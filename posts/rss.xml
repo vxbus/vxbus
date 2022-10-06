@@ -1,14 +1,20 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>所有文章 - 北南南北</title>
-        <link>https://www.kad8.com/posts/</link>
-        <description>所有文章 | 北南南北</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 06 Oct 2022 04:22:06 -0400</lastBuildDate><atom:link href="https://www.kad8.com/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>Test</title>
-    <link>https://www.kad8.com/posts/test/</link>
-    <pubDate>Thu, 06 Oct 2022 04:22:06 -0400</pubDate><author>
-        <name>作者</name>
-    </author><guid>https://www.kad8.com/posts/test/</guid>
-    <description><![CDATA[This is a test bloghello, welcome to our website]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 北南南北</title>
+    <link>https://www.kad8.com/posts/</link>
+    <description>Recent content in Posts on 北南南北</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 06 Oct 2022 04:22:06 -0400</lastBuildDate><atom:link href="https://www.kad8.com/posts/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test</title>
+      <link>https://www.kad8.com/posts/test/</link>
+      <pubDate>Thu, 06 Oct 2022 04:22:06 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/posts/test/</guid>
+      <description>This is a test blog hello, welcome to our website</description>
+    </item>
+    
+  </channel>
 </rss>
