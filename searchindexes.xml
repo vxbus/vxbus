@@ -46,18 +46,21 @@
   </entry>
   
   <entry>
-    <title>VxWorks</title>
-    <url>/post/syntax-highlighting.html</url>
+    <title>VxWorks操作系统下的串口读写程序</title>
+    <url>/post/VxWorks-Uart-Read-Write-Programming.html</url>
     <categories><category>示例</category>
     </categories>
     <tags>
-      <tag>语法</tag>
-      <tag>高亮</tag>
-      <tag>Chroma</tag>
+      <tag>VxWorks</tag>
+      <tag>UART</tag>
+      <tag>串口</tag>
+      <tag>编程</tag>
     </tags>
-    <content type="html"><![CDATA[Hugo 通过 Chroma 提供非常快速的语法高亮显示，现 Hugo 中使用 Chroma 作为代码块高亮支持，它内置在 Go 语言当中，速度是真的非常、非常快，而且最为重要的是它也兼容之前我们使用的 Pygments 方式。
-以下通过 Hugo 内置短代码 highlight 和 Markdown 代码块方式分别验证不同语言的代码块渲染效果并能正确高亮显示，有关优化语法突出显示的更多信息，请参阅 Hugo 文档  。
-编程语言 GO 199 200 201 202 203 204 205 206 207 208  func GetTitleFunc(style string) func(s string) string { switch strings.ToLower(style) { case &#34;go&#34;: return strings.Title case &#34;chicago&#34;: return transform.NewTitleConverter(transform.ChicagoStyle) default: return transform.NewTitleConverter(transform.APStyle)  } }  ]]></content>
+    <content type="html"><![CDATA[关于传统的串口编程，在各大操作系统下的流程基本是一致的，只是针对不同的操作系统，函数接口可能有所差异而已，下面讲述VxWorks操作系统下对于串口读写的编程步骤和代码
+相关的VxWorks 和 串口，请参阅 VxWorks下的串口测试程序设计和源码  。
+串口配置过程 打开串口 fd = open(&#34;/tyCo/0&#34;, O_RDWR, 0); &#34;/tyCo/0&#34; 串口1的设备名，O_RDWR：open for reading and writing 设置串口raw模式，清空输入输出的缓冲区 在VxWorks中配置串口可以直接通过ioctl的控制命令来实现
+ioctl(fd,FIOSETOPTIONS,OPT_RAW); ioctl(fd,FIOFLUSH,0); ioctl(int fd,int function,int arg); function的参数如下：
+]]></content>
   </entry>
   
   <entry>

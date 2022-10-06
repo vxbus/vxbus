@@ -32,17 +32,27 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kad8.com/tags/chroma/</loc>
-    <lastmod>2022-10-06T05:35:25-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.kad8.com/tags/</loc>
     <lastmod>2022-10-06T05:35:25-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kad8.com/post/syntax-highlighting.html</loc>
+    <loc>https://www.kad8.com/tags/uart/</loc>
+    <lastmod>2022-10-06T05:35:25-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/vxworks/</loc>
+    <lastmod>2022-10-06T05:35:25-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/post/VxWorks-Uart-Read-Write-Programming.html</loc>
+    <lastmod>2022-10-06T05:35:25-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/%E4%B8%B2%E5%8F%A3/</loc>
     <lastmod>2022-10-06T05:35:25-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -52,12 +62,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kad8.com/tags/%E8%AF%AD%E6%B3%95/</loc>
-    <lastmod>2022-10-06T05:35:25-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/tags/%E9%AB%98%E4%BA%AE/</loc>
+    <loc>https://www.kad8.com/tags/%E7%BC%96%E7%A8%8B/</loc>
     <lastmod>2022-10-06T05:35:25-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -127,6 +132,11 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://www.kad8.com/tags/%E8%AF%AD%E6%B3%95/</loc>
+    <lastmod>2022-08-06T14:41:50+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://www.kad8.com/archives/</loc>
     <lastmod>2022-07-26T21:46:25+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -157,7 +167,17 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://www.kad8.com/tags/chroma/</loc>
+    <lastmod>2022-06-07T19:09:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://www.kad8.com/post/syntax-highlighting.html</loc>
+    <lastmod>2022-06-07T19:09:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/%E9%AB%98%E4%BA%AE/</loc>
     <lastmod>2022-06-07T19:09:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -199,11 +219,6 @@
   </url><url>
     <loc>https://www.kad8.com/tags/%E5%BC%80%E5%A7%8B/</loc>
     <lastmod>2022-06-03T16:43:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/tags/vxworks/</loc>
-    <lastmod>2022-05-02T15:59:41+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
