@@ -2,6 +2,17 @@
 <search>
   
   <entry>
+    <title>Test</title>
+    <url>/posts/test/</url>
+    <categories>
+    </categories>
+    <tags>
+    </tags>
+    <content type="html"><![CDATA[测试文章 今天开始测试博客文章的生成
+]]></content>
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
     <url>/posts/hello-world/</url>
     <categories>
