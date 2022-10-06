@@ -6,7 +6,7 @@
     <description>Recent content in Posts on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 18 Sep 2022 20:58:13 +0800</lastBuildDate><atom:link href="https://www.kad8.com/post/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Oct 2022 05:35:25 -0400</lastBuildDate><atom:link href="https://www.kad8.com/post/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>欢迎加入 Hugo NexT 组织！</title>
       <link>https://www.kad8.com/post/external-link/</link>
@@ -32,6 +32,20 @@
     Hugo
     &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;
 &lt;/a&gt; 是现今世界上最快的网站建设框架，也是最流行的开源静态站点生成器之一。 凭借其惊人的速度和灵活性，Hugo 让建设网站再次变得有趣起来。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>VxWorks</title>
+      <link>https://www.kad8.com/post/syntax-highlighting.html</link>
+      <pubDate>Thu, 06 Oct 2022 05:35:25 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/post/syntax-highlighting.html</guid>
+      <description>&lt;p&gt;Hugo 通过 Chroma 提供非常快速的语法高亮显示，现 Hugo 中使用 Chroma 作为代码块高亮支持，它内置在 Go 语言当中，速度是真的非常、非常快，而且最为重要的是它也兼容之前我们使用的 Pygments 方式。&lt;/p&gt;
+&lt;p&gt;以下通过 Hugo 内置短代码 &lt;code&gt;highlight&lt;/code&gt; 和 &lt;code&gt;Markdown&lt;/code&gt; 代码块方式分别验证不同语言的代码块渲染效果并能正确高亮显示，有关优化语法突出显示的更多信息，请参阅 
+&lt;a href=&#34;https://gohugo.io/getting-started/configuration-markup#highlight&#34; title=&#34;Hugo 文档&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;
+    Hugo 文档
+    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;
+&lt;/a&gt;。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -85,20 +99,6 @@
     
     <item>
       <title>Hugo 内置的 Chroma 语法高亮</title>
-      <link>https://www.kad8.com/post/syntax-highlighting.html</link>
-      <pubDate>Tue, 07 Jun 2022 19:09:52 +0800</pubDate>
-      
-      <guid>https://www.kad8.com/post/syntax-highlighting.html</guid>
-      <description>&lt;p&gt;Hugo 通过 Chroma 提供非常快速的语法高亮显示，现 Hugo 中使用 Chroma 作为代码块高亮支持，它内置在 Go 语言当中，速度是真的非常、非常快，而且最为重要的是它也兼容之前我们使用的 Pygments 方式。&lt;/p&gt;
-&lt;p&gt;以下通过 Hugo 内置短代码 &lt;code&gt;highlight&lt;/code&gt; 和 &lt;code&gt;Markdown&lt;/code&gt; 代码块方式分别验证不同语言的代码块渲染效果并能正确高亮显示，有关优化语法突出显示的更多信息，请参阅 
-&lt;a href=&#34;https://gohugo.io/getting-started/configuration-markup#highlight&#34; title=&#34;Hugo 文档&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;
-    Hugo 文档
-    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;
-&lt;/a&gt;。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Hugo 内置的 Chroma 语法高亮---------------------vxworks</title>
       <link>https://www.kad8.com/post/syntax-highlighting.html</link>
       <pubDate>Tue, 07 Jun 2022 19:09:52 +0800</pubDate>
       
