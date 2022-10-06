@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on 北南南北</title>
-    <link>https://www.kad8.com/posts/</link>
-    <description>Recent content in Posts on 北南南北</description>
+    <title>语法 on 北南南北</title>
+    <link>https://www.kad8.com/tags/%E8%AF%AD%E6%B3%95/</link>
+    <description>Recent content in 语法 on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 06 Oct 2022 04:22:06 -0400</lastBuildDate><atom:link href="https://www.kad8.com/posts/rss.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Test</title>
-      <link>https://www.kad8.com/posts/test/</link>
-      <pubDate>Thu, 06 Oct 2022 04:22:06 -0400</pubDate>
-      
-      <guid>https://www.kad8.com/posts/test/</guid>
-      <description>This is a test blog hello, welcome to our website</description>
-    </item>
-    
+    <lastBuildDate>Tue, 07 Jun 2022 19:09:52 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/%E8%AF%AD%E6%B3%95/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo 内置的 Chroma 语法高亮</title>
       <link>https://www.kad8.com/post/syntax-highlighting.html</link>

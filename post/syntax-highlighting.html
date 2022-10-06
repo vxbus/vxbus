@@ -10,26 +10,26 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/imgs/icons/favicon_16x16_next.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/imgs/icons/favicon_32_32_next.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/imgs/icons/apple_touch_icon_next.png">
-<meta itemprop="name" content="Test" />
-<meta itemprop="description" content="Where there is embedded, there is VxWorks." />
+<meta itemprop="name" content="Hugo 内置的 Chroma 语法高亮" />
+<meta itemprop="description" content="描述下 Chroma 所支持的各种语法及高亮效果展示" />
 <meta itemprop="datePublished" ZgotmplZ />
 <meta itemprop="dateModified" ZgotmplZ />
 <meta itemprop="image" content="https://www.kad8.com/imgs/hugo_next_avatar.png" />
-<meta itemprop="keywords" content="Embedded,VxWorks,Linux,Server,Real Time" />
+<meta itemprop="keywords" content="语法,高亮,Chroma" />
 
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Test" />
-<meta property="og:description" content="Where there is embedded, there is VxWorks." />
+<meta property="og:title" content="Hugo 内置的 Chroma 语法高亮" />
+<meta property="og:description" content="描述下 Chroma 所支持的各种语法及高亮效果展示" />
 <meta property="og:image" content="/imgs/hugo_next_avatar.png" />
 <meta property="og:image:width" content="312" />
 <meta property="og:image:height" content="312" />
 <meta property="og:image:type" content="image/jpeg/png/svg/jpg" />
-<meta property="og:url" content="https://www.kad8.com/posts/test/"/>
+<meta property="og:url" content="https://www.kad8.com/post/syntax-highlighting.html"/>
 <meta property="og:site_name" content="北南南北" />
 <meta property="og:locale" content="zh-CN"/>
 <meta property="article:author" content="VxWorks OS" />
-<meta property="article:published_time" content="2022-10-06 04:22:06 -0400 EDT" />
-<meta property="article:modified_time" content="2022-10-06 04:22:06 -0400 EDT" />
+<meta property="article:published_time" content="2022-06-07 19:09:52 &#43;0800 &#43;0800" />
+<meta property="article:modified_time" content="2022-06-07 19:09:52 &#43;0800 &#43;0800" />
 
 
   
@@ -44,7 +44,7 @@
       content: "~ 我可是有底线的哟 ~";
     }
   </style>
-  <script class="next-config" data-name="page" type="application/json">{"comments":false,"isHome":false,"isPage":true,"path":"test","permalink":"https://www.kad8.com/posts/test/","title":"Test"}</script>
+  <script class="next-config" data-name="page" type="application/json">{"comments":false,"isHome":false,"isPage":true,"path":"syntax-highlighting.html","permalink":"https://www.kad8.com/post/syntax-highlighting.html","title":"Hugo 内置的 Chroma 语法高亮"}</script>
   <script type="text/javascript">
   document.addEventListener('DOMContentLoaded', () => {
     var script = document.createElement('script');
@@ -60,7 +60,7 @@
 
 
 
-  <title>Test - 北南南北</title>
+  <title>Hugo 内置的 Chroma 语法高亮 - 北南南北</title>
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
@@ -173,7 +173,27 @@
       <div class="post-toc-wrap sidebar-panel">
         <div class="post-toc animated"><nav id="TableOfContents">
   <ul>
-    <li><a href="#this-is-a-test-blog">This is a test blog</a></li>
+    <li><a href="#编程语言">编程语言</a>
+      <ul>
+        <li><a href="#go">GO</a></li>
+        <li><a href="#java">Java</a></li>
+        <li><a href="#python">Python</a></li>
+        <li><a href="#git-对比">Git 对比</a></li>
+      </ul>
+    </li>
+    <li><a href="#文件">文件</a>
+      <ul>
+        <li><a href="#make-文件">Make 文件</a></li>
+        <li><a href="#markdown-文档">Markdown 文档</a></li>
+      </ul>
+    </li>
+    <li><a href="#数据内容">数据内容</a>
+      <ul>
+        <li><a href="#json-数据">JSON 数据</a></li>
+        <li><a href="#xml-内容">XML 内容</a></li>
+        <li><a href="#sql-查询">SQL 查询</a></li>
+      </ul>
+    </li>
   </ul>
 </nav></div>
       </div>
@@ -307,7 +327,7 @@
       
   <div class="post-block">
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://www.kad8.com/posts/test/">
+    <link itemprop="mainEntityOfPage" href="https://www.kad8.com/post/syntax-highlighting.html">
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
       <meta itemprop="name" content="VxWorks OS">
@@ -317,12 +337,12 @@
       <meta itemprop="description" content="Where there is embedded, there is VxWorks.">
     </span>
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Test">
-      <meta itemprop="description" content="This is a test blog hello, welcome to our website">
+      <meta itemprop="name" content="Hugo 内置的 Chroma 语法高亮">
+      <meta itemprop="description" content="描述下 Chroma 所支持的各种语法及高亮效果展示">
     </span>
     <header class="post-header">
-       <h1 class="post-title" itemprop="name headline">Test
-  <a href="https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name/posts/test.md" rel="noopener external nofollow noreferrer" target="_blank" class="exturl post-edit-link" title="编辑"><i class="fa fa-pen-nib"></i></a> </h1> <div class="post-meta-container">
+       <h1 class="post-title" itemprop="name headline">Hugo 内置的 Chroma 语法高亮
+  <a href="https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name/posts/syntax-highlighting.md" rel="noopener external nofollow noreferrer" target="_blank" class="exturl post-edit-link" title="编辑"><i class="fa fa-pen-nib"></i></a> </h1> <div class="post-meta-container">
   <div class="post-meta-items">
     
 
@@ -332,10 +352,21 @@
     <i class="far fa-calendar"></i>
   </span>
   <span class="post-meta-item-text">发表于：</span>
-  <time title="发表于：2022-10-06 04:22:06 -0400 EDT" itemprop="dateCreated datePublished" datetime="2022-10-06 04:22:06 -0400 EDT">2022-10-06</time>
+  <time title="发表于：2022-06-07 19:09:52 &#43;0800 &#43;0800" itemprop="dateCreated datePublished" datetime="2022-06-07 19:09:52 &#43;0800 &#43;0800">2022-06-07</time>
 </span>
     
     
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="far fa-folder-open"></i>
+  </span>
+  <span class="post-meta-item-text">分类于：</span>
+  <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+    <a href="/categories/%E7%A4%BA%E4%BE%8B" itemprop="url" rel="index">
+      <span itemprop="name">示例</span>
+    </a>
+  </span>
+</span>
   </div>
   <div class="post-meta-items">
     
@@ -343,7 +374,7 @@
   <span class="post-meta-item-icon">
     <i class="far fa-file-word"></i>
   </span>
-  <span class="post-meta-item-text">字数：</span><span>10</span>
+  <span class="post-meta-item-text">字数：</span><span>226</span>
 </span>
     
 <span class="post-meta-item" title="阅读">
@@ -351,7 +382,7 @@
     <i class="far fa-clock"></i>
   </span>
   <span class="post-meta-item-text">阅读：&asymp;</span>
-  <span>1分钟</span>
+  <span>2分钟</span>
 </span>
 
     
@@ -362,7 +393,7 @@
   <span class="post-meta-item-text">
   浏览：
   </span>
-  <span id="busuanzi_value_page_pv" data-path="/posts/test/"><i class="fa fa-sync fa-spin"></i></span>
+  <span id="busuanzi_value_page_pv" data-path="/post/syntax-highlighting.html"><i class="fa fa-sync fa-spin"></i></span>
 </span>
 
   </div>
@@ -373,14 +404,121 @@
     
     <div class="post-body  autonumber " itemprop="articleBody">
       
-  <h2 id="this-is-a-test-blog">This is a test blog</h2>
-<p>hello, welcome to our website</p>
+  <p>Hugo 通过 Chroma 提供非常快速的语法高亮显示，现 Hugo 中使用 Chroma 作为代码块高亮支持，它内置在 Go 语言当中，速度是真的非常、非常快，而且最为重要的是它也兼容之前我们使用的 Pygments 方式。</p>
+<p>以下通过 Hugo 内置短代码 <code>highlight</code> 和 <code>Markdown</code> 代码块方式分别验证不同语言的代码块渲染效果并能正确高亮显示，有关优化语法突出显示的更多信息，请参阅 
+<a href="https://gohugo.io/getting-started/configuration-markup#highlight" title="Hugo 文档" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    Hugo 文档
+    <i class="fa fa-external-link-alt"></i>
+</a>。</p>
+<h2 id="编程语言">编程语言</h2>
+<h3 id="go">GO</h3>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="199"><a style="outline: none; text-decoration:none; color:inherit" href="#199">199</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="200"><a style="outline: none; text-decoration:none; color:inherit" href="#200">200</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="201"><a style="outline: none; text-decoration:none; color:inherit" href="#201">201</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="202"><a style="outline: none; text-decoration:none; color:inherit" href="#202">202</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="203"><a style="outline: none; text-decoration:none; color:inherit" href="#203">203</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="204"><a style="outline: none; text-decoration:none; color:inherit" href="#204">204</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="205"><a style="outline: none; text-decoration:none; color:inherit" href="#205">205</a>
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="206"><a style="outline: none; text-decoration:none; color:inherit" href="#206">206</a>
+</span></span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="207"><a style="outline: none; text-decoration:none; color:inherit" href="#207">207</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="208"><a style="outline: none; text-decoration:none; color:inherit" href="#208">208</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-go" data-lang="go"><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">GetTitleFunc</span>(<span style="color:#a6e22e">style</span> <span style="color:#66d9ef">string</span>) <span style="color:#66d9ef">func</span>(<span style="color:#a6e22e">s</span> <span style="color:#66d9ef">string</span>) <span style="color:#66d9ef">string</span> {
+  <span style="color:#66d9ef">switch</span> <span style="color:#a6e22e">strings</span>.<span style="color:#a6e22e">ToLower</span>(<span style="color:#a6e22e">style</span>) {
+  <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;go&#34;</span>:
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">strings</span>.<span style="color:#a6e22e">Title</span>
+  <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;chicago&#34;</span>:
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">transform</span>.<span style="color:#a6e22e">NewTitleConverter</span>(<span style="color:#a6e22e">transform</span>.<span style="color:#a6e22e">ChicagoStyle</span>)
+  <span style="color:#66d9ef">default</span>:
+<span style="display:block;width:100%;background-color:#3c3d38">    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">transform</span>.<span style="color:#a6e22e">NewTitleConverter</span>(<span style="color:#a6e22e">transform</span>.<span style="color:#a6e22e">APStyle</span>)
+</span>  }
+}</code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="java">Java</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> javax.swing.JFrame<span style="color:#f92672">;</span>  <span style="color:#75715e">//Importing class JFrame
+</span><span style="color:#75715e"></span><span style="color:#f92672">import</span> javax.swing.JLabel<span style="color:#f92672">;</span>  <span style="color:#75715e">//Importing class JLabel
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">HelloWorld</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        JFrame frame <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> JFrame<span style="color:#f92672">();</span>           <span style="color:#75715e">//Creating frame
+</span><span style="color:#75715e"></span>        frame<span style="color:#f92672">.</span><span style="color:#a6e22e">setTitle</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Hi!&#34;</span><span style="color:#f92672">);</span>                 <span style="color:#75715e">//Setting title frame
+</span><span style="color:#75715e"></span>        frame<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> JLabel<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Hello, world!&#34;</span><span style="color:#f92672">));</span><span style="color:#75715e">//Adding text to frame
+</span><span style="color:#75715e"></span>        frame<span style="color:#f92672">.</span><span style="color:#a6e22e">pack</span><span style="color:#f92672">();</span>                          <span style="color:#75715e">//Setting size to smallest
+</span><span style="color:#75715e"></span>        frame<span style="color:#f92672">.</span><span style="color:#a6e22e">setLocationRelativeTo</span><span style="color:#f92672">(</span><span style="color:#66d9ef">null</span><span style="color:#f92672">);</span>     <span style="color:#75715e">//Centering frame
+</span><span style="color:#75715e"></span>        frame<span style="color:#f92672">.</span><span style="color:#a6e22e">setVisible</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>                <span style="color:#75715e">//Showing frame
+</span><span style="color:#75715e"></span>    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><h3 id="python">Python</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-python" data-lang="python">print <span style="color:#e6db74">&#34;Hello, world!&#34;</span>
+</code></pre></div><h3 id="git-对比">Git 对比</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-diff" data-lang="diff">*** /path/to/original &#39;&#39;timestamp&#39;&#39;
+<span style="color:#f92672">--- /path/to/new  &#39;&#39;timestamp&#39;&#39;
+</span><span style="color:#f92672"></span>***************
+*** 1 ****
+<span style="font-weight:bold">! This is a line.
+</span><span style="font-weight:bold"></span><span style="color:#f92672">--- 1 ---
+</span><span style="color:#f92672"></span><span style="font-weight:bold">! This is a replacement line.
+</span><span style="font-weight:bold"></span>It is important to spell
+<span style="color:#f92672">-removed line
+</span><span style="color:#f92672"></span><span style="color:#a6e22e">+new line
+</span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-diff" data-lang="diff">*** /path/to/original &#39;&#39;timestamp&#39;&#39;
+<span style="color:#f92672">--- /path/to/new  &#39;&#39;timestamp&#39;&#39;
+</span><span style="color:#f92672"></span>***************
+<span style="display:block;width:100%;background-color:#3c3d38">*** 1 ****
+</span><span style="font-weight:bold">! This is a line.
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="font-weight:bold"></span><span style="color:#f92672">--- 1 ---
+</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="color:#f92672"></span><span style="font-weight:bold">! This is a replacement line.
+</span></span><span style="font-weight:bold"></span>It is important to spell
+<span style="color:#f92672">-removed line
+</span><span style="color:#f92672"></span><span style="color:#a6e22e">+new line
+</span></code></pre></div><h2 id="文件">文件</h2>
+<h3 id="make-文件">Make 文件</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-makefile" data-lang="makefile">CC<span style="color:#f92672">=</span>gcc
+CFLAGS<span style="color:#f92672">=</span>-I.
 
+<span style="color:#a6e22e">hellomake</span><span style="color:#f92672">:</span> hellomake.o hellofunc.o
+     <span style="color:#66d9ef">$(</span>CC<span style="color:#66d9ef">)</span> -o hellomake hellomake.o hellofunc.o -I.
+</code></pre></div><h3 id="markdown-文档">Markdown 文档</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">**bold**
+<span style="font-style:italic">*italics*</span>
+[<span style="color:#f92672">link</span>](<span style="color:#a6e22e">www.example.com</span>)
+</code></pre></div><h2 id="数据内容">数据内容</h2>
+<h3 id="json-数据">JSON 数据</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-json" data-lang="json">{<span style="color:#f92672">&#34;employees&#34;</span>:[
+    {<span style="color:#f92672">&#34;firstName&#34;</span>:<span style="color:#e6db74">&#34;John&#34;</span>, <span style="color:#f92672">&#34;lastName&#34;</span>:<span style="color:#e6db74">&#34;Doe&#34;</span>},
+]}
+</code></pre></div><h3 id="xml-内容">XML 内容</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;employees&gt;</span>
+    <span style="color:#f92672">&lt;employee&gt;</span>
+        <span style="color:#f92672">&lt;firstName&gt;</span>John<span style="color:#f92672">&lt;/firstName&gt;</span> <span style="color:#f92672">&lt;lastName&gt;</span>Doe<span style="color:#f92672">&lt;/lastName&gt;</span>
+    <span style="color:#f92672">&lt;/employee&gt;</span>
+<span style="color:#f92672">&lt;/employees&gt;</span>
+</code></pre></div><h3 id="sql-查询">SQL 查询</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">column_name</span>,<span style="color:#66d9ef">column_name</span>
+<span style="color:#66d9ef">FROM</span>
+  <span style="color:#66d9ef">Table</span>
+<span style="color:#66d9ef">WHERE</span> <span style="color:#66d9ef">column_name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;condition&#34;</span></code></pre></div>
+<p>除以上列举的代码高亮显示外，还支持诸如：C 语言、C++、HTML、CSS、Shell脚本等各主流的代码语言高亮显示，可自行测试效果。</p>
 
     </div>
     <footer class="post-footer">
       
 
+<div class="post-tags">
+  
+    <a href="/tags/%e8%af%ad%e6%b3%95">
+    语法
+  </a>
+    <a href="/tags/%e9%ab%98%e4%ba%ae">
+    高亮
+  </a>
+    <a href="/tags/chroma">
+    Chroma
+  </a>
+</div>
 
 <div class="addthis_inline_share_toolbox" style="text-align: center;"></div>
 <hr/>
@@ -406,7 +544,7 @@
   <ul>
     <li class="post-copyright-title">
       <strong>文章标题：</strong>
-      Test
+      Hugo 内置的 Chroma 语法高亮
     </li>
     <li class="post-copyright-author">
       <strong>本文作者： </strong>
@@ -414,7 +552,7 @@
     </li>
     <li class="post-copyright-link"> 
       <strong>本文链接：</strong>
-       <a id="post-cr-link" href="https://www.kad8.com/posts/test/" title="Test">https://www.kad8.com/posts/test/</a>
+       <a id="post-cr-link" href="https://www.kad8.com/post/syntax-highlighting.html" title="Hugo 内置的 Chroma 语法高亮">https://www.kad8.com/post/syntax-highlighting.html</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -447,12 +585,11 @@
 </div>
 <div class="post-nav">
   <div class="post-nav-next post-nav-item">
+    <a href="/posts/test/" rel="next" title="Test">
+      <i class="fa fa-chevron-left"></i> Test
+    </a>
   </div>
   <div class="post-nav-prev post-nav-item">
-    <a href="/post/syntax-highlighting.html" rel="prev" title="Hugo 内置的 Chroma 语法高亮">
-      Hugo 内置的 Chroma 语法高亮
-      <i class="fa fa-chevron-right"></i>
-    </a>
   </div>
 </div>
     </footer>

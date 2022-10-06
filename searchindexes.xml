@@ -12,4 +12,44 @@
 ]]></content>
   </entry>
   
+  <entry>
+    <title>关于 Hugo NexT 组织</title>
+    <url>/about.html</url>
+    <categories>
+    </categories>
+    <tags>
+    </tags>
+    <content type="html"><![CDATA[Hugo NexT 组织是由众多喜爱 NexT 主题及风格的世界各地友人共同组建而成，为的就是让这个主题继续在 Hugo 引擎中也能得到发扬光大，在此也欢迎你的加入！
+我们的愿景 延续 NexT 经典的黑白调搭配，保持简单的易用性及强大的功能。
+使用反馈  加入 GitHub Discussions   或 Gitter   在线讨论 🍻  GitHub Issues   提交错误报告 🐛  GitHub Feature   表新功能的想法 ✨   同时国内用户也可加入 QQ 群交流： 604710815
+ ]]></content>
+  </entry>
+  
+  <entry>
+    <title>Hugo 内置的 Chroma 语法高亮</title>
+    <url>/post/syntax-highlighting.html</url>
+    <categories><category>示例</category>
+    </categories>
+    <tags>
+      <tag>语法</tag>
+      <tag>高亮</tag>
+      <tag>Chroma</tag>
+    </tags>
+    <content type="html"><![CDATA[Hugo 通过 Chroma 提供非常快速的语法高亮显示，现 Hugo 中使用 Chroma 作为代码块高亮支持，它内置在 Go 语言当中，速度是真的非常、非常快，而且最为重要的是它也兼容之前我们使用的 Pygments 方式。
+以下通过 Hugo 内置短代码 highlight 和 Markdown 代码块方式分别验证不同语言的代码块渲染效果并能正确高亮显示，有关优化语法突出显示的更多信息，请参阅 Hugo 文档  。
+编程语言 GO 199 200 201 202 203 204 205 206 207 208  func GetTitleFunc(style string) func(s string) string { switch strings.ToLower(style) { case &#34;go&#34;: return strings.Title case &#34;chicago&#34;: return transform.NewTitleConverter(transform.ChicagoStyle) default: return transform.NewTitleConverter(transform.APStyle)  } }   Java import javax.swing.JFrame; //Importing class JFrame import javax.swing.JLabel; //Importing class JLabel public class HelloWorld { public static void main(String[] args) { JFrame frame = new JFrame(); //Creating frame  frame.setTitle(&#34;Hi!&#34;); //Setting title frame  frame.add(new JLabel(&#34;Hello, world!&#34;));//Adding text to frame  frame.pack(); //Setting size to smallest  frame.setLocationRelativeTo(null); //Centering frame  frame.setVisible(true); //Showing frame  } } Python print &#34;Hello, world!&#34; Git 对比 *** /path/to/original &#39;&#39;timestamp&#39;&#39; --- /path/to/new &#39;&#39;timestamp&#39;&#39; *************** *** 1 **** ! This is a line. --- 1 --- ! This is a replacement line. It is important to spell -removed line +new line *** /path/to/original &#39;&#39;timestamp&#39;&#39; --- /path/to/new &#39;&#39;timestamp&#39;&#39; *************** *** 1 **** ! This is a line. --- 1 --- ! This is a replacement line. It is important to spell -removed line +new line 文件 Make 文件 CC=gcc CFLAGS=-I. hellomake: hellomake.o hellofunc.o $(CC) -o hellomake hellomake.o hellofunc.o -I. Markdown 文档 **bold** *italics* [link](www.example.com) 数据内容 JSON 数据 {&#34;employees&#34;:[ {&#34;firstName&#34;:&#34;John&#34;, &#34;lastName&#34;:&#34;Doe&#34;}, ]} XML 内容 &lt;employees&gt; &lt;employee&gt; &lt;firstName&gt;John&lt;/firstName&gt; &lt;lastName&gt;Doe&lt;/lastName&gt; &lt;/employee&gt; &lt;/employees&gt; SQL 查询 SELECT column_name,column_name FROM Table WHERE column_name = &#34;condition&#34; 除以上列举的代码高亮显示外，还支持诸如：C 语言、C++、HTML、CSS、Shell脚本等各主流的代码语言高亮显示，可自行测试效果。
+]]></content>
+  </entry>
+  
+  <entry>
+    <title>站点示例</title>
+    <url>/flinks.html</url>
+    <categories>
+    </categories>
+    <tags>
+    </tags>
+    <content type="html"><![CDATA[如想交换本站友情链接，请在评论区留下你的站点信息，格式参考如下：
+- name: Hugo-NexT desc: Hugo NexT 官方预览网站。 avatar: https://hugo-next.eu.org/imgs/hugo_next_avatar.png link: https://hugo-next.eu.org ]]></content>
+  </entry>
+  
 </search>

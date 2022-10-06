@@ -16,5 +16,41 @@
       <description>This is a test blog hello, welcome to our website</description>
     </item>
     
+    <item>
+      <title>关于 Hugo NexT 组织</title>
+      <link>https://www.kad8.com/about.html</link>
+      <pubDate>Thu, 09 Jun 2022 20:12:52 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/about.html</guid>
+      <description>Hugo NexT 组织是由众多喜爱 NexT 主题及风格的世界各地友人共同组建而成，为的就是让这个主题继续在 Hugo 引擎中也能得到发扬光大，在此也欢迎你的加入！
+我们的愿景 延续 NexT 经典的黑白调搭配，保持简单的易用性及强大的功能。
+使用反馈  加入 GitHub Discussions   或 Gitter   在线讨论 🍻  GitHub Issues   提交错误报告 🐛  GitHub Feature   表新功能的想法 ✨   同时国内用户也可加入 QQ 群交流： 604710815
+ </description>
+    </item>
+    
+    <item>
+      <title>Hugo 内置的 Chroma 语法高亮</title>
+      <link>https://www.kad8.com/post/syntax-highlighting.html</link>
+      <pubDate>Tue, 07 Jun 2022 19:09:52 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/post/syntax-highlighting.html</guid>
+      <description>&lt;p&gt;Hugo 通过 Chroma 提供非常快速的语法高亮显示，现 Hugo 中使用 Chroma 作为代码块高亮支持，它内置在 Go 语言当中，速度是真的非常、非常快，而且最为重要的是它也兼容之前我们使用的 Pygments 方式。&lt;/p&gt;
+&lt;p&gt;以下通过 Hugo 内置短代码 &lt;code&gt;highlight&lt;/code&gt; 和 &lt;code&gt;Markdown&lt;/code&gt; 代码块方式分别验证不同语言的代码块渲染效果并能正确高亮显示，有关优化语法突出显示的更多信息，请参阅 
+&lt;a href=&#34;https://gohugo.io/getting-started/configuration-markup#highlight&#34; title=&#34;Hugo 文档&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;
+    Hugo 文档
+    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;
+&lt;/a&gt;。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>站点示例</title>
+      <link>https://www.kad8.com/flinks.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kad8.com/flinks.html</guid>
+      <description>如想交换本站友情链接，请在评论区留下你的站点信息，格式参考如下：
+- name: Hugo-NexT desc: Hugo NexT 官方预览网站。 avatar: https://hugo-next.eu.org/imgs/hugo_next_avatar.png link: https://hugo-next.eu.org </description>
+    </item>
+    
   </channel>
 </rss>
