@@ -272,7 +272,7 @@
       </div>
     <div class="siteinfo-item">
       <div class="item-name"><i class="fa fa-font"></i>总字数：</div>
-      <div class="item-count" id="wordsCount" data-count="2243"></div>
+      <div class="item-count" id="wordsCount" data-count="2256"></div>
     </div>
     <div class="siteinfo-item">
       <div class="item-name"><i class="fa fa-mug-hot"></i>阅读约：</div>
@@ -359,7 +359,7 @@
   <span class="post-meta-item-icon">
     <i class="far fa-file-word"></i>
   </span>
-  <span class="post-meta-item-text">字数：</span><span>29</span>
+  <span class="post-meta-item-text">字数：</span><span>42</span>
 </span>
     
 <span class="post-meta-item" title="阅读">
@@ -399,8 +399,8 @@
 <h3 id="打开串口">打开串口</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-c" data-lang="c">fd <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#34;/tyCo/0&#34;</span>, O_RDWR, <span style="color:#ae81ff">0</span>);
 </code></pre></div><ul>
-<li>&ldquo;/tyCo/0&rdquo; 串口1的设备名</li>
-<li>O_RDWR：open for reading and writing</li>
+<li>&ldquo;/tyCo/0&rdquo;: 串口1的设备名</li>
+<li>O_RDWR: 按照读写方式打开串口</li>
 </ul>
 <h3 id="设置串口raw模式清空输入输出的缓冲区">设置串口raw模式，清空输入输出的缓冲区</h3>
 <p>在VxWorks中配置串口可以直接通过ioctl的控制命令来实现</p>
@@ -408,6 +408,44 @@
 ioctl(fd,FIOFLUSH,<span style="color:#ae81ff">0</span>);
 ioctl(<span style="color:#66d9ef">int</span> fd,<span style="color:#66d9ef">int</span> function,<span style="color:#66d9ef">int</span> arg);
 </code></pre></div><p>function的参数如下：</p>
+<table>
+<thead>
+<tr>
+<th>FIOBAUDRATE</th>
+<th>设置波特率，arg为一整数，表示要设定的波特率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIOGETOPTIONS</td>
+<td>取得设备控制字，arg表示读出的内容存放的位置</td>
+</tr>
+<tr>
+<td>FIOSETOPTIONS</td>
+<td>设置设备控制字，arg表示要设置的选项</td>
+</tr>
+<tr>
+<td>FIOGETNAME</td>
+<td>取得文件描述符对应的文件名，arg存放文件名的缓冲区</td>
+</tr>
+<tr>
+<td>FIOREAD</td>
+<td>取得输入缓冲区内未读取的字符数，arg用于接收结果的整型指针</td>
+</tr>
+<tr>
+<td>FIOWRITE</td>
+<td>取得输出缓冲区内的字符个数，arg用于接收结果的整型指针</td>
+</tr>
+<tr>
+<td>FIOFLUSH</td>
+<td>清空输入输出缓冲区的字符</td>
+</tr>
+<tr>
+<td>FIOCANCEL</td>
+<td>取消读和写</td>
+</tr>
+</tbody>
+</table>
 
     </div>
     <footer class="post-footer">
