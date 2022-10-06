@@ -35,44 +35,29 @@
   </entry>
   
   <entry>
-    <title>VxWorks</title>
-    <url>/post/syntax-highlighting.html</url>
-    <categories><category>示例</category>
-    </categories>
-    <tags>
-      <tag>语法</tag>
-      <tag>高亮</tag>
-      <tag>Chroma</tag>
-    </tags>
-    <content type="html"><![CDATA[Hugo 通过 Chroma 提供非常快速的语法高亮显示，现 Hugo 中使用 Chroma 作为代码块高亮支持，它内置在 Go 语言当中，速度是真的非常、非常快，而且最为重要的是它也兼容之前我们使用的 Pygments 方式。
-以下通过 Hugo 内置短代码 highlight 和 Markdown 代码块方式分别验证不同语言的代码块渲染效果并能正确高亮显示，有关优化语法突出显示的更多信息，请参阅 Hugo 文档  。
-编程语言 GO 199 200 201 202 203 204 205 206 207 208  func GetTitleFunc(style string) func(s string) string { switch strings.ToLower(style) { case &#34;go&#34;: return strings.Title case &#34;chicago&#34;: return transform.NewTitleConverter(transform.ChicagoStyle) default: return transform.NewTitleConverter(transform.APStyle)  } }  ]]></content>
-  </entry>
-  
-  <entry>
-    <title>VxWorks</title>
-    <url>/post/syntax-highlighting.html</url>
-    <categories><category>示例</category>
-    </categories>
-    <tags>
-      <tag>语法</tag>
-      <tag>高亮</tag>
-      <tag>Chroma</tag>
-    </tags>
-    <content type="html"><![CDATA[Hugo 通过 Chroma 提供非常快速的语法高亮显示，现 Hugo 中使用 Chroma 作为代码块高亮支持，它内置在 Go 语言当中，速度是真的非常、非常快，而且最为重要的是它也兼容之前我们使用的 Pygments 方式。
-以下通过 Hugo 内置短代码 highlight 和 Markdown 代码块方式分别验证不同语言的代码块渲染效果并能正确高亮显示，有关优化语法突出显示的更多信息，请参阅 Hugo 文档  。
-编程语言 GO 199 200 201 202 203 204 205 206 207 208  func GetTitleFunc(style string) func(s string) string { switch strings.ToLower(style) { case &#34;go&#34;: return strings.Title case &#34;chicago&#34;: return transform.NewTitleConverter(transform.ChicagoStyle) default: return transform.NewTitleConverter(transform.APStyle)  } }  ]]></content>
-  </entry>
-  
-  <entry>
     <title>Test</title>
-    <url>/posts/test/</url>
+    <url>/post/test/</url>
     <categories>
     </categories>
     <tags>
     </tags>
-    <content type="html"><![CDATA[This is a test blog hello, welcome to our website
+    <content type="html"><![CDATA[Hello, test
 ]]></content>
+  </entry>
+  
+  <entry>
+    <title>VxWorks</title>
+    <url>/post/syntax-highlighting.html</url>
+    <categories><category>示例</category>
+    </categories>
+    <tags>
+      <tag>语法</tag>
+      <tag>高亮</tag>
+      <tag>Chroma</tag>
+    </tags>
+    <content type="html"><![CDATA[Hugo 通过 Chroma 提供非常快速的语法高亮显示，现 Hugo 中使用 Chroma 作为代码块高亮支持，它内置在 Go 语言当中，速度是真的非常、非常快，而且最为重要的是它也兼容之前我们使用的 Pygments 方式。
+以下通过 Hugo 内置短代码 highlight 和 Markdown 代码块方式分别验证不同语言的代码块渲染效果并能正确高亮显示，有关优化语法突出显示的更多信息，请参阅 Hugo 文档  。
+编程语言 GO 199 200 201 202 203 204 205 206 207 208  func GetTitleFunc(style string) func(s string) string { switch strings.ToLower(style) { case &#34;go&#34;: return strings.Title case &#34;chicago&#34;: return transform.NewTitleConverter(transform.ChicagoStyle) default: return transform.NewTitleConverter(transform.APStyle)  } }  ]]></content>
   </entry>
   
   <entry>
@@ -220,22 +205,6 @@ Default Header without icon Welcome to Hugo NexT!  Default Header Welcome to Hug
 尾声 岁月像一条河 2015年，是褚时健和马静芬结婚60周年，被称为“钻石婚”的纪念年份。这简直是一份人生的奖赏,在中国离婚率愈益升高的当下，60年的婚姻，几乎就像一个前世之梦。一个甲子的相伴相随，褚时健和马静芬共同经历了国家和个人的各种风浪，共同面对过生死。他们两人已经不仅是夫妻，更是一对战友。尽管马静芬偶尔会对褚时健年轻时候的粗心抱怨上两句，但说到最后，她会说一句：“没有我就没有他，没有他也就没有我。”
 作者致谢 这本书从2014年初夏开始采访，到今天完稿，历时18个月。封面上“作者”只能是我一个人的名字，但也只有我自己知道，这本书，包含了太多人的心力和体力。我当然首先要致谢王石先生，没有他就没有这本书。我自己细想下来，没有王石先生一直的鞭策和鼓励，也没有我写作工作的今天。从2006年我开始从事专业写作工作以来，他给我创造了很多写作的机会，并且不吝自己诸多人生和学习的体会和感悟，一一传递予我。知遇之恩，感谢非常。
 最后，我当然要把最大的感谢致予褚时健先生。不仅是因为他慷慨、坦率面对我的各种提问，更重要的是，在倾听他的故事的过程里，他繁盛的人生经历，他的强大生命力，他对生活、对事业的一片赤子之心，也丰富了我对自己人生的思考。
-]]></content>
-  </entry>
-  
-  <entry>
-    <title>Hugo 内置的 Chroma 语法高亮</title>
-    <url>/post/syntax-highlighting.html</url>
-    <categories><category>示例</category>
-    </categories>
-    <tags>
-      <tag>语法</tag>
-      <tag>高亮</tag>
-      <tag>Chroma</tag>
-    </tags>
-    <content type="html"><![CDATA[Hugo 通过 Chroma 提供非常快速的语法高亮显示，现 Hugo 中使用 Chroma 作为代码块高亮支持，它内置在 Go 语言当中，速度是真的非常、非常快，而且最为重要的是它也兼容之前我们使用的 Pygments 方式。
-以下通过 Hugo 内置短代码 highlight 和 Markdown 代码块方式分别验证不同语言的代码块渲染效果并能正确高亮显示，有关优化语法突出显示的更多信息，请参阅 Hugo 文档  。
-编程语言 GO 199 200 201 202 203 204 205 206 207 208  func GetTitleFunc(style string) func(s string) string { switch strings.ToLower(style) { case &#34;go&#34;: return strings.Title case &#34;chicago&#34;: return transform.NewTitleConverter(transform.ChicagoStyle) default: return transform.NewTitleConverter(transform.APStyle)  } }   Java import javax.swing.JFrame; //Importing class JFrame import javax.swing.JLabel; //Importing class JLabel public class HelloWorld { public static void main(String[] args) { JFrame frame = new JFrame(); //Creating frame  frame.setTitle(&#34;Hi!&#34;); //Setting title frame  frame.add(new JLabel(&#34;Hello, world!&#34;));//Adding text to frame  frame.pack(); //Setting size to smallest  frame.setLocationRelativeTo(null); //Centering frame  frame.setVisible(true); //Showing frame  } } Python print &#34;Hello, world!&#34; Git 对比 *** /path/to/original &#39;&#39;timestamp&#39;&#39; --- /path/to/new &#39;&#39;timestamp&#39;&#39; *************** *** 1 **** ! This is a line. --- 1 --- ! This is a replacement line. It is important to spell -removed line +new line *** /path/to/original &#39;&#39;timestamp&#39;&#39; --- /path/to/new &#39;&#39;timestamp&#39;&#39; *************** *** 1 **** ! This is a line. --- 1 --- ! This is a replacement line. It is important to spell -removed line +new line 文件 Make 文件 CC=gcc CFLAGS=-I. hellomake: hellomake.o hellofunc.o $(CC) -o hellomake hellomake.o hellofunc.o -I. Markdown 文档 **bold** *italics* [link](www.example.com) 数据内容 JSON 数据 {&#34;employees&#34;:[ {&#34;firstName&#34;:&#34;John&#34;, &#34;lastName&#34;:&#34;Doe&#34;}, ]} XML 内容 &lt;employees&gt; &lt;employee&gt; &lt;firstName&gt;John&lt;/firstName&gt; &lt;lastName&gt;Doe&lt;/lastName&gt; &lt;/employee&gt; &lt;/employees&gt; SQL 查询 SELECT column_name,column_name FROM Table WHERE column_name = &#34;condition&#34; 除以上列举的代码高亮显示外，还支持诸如：C 语言、C++、HTML、CSS、Shell脚本等各主流的代码语言高亮显示，可自行测试效果。
 ]]></content>
   </entry>
   
