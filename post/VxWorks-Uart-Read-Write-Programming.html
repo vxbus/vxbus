@@ -177,8 +177,10 @@
       <ul>
         <li><a href="#打开串口">打开串口</a></li>
         <li><a href="#设置串口raw模式清空输入输出的缓冲区">设置串口raw模式，清空输入输出的缓冲区</a></li>
+        <li><a href="#设置波特率数据位停止位校验方式">设置波特率，数据位，停止位，校验方式</a></li>
       </ul>
     </li>
+    <li><a href="#串口读写操作">串口读写操作</a></li>
   </ul>
 </nav></div>
       </div>
@@ -272,7 +274,7 @@
       </div>
     <div class="siteinfo-item">
       <div class="item-name"><i class="fa fa-font"></i>总字数：</div>
-      <div class="item-count" id="wordsCount" data-count="2256"></div>
+      <div class="item-count" id="wordsCount" data-count="2312"></div>
     </div>
     <div class="siteinfo-item">
       <div class="item-name"><i class="fa fa-mug-hot"></i>阅读约：</div>
@@ -359,7 +361,7 @@
   <span class="post-meta-item-icon">
     <i class="far fa-file-word"></i>
   </span>
-  <span class="post-meta-item-text">字数：</span><span>42</span>
+  <span class="post-meta-item-text">字数：</span><span>98</span>
 </span>
     
 <span class="post-meta-item" title="阅读">
@@ -446,6 +448,21 @@ ioctl(<span style="color:#66d9ef">int</span> fd,<span style="color:#66d9ef">int<
 </tr>
 </tbody>
 </table>
+<h3 id="设置波特率数据位停止位校验方式">设置波特率，数据位，停止位，校验方式</h3>
+<p>在 VxWorks 中设置串口也是用 &lsquo;ioctl&rsquo; 系统调用加控制命令实现，其控制命令为&rsquo;SIO_HW_OPTS_SET'，第三个参数跟配置参数，如：数据位为8，停止位为1，无奇偶校验位，无流控可以这样配置</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-c" data-lang="c">ioctl(fd,SIO_HW_OPTS_SET,CS8<span style="color:#f92672">|</span>PARENB<span style="color:#f92672">|</span>CLOCAL<span style="color:#f92672">|</span>CREAD);
+</code></pre></div><p>具体各项参数意义如下：</p>
+<p>| CLOCAL | 忽略modem控制信号 |
+| CREAD | 启动接收器 |
+| CSIZE | 指定数据位：CS5~CS8 |
+| HUPCL	| 最后关闭时挂断modem连接 |
+| STOP8	| 被设置时指定2位停止位，否则默认为1位停止位 |
+| PARENB | 被设置时启用奇偶校验，否则默认为无奇偶校验 |
+| PARODD | 被设置时启用奇校验，否则默认为偶校验(PARENB设置时才有效) |</p>
+<h2 id="串口读写操作">串口读写操作</h2>
+<p>在VxWorks系统中串口的读写操作非常简单，直接使用系统调用函数 read() 和 write() 就能实现串口的读写操作。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-c" data-lang="c"><span style="color:#66d9ef">int</span> read(<span style="color:#66d9ef">int</span> fd, <span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>buffer, size_t maxbytes)
+</code></pre></div>
 
     </div>
     <footer class="post-footer">
