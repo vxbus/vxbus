@@ -58,7 +58,7 @@
     </tags>
     <content type="html"><![CDATA[关于传统的串口编程，在各大操作系统下的流程基本是一致的，只是针对不同的操作系统，函数接口可能有所差异而已，下面讲述VxWorks操作系统下对于串口读写的编程步骤和代码
 相关的VxWorks 和 串口，请参阅 VxWorks下的串口测试程序设计和源码  。
-串口配置过程 打开串口 fd = open(&#34;/tyCo/0&#34;, O_RDWR, 0); &#34;/tyCo/0&#34; 串口1的设备名，O_RDWR：open for reading and writing 设置串口raw模式，清空输入输出的缓冲区 在VxWorks中配置串口可以直接通过ioctl的控制命令来实现
+串口配置过程 打开串口 fd = open(&#34;/tyCo/0&#34;, O_RDWR, 0);  &ldquo;/tyCo/0&rdquo; 串口1的设备名 O_RDWR：open for reading and writing  设置串口raw模式，清空输入输出的缓冲区 在VxWorks中配置串口可以直接通过ioctl的控制命令来实现
 ioctl(fd,FIOSETOPTIONS,OPT_RAW); ioctl(fd,FIOFLUSH,0); ioctl(int fd,int function,int arg); function的参数如下：
 ]]></content>
   </entry>
