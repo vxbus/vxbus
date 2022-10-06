@@ -188,11 +188,20 @@
     </item>
     
     <item>
-      <title>NexT</title>
-      <link>https://www.kad8.com/tags/next/</link>
-      <pubDate>Wed, 01 Jun 2022 15:59:41 +0800</pubDate>
+      <title>VxWorks</title>
+      <link>https://www.kad8.com/tags/vxworks/</link>
+      <pubDate>Mon, 02 May 2022 15:59:41 +0800</pubDate>
       
-      <guid>https://www.kad8.com/tags/next/</guid>
+      <guid>https://www.kad8.com/tags/vxworks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WindRiver</title>
+      <link>https://www.kad8.com/tags/windriver/</link>
+      <pubDate>Mon, 02 May 2022 15:59:41 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/tags/windriver/</guid>
       <description></description>
     </item>
     
