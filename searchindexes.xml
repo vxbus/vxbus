@@ -35,17 +35,6 @@
   </entry>
   
   <entry>
-    <title>Test</title>
-    <url>/post/test/</url>
-    <categories>
-    </categories>
-    <tags>
-    </tags>
-    <content type="html"><![CDATA[Hello, test
-]]></content>
-  </entry>
-  
-  <entry>
     <title>VxWorks操作系统下的串口读写程序</title>
     <url>/post/vxworks-uart-read-write-programming.html</url>
     <categories><category>VxWorks</category>
@@ -67,6 +56,27 @@ int read(int fd, char *buffer, size_t maxbytes) 参数说明：
  fd: 用open函数打开串口设备返回的文件描述符 buffer: 读取的内容将要存放的地址，为指针变量 maxbytes: 读取的最大字节数  int write(int fd, char *buffer, size_t nbytes) 参数说明：
  fd: 用open函数打开串口设备返回的文件描述符 buffer: 将要写的内容的地址，为指针变量，通常为字符串首地址 nbytes: 将要写入的字节数，通常为要写入的字符串的长度  实例代码 VxWorks系统下串口读写的实例代码，仅供参考。
 #include &#34;vxWorks.h&#34;#include &#34;stdio.h&#34;#include &#34;ioLib.h&#34;#include &#34;taskLib.h&#34;#include &#34;sioLib.h&#34;#include &#34;sdLib.h&#34;#include &#34;semLib.h&#34;#include &#34;msgQLib.h&#34; char wbuf[] = &#34;hello&#34;; #define DEV_NAME &#34;/tyCo/2&#34; #define MAX_BUF_SIZE 20 #define SD_COMMDATA_NAME &#34;share_data&#34; #define SD_COMMDATA_MUTEX &#34;share_sem&#34; #define SHARE_DATA_LENGTH 20  typedef struct unix_clock_struct { UINT32 sec; /* ms */ UINT32 msec; /* s */ UINT8 quality; /* 时标质量 */ } UNIX_CLOCK_STRUCT; char *comdata; int set_serial(int fd); SEM_ID mutexComdata; void taskUart(void); int main(void) { int ret; int sdCommId; char r_buff[MAX_BUF_SIZE]; mutexComdata = semOpen(SD_COMMDATA_MUTEX, SEM_TYPE_MUTEX, SEM_FULL, SEM_Q_PRIORITY | SEM_DELETE_SAFE | \ SEM_INVERSION_SAFE, OM_CREATE | OM_DELETE_ON_LAST_CLOSE, NULL); if(mutexComdata == NULL) { /*致命错误，无法创建互斥锁*/ printf(&#34;ERROR TO OPEN SD_COMMDATA_MUTEX\n&#34;); taskExit(0); } /* 申请公共数据共享内存 */ sdCommId = sdOpen(SD_COMMDATA_NAME, SD_LINGER, OM_CREATE, SHARE_DATA_LENGTH, 0, SD_ATTR_RW|SD_CACHE_OFF, &amp;comdata); if(sdCommId == NULL) { /*致命错误，无法分配公共数据内存，报错退出*/ printf(&#34;ERROR TO OPEN SD_COMMDATA\n&#34;); taskExit(0); } if((ret = taskSpawn(&#34;taskUart&#34;,90,0x100, 20000, (FUNCPTR)taskUart,\ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)) &lt; 0) { printf(&#34;taskSpawn failed:ret = %s\n&#34;); } return 0; } void taskUart(void) { int ret; int fd = -1; UNIX_CLOCK_STRUCT w_buff; if((fd = open(DEV_NAME, O_RDWR,0)) &lt; 0) { printf(&#34;open %s failed.\n&#34;,DEV_NAME); } /*配置串口参数*/ if((ret = set_serial(fd)) &lt; 0) { printf(&#34;ret = %d\nset_serial failed.\n&#34;); } while(1) { semRTake(mutexComdata,WAIT_FOREVER); #if 0/*清空输入输出缓冲*/ if((ret = ioctl(fd, FIOFLUSH, 0))&lt;0) { printf(&#34; ret = %d\nset FIOFLUSH failed.\n&#34;,ret); } memset(r_buff,0,sizeof(r_buff)); /*读取串口中的值*/ if((ret = read(fd,r_buff,sizeof(r_buff)))&lt;0) { printf(&#34;ret = %d:read %s failed.\n&#34;,ret,DEV_NAME); } else printf(&#34;Received:%s\n&#34;,r_buff); #endif  #if 1  /*清空输入输出缓冲*/ if((ret = ioctl(fd, FIOFLUSH, 0))&lt;0) { printf(&#34; ret = %d\nset FIOFLUSH failed.\n&#34;,ret); } if(NULL == bzero(&amp;w_buff,sizeof(w_buff))) { printf(&#34;memset failed.\n&#34;); } if(NULL == memcpy(&amp;w_buff,comdata,sizeof(w_buff))) { printf(&#34;memset failed.\n&#34;); } if(&amp;w_buff != NULL) { /*往串口中写值*/ if((ret = write(fd, &amp;w_buff.sec, sizeof(ret)))&lt;0) // if((ret = write(fd, wbuf, sizeof(wbuf)))&lt;0)  { printf(&#34;ret = %d:write %s failed.\n&#34;,ret,DEV_NAME); } else { printf(&#34;write success:%d\n&#34;,w_buff.sec); } } semGive(mutexComdata); #endif  taskDelay(sysClkRateGet()*2); } } int set_serial(int fd) { int error = -1; int ok = 0; int ret; if(fd&lt;0) { printf(&#34;error:fd is %d\n&#34;,fd); } /*设定波特率为9600*/ if((ret = ioctl(fd, FIOBAUDRATE, 9600))&lt;0) { printf(&#34;ret = %d\nset baudrate failed\n&#34;,ret); return error; } /*设定：数据位为8，无奇偶校验，1位停止位*/ /*CLOCAL:忽略modem控制信号 * CREAD：启动接收器 * CS8:设定数据位为8*/ if((ret = ioctl(fd, SIO_HW_OPTS_SET,CREAD|CS8 |CLOCAL))&lt;0) { printf(&#34;ret = %d\nset SIO_HW_OPTS_SET failed.\n&#34;); return error; } return ok; } ]]></content>
+  </entry>
+  
+  <entry>
+    <title>针对VxWorks的QT 5.15.10发布了</title>
+    <url>/post/qt-5-15-10-for-vxworks-released.html</url>
+    <categories><category>VxWorks</category>
+    </categories>
+    <tags>
+      <tag>VxWorks</tag>
+      <tag>QT</tag>
+      <tag>图像</tag>
+    </tags>
+    <content type="html"><![CDATA[Qt是一个多平台的C++图形用户界面应用程序框架。它提供给应用程序开发者建立艺术级的图形用户界面所需的所用功能。Qt是完全面向对象的编程，所以具有易扩展和组件编程的优势。
+相关的VxWorks 和 QT的文章，请参阅 VxWorks 6.8操作系统下QT的安装设置和运行方法  。
+我们非常激动地发布了支持VxWorks的QT 5.15.10 支持VxWorks的Qt 5.15.10长期支持的商业发行是基于我们最新的QT 5.15.10(LTS)之上的源代码发布。这个发行从早期的QT 5的版本官方升级了针对VxWorks的QT支持，这是对诸如航空和国防以及医疗等行业的市场需求的积极回应。它提供了QT版本的升级同时也提供了VxWorks系统具体的问题解决，还有别的一些改进。
+这次发行支持基于iMX6硬件的Ubuntu主机，我们也同时在准备基于x68和基于Windows主机的支持。此次的发行包开放给拥有QT账户的客户，也同时通过git仓库的形式开放给具有商业许可证的客户，请和我们联系以获取更多细节。
+从这儿开始 这儿有关于安装和配置的独立的文章，要获取更多关于QT和支持VxWorks的QT的详细信息，请查看这儿关于QT 5.15的在线文档。
+   https://doc.qt.io/qt-5/vxworks.html  
+   https://doc.qt.io/qt-5/index.html  
+   https://wiki.qt.io/Getting_Commercial_Qt_Sources  
+ ]]></content>
   </entry>
   
   <entry>
