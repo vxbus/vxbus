@@ -18,7 +18,7 @@
   <entry>
     <title>VxWorks实时性能探究</title>
     <url>/post/vxworks-real-time-feature-explore.html</url>
-    <categories><category>VxWrks</category>
+    <categories><category>VxWorks</category>
     </categories>
     <tags>
       <tag>VxWorks</tag>
@@ -42,6 +42,28 @@ C语言代码都是经过预处理、编译，产生汇编代码（汇编代码�
 可以看出不管是任务切换时间还是中断响应，VxWorks都是最好的，当然VxWorks也是最贵的。
 此外我们还可以看出不管是任务切换还是中断响应，时间尺度都是在几个us，根据CPU主频的不同，大概是几千个时钟周期的样子。 下面代码是测试执行100万次简单循环语句所耗费的时间:
 int i = 1000000; int j = 0; while(i){ j += 0; i--; } timer = 2033 us //执行100万次该循环所耗时间，可以将执行每次的时间和任务切换的时间进行对比 ]]></content>
+  </entry>
+  
+  <entry>
+    <title>如何在Ubuntu Linux下将mp4转成mp3</title>
+    <url>/post/linux/how-to-convert-mp4-to-mp3-in-ubuntu-linux.html</url>
+    <categories><category>Linux</category>
+    </categories>
+    <tags>
+      <tag>ubuntu</tag>
+      <tag>ffmpeg</tag>
+      <tag>mp4</tag>
+      <tag>mp3</tag>
+    </tags>
+    <content type="html"><![CDATA[ FFmpeg是一款开源软件，用于生成处理多媒体数据的各类库和程序。FFmpeg可以转码、处理视频和图片（调整视频、图片大小，去噪等）、打包、传输及播放视频。
+ 本文描述了如何在Ubuntu Linux系统下，通过ffmpeg将mp4文件转成mp3文件。
+为什么要将mp4转成mp3 因为这样可以节省空间，一些基本的设备是不支持mp4扩展名的文件，在这个例子里，我们将使用ffmpeg将mp4文件转成mp3文件。
+FFmpeg是一个完整的跨平台的解决方案，用来录制，转化以及分流音视频，它包括业界领先的音视频编码库 labavcodec 。
+在ubuntu上安装ffmpeg sudo apt-get install ffmpeg libavcodec-extra-53 将mp4转成mp3 基本的命令
+ffmpeg -i filename.mp4 filename.mp3 可以用命令`man ffmpeg&rsquo;来查看更多选项
+ffmpeg -i filename.mp4 -b:a 192K -vn filename.mp3 一个流的说明符可以匹配一些流，这些选项会适用于所有的流，比如，在-b:a 128k选项中的流说明符可以匹配所有的音频流。
+通过脚本 下面这个脚本会将Music目录下的带有.mp4扩展名的文件转成.mp3扩展名的文件。
+#!/bin/bash MP4FILE=$(ls ~/Music/ |grep .mp4) for filename in $MP4FILE do name=`echo &#34;$filename&#34; | sed -e &#34;s/.mp4$//g&#34;` ffmpeg -i ~/Music/$filename -b:a 192K -vn ~/Music/$name.mp3 done ]]></content>
   </entry>
   
   <entry>
