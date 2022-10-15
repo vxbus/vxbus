@@ -6,7 +6,7 @@
     <description>Recent content in Posts on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 15 Oct 2022 11:52:03 +0800</lastBuildDate><atom:link href="https://www.kad8.com/post/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Oct 2022 20:52:03 +0800</lastBuildDate><atom:link href="https://www.kad8.com/post/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>欢迎加入 VxWorks 俱乐部！</title>
       <link>https://www.kad8.com/post/welcome-to-vxworks-club/</link>
@@ -32,6 +32,18 @@
     VxWorks
     &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;
 &lt;/a&gt;, 由大名鼎鼎的风河（WindRiver）开发。本篇文章就是将VxWorks操作系统和市面上几种其他实时操作系统的实时性能进行对比。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>syslog命令</title>
+      <link>https://www.kad8.com/post/linux/syslog.html</link>
+      <pubDate>Sat, 15 Oct 2022 20:52:03 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/post/linux/syslog.html</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;FFmpeg&lt;/code&gt;是一款开源软件，用于生成处理多媒体数据的各类库和程序。FFmpeg可以转码、处理视频和图片（调整视频、图片大小，去噪等）、打包、传输及播放视频。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;本文描述了如何在Ubuntu Linux系统下，通过ffmpeg将mp4文件转成mp3文件。&lt;/p&gt;</description>
     </item>
     
     <item>
