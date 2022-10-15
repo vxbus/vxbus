@@ -3,8 +3,8 @@
   
   <entry>
     <title>欢迎加入 VxWorks 俱乐部！</title>
-    <url>/post/external-link/</url>
-    <categories><category>示例</category>
+    <url>/post/welcome-to-vxworks-club/</url>
+    <categories><category>Announce</category>
     </categories>
     <tags>
       <tag>VxWorks</tag>
@@ -17,7 +17,7 @@
   
   <entry>
     <title>VxWorks实时性能探究</title>
-    <url>/post/vxworks-real-time-feature-explore.html</url>
+    <url>/post/vxworks/vxworks-real-time-feature-explore.html</url>
     <categories><category>VxWorks</category>
     </categories>
     <tags>
@@ -68,7 +68,7 @@ ffmpeg -i filename.mp4 -b:a 192K -vn filename.mp3 一个流的说明符可以匹
   
   <entry>
     <title>VxWorks 6.8下基于QT的串口编程</title>
-    <url>/post/vxworks-6.8-qt-uart-programming.html</url>
+    <url>/post/vxworks/vxworks-6.8-qt-uart-programming.html</url>
     <categories><category>VxWorks</category>
     </categories>
     <tags>
@@ -93,7 +93,7 @@ VxWorks简介 VxWorks 操作系统是美国WindRiver公司于1983年设计开发
   
   <entry>
     <title>VxWorks操作系统下的串口读写程序</title>
-    <url>/post/vxworks-uart-read-write-programming.html</url>
+    <url>/post/vxworks/vxworks-uart-read-write-programming.html</url>
     <categories><category>VxWorks</category>
     </categories>
     <tags>
@@ -117,7 +117,7 @@ int read(int fd, char *buffer, size_t maxbytes) 参数说明：
   
   <entry>
     <title>针对VxWorks的QT 5.15.10发布了</title>
-    <url>/post/qt-5-15-10-for-vxworks-released.html</url>
+    <url>/post/vxworks/qt-5-15-10-for-vxworks-released.html</url>
     <categories><category>VxWorks</category>
     </categories>
     <tags>

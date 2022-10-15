@@ -10,26 +10,26 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/imgs/icons/favicon_16x16_next.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/imgs/icons/favicon_32_32_next.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/imgs/icons/apple_touch_icon_next.png">
-<meta itemprop="name" content="VxWorks实时性能探究" />
-<meta itemprop="description" content="将VxWorks操作系统和市面上几种其他实时操作系统的实时性能进行对比" />
+<meta itemprop="name" content="针对VxWorks的QT 5.15.10发布了" />
+<meta itemprop="description" content="支持VxWorks的Qt 5.15.10长期支持的商业发行是基于我们最新的QT 5.15.10(LTS)之上的源代码发布" />
 <meta itemprop="datePublished" ZgotmplZ />
 <meta itemprop="dateModified" ZgotmplZ />
 <meta itemprop="image" content="https://www.kad8.com/imgs/hugo_next_avatar.png" />
-<meta itemprop="keywords" content="VxWorks,实时性" />
+<meta itemprop="keywords" content="VxWorks,QT,图像" />
 
 <meta property="og:type" content="article" />
-<meta property="og:title" content="VxWorks实时性能探究" />
-<meta property="og:description" content="将VxWorks操作系统和市面上几种其他实时操作系统的实时性能进行对比" />
+<meta property="og:title" content="针对VxWorks的QT 5.15.10发布了" />
+<meta property="og:description" content="支持VxWorks的Qt 5.15.10长期支持的商业发行是基于我们最新的QT 5.15.10(LTS)之上的源代码发布" />
 <meta property="og:image" content="/imgs/hugo_next_avatar.png" />
 <meta property="og:image:width" content="312" />
 <meta property="og:image:height" content="312" />
 <meta property="og:image:type" content="image/jpeg/png/svg/jpg" />
-<meta property="og:url" content="https://www.kad8.com/post/vxworks-real-time-feature-explore.html"/>
+<meta property="og:url" content="https://www.kad8.com/post/vxworks/qt-5-15-10-for-vxworks-released.html"/>
 <meta property="og:site_name" content="北南南北" />
 <meta property="og:locale" content="zh-CN"/>
 <meta property="article:author" content="VxWorks OS" />
-<meta property="article:published_time" content="2022-06-02 11:52:03 &#43;0800 &#43;0800" />
-<meta property="article:modified_time" content="2022-06-03 16:43:23 &#43;0800 &#43;0800" />
+<meta property="article:published_time" content="2022-10-06 05:35:25 -0400 EDT" />
+<meta property="article:modified_time" content="2022-10-06 05:35:25 -0400 EDT" />
 
 
   
@@ -44,7 +44,7 @@
       content: "~ 我可是有底线的哟 ~";
     }
   </style>
-  <script class="next-config" data-name="page" type="application/json">{"comments":false,"isHome":false,"isPage":true,"path":"vxworks-real-time-feature-explore.html","permalink":"https://www.kad8.com/post/vxworks-real-time-feature-explore.html","title":"VxWorks实时性能探究"}</script>
+  <script class="next-config" data-name="page" type="application/json">{"comments":false,"isHome":false,"isPage":true,"path":"qt-5-15-10-for-vxworks-released.html","permalink":"https://www.kad8.com/post/vxworks/qt-5-15-10-for-vxworks-released.html","title":"针对VxWorks的QT 5.15.10发布了"}</script>
   <script type="text/javascript">
   document.addEventListener('DOMContentLoaded', () => {
     var script = document.createElement('script');
@@ -60,7 +60,7 @@
 
 
 
-  <title>VxWorks实时性能探究 - 北南南北</title>
+  <title>针对VxWorks的QT 5.15.10发布了 - 北南南北</title>
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
@@ -173,8 +173,8 @@
       <div class="post-toc-wrap sidebar-panel">
         <div class="post-toc animated"><nav id="TableOfContents">
   <ul>
-    <li><a href="#前期知识准备">前期知识准备</a></li>
-    <li><a href="#实时操作系统rtos的实时性能评价指标">实时操作系统（RTOS）的实时性能评价指标</a></li>
+    <li><a href="#我们非常激动地发布了支持vxworks的qt-51510">我们非常激动地发布了支持VxWorks的QT 5.15.10</a></li>
+    <li><a href="#从这儿开始">从这儿开始</a></li>
   </ul>
 </nav></div>
       </div>
@@ -196,7 +196,7 @@
     </div>
     <div class="site-state-item site-state-categories">
       <a href="/categories/">
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">分类</span>
       </a>
     </div>
@@ -308,7 +308,7 @@
       
   <div class="post-block">
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://www.kad8.com/post/vxworks-real-time-feature-explore.html">
+    <link itemprop="mainEntityOfPage" href="https://www.kad8.com/post/vxworks/qt-5-15-10-for-vxworks-released.html">
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
       <meta itemprop="name" content="VxWorks OS">
@@ -318,14 +318,11 @@
       <meta itemprop="description" content="Where there is embedded, there is VxWorks.">
     </span>
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="VxWorks实时性能探究">
-      <meta itemprop="description" content="将VxWorks操作系统和市面上几种其他实时操作系统的实时性能进行对比">
+      <meta itemprop="name" content="针对VxWorks的QT 5.15.10发布了">
+      <meta itemprop="description" content="支持VxWorks的Qt 5.15.10长期支持的商业发行是基于我们最新的QT 5.15.10(LTS)之上的源代码发布">
     </span>
     <header class="post-header">
-       <h1 class="post-title" itemprop="name headline">
-  <span class="post-sticky-flag" title="置顶">
-    <i class="fa fa-thumbtack"></i>
-  </span>VxWorks实时性能探究 </h1> <div class="post-meta-container">
+       <h1 class="post-title" itemprop="name headline">针对VxWorks的QT 5.15.10发布了 </h1> <div class="post-meta-container">
   <div class="post-meta-items">
     
 
@@ -335,17 +332,9 @@
     <i class="far fa-calendar"></i>
   </span>
   <span class="post-meta-item-text">发表于：</span>
-  <time title="发表于：2022-06-02 11:52:03 &#43;0800 &#43;0800" itemprop="dateCreated datePublished" datetime="2022-06-02 11:52:03 &#43;0800 &#43;0800">2022-06-02</time>
+  <time title="发表于：2022-10-06 05:35:25 -0400 EDT" itemprop="dateCreated datePublished" datetime="2022-10-06 05:35:25 -0400 EDT">2022-10-06</time>
 </span>
     
-
-<span class="post-meta-item">
-  <span class="post-meta-item-icon">
-    <i class="far fa-calendar-check"></i>
-  </span>
-  <span class="post-meta-item-text">更新于：</span>
-  <time title="修改时间：2022-06-03T16:43:23&#43;08:00" itemprop="dateModified" datetime="2022-06-03T16:43:23&#43;08:00">2022-06-03</time>
-</span>
     
 <span class="post-meta-item">
   <span class="post-meta-item-icon">
@@ -365,7 +354,7 @@
   <span class="post-meta-item-icon">
     <i class="far fa-file-word"></i>
   </span>
-  <span class="post-meta-item-text">字数：</span><span>62</span>
+  <span class="post-meta-item-text">字数：</span><span>20</span>
 </span>
     
 <span class="post-meta-item" title="阅读">
@@ -384,7 +373,7 @@
   <span class="post-meta-item-text">
   浏览：
   </span>
-  <span id="busuanzi_value_page_pv" data-path="/post/vxworks-real-time-feature-explore.html"><i class="fa fa-sync fa-spin"></i></span>
+  <span id="busuanzi_value_page_pv" data-path="/post/vxworks/qt-5-15-10-for-vxworks-released.html"><i class="fa fa-sync fa-spin"></i></span>
 </span>
 
   </div>
@@ -395,59 +384,41 @@
     
     <div class="post-body  autonumber " itemprop="articleBody">
       
-  <blockquote>
-<p><code>VxWorks</code>操作系统是一款硬实时操作系统，一直听闻其实时性能非常优秀，但是一直没有一个直观地概念。</p>
-</blockquote>
-<p>笔者最近在使用
-<a href="https://www.vxworks.net/" title="VxWorks" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
-    VxWorks
+  <p>Qt是一个多平台的C++图形用户界面应用程序框架。它提供给应用程序开发者建立艺术级的图形用户界面所需的所用功能。Qt是完全面向对象的编程，所以具有易扩展和组件编程的优势。</p>
+<p>相关的<code>VxWorks</code> 和 <code>QT</code>的文章，请参阅 
+<a href="https://www.vxworks.net/windml/10-qt-installation-and-execution-under-vxworks-6-8" title="VxWorks 6.8操作系统下QT的安装设置和运行方法" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    VxWorks 6.8操作系统下QT的安装设置和运行方法
     <i class="fa fa-external-link-alt"></i>
-</a>, 由大名鼎鼎的风河（WindRiver）开发。本篇文章就是将VxWorks操作系统和市面上几种其他实时操作系统的实时性能进行对比。</p>
-<h2 id="前期知识准备">前期知识准备</h2>
-<p>实时性能和响应时间有关，为此，先对计算机操作系统中的时间概念和时间尺度进行一下介绍。</p>
-<p>1 s = 1000 ms = 1000000 us = 1000000000 ns，看不出来1 s时间还是很长的嘛</p>
+</a>。</p>
+<p><img src="//www.vxworks.net/images/news/Commercial_LTS_Qt-5-15-10_Released.png" alt="Commercial LTS QT 5.15.10 Released"></p>
+<h2 id="我们非常激动地发布了支持vxworks的qt-51510">我们非常激动地发布了支持VxWorks的QT 5.15.10</h2>
+<p>支持VxWorks的Qt 5.15.10长期支持的商业发行是基于我们最新的QT 5.15.10(LTS)之上的源代码发布。这个发行从早期的QT 5的版本官方升级了针对VxWorks的QT支持，这是对诸如航空和国防以及医疗等行业的市场需求的积极回应。它提供了QT版本的升级同时也提供了VxWorks系统具体的问题解决，还有别的一些改进。</p>
+<p>这次发行支持基于iMX6硬件的Ubuntu主机，我们也同时在准备基于x68和基于Windows主机的支持。此次的发行包开放给拥有QT账户的客户，也同时通过git仓库的形式开放给具有商业许可证的客户，请和我们联系以获取更多细节。</p>
+<h2 id="从这儿开始">从这儿开始</h2>
+<p>这儿有关于安装和配置的独立的文章，要获取更多关于QT和支持VxWorks的QT的详细信息，请查看这儿关于QT 5.15的在线文档。</p>
 <ul>
 <li>
-<p>时钟周期：主频为4 GHz的CPU的时钟周期为1/4G = 0.25 ns，时钟周期是计算机中最基本的、最小的[时间单位。在一个时钟周期内，CPU仅完成一个最基本的动作。</p>
+<p>
+<a href="https://doc.qt.io/qt-5/vxworks.html" title="https://doc.qt.io/qt-5/vxworks.html" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    https://doc.qt.io/qt-5/vxworks.html
+    <i class="fa fa-external-link-alt"></i>
+</a></p>
 </li>
 <li>
-<p>CPU周期：CPU周期亦称机器周期，一条指令执行过程被划分为若干阶段，每一阶段完成所需时间。完成一个基本操作所需要的时间称为机器周期。通常用内存中读取一个指令字的最短时间来规定CPU周期。</p>
+<p>
+<a href="https://doc.qt.io/qt-5/index.html" title="https://doc.qt.io/qt-5/index.html" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    https://doc.qt.io/qt-5/index.html
+    <i class="fa fa-external-link-alt"></i>
+</a></p>
 </li>
 <li>
-<p>指令周期：取出并执行一条指令的时间。想要详细了解可以看这篇文章【浅析】CPU中的指令周期、CPU周期和时钟周期</p>
-</li>
-<li>
-<p>内存时钟周期：相比CPU，一般的DDR内存芯片速率仅为400 MHz，时钟周期达2.5 ns, 再加上总线延时，导致内存访问时间达到几十纳秒。CPU运行速率与内存访问速率比大致为100：1。</p>
-</li>
-<li>
-<p>硬盘读取时间：硬盘的读写速度就更慢了，一般的机械硬盘的完成一次读写所需要的时间，主要取决寻道时间+旋转时间，完成一次读或者写的时间量级大致为ms级别，因此内存访问速率与磁盘存取速度比大致为1000:1。</p>
+<p>
+<a href="https://wiki.qt.io/Getting_Commercial_Qt_Sources" title="https://wiki.qt.io/Getting_Commercial_Qt_Sources" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    https://wiki.qt.io/Getting_Commercial_Qt_Sources
+    <i class="fa fa-external-link-alt"></i>
+</a></p>
 </li>
 </ul>
-<p>上面是有关硬件方面的时间周期情况，对于操作系统或者应用程序来说，我们一般关注的是算法的时间复杂度和空间复杂度，这是从整理理想的情况来衡量一个算法的优劣。如果想要详细了解每条代码的执行所耗时间，我们需要更深入了解代码是怎么在计算机上执行的。</p>
-<p>C语言代码都是经过预处理、编译，产生汇编代码（汇编代码几乎已经接近机器码了），一句高级语言代码相当于汇编语言的几行甚至几十行。而学过汇编语言的都应该知道，不同的汇编代码指令执行所耗费的时间也是不同的。一般来说,移位,加法,取反这种指令只需要一个时钟周期,而乘法,除法等指令需要几个乃至几十个时钟周期执行。</p>
-<h2 id="实时操作系统rtos的实时性能评价指标">实时操作系统（RTOS）的实时性能评价指标</h2>
-<p>实时操作系统的实时性能评价指标一般有两个：</p>
-<ul>
-<li>任务切换时间</li>
-</ul>
-<p>当多任务应用程序运行在操作系统上时，它把正在运行的任务的状态保存到任务自己的栈区之中，然后把下一个将要运行的任务的当前状态从该任务的栈区装入CPU的寄存器，并开始这个任务的执行，这个过程就叫做任务切换。</p>
-<ul>
-<li>中断响应时间</li>
-</ul>
-<p>计算机接收到中断信号到操作系统做出响应，并完成切换转入中断服务程序的时间。</p>
-<p>下图是几种实时操作系统的实时性能对比：</p>
-<p><img src="//www.vxworks.net/images/vxworks/vxworks-realtime.png" alt="Commercial LTS QT 5.15.10 Released"></p>
-<p>可以看出不管是任务切换时间还是中断响应，VxWorks都是最好的，当然VxWorks也是最贵的。</p>
-<p>此外我们还可以看出不管是任务切换还是中断响应，时间尺度都是在几个us，根据CPU主频的不同，大概是几千个时钟周期的样子。
-下面代码是测试执行100万次简单循环语句所耗费的时间:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-c" data-lang="c"><span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">1000000</span>;
-<span style="color:#66d9ef">int</span> j <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
-<span style="color:#66d9ef">while</span>(i){
-j <span style="color:#f92672">+=</span> <span style="color:#ae81ff">0</span>;
-i<span style="color:#f92672">--</span>;
-}
-timer <span style="color:#f92672">=</span> <span style="color:#ae81ff">2033</span> us <span style="color:#75715e">//执行100万次该循环所耗时间，可以将执行每次的时间和任务切换的时间进行对比
-</span></code></pre></div>
 
     </div>
     <footer class="post-footer">
@@ -458,8 +429,11 @@ timer <span style="color:#f92672">=</span> <span style="color:#ae81ff">2033</spa
     <a href="/tags/vxworks">
     VxWorks
   </a>
-    <a href="/tags/%e5%ae%9e%e6%97%b6%e6%80%a7">
-    实时性
+    <a href="/tags/qt">
+    QT
+  </a>
+    <a href="/tags/%e5%9b%be%e5%83%8f">
+    图像
   </a>
 </div>
 
@@ -487,7 +461,7 @@ timer <span style="color:#f92672">=</span> <span style="color:#ae81ff">2033</spa
   <ul>
     <li class="post-copyright-title">
       <strong>文章标题：</strong>
-      VxWorks实时性能探究
+      针对VxWorks的QT 5.15.10发布了
     </li>
     <li class="post-copyright-author">
       <strong>本文作者： </strong>
@@ -495,7 +469,7 @@ timer <span style="color:#f92672">=</span> <span style="color:#ae81ff">2033</spa
     </li>
     <li class="post-copyright-link"> 
       <strong>本文链接：</strong>
-       <a id="post-cr-link" href="https://www.kad8.com/post/vxworks-real-time-feature-explore.html" title="VxWorks实时性能探究">https://www.kad8.com/post/vxworks-real-time-feature-explore.html</a>
+       <a id="post-cr-link" href="https://www.kad8.com/post/vxworks/qt-5-15-10-for-vxworks-released.html" title="针对VxWorks的QT 5.15.10发布了">https://www.kad8.com/post/vxworks/qt-5-15-10-for-vxworks-released.html</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -520,13 +494,13 @@ timer <span style="color:#f92672">=</span> <span style="color:#ae81ff">2033</spa
 </div>
 <div class="post-nav">
   <div class="post-nav-next post-nav-item">
-    <a href="/post/external-link/" rel="next" title="欢迎加入 VxWorks 俱乐部！">
-      <i class="fa fa-chevron-left"></i> 欢迎加入 VxWorks 俱乐部！
+    <a href="/post/vxworks/vxworks-uart-read-write-programming.html" rel="next" title="VxWorks操作系统下的串口读写程序">
+      <i class="fa fa-chevron-left"></i> VxWorks操作系统下的串口读写程序
     </a>
   </div>
   <div class="post-nav-prev post-nav-item">
-    <a href="/post/linux/how-to-convert-mp4-to-mp3-in-ubuntu-linux.html" rel="prev" title="如何在Ubuntu Linux下将mp4转成mp3">
-      如何在Ubuntu Linux下将mp4转成mp3
+    <a href="/post/mermaid-charts.html" rel="prev" title="Mermaid支持流程图">
+      Mermaid支持流程图
       <i class="fa fa-chevron-right"></i>
     </a>
   </div>

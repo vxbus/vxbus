@@ -2,12 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.kad8.com/post/external-link/</loc>
+    <loc>https://www.kad8.com/post/welcome-to-vxworks-club/</loc>
     <lastmod>2022-05-02T15:59:41+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kad8.com/post/vxworks-real-time-feature-explore.html</loc>
+    <loc>https://www.kad8.com/post/vxworks/vxworks-real-time-feature-explore.html</loc>
     <lastmod>2022-06-03T16:43:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -87,7 +87,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kad8.com/post/vxworks-6.8-qt-uart-programming.html</loc>
+    <loc>https://www.kad8.com/post/vxworks/vxworks-6.8-qt-uart-programming.html</loc>
     <lastmod>2022-10-07T05:35:25-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -102,7 +102,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kad8.com/post/vxworks-uart-read-write-programming.html</loc>
+    <loc>https://www.kad8.com/post/vxworks/vxworks-uart-read-write-programming.html</loc>
     <lastmod>2022-10-06T05:35:25-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -112,7 +112,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kad8.com/post/qt-5-15-10-for-vxworks-released.html</loc>
+    <loc>https://www.kad8.com/post/vxworks/qt-5-15-10-for-vxworks-released.html</loc>
     <lastmod>2022-10-06T05:35:25-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -264,6 +264,11 @@
   </url><url>
     <loc>https://www.kad8.com/tags/%E5%AE%9E%E6%97%B6%E6%80%A7/</loc>
     <lastmod>2022-06-03T16:43:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/categories/announce/</loc>
+    <lastmod>2022-05-02T15:59:41+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
