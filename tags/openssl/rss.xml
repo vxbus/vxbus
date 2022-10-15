@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Linux on 北南南北</title>
-    <link>https://www.kad8.com/categories/linux/</link>
-    <description>Recent content in Linux on 北南南北</description>
+    <title>openssl on 北南南北</title>
+    <link>https://www.kad8.com/tags/openssl/</link>
+    <description>Recent content in openssl on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 15 Oct 2022 21:52:03 +0800</lastBuildDate><atom:link href="https://www.kad8.com/categories/linux/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Oct 2022 21:52:03 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/openssl/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>openssl命令</title>
       <link>https://www.kad8.com/post/linux/openssl.html</link>
@@ -20,30 +20,6 @@
 &lt;p&gt;OpenSSL有两种运行模式：&lt;code&gt;交互模式&lt;/code&gt;和&lt;code&gt;批处理模式&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;直接输入openssl回车进入交互模式，输入带命令选项的openssl进入批处理模式。&lt;/p&gt;
 &lt;p&gt;OpenSSL整个软件包大概可以分成三个主要的功能部分：密码算法库、SSL协议库以及应用程序。OpenSSL的目录结构自然也是围绕这三个功能部分进行规划的。 &lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>syslog命令</title>
-      <link>https://www.kad8.com/post/linux/syslog.html</link>
-      <pubDate>Sat, 15 Oct 2022 20:52:03 +0800</pubDate>
-      
-      <guid>https://www.kad8.com/post/linux/syslog.html</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;系统默认的日志守护进程&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;code&gt;syslog&lt;/code&gt;是Linux系统默认的日志守护进程。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>如何在Ubuntu Linux下将mp4转成mp3</title>
-      <link>https://www.kad8.com/post/linux/how-to-convert-mp4-to-mp3-in-ubuntu-linux.html</link>
-      <pubDate>Sat, 15 Oct 2022 11:52:03 +0800</pubDate>
-      
-      <guid>https://www.kad8.com/post/linux/how-to-convert-mp4-to-mp3-in-ubuntu-linux.html</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;FFmpeg&lt;/code&gt;是一款开源软件，用于生成处理多媒体数据的各类库和程序。FFmpeg可以转码、处理视频和图片（调整视频、图片大小，去噪等）、打包、传输及播放视频。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;本文描述了如何在Ubuntu Linux系统下，通过ffmpeg将mp4文件转成mp3文件。&lt;/p&gt;</description>
     </item>
     
   </channel>

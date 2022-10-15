@@ -11,7 +11,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/imgs/icons/favicon_32_32_next.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/imgs/icons/apple_touch_icon_next.png">
 <meta itemprop="name" content="syslog命令" />
-<meta itemprop="description" content="本文讲述了如何在Ubuntu Linux下通过ffmpeg将mp4文件转成mp3文件" />
+<meta itemprop="description" content="系统默认的日志守护进程" />
 <meta itemprop="datePublished" ZgotmplZ />
 <meta itemprop="dateModified" ZgotmplZ />
 <meta itemprop="image" content="https://www.kad8.com/imgs/hugo_next_avatar.png" />
@@ -19,7 +19,7 @@
 
 <meta property="og:type" content="article" />
 <meta property="og:title" content="syslog命令" />
-<meta property="og:description" content="本文讲述了如何在Ubuntu Linux下通过ffmpeg将mp4文件转成mp3文件" />
+<meta property="og:description" content="系统默认的日志守护进程" />
 <meta property="og:image" content="/imgs/hugo_next_avatar.png" />
 <meta property="og:image:width" content="312" />
 <meta property="og:image:height" content="312" />
@@ -115,7 +115,7 @@
     </li>
     <li class="menu-item menu-item-archives">
       <a href="/archives/" class="hvr-icon-pulse " rel="section"><i class="fa fa-archive hvr-icon"></i>归档
-        <span class="badge">15</span>
+        <span class="badge">16</span>
       </a>
     </li>
     <li class="menu-item menu-item-commonweal">
@@ -190,7 +190,7 @@
   <nav class="site-state">
     <div class="site-state-item site-state-posts">
       <a href="/archives/">
-        <span class="site-state-item-count">15</span>
+        <span class="site-state-item-count">16</span>
         <span class="site-state-item-name">日志</span>
       </a>
     </div>
@@ -202,7 +202,7 @@
     </div>
     <div class="site-state-item site-state-tags">
       <a href="/tags/">
-        <span class="site-state-item-count">34</span>
+        <span class="site-state-item-count">35</span>
         <span class="site-state-item-name">标签</span>
       </a>
     </div>
@@ -268,15 +268,15 @@
       </div>
     <div class="siteinfo-item">
       <div class="item-name"><i class="fa fa-font"></i>总字数：</div>
-      <div class="item-count" id="wordsCount" data-count="3259"></div>
+      <div class="item-count" id="wordsCount" data-count="3556"></div>
     </div>
     <div class="siteinfo-item">
       <div class="item-name"><i class="fa fa-mug-hot"></i>阅读约：</div>
-      <div class="item-count" id="readTimes" data-times="26"></div>
+      <div class="item-count" id="readTimes" data-times="28"></div>
     </div>
     <div class="siteinfo-item">
       <div class="item-name"><i class="fa fa-clock-rotate-left"></i>最后更新于：</div>
-      <div class="item-count" id="last-push-date" data-lastpushdate="2022-10-15T20:52:03&#43;08:00"></div>
+      <div class="item-count" id="last-push-date" data-lastpushdate="2022-10-15T21:52:03&#43;08:00"></div>
     </div>
   </div>
 </div>
@@ -319,7 +319,7 @@
     </span>
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
       <meta itemprop="name" content="syslog命令">
-      <meta itemprop="description" content="本文讲述了如何在Ubuntu Linux下通过ffmpeg将mp4文件转成mp3文件">
+      <meta itemprop="description" content="系统默认的日志守护进程">
     </span>
     <header class="post-header">
        <h1 class="post-title" itemprop="name headline">syslog命令 </h1> <div class="post-meta-container">
@@ -362,7 +362,7 @@
   <span class="post-meta-item-icon">
     <i class="far fa-file-word"></i>
   </span>
-  <span class="post-meta-item-text">字数：</span><span>66</span>
+  <span class="post-meta-item-text">字数：</span><span>67</span>
 </span>
     
 <span class="post-meta-item" title="阅读">
@@ -392,7 +392,10 @@
     
     <div class="post-body  autonumber " itemprop="articleBody">
       
-  <p><code>syslog</code>是Linux系统默认的日志守护进程。</p>
+  <blockquote>
+<p>系统默认的日志守护进程</p>
+</blockquote>
+<p><code>syslog</code>是Linux系统默认的日志守护进程。</p>
 <h2 id="概述">概述</h2>
 <p>默认的syslog配置文件是/etc/syslog.conf文件。程序，守护进程和内核提供了访问系统的日志信息。因此，任何希望生成日志信息的程序都可以向 syslog 接口呼叫生成该信息。</p>
 <p>几乎所有的网络设备都可以通过syslog协议，将日志信息以用户数据报协议(UDP)方式传送到远端服务器，远端接收日志服务器必须通过syslogd监听UDP 端口514，并根据 syslog.conf配置文件中的配置处理本机，接收访问系统的日志信息，把指定的事件写入特定文件中，供后台数据库管理和响应之用。意味着可以让任何事件都登录到一台或多台服务器上，以备后台数据库用off-line(离线) 方法分析远端设备的事件。</p>
@@ -487,8 +490,8 @@ Jan  <span style="color:#ae81ff">5</span> 10:37:14 localhost TAG: this is a test
 </div>
 <div class="post-nav">
   <div class="post-nav-next post-nav-item">
-    <a href="/post/vxworks/vxworks-real-time-feature-explore.html" rel="next" title="VxWorks实时性能探究">
-      <i class="fa fa-chevron-left"></i> VxWorks实时性能探究
+    <a href="/post/linux/openssl.html" rel="next" title="openssl命令">
+      <i class="fa fa-chevron-left"></i> openssl命令
     </a>
   </div>
   <div class="post-nav-prev post-nav-item">
