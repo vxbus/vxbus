@@ -142,6 +142,36 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://www.kad8.com/tags/5g/</loc>
+    <lastmod>2022-10-13T08:53:45-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/categories/news/</loc>
+    <lastmod>2022-10-13T08:53:45-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/tcs/</loc>
+    <lastmod>2022-10-13T08:53:45-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/vran/</loc>
+    <lastmod>2022-10-13T08:53:45-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/windriver/</loc>
+    <lastmod>2022-10-13T08:53:45-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/post/news/windriver-and-TCS-build-5G-Open-Ran-ecos.html</loc>
+    <lastmod>2022-10-13T08:53:45-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://www.kad8.com/tags/qt/</loc>
     <lastmod>2022-10-07T05:35:25-04:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -348,11 +378,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/categories/announce/</loc>
-    <lastmod>2022-05-02T15:59:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/tags/windriver/</loc>
     <lastmod>2022-05-02T15:59:41+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

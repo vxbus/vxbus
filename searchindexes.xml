@@ -182,6 +182,29 @@ ffmpeg -i filename.mp4 -b:a 192K -vn filename.mp3 一个流的说明符可以匹
   </entry>
   
   <entry>
+    <title>风河携手TCS建构5G/Open RAN分布式移动网络基础设施生态系统</title>
+    <url>/post/news/windriver-and-TCS-build-5G-Open-Ran-ecos.html</url>
+    <categories><category>News</category>
+    </categories>
+    <tags>
+      <tag>WindRiver</tag>
+      <tag>vRan</tag>
+      <tag>TCS</tag>
+      <tag>5G</tag>
+    </tags>
+    <content type="html"><![CDATA[ 全球领先的关键任务智能系统软件提供商风河公司®宣布，正在与塔塔咨询服务公司（TCS）合作，在Wind River Studio上托管vRAN解决方案。这项战略合作将创建一个全栈移动基础设施解决方案，在4G-5G vRAN下一代网络中开展TCS部署和工程服务，并以Studio作为云平台。
+ TCS网络解决方案与服务副总裁Vimal Kumar表示：“我们很高兴与风河合作，帮助我们的客户借助5G技术改善他们的业务。我们的Cognitive Network Operations平台运行在Wind River Studio之上，由此帮助电信网络运营商运用AI和ML技术来监测网络健康状况，预测可能发生的故障，提供以客户为中心的网络体验，并确保卓越的服务质量。”
+风河公司首席产品官Avijit Sinha表示：“运营商正在致力于创造数字化、云原生的未来，他们正在寻求灵活、经济的解决方案，以便降低部署复杂度并进行持续性维护。风河公司提供了成熟的生产就绪产品，与领先运营商实现了实用化部署，其基础正是经过广泛验证的Wind River Studio技术。”
+风河公司印度销售主管Rajeev Rawal表示：“与TCS携手，提供敏捷、安全、可靠和超低延迟解决方案，以支持新的应用场景，让云计算、边缘计算和智能化技术承担起更加重要的任务。”
+作为5G市场的领导者，风河在世界首次成功5G数据会话和商业vRAN/O-RAN项目中发挥了关键作用，其中包括世界上最大的Open RAN网络。
+Wind River Studio提供了一个完全基于云原生、Kubernetes和容器的体系结构，可用于大规模分布式边缘网络的开发、部署、运营和服务。这套平台为地理分布的管理解决方案提供了基础，能够为数千个节点提供单一窗口（SPoG）、零接触的自动化管理，从而简化Day 1和Day 2运营，而且与节点的物理位置无关。Studio解决了部署和管理物理地理分散云原生vRAN基础设施的复杂挑战，在vRAN部署中提供了传统的RAN性能。
+ 塔塔咨询服务 (TCS）简介
+ 塔塔咨询服务公司是一家IT服务、咨询和业务解决方案提供商，50多年来一直与许多全球最大企业合作，帮助他们实现转型。TCS提供以咨询为主导、以认知为动力的综合性商业、技术和工程服务以及解决方案。所有这些都通过独特的Location Independent Agile™ 模式来提供，被作为卓越软件开发的基准指标。
+作为印度最大的跨国商业集团塔塔集团的一部分，TCS在55个国家拥有超过606,000名训练有素的咨询师。在截至2022年3月31日的财年中，TCS创造了257亿美元的合并营收，并在印度的BSE和NSE上市。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>VxWorks 6.8下基于QT的串口编程</title>
     <url>/post/vxworks/vxworks-6.8-qt-uart-programming.html</url>
     <categories><category>VxWorks</category>
