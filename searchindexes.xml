@@ -45,6 +45,34 @@ int i = 1000000; int j = 0; while(i){ j += 0; i--; } timer = 2033 us //执行100
   </entry>
   
   <entry>
+    <title>FPGA硬核和软核处理器的区别</title>
+    <url>/post/fpga/difference-between-hard-core-processor-and-soft-core-processor-of-fpga.html</url>
+    <categories><category>FPGA</category>
+    </categories>
+    <tags>
+      <tag>CPU</tag>
+      <tag>fpga</tag>
+      <tag>processor</tag>
+      <tag>Altera</tag>
+      <tag>Xilinx</tag>
+    </tags>
+    <content type="html"><![CDATA[ 从架构的角度来说，SOPC和SoC FPGA是统一的，都是由FPGA部分和处理器部分组成。在SoC FPGA 中，嵌入的是纯硬件基础的硬核处理器，简称HPS(Hardware Processor System)，而SOPC技术中，嵌入的是使用FPGA逻辑资源实现的软核处理器，两者指令集不一样，处理器性能也不一样。
+ 软核处理器 SOPC技术，即软核处理器，最早是由Altera公司提出来的，它是基于 FPGA  的SOC片上系统设计技术。是使用FPGA的逻辑和资源搭建的一个软核CPU系统，由于是使用FPGA的通用逻辑搭建的CPU，因此具有一定的灵活性，用户可以根据自己的需求对CPU进行定制裁剪，增加一些专用功能，例如除法或浮点运算单元，用于提升CPU在某些专用运算方面的性能，或者删除一些在系统里面使用不到的功能，以节约逻辑资源。
+另外也可以根据用户的实际需求，为CPU添加各种标准或定制的外设，例如UART，SPI，IIC等标准接口外设，同时，用户也可以自己使用FPGA的逻辑资源，编写各种专用的外设，然后连接到CPU总线上，由CPU进行控制，以实现软硬件的协同工作，在保证系统性能的同时，增加了系统的灵活性。
+而且，如果单个的软核CPU无法满足用户需求，可以添加多个CPU软核，搭建多核系统，通过多核CPU协同工作，让系统拥有更加灵活便捷的控制能力。
+由于是使用FPGA资源实现的，所以具有很大的灵活性，可以实现根据需要实现多种处理器，如8051，RISC-V，Xilinx的 MicroBlaze ，Altera的Nios-II等等。
+硬核处理器 由于软核CPU是使用FPGA的通用逻辑资源搭建的，相较使用经过布局布线优化的硬核处理器来说，软核处理器够运行的最高实时钟主频要低一些，而且也会相应的消耗较多的FPGA逻辑资源以及片上存储器资源，因此SOPC方案仅适用于对于数处理器整体性能要求不高的应用，例如整个系统的初始化配置，人机交互，多个功能模块间的协调控制等功能。
+所以，各大FPGA厂家推出了SoC FPGA技术，是在芯片设计之初，就在内部的硬件电路上添加了硬核处理器，是纯硬件实现的，不会消耗FPGA的逻辑资源，硬核处理器和FPGA逻辑在一定程度上是相互独立的，简单的说，就是SoC FPGA就是把一块ARM处理器和一块FPGA芯片封装成了一个芯片。
+例如比较有名的Xilinx的ZYNQ/PYNQ系列集成ARM Cortex-A9处理器，同时具有ARM软件的可编程性和FPGA 的硬件可编程性，不仅可实现重要分析与硬件加速，同时还在单个器件上高度集成 CPU、DSP、ASSP 以及混合信号功能。
+ZYNQ开发板 Intel的Cyclone V系列，集成双核Cortex-A9，于2013年发布，在单一芯片上集成了双核的ARM Cortex-A9处理器和FPGA逻辑资源的新型SoC芯片，相较于传统的单一ARM处理器或FPGA芯片，它既拥有了ARM处理器灵活高效的数据运算和事务处理能力，同时又集成了FPGA的高速并行处理优势，同时，基于两者独特的片上互联结构，使用时可以将FPGA上的通用逻辑资源经过配置，映射为ARM处理器的一个或多个具有特定功能的外设，通过高达128位宽的AXI高速总线进行通信，完成数据和控制命令的交互。由于片上的ARM处理器是经过布局布线的硬线逻辑，因此其能工作的时钟主频较高，因此单位时间内能够执行的指令也更多。
+区别和联系 从架构的角度来说，SOPC和SoC FPGA是统一的，都是由FPGA部分和处理器部分组成。在SoC FPGA 中，嵌入的是纯硬件基础的硬核处理器，简称HPS(Hardware Processor System)，而SOPC技术中，嵌入的是使用FPGA逻辑资源实现的软核处理器，两者指令集不一样，处理器性能也不一样。
+一般来说，硬核处理器的性能要远远高于软核处理器。另外，硬核处理器除了CPU部分，还集成了各种高性能外设，如MMU、DDR3控制器、Nand FLASH控制器等，可以运行成熟的Linux操作系统和应用程序，提供统一的系统API，降低开发者的软件开发难度。而软核CPU虽然可以通过配置，用逻辑资源来搭建相应的控制器以支持相应功能，但是从性能和开发难度上来说，基于SoC FPGA架构进行设计开发是比较好的选择。
+ZYNQ内部框图 另外，虽然SoC FPGA芯片上既包含了有ARM，又包含了有FPGA，但是两者一定程度上是相互独立的，SoC芯片上的ARM处理器核并非是包含于FPGA逻辑单元内部的，FPGA和ARM（HPS）处理器只是封装到同一个芯片中，JTAG接口、电源引脚和外设的接口引脚都是独立的，因此，如果使用SoC FPGA芯片进行设计，即使不使用到片上的ARM处理器，ARM处理器部分占用的芯片资源也无法释放出来，不能用作通用的FPGA资源。
+而SOPC则是使用FPGA通用逻辑和存储器资源搭建的CPU，当不使用CPU时，CPU部分占用的资源可以被释放，重新用作通用FPGA资源。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>openssl命令</title>
     <url>/post/linux/openssl.html</url>
     <categories><category>Linux</category>
