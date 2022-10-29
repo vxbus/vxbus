@@ -176,10 +176,11 @@
     <li><a href="#解析和提取-html">解析和提取 HTML</a></li>
     <li><a href="#二维码扫描仪">二维码扫描仪</a></li>
     <li><a href="#截图">截图</a></li>
-    <li><a href="#创建有声读物">创建有声读物</a></li>
-  </ul>
-
-  <ul>
+    <li><a href="#创建有声读物">创建有声读物</a>
+      <ul>
+        <li><a href="#pdf-编辑器">PDF 编辑器</a></li>
+      </ul>
+    </li>
     <li><a href="#迷你-stackoverflow">迷你 Stackoverflow</a></li>
     <li><a href="#自动化手机">自动化手机</a></li>
     <li><a href="#监控-cpugpu-温度">监控 CPU/GPU 温度</a></li>
@@ -278,7 +279,7 @@
       </div>
     <div class="siteinfo-item">
       <div class="item-name"><i class="fa fa-font"></i>总字数：</div>
-      <div class="item-count" id="wordsCount" data-count="4477"></div>
+      <div class="item-count" id="wordsCount" data-count="4476"></div>
     </div>
     <div class="siteinfo-item">
       <div class="item-name"><i class="fa fa-mug-hot"></i>阅读约：</div>
@@ -364,7 +365,7 @@
   <span class="post-meta-item-icon">
     <i class="far fa-file-word"></i>
   </span>
-  <span class="post-meta-item-text">字数：</span><span>877</span>
+  <span class="post-meta-item-text">字数：</span><span>876</span>
 </span>
     
 <span class="post-meta-item" title="阅读">
@@ -483,75 +484,75 @@ print(<span style="color:#e6db74">&#34;Your Qr Code is: &#34;</span>, Scan_Qr(<s
 <blockquote>
 <p>厌倦了手动将您的 PDF 书籍转换为有声读物，那么这是你的自动化脚本，它使用 GTTS 模块将你的 PDF 文本转换为音频。</p>
 </blockquote>
-<p>``python</p>
-<h1 id="create-audiobooks">Create Audiobooks</h1>
-<h1 id="pip-install-gtts">pip install gTTS</h1>
-<h1 id="pip-install-pypdf2">pip install PyPDF2</h1>
-<p>from PyPDF2 import PdfFileReader as reader
-from gtts import gTTS</p>
-<p>def create_audio(pdf_file):
-read_Pdf = reader(open(pdf_file, &lsquo;rb&rsquo;))
-for page in range(read_Pdf.numPages):
-text = read_Pdf.getPage(page).extractText()
-tts = gTTS(text, lang=&lsquo;en&rsquo;)
-tts.save(&lsquo;page&rsquo; + str(page) + &lsquo;.mp3&rsquo;)</p>
-<p>create_audio(&lsquo;book.pdf&rsquo;)</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-fallback" data-lang="fallback">
-### PDF 编辑器
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-python" data-lang="python"><span style="color:#75715e"># Create Audiobooks</span>
+<span style="color:#75715e"># pip install gTTS</span>
+<span style="color:#75715e"># pip install PyPDF2</span>
 
-&gt; 使用以下自动化脚本使用 Python 编辑 PDF 文件。该脚本使用 PyPDF4 模块，它是 PyPDF2 的升级版本，下面我编写了 Parse Text、Remove pages 等常用功能。当你有大量 PDF 文件要编辑或需要以编程方式在 Python 项目中使用脚本时，这是一个方便的脚本。
+<span style="color:#f92672">from</span> PyPDF2 <span style="color:#f92672">import</span> PdfFileReader <span style="color:#66d9ef">as</span> reader
+<span style="color:#f92672">from</span> gtts <span style="color:#f92672">import</span> gTTS
 
-```python
-# PDF Editor
-# pip install PyPDf4
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">create_audio</span>(pdf_file):
+    read_Pdf <span style="color:#f92672">=</span> reader(open(pdf_file, <span style="color:#e6db74">&#39;rb&#39;</span>))
+    <span style="color:#66d9ef">for</span> page <span style="color:#f92672">in</span> range(read_Pdf<span style="color:#f92672">.</span>numPages):
+        text <span style="color:#f92672">=</span> read_Pdf<span style="color:#f92672">.</span>getPage(page)<span style="color:#f92672">.</span>extractText()
+        tts <span style="color:#f92672">=</span> gTTS(text, lang<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;en&#39;</span>)
+        tts<span style="color:#f92672">.</span>save(<span style="color:#e6db74">&#39;page&#39;</span> <span style="color:#f92672">+</span> str(page) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;.mp3&#39;</span>)
+        
+create_audio(<span style="color:#e6db74">&#39;book.pdf&#39;</span>)
+</code></pre></div><h3 id="pdf-编辑器">PDF 编辑器</h3>
+<blockquote>
+<p>使用以下自动化脚本使用 Python 编辑 PDF 文件。该脚本使用 PyPDF4 模块，它是 PyPDF2 的升级版本，下面我编写了 Parse Text、Remove pages 等常用功能。当你有大量 PDF 文件要编辑或需要以编程方式在 Python 项目中使用脚本时，这是一个方便的脚本。</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-python" data-lang="python"><span style="color:#75715e"># PDF Editor</span>
+<span style="color:#75715e"># pip install PyPDf4</span>
 
-import PyPDF4
+<span style="color:#f92672">import</span> PyPDF4
 
-# Parse the Text from PDF
-def parse_text(pdf_file):
-    reader = PyPDF4.PdfFileReader(pdf_file)
-    for page in reader.pages:
-        print(page.extractText())
+<span style="color:#75715e"># Parse the Text from PDF</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">parse_text</span>(pdf_file):
+    reader <span style="color:#f92672">=</span> PyPDF4<span style="color:#f92672">.</span>PdfFileReader(pdf_file)
+    <span style="color:#66d9ef">for</span> page <span style="color:#f92672">in</span> reader<span style="color:#f92672">.</span>pages:
+        print(page<span style="color:#f92672">.</span>extractText())
         
-# Remove Page from PDF
-def remove_page(pdf_file, page_numbers):
-    filer = PyPDF4.PdfReader(&#39;source.pdf&#39;, &#39;rb&#39;)
-    out = PyPDF4.PdfWriter()
-    for index in page_numbers:
-        page = filer.pages[index] 
-        out.add_page(page)
-with open(&#39;rm.pdf&#39;, &#39;wb&#39;) as f:
-        out.write(f)
+<span style="color:#75715e"># Remove Page from PDF</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">remove_page</span>(pdf_file, page_numbers):
+    filer <span style="color:#f92672">=</span> PyPDF4<span style="color:#f92672">.</span>PdfReader(<span style="color:#e6db74">&#39;source.pdf&#39;</span>, <span style="color:#e6db74">&#39;rb&#39;</span>)
+    out <span style="color:#f92672">=</span> PyPDF4<span style="color:#f92672">.</span>PdfWriter()
+    <span style="color:#66d9ef">for</span> index <span style="color:#f92672">in</span> page_numbers:
+        page <span style="color:#f92672">=</span> filer<span style="color:#f92672">.</span>pages[index] 
+        out<span style="color:#f92672">.</span>add_page(page)
+<span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#39;rm.pdf&#39;</span>, <span style="color:#e6db74">&#39;wb&#39;</span>) <span style="color:#66d9ef">as</span> f:
+        out<span style="color:#f92672">.</span>write(f)
         
-# Add Blank Page to PDF
-def add_page(pdf_file, page_number):
-    reader = PyPDF4.PdfFileReader(pdf_file)
-    writer = PyPDF4.PdfWriter()
-    writer.addPage()
-    with open(&#39;add.pdf&#39;, &#39;wb&#39;) as f:
-        writer.write(f)
+<span style="color:#75715e"># Add Blank Page to PDF</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add_page</span>(pdf_file, page_number):
+    reader <span style="color:#f92672">=</span> PyPDF4<span style="color:#f92672">.</span>PdfFileReader(pdf_file)
+    writer <span style="color:#f92672">=</span> PyPDF4<span style="color:#f92672">.</span>PdfWriter()
+    writer<span style="color:#f92672">.</span>addPage()
+    <span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#39;add.pdf&#39;</span>, <span style="color:#e6db74">&#39;wb&#39;</span>) <span style="color:#66d9ef">as</span> f:
+        writer<span style="color:#f92672">.</span>write(f)
         
-# Rotate Pages
-def rotate_page(pdf_file):
-    reader = PyPDF4.PdfFileReader(pdf_file)
-    writer = PyPDF4.PdfWriter()
-    for page in reader.pages:
-        page.rotateClockwise(90)
-        writer.addPage(page)
-    with open(&#39;rotate.pdf&#39;, &#39;wb&#39;) as f:
-        writer.write(f)
+<span style="color:#75715e"># Rotate Pages</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">rotate_page</span>(pdf_file):
+    reader <span style="color:#f92672">=</span> PyPDF4<span style="color:#f92672">.</span>PdfFileReader(pdf_file)
+    writer <span style="color:#f92672">=</span> PyPDF4<span style="color:#f92672">.</span>PdfWriter()
+    <span style="color:#66d9ef">for</span> page <span style="color:#f92672">in</span> reader<span style="color:#f92672">.</span>pages:
+        page<span style="color:#f92672">.</span>rotateClockwise(<span style="color:#ae81ff">90</span>)
+        writer<span style="color:#f92672">.</span>addPage(page)
+    <span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#39;rotate.pdf&#39;</span>, <span style="color:#e6db74">&#39;wb&#39;</span>) <span style="color:#66d9ef">as</span> f:
+        writer<span style="color:#f92672">.</span>write(f)
         
-# Merge PDFs
-def merge_pdfs(pdf_file1, pdf_file2):
-    pdf1 = PyPDF4.PdfFileReader(pdf_file1)
-    pdf2 = PyPDF4.PdfFileReader(pdf_file2)
-    writer = PyPDF4.PdfWriter()
-    for page in pdf1.pages:
-        writer.addPage(page)
-    for page in pdf2.pages:
-        writer.addPage(page)
-    with open(&#39;merge.pdf&#39;, &#39;wb&#39;) as f:
-        writer.write(f)
+<span style="color:#75715e"># Merge PDFs</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">merge_pdfs</span>(pdf_file1, pdf_file2):
+    pdf1 <span style="color:#f92672">=</span> PyPDF4<span style="color:#f92672">.</span>PdfFileReader(pdf_file1)
+    pdf2 <span style="color:#f92672">=</span> PyPDF4<span style="color:#f92672">.</span>PdfFileReader(pdf_file2)
+    writer <span style="color:#f92672">=</span> PyPDF4<span style="color:#f92672">.</span>PdfWriter()
+    <span style="color:#66d9ef">for</span> page <span style="color:#f92672">in</span> pdf1<span style="color:#f92672">.</span>pages:
+        writer<span style="color:#f92672">.</span>addPage(page)
+    <span style="color:#66d9ef">for</span> page <span style="color:#f92672">in</span> pdf2<span style="color:#f92672">.</span>pages:
+        writer<span style="color:#f92672">.</span>addPage(page)
+    <span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#39;merge.pdf&#39;</span>, <span style="color:#e6db74">&#39;wb&#39;</span>) <span style="color:#66d9ef">as</span> f:
+        writer<span style="color:#f92672">.</span>write(f)
 </code></pre></div><h2 id="迷你-stackoverflow">迷你 Stackoverflow</h2>
 <blockquote>
 <p>作为一名程序员，我知道我们每天都需要 StackOverflow，但你不再需要在 Google 上搜索它。现在，在您继续处理项目的同时，在你的 CMD 中获得直接解决方案。通过使用 Howdoi 模块，你可以在命令提示符或终端中获得 StackOverflow 解决方案。你可以在下面找到一些可以尝试的示例。</p>
