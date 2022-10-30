@@ -82,6 +82,21 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://www.kad8.com/tags/lcd/</loc>
+    <lastmod>2022-10-28T06:53:45-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/rgb/</loc>
+    <lastmod>2022-10-28T06:53:45-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/post/fpga/embedded-lcd-interface-model.html</loc>
+    <lastmod>2022-10-28T06:53:45-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://www.kad8.com/tags/kernel/</loc>
     <lastmod>2022-10-16T16:43:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
