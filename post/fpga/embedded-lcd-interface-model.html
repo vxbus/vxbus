@@ -418,10 +418,10 @@ RGB接口方式: 显示数据不写入DDRAM，直接写屏，速度快，常用�
 <p>MCU接口的LCD的DriverIC都带GRAM，Driver IC作为MCU的一片协处理器，接受MCU发过来的Command/Data，可以相对独立的工作。对于MCU接口的LCM(LCD Module)，其内部的芯片就叫LCD驱动器。主要功能是对主机发过的数据/命令，进行变换，变成每个象素的RGB数据，使之在屏上显示出来。这个过程不需要点、行、帧时钟。</p>
 <h2 id="m6800模式">M6800模式</h2>
 <p>M6800模式支持可选择的总线宽度8/9/16/18-bit(默认为8位)，其实际设计思想是与I80的思想是一样的，主要区别就是该模式的总线控制读写信号组合在一个引脚上(/WR)，而增加了一个锁存信号(E)数据位传输有8位，9位，16位和18位。</p>
-<p><img src="https://www.vxworks.net/images/kad8/M6800.jpg" alt="M6800模式"></p>
+<p><img src="https://www.vxworks.net/images/kad8/M8600.jpg" alt="M6800模式"></p>
 <h2 id="i8080模式">I8080模式</h2>
 <p>I80模式连线分为：CS/，RS(寄存器选择)，RD/，WR/，再就是数据线了。优点是：控制简单方便，无需时钟和同步信号。缺点是：要耗费GRAM，所以难以做到大屏(QVGA以上)。</p>
-<p><img src="https://www.vxworks.net/images/kad8/I8080-1.jpg" alt="I8080模式"></p>
+<p><img src="https://www.vxworks.net/images/kad8/I8080.jpg" alt="I8080模式"></p>
 <ul>
 <li>MCU接口标准名称是I80，管脚的控制脚有5个：</li>
 <li>CS 片选信号</li>
