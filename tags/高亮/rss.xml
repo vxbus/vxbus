@@ -6,11 +6,11 @@
     <description>Recent content in 高亮 on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 07 Jun 2022 19:09:52 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/%E9%AB%98%E4%BA%AE/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Jun 2021 19:09:52 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/%E9%AB%98%E4%BA%AE/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo 内置的 Chroma 语法高亮</title>
       <link>https://www.kad8.com/post/syntax-highlighting.html</link>
-      <pubDate>Tue, 07 Jun 2022 19:09:52 +0800</pubDate>
+      <pubDate>Mon, 07 Jun 2021 19:09:52 +0800</pubDate>
       
       <guid>https://www.kad8.com/post/syntax-highlighting.html</guid>
       <description>&lt;p&gt;Hugo 通过 Chroma 提供非常快速的语法高亮显示，现 Hugo 中使用 Chroma 作为代码块高亮支持，它内置在 Go 语言当中，速度是真的非常、非常快，而且最为重要的是它也兼容之前我们使用的 Pygments 方式。&lt;/p&gt;

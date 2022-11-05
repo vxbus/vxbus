@@ -6,11 +6,11 @@
     <description>Recent content in 表情 on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 04 Jun 2022 19:46:45 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/%E8%A1%A8%E6%83%85/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 04 Jun 2021 19:46:45 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/%E8%A1%A8%E6%83%85/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>支持 Emoji 表情</title>
       <link>https://www.kad8.com/post/emoji-support.html</link>
-      <pubDate>Sat, 04 Jun 2022 19:46:45 +0800</pubDate>
+      <pubDate>Fri, 04 Jun 2021 19:46:45 +0800</pubDate>
       
       <guid>https://www.kad8.com/post/emoji-support.html</guid>
       <description>&lt;p&gt;Emoji 可以通过多种方式在 Hugo 项目中启用。&lt;/p&gt;
