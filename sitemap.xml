@@ -272,26 +272,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kad8.com/post/mermaid-charts.html</loc>
-    <lastmod>2022-09-18T20:58:13+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/tags/%E6%97%B6%E5%BA%8F%E5%9B%BE/</loc>
-    <lastmod>2022-09-18T20:58:13+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/tags/%E6%B5%81%E7%A8%8B%E5%9B%BE/</loc>
-    <lastmod>2022-09-18T20:58:13+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/categories/%E7%A4%BA%E4%BE%8B/</loc>
-    <lastmod>2022-09-18T20:58:13+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.kad8.com/archives/</loc>
     <lastmod>2022-07-26T21:46:25+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -314,6 +294,26 @@
   </url><url>
     <loc>https://www.kad8.com/post/vxworks/windriver-capital-transaction.html</loc>
     <lastmod>2022-01-20T05:40:25-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/post/mermaid-charts.html</loc>
+    <lastmod>2021-09-18T20:58:13+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/%E6%97%B6%E5%BA%8F%E5%9B%BE/</loc>
+    <lastmod>2021-09-18T20:58:13+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/%E6%B5%81%E7%A8%8B%E5%9B%BE/</loc>
+    <lastmod>2021-09-18T20:58:13+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/categories/%E7%A4%BA%E4%BE%8B/</loc>
+    <lastmod>2021-09-18T20:58:13+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
