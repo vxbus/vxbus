@@ -53,7 +53,8 @@ int i = 1000000; int j = 0; while(i){ j += 0; i--; } timer = 2033 us //执行100
       <tag>linux</tag>
       <tag>device driver</tag>
     </tags>
-    <content type="html"><![CDATA[Linux基础 任意3种网络操作的Linux命令,并说明他们的含义 ifconfig 命令 ifconfig 用于查看和配置 Linux 系统的网络接口。 查看所有网络接口及其状态：ifconfig -a 。 使用 up 和 down 命令启动或停止某个接口：ifconfig eth0 up 和 ifconfig eth0 down 。
+    <content type="html"><![CDATA[今天给大家分享几道Linux设备驱动相关的面试题，希望能对需要的网友一些帮助！
+Linux基础 任意3种网络操作的Linux命令,并说明他们的含义 ifconfig 命令 ifconfig 用于查看和配置 Linux 系统的网络接口。 查看所有网络接口及其状态：ifconfig -a 。 使用 up 和 down 命令启动或停止某个接口：ifconfig eth0 up 和 ifconfig eth0 down 。
 iptables 命令 iptables ，是一个配置 Linux 内核防火墙的命令行工具。功能非常强大，对于我们开发来说，主要掌握如何开放端口即可。
 netstat 命令 Linux netstat命令用于显示网络状态。
 利用netstat指令可让你得知整个Linux系统的网络情况。
