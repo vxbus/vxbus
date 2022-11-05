@@ -6,7 +6,16 @@
     <description>Recent content in Linux on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 04 Nov 2022 11:52:03 +0800</lastBuildDate><atom:link href="https://www.kad8.com/categories/linux/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 04 Nov 2022 17:52:03 +0800</lastBuildDate><atom:link href="https://www.kad8.com/categories/linux/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux mmap内存映射详解</title>
+      <link>https://www.kad8.com/post/linux/linux-mmap-explanation.html</link>
+      <pubDate>Fri, 04 Nov 2022 17:52:03 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/post/linux/linux-mmap-explanation.html</guid>
+      <description>&lt;p&gt;mmap用于把文件映射到内存空间中，简单说mmap就是把一个文件的内容在内存里面做一个映像。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>几道简单的Linux驱动相关面试题</title>
       <link>https://www.kad8.com/post/linux/linux-device-driver-questions-and-answers.html</link>
