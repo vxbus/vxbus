@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on 北南南北</title>
+    <link>https://www.kad8.com/tags/linux/</link>
+    <description>Recent content in linux on 北南南北</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 04 Nov 2022 11:52:03 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/linux/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>几道简单的Linux驱动相关面试题</title>
+      <link>https://www.kad8.com/post/linux/linux-device-driver-questions-and-answers.html</link>
+      <pubDate>Fri, 04 Nov 2022 11:52:03 +0800</pubDate>
+      
+      <guid>https://www.kad8.com/post/linux/linux-device-driver-questions-and-answers.html</guid>
+      <description>&lt;h2 id=&#34;linux基础&#34;&gt;Linux基础&lt;/h2&gt;
+&lt;h3 id=&#34;任意3种网络操作的linux命令并说明他们的含义&#34;&gt;任意3种网络操作的Linux命令,并说明他们的含义&lt;/h3&gt;
+&lt;h4 id=&#34;ifconfig-命令&#34;&gt;ifconfig 命令&lt;/h4&gt;
+&lt;p&gt;ifconfig 用于查看和配置 Linux 系统的网络接口。
+查看所有网络接口及其状态：ifconfig -a 。
+使用 up 和 down 命令启动或停止某个接口：ifconfig eth0 up 和 ifconfig eth0 down 。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
