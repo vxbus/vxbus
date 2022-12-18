@@ -6,7 +6,16 @@
     <description>Recent content in linux on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 04 Nov 2022 19:52:03 +0800</lastBuildDate><atom:link href="https://www.kad8.com/tags/linux/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Dec 2022 09:30:20 -0500</lastBuildDate><atom:link href="https://www.kad8.com/tags/linux/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关于Linux下的crontab，你不知道的那些知识点</title>
+      <link>https://www.kad8.com/post/linux/linux-crontab-knowledge.html</link>
+      <pubDate>Sun, 18 Dec 2022 09:30:20 -0500</pubDate>
+      
+      <guid>https://www.kad8.com/post/linux/linux-crontab-knowledge.html</guid>
+      <description>&lt;p&gt;实际工作中，crontab出现的问题是多种多样的，下面就深入介绍下crontab在具体工作中容易出现的问题和解决问题的办法。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Linux编程之经典多级时间轮定时器</title>
       <link>https://www.kad8.com/post/linux/linux-programming-multiple-time-wheel-timer.html</link>

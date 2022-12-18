@@ -13,7 +13,42 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/categories/</loc>
-    <lastmod>2022-12-17T04:57:58-05:00</lastmod>
+    <lastmod>2022-12-18T09:30:20-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/crontab/</loc>
+    <lastmod>2022-12-18T09:30:20-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/categories/linux/</loc>
+    <lastmod>2022-12-18T09:30:20-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/linux/</loc>
+    <lastmod>2022-12-18T09:30:20-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/post/</loc>
+    <lastmod>2022-12-18T09:30:20-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/</loc>
+    <lastmod>2022-12-18T09:30:20-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/post/linux/linux-crontab-knowledge.html</loc>
+    <lastmod>2022-12-18T09:30:20-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/</loc>
+    <lastmod>2022-12-18T09:30:20-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -29,31 +64,6 @@
   </url><url>
     <loc>https://www.kad8.com/post/hardware/why-add-pull-up-resistor-for-i2c.html</loc>
     <lastmod>2022-12-17T04:57:58-05:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/post/</loc>
-    <lastmod>2022-12-17T04:57:58-05:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/tags/</loc>
-    <lastmod>2022-12-17T04:57:58-05:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/</loc>
-    <lastmod>2022-12-17T04:57:58-05:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/categories/linux/</loc>
-    <lastmod>2022-11-04T20:43:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/tags/linux/</loc>
-    <lastmod>2022-11-04T20:43:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>

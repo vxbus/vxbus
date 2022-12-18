@@ -6,7 +6,7 @@
     <description>Recent content in Posts on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 17 Dec 2022 04:57:58 -0500</lastBuildDate><atom:link href="https://www.kad8.com/post/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Dec 2022 09:30:20 -0500</lastBuildDate><atom:link href="https://www.kad8.com/post/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>欢迎加入 VxWorks 俱乐部！</title>
       <link>https://www.kad8.com/post/welcome-to-vxworks-club/</link>
@@ -32,6 +32,15 @@
     VxWorks
     &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;
 &lt;/a&gt;, 由大名鼎鼎的风河（WindRiver）开发。本篇文章就是将VxWorks操作系统和市面上几种其他实时操作系统的实时性能进行对比。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>关于Linux下的crontab，你不知道的那些知识点</title>
+      <link>https://www.kad8.com/post/linux/linux-crontab-knowledge.html</link>
+      <pubDate>Sun, 18 Dec 2022 09:30:20 -0500</pubDate>
+      
+      <guid>https://www.kad8.com/post/linux/linux-crontab-knowledge.html</guid>
+      <description>&lt;p&gt;实际工作中，crontab出现的问题是多种多样的，下面就深入介绍下crontab在具体工作中容易出现的问题和解决问题的办法。&lt;/p&gt;</description>
     </item>
     
     <item>
