@@ -409,6 +409,18 @@
 <p>根据I2C总线规范，总线空闲时两根线都必须为高。假设主设备A需要启动I2C，他需要在SCL高电平时，将SDA由高电平转换为低电平作为启动信号。</p>
 <p>主设备A在把SDA拉高后，它需要再检查一下SDA的电平。为什么? 因为线与，如果主设备A拉高SDA时，已经有其他主设备将SDA拉低了，由于 1 &amp; 0 = 0 那么主设备A在检查SDA电平时, 会发现不是高电平，而是低电平。说明其他主设备抢占总线的时间比它早，主设备A只能放弃占用总线。如果SDA是高电平，说明主设备A可以占用总线，然后主设备A将SDA拉低，开始通信。</p>
 <p>因此，模拟I2C一定要将GPIO端口设置为开漏输出并加上拉电阻。</p>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1543398821442998"
+     crossorigin="anonymous"></script>
+
+<ins class="adsbygoogle"
+     style="display:inline-block;width:970px;height:90px"
+     data-ad-client="ca-pub-1543398821442998"
+     data-ad-slot="4140563281"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
 
     </div>
     <footer class="post-footer">
