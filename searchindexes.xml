@@ -46,6 +46,20 @@ int i = 1000000; int j = 0; while(i){ j += 0; i--; } timer = 2033 us //执行100
   
   <entry>
     <title>关于Linux下的crontab，你不知道的那些知识点</title>
+    <url>/post/linux/awk-usage-skills.html</url>
+    <categories><category>Linux</category>
+    </categories>
+    <tags>
+      <tag>linux</tag>
+      <tag>crontab</tag>
+    </tags>
+    <content type="html"><![CDATA[ 打印文件的第一列  awk &#39;{print $1}&#39; vxworks.txt  打印文件的前两列  awk &#39;{print $1,$2}&#39; vxworks.txt  打印文件的最后一列  awk &#39;{print $NF}&#39; vxworks.txt  打印文件的总行数  awk &#39;END{print NR}&#39; vxworks.txt  打印文件的第一行  awk &#39;NR==1{print}&#39; vxworks.txt NR是指awk正在处理的记录位于文件中的位置（行号）
+ 打印文件的第3行第2列  sed -n &#39;3,1p&#39; vxworks.txt | awk &#39;{print $2}&#39;  删除空行  awk &#39;NF&#39; vxworks.txt  打印奇数行  awk &#39;b=!b&#39; vxworks.txt  打印文件按#分割后,行长度为3的所有行  awk -F &#39;#&#39; &#39;if(NF==3){print}&#39; vxworks.txt NF是指awk正在处理的记录包含几个域（字段），这与域分隔符有关，默认为空
+ 统计Linux系统中每个用户所用的shell  cat /etc/passwd | awk -F &#34;:&#34; &#39;{print $1&#34; : &#34;$7}&#39;  用awk统计linux系统中所有的用户数  cat /etc/passwd | awk &#39;{count++}END{ print count}&#39;  统计某个文件夹下文件所占的字节数  ls -l | awk &#39;BEGIN{size=0}{size=size+$5}END{print size}&#39;  统计某个文件夹下文件所占的字节数,按M显示  ls -l | awk &#39;BEGIN{size=0}{size=size+$5}END{print size}&#39;  netstat结合awk统计TCP连接数  netstat -tunlp | awk &#39;/^tcp/{++a[$6]}END{for(i in a) print i,a[i]}&#39;  过滤空行  awk &#39;/^[^$]/ {print $0}&#39; vxworks.txt  列运算  awk &#39;/^[^$]/ {print $0}&#39; vxworks.txt cat 1.txt 1 2 3  求和  cat 1.txt | awk &#39;{a+=$1}END{print a}&#39;  求平均值  cat 1.txt | awk &#39;{a+=$1}END{print a/NR}&#39;  求列的最大值  cat 1.txt | awk &#39;BEGIN{a=0}{if($1&gt;a) a=$1 fi}END{print a}&#39; ]]></content>
+  </entry>
+  
+  <entry>
+    <title>关于Linux下的crontab，你不知道的那些知识点</title>
     <url>/post/linux/linux-crontab-knowledge.html</url>
     <categories><category>Linux</category>
     </categories>

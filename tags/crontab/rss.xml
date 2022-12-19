@@ -6,7 +6,18 @@
     <description>Recent content in crontab on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 18 Dec 2022 09:30:20 -0500</lastBuildDate><atom:link href="https://www.kad8.com/tags/crontab/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Dec 2022 08:18:31 -0500</lastBuildDate><atom:link href="https://www.kad8.com/tags/crontab/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关于Linux下的crontab，你不知道的那些知识点</title>
+      <link>https://www.kad8.com/post/linux/awk-usage-skills.html</link>
+      <pubDate>Mon, 19 Dec 2022 08:18:31 -0500</pubDate>
+      
+      <guid>https://www.kad8.com/post/linux/awk-usage-skills.html</guid>
+      <description>打印文件的第一列  awk &amp;#39;{print $1}&amp;#39; vxworks.txt  打印文件的前两列  awk &amp;#39;{print $1,$2}&amp;#39; vxworks.txt  打印文件的最后一列  awk &amp;#39;{print $NF}&amp;#39; vxworks.txt  打印文件的总行数  awk &amp;#39;END{print NR}&amp;#39; vxworks.txt  打印文件的第一行  awk &amp;#39;NR==1{print}&amp;#39; vxworks.txt NR是指awk正在处理的记录位于文件中的位置（行号）
+ 打印文件的第3行第2列  sed -n &amp;#39;3,1p&amp;#39; vxworks.txt | awk &amp;#39;{print $2}&amp;#39;  删除空行  awk &amp;#39;NF&amp;#39; vxworks.txt  打印奇数行  awk &amp;#39;b=!b&amp;#39; vxworks.txt  打印文件按#分割后,行长度为3的所有行  awk -F &amp;#39;#&amp;#39; &amp;#39;if(NF==3){print}&amp;#39; vxworks.txt NF是指awk正在处理的记录包含几个域（字段），这与域分隔符有关，默认为空
+ 统计Linux系统中每个用户所用的shell  cat /etc/passwd | awk -F &amp;#34;:&amp;#34; &amp;#39;{print $1&amp;#34; : &amp;#34;$7}&amp;#39;  用awk统计linux系统中所有的用户数  cat /etc/passwd | awk &amp;#39;{count++}END{ print count}&amp;#39;  统计某个文件夹下文件所占的字节数  ls -l | awk &amp;#39;BEGIN{size=0}{size=size+$5}END{print size}&amp;#39;  统计某个文件夹下文件所占的字节数,按M显示  ls -l | awk &amp;#39;BEGIN{size=0}{size=size+$5}END{print size}&amp;#39;  netstat结合awk统计TCP连接数  netstat -tunlp | awk &amp;#39;/^tcp/{++a[$6]}END{for(i in a) print i,a[i]}&amp;#39;  过滤空行  awk &amp;#39;/^[^$]/ {print $0}&amp;#39; vxworks.</description>
+    </item>
+    
     <item>
       <title>关于Linux下的crontab，你不知道的那些知识点</title>
       <link>https://www.kad8.com/post/linux/linux-crontab-knowledge.html</link>
