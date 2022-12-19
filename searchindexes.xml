@@ -45,6 +45,50 @@ int i = 1000000; int j = 0; while(i){ j += 0; i--; } timer = 2033 us //执行100
   </entry>
   
   <entry>
+    <title>分享一种通信协议的应用编程原理和思路</title>
+    <url>/post/linux/communication-protocol-programming-principle-and-idea.html</url>
+    <categories><category>Linux</category>
+    </categories>
+    <tags>
+      <tag>programming</tag>
+      <tag>uart</tag>
+      <tag>can</tag>
+      <tag>usb</tag>
+    </tags>
+    <content type="html"><![CDATA[ 嵌入式开发过程中，UART、 CAN、 USB等通信基本离不开通信协议。
+ 下面给大家分享一种通信协议（MAVLink）在应用编程中的编程原理和思路。
+应用编程主要内容 发送和接收说明 利用MAVLink通信协议进行编程，主要实现的功能就是：
+发送端 将需要发送的数据（如：SysState, BatVol），添加MAVLink通信协议，通过硬件（如：UART、CAN）发送出去。
+接收端 硬件（如：UART、CAN）接收到的数据，通过MAVLink协议解析，得到一帧完整的MAVLink数据包，提取发送端发送的数据（如：SysState, BatVol），将得到的数据应用到我们程序中。
+主要流程：数据 -&gt; MAVLink封装 -&gt; 发送 -&gt; 接收 -&gt; MAVLink解析 -&gt;数据
+发送和接收流程图 该流程图是结合我上一篇文章提供的源代码例程画出来，包含的只是主要内容，更多细节没有在流程图中呈现。
+提示：
+我提供例程是针对初学者提供比较单一发送和接收例程（MDK-ARM和EWARM包含各自的发送和接收工程）。
+而实际项目可能会：
+  发送和接收在一个工程；
+  包含操作系统；
+  发送、接收数据FIFO（队列）处理；
+  所以，实际项目，请按需修改我提供的源码。
+MAVLink函数接口详细说明 这一章节讲述发送和接收主要用到的函数接口，请参考我提供的源代码例程理解。 为方便初学者理解，我将其分为发送和接收两个部分来讲述。
+发送主要函数接口 上面是我提供例程的代码，主要讲4个接口。
+MAVLink_SendTest 这个接口是根据自己情况进行封装函数，用于应用程序调用，这里不多说。
+mavlink_msg_sys_info_pack 这个函数接口主要目的：将变量信息（SysID、CompID、SysState、BatVol）打包，最终得到MAVLink_Msg这个消息包。
+mavlink_msg_to_send_buffer 将上一步得到的MAVLink_Msg转换成我们要发送的数据BUF缓存。
+MAV_USART_SendNByte 这个函数接口也是我自己根据硬件（UART）封装的，如果你是其它硬件通信，只需要封装一个类似的接口（参数具有BUF，LEN）即可。
+发送数据的流程：从应用代码 -&gt; 底层硬件（发送出去）。
+如果要深入了解，可以先熟悉软件流程，再结合源代码工程，同时参看接口函数具体实现。相信你很快就明白了。
+接收主要函数接口 上面是我提供例程的代码（方便截图，去掉了部分），主要讲以上4点内容。
+MAV_USART_GetByte 该函数接口也是硬件底层通信接口，请根据自己情况修改，只需要传递数据（流）进来即可。
+mavlink_parse_char MAVLink解析是按照一个一个字符进行解析，我们接收到一个字符，就对其进行解析，直到解析完（根据返回标志判断）一帧数据为止。
+if(MAVLINK_MSG_ID_SYS_INFO == MAVLinkMsg.msgid) 这里就是对解析好的一包完整消息进行分类判断吧。其实，我是想说，这个地方还有两个ID需要进行判断，SysID系统ID和CompID部件ID。
+我提供例程为方便初学者快速理解，未提供SysID和CompID判断，在后续应用编程中会用到。
+mavlink_msg_sys_info_get_voltage_battery 通过该接口获取消息变量，看图中说明文字，前面是消息，后面是消息变量。
+接收数据的流程：从底层硬件（接收数据） -&gt; 应用代码。
+以上就是发送和接收的主要函数接口，如果你只是简单的进行通信，这几个接口就够你使用了。当然，更高级的编程应用还需要你进一步掌握其中的内容。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>Linux之awk使用技巧</title>
     <url>/post/linux/awk-usage-skills.html</url>
     <categories><category>Linux</category>

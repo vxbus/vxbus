@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>UART on 北南南北</title>
+    <title>uart on 北南南北</title>
     <link>https://www.kad8.com/tags/uart/</link>
-    <description>Recent content in UART on 北南南北</description>
+    <description>Recent content in uart on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 07 Oct 2022 05:35:25 -0400</lastBuildDate><atom:link href="https://www.kad8.com/tags/uart/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Dec 2022 08:57:23 -0500</lastBuildDate><atom:link href="https://www.kad8.com/tags/uart/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>分享一种通信协议的应用编程原理和思路</title>
+      <link>https://www.kad8.com/post/linux/communication-protocol-programming-principle-and-idea.html</link>
+      <pubDate>Mon, 19 Dec 2022 08:57:23 -0500</pubDate>
+      
+      <guid>https://www.kad8.com/post/linux/communication-protocol-programming-principle-and-idea.html</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;嵌入式开发过程中，&lt;code&gt;UART&lt;/code&gt;、 &lt;code&gt;CAN&lt;/code&gt;、 &lt;code&gt;USB&lt;/code&gt;等通信基本离不开通信协议。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;下面给大家分享一种通信协议（MAVLink）在应用编程中的编程原理和思路。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>VxWorks 6.8下基于QT的串口编程</title>
       <link>https://www.kad8.com/post/vxworks/vxworks-6.8-qt-uart-programming.html</link>
