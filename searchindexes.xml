@@ -45,13 +45,13 @@ int i = 1000000; int j = 0; while(i){ j += 0; i--; } timer = 2033 us //执行100
   </entry>
   
   <entry>
-    <title>关于Linux下的crontab，你不知道的那些知识点</title>
+    <title>Linux之awk使用技巧</title>
     <url>/post/linux/awk-usage-skills.html</url>
     <categories><category>Linux</category>
     </categories>
     <tags>
       <tag>linux</tag>
-      <tag>crontab</tag>
+      <tag>awk</tag>
     </tags>
     <content type="html"><![CDATA[ 打印文件的第一列  awk &#39;{print $1}&#39; vxworks.txt  打印文件的前两列  awk &#39;{print $1,$2}&#39; vxworks.txt  打印文件的最后一列  awk &#39;{print $NF}&#39; vxworks.txt  打印文件的总行数  awk &#39;END{print NR}&#39; vxworks.txt  打印文件的第一行  awk &#39;NR==1{print}&#39; vxworks.txt NR是指awk正在处理的记录位于文件中的位置（行号）
  打印文件的第3行第2列  sed -n &#39;3,1p&#39; vxworks.txt | awk &#39;{print $2}&#39;  删除空行  awk &#39;NF&#39; vxworks.txt  打印奇数行  awk &#39;b=!b&#39; vxworks.txt  打印文件按#分割后,行长度为3的所有行  awk -F &#39;#&#39; &#39;if(NF==3){print}&#39; vxworks.txt NF是指awk正在处理的记录包含几个域（字段），这与域分隔符有关，默认为空

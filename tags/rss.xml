@@ -8,11 +8,11 @@
     <language>zh-CN</language>
     <lastBuildDate>Mon, 19 Dec 2022 08:18:31 -0500</lastBuildDate><atom:link href="https://www.kad8.com/tags/rss.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>crontab</title>
-      <link>https://www.kad8.com/tags/crontab/</link>
+      <title>awk</title>
+      <link>https://www.kad8.com/tags/awk/</link>
       <pubDate>Mon, 19 Dec 2022 08:18:31 -0500</pubDate>
       
-      <guid>https://www.kad8.com/tags/crontab/</guid>
+      <guid>https://www.kad8.com/tags/awk/</guid>
       <description></description>
     </item>
     
@@ -22,6 +22,15 @@
       <pubDate>Mon, 19 Dec 2022 08:18:31 -0500</pubDate>
       
       <guid>https://www.kad8.com/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>crontab</title>
+      <link>https://www.kad8.com/tags/crontab/</link>
+      <pubDate>Sun, 18 Dec 2022 09:30:20 -0500</pubDate>
+      
+      <guid>https://www.kad8.com/tags/crontab/</guid>
       <description></description>
     </item>
     

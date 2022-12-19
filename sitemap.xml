@@ -12,12 +12,12 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kad8.com/categories/</loc>
+    <loc>https://www.kad8.com/tags/awk/</loc>
     <lastmod>2022-12-19T08:18:31-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kad8.com/tags/crontab/</loc>
+    <loc>https://www.kad8.com/categories/</loc>
     <lastmod>2022-12-19T08:18:31-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -32,6 +32,11 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://www.kad8.com/post/linux/awk-usage-skills.html</loc>
+    <lastmod>2022-12-19T08:18:31-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://www.kad8.com/post/</loc>
     <lastmod>2022-12-19T08:18:31-05:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -42,13 +47,13 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kad8.com/post/linux/awk-usage-skills.html</loc>
+    <loc>https://www.kad8.com/</loc>
     <lastmod>2022-12-19T08:18:31-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kad8.com/</loc>
-    <lastmod>2022-12-19T08:18:31-05:00</lastmod>
+    <loc>https://www.kad8.com/tags/crontab/</loc>
+    <lastmod>2022-12-18T09:30:20-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
