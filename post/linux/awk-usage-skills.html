@@ -263,7 +263,7 @@
       </div>
     <div class="siteinfo-item">
       <div class="item-name"><i class="fa fa-font"></i>总字数：</div>
-      <div class="item-count" id="wordsCount" data-count="8407"></div>
+      <div class="item-count" id="wordsCount" data-count="8422"></div>
     </div>
     <div class="siteinfo-item">
       <div class="item-name"><i class="fa fa-mug-hot"></i>阅读约：</div>
@@ -349,7 +349,7 @@
   <span class="post-meta-item-icon">
     <i class="far fa-file-word"></i>
   </span>
-  <span class="post-meta-item-text">字数：</span><span>132</span>
+  <span class="post-meta-item-text">字数：</span><span>147</span>
 </span>
     
 <span class="post-meta-item" title="阅读">
@@ -379,87 +379,51 @@
     
     <div class="post-body  autonumber " itemprop="articleBody">
       
-  <ul>
-<li>打印文件的第一列</li>
-</ul>
+  <p>AWK 是一种处理文本文件的语言，是一个强大的文本分析工具。</p>
+<p>之所以叫 AWK 是因为其取了三位创始人 Alfred Aho，Peter Weinberger, 和 Brian Kernighan 的 Family Name 的首字符。</p>
+<p>打印文件的第一列</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">awk <span style="color:#e6db74">&#39;{print $1}&#39;</span> vxworks.txt
-</code></pre></div><ul>
-<li>打印文件的前两列</li>
-</ul>
+</code></pre></div><p>打印文件的前两列</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">awk <span style="color:#e6db74">&#39;{print $1,$2}&#39;</span> vxworks.txt
-</code></pre></div><ul>
-<li>打印文件的最后一列</li>
-</ul>
+</code></pre></div><p>打印文件的最后一列</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">awk <span style="color:#e6db74">&#39;{print $NF}&#39;</span> vxworks.txt
-</code></pre></div><ul>
-<li>打印文件的总行数</li>
-</ul>
+</code></pre></div><p>打印文件的总行数</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">awk <span style="color:#e6db74">&#39;END{print NR}&#39;</span> vxworks.txt
-</code></pre></div><ul>
-<li>打印文件的第一行</li>
-</ul>
+</code></pre></div><p>打印文件的第一行</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">awk <span style="color:#e6db74">&#39;NR==1{print}&#39;</span> vxworks.txt
 </code></pre></div><p>NR是指awk正在处理的记录位于文件中的位置（行号）</p>
-<ul>
-<li>打印文件的第3行第2列</li>
-</ul>
+<p>打印文件的第3行第2列</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">sed -n <span style="color:#e6db74">&#39;3,1p&#39;</span> vxworks.txt | awk <span style="color:#e6db74">&#39;{print $2}&#39;</span>
-</code></pre></div><ul>
-<li>删除空行</li>
-</ul>
+</code></pre></div><p>删除空行</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">awk <span style="color:#e6db74">&#39;NF&#39;</span> vxworks.txt
-</code></pre></div><ul>
-<li>打印奇数行</li>
-</ul>
+</code></pre></div><p>打印奇数行</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">awk <span style="color:#e6db74">&#39;b=!b&#39;</span> vxworks.txt
-</code></pre></div><ul>
-<li>打印文件按#分割后,行长度为3的所有行</li>
-</ul>
+</code></pre></div><p>打印文件按#分割后,行长度为3的所有行</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">awk -F <span style="color:#e6db74">&#39;#&#39;</span> <span style="color:#e6db74">&#39;if(NF==3){print}&#39;</span> vxworks.txt
 </code></pre></div><p>NF是指awk正在处理的记录包含几个域（字段），这与域分隔符有关，默认为空</p>
-<ul>
-<li>统计Linux系统中每个用户所用的shell</li>
-</ul>
+<p>统计Linux系统中每个用户所用的shell</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">cat /etc/passwd | awk -F <span style="color:#e6db74">&#34;:&#34;</span> <span style="color:#e6db74">&#39;{print $1&#34; : &#34;$7}&#39;</span>
-</code></pre></div><ul>
-<li>用awk统计linux系统中所有的用户数</li>
-</ul>
+</code></pre></div><p>用awk统计linux系统中所有的用户数</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">cat /etc/passwd | awk <span style="color:#e6db74">&#39;{count++}END{ print count}&#39;</span>
-</code></pre></div><ul>
-<li>统计某个文件夹下文件所占的字节数</li>
-</ul>
+</code></pre></div><p>统计某个文件夹下文件所占的字节数</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">ls -l | awk <span style="color:#e6db74">&#39;BEGIN{size=0}{size=size+$5}END{print size}&#39;</span>
-</code></pre></div><ul>
-<li>统计某个文件夹下文件所占的字节数,按M显示</li>
-</ul>
+</code></pre></div><p>统计某个文件夹下文件所占的字节数,按M显示</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">ls -l | awk <span style="color:#e6db74">&#39;BEGIN{size=0}{size=size+$5}END{print size}&#39;</span>
-</code></pre></div><ul>
-<li>netstat结合awk统计TCP连接数</li>
-</ul>
+</code></pre></div><p>netstat结合awk统计TCP连接数</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">netstat -tunlp | awk <span style="color:#e6db74">&#39;/^tcp/{++a[$6]}END{for(i in a) print i,a[i]}&#39;</span>
-</code></pre></div><ul>
-<li>过滤空行</li>
-</ul>
+</code></pre></div><p>过滤空行</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">awk <span style="color:#e6db74">&#39;/^[^$]/ {print $0}&#39;</span> vxworks.txt
-</code></pre></div><ul>
-<li>列运算</li>
-</ul>
+</code></pre></div><p>列运算</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">awk <span style="color:#e6db74">&#39;/^[^$]/ {print $0}&#39;</span> vxworks.txt
 cat 1.txt
 <span style="color:#ae81ff">1</span>
 <span style="color:#ae81ff">2</span>
 <span style="color:#ae81ff">3</span>
-</code></pre></div><ul>
-<li>求和</li>
-</ul>
+</code></pre></div><p>求和</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">cat 1.txt | awk <span style="color:#e6db74">&#39;{a+=$1}END{print a}&#39;</span>
-</code></pre></div><ul>
-<li>求平均值</li>
-</ul>
+</code></pre></div><p>求平均值</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">cat 1.txt | awk <span style="color:#e6db74">&#39;{a+=$1}END{print a/NR}&#39;</span>
-</code></pre></div><ul>
-<li>求列的最大值</li>
-</ul>
+</code></pre></div><p>求列的最大值</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">cat 1.txt | awk <span style="color:#e6db74">&#39;BEGIN{a=0}{if($1&gt;a) a=$1 fi}END{print a}&#39;</span>
 </code></pre></div>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1543398821442998"
