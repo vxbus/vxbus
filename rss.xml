@@ -6,7 +6,7 @@
     <description>Recent content on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 19 Dec 2022 08:57:23 -0500</lastBuildDate><atom:link href="https://www.kad8.com/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Dec 2022 08:21:45 -0500</lastBuildDate><atom:link href="https://www.kad8.com/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>欢迎加入 VxWorks 俱乐部！</title>
       <link>https://www.kad8.com/post/welcome-to-vxworks-club/</link>
@@ -32,6 +32,17 @@
     VxWorks
     &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;
 &lt;/a&gt;, 由大名鼎鼎的风河（WindRiver）开发。本篇文章就是将VxWorks操作系统和市面上几种其他实时操作系统的实时性能进行对比。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>详解TCP和UDP协议的原理和区别</title>
+      <link>https://www.kad8.com/post/linux/tcp-and-udp-principle-and-difference.html</link>
+      <pubDate>Tue, 20 Dec 2022 08:21:45 -0500</pubDate>
+      
+      <guid>https://www.kad8.com/post/linux/tcp-and-udp-principle-and-difference.html</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;最近重新认知了一下TCP和UDP的原理以及区别，做一个简单的总结。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
     </item>
     
     <item>
