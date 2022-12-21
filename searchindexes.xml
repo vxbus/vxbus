@@ -45,6 +45,49 @@ int i = 1000000; int j = 0; while(i){ j += 0; i--; } timer = 2033 us //执行100
   </entry>
   
   <entry>
+    <title>Linux环境监控工具基础参考</title>
+    <url>/post/linux/linux-environment-monitor-tool.html</url>
+    <categories><category>Linux</category>
+    </categories>
+    <tags>
+      <tag>linux</tag>
+      <tag>monitor tool</tag>
+    </tags>
+    <content type="html"><![CDATA[Linux 操作系统有很多自带和第三方监控工具，这篇文章从不同维度整理了一些，但仅限基础了解，因为，单独讲任何一个指令，都可以成篇文章，具体指令参数，可以检索 man，从中理解。
+CPU top(任务管理工具)
+top -n 1 -b vmstat(展现给定时间间隔的服务器的状态值，包括服务器的 CPU 使用率，内存使用)
+vmstat 1 10 #每1秒采集一次共采集10次 pidstat(进程实时监控)
+pidstat -u 1 -p pid mpstat(多 CPU 实时监控工具)
+mpstat -P ALL 1 5 sar(性能监控和瓶颈检查)
+sar -u dstat(dstat 是一个可以取代 vmstat，iostat，netstat 和 ifstat 这些命令的多功能产品)
+dstat 2 10 #每2秒采集一次共采集10次 内存 top
+top -n 1 -b pidstat
+pidstat -r free(查看当前系统的物理内存使用情况)
+free -mh sar(性能监控和瓶颈检查)
+sar -r 10 3 #每10秒采样一次，连续采样3次 vmstat
+vmstat 2 1 磁盘 IO iostat(IO 实时监控)
+iostat -d -x -k 1 10 iotop(监控系统中各个进程对 IO 的使用量)
+iotop pidstat
+示例: pidstat -d sar
+sar -d vmstat
+vmstat 2 1 网络 netstat(监控 TCP/IP 网络)
+netstat -nltup iftop(实时流量监控工具)
+iftop -i em2 ss(获取 socket 统计信息，他可以显示和 netstat 类似的内容)
+ss -aA tcp sar
+sar -n EDEV 1 5 tcpdump(抓包工具)
+tcpdump -i em1 host 192.168.1.1 and port 80 tcpflow(分析网络流量)
+tcpflow -i em1 port 80 nload(用于查看 Linux 网络流量状况，实时输出)
+nload -t 200 -i 1024 -o 128 -U M 系统负载 (1) CPU 负载说明
+ 如果某个程序频繁的进行计算、逻辑判断等操作，那么此类程序主要依赖于 CPU 的处理速度，故称之为 &ldquo;计算密集型程序&rdquo;。
+ (2) IO 负载说明
+ 如果某个程序频繁的从磁盘中读取写入文件，那么这种类型的操作主要依赖于磁盘的读取速度，也就是输入输出 (input/output)，简写为 I/O。此类 I/O 负载的程序，称为 I/O 密集型程序。
+ top
+top uptime
+uptime sar
+sar -q 1 20 其他工具  htop(类似 top，比 top 更加人性化) glances(类似 top，基于 Python 的系统遥测监控工具) strace(常用来跟踪进程执行时的系统调用和所接收的信号) dtrace(动态跟踪) valgrind(内存泄漏检测) dmesg(内核信息) ]]></content>
+  </entry>
+  
+  <entry>
     <title>详解TCP和UDP协议的原理和区别</title>
     <url>/post/linux/tcp-and-udp-principle-and-difference.html</url>
     <categories><category>Linux</category>
