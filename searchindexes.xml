@@ -36,7 +36,7 @@ Webbench Webbench是一个在 Linux 下使用的非常简单的网站压测工�
 项目主页 http://sourceforge.net/projects/cjson/ CMockery CMockery是google发布的用于C单元测试的一个轻量级的框架。
 它很小巧，对其他开源包没有依赖，对被测试代码侵入性小。
 CMockery 的源代码行数不到3K，阅读一下will_return和mock的源代码就一目了然了。
-主要特点  - 免费且开源，google 提供技术支持； - 轻量级的框架，使测试更加快速简单； - 避免使用复杂的编译器特性，对老版本的编译器来讲，兼容性好； - 并不强制要求待测代码必须依赖 C99 标准，这一特性对许多嵌入式系统的开发很有用。  项目地址 http://code.google.com/p/cmockery/downloads/list Libev libev 是一个开源的事件驱动库，基于 epoll、kqueue 等 OS 提供的基础设施。
+主要特点  免费且开源，google 提供技术支持； 轻量级的框架，使测试更加快速简单； 避免使用复杂的编译器特性，对老版本的编译器来讲，兼容性好； 并不强制要求待测代码必须依赖 C99 标准，这一特性对许多嵌入式系统的开发很有用。  项目地址 http://code.google.com/p/cmockery/downloads/list Libev libev 是一个开源的事件驱动库，基于 epoll、kqueue 等 OS 提供的基础设施。
 其以高效出名，它可以将 IO 事件、定时器、和信号统一起来，统一放在事件处理这一套框架下处理。
 基于 Reactor 模式，效率较高，并且代码精简（4.15 版本 8000 多行），是学习事件驱动编程的很好的资源。
 项目地址 http://software.schmorp.de/pkg/libev.html Memcached Memcached 是一个高性能的分布式内存对象缓存系统，用于动态 Web 应用以减轻数据库负载。
