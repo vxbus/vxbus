@@ -10,26 +10,26 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/imgs/icons/favicon_16x16_next.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/imgs/icons/favicon_32_32_next.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/imgs/icons/apple_touch_icon_next.png">
-<meta itemprop="name" content="针对VxWorks的QT 5.15.10发布了" />
-<meta itemprop="description" content="支持VxWorks的Qt 5.15.10长期支持的商业发行是基于我们最新的QT 5.15.10(LTS)之上的源代码发布" />
+<meta itemprop="name" content="SPI总线详解" />
+<meta itemprop="description" content="SPI总线详解" />
 <meta itemprop="datePublished" ZgotmplZ />
 <meta itemprop="dateModified" ZgotmplZ />
 <meta itemprop="image" content="https://www.kad8.com/imgs/hugo_next_avatar.png" />
-<meta itemprop="keywords" content="VxWorks,QT,图像" />
+<meta itemprop="keywords" content="SPI" />
 
 <meta property="og:type" content="article" />
-<meta property="og:title" content="针对VxWorks的QT 5.15.10发布了" />
-<meta property="og:description" content="支持VxWorks的Qt 5.15.10长期支持的商业发行是基于我们最新的QT 5.15.10(LTS)之上的源代码发布" />
+<meta property="og:title" content="SPI总线详解" />
+<meta property="og:description" content="SPI总线详解" />
 <meta property="og:image" content="/imgs/hugo_next_avatar.png" />
 <meta property="og:image:width" content="312" />
 <meta property="og:image:height" content="312" />
 <meta property="og:image:type" content="image/jpeg/png/svg/jpg" />
-<meta property="og:url" content="https://www.kad8.com/post/vxworks/qt-5-15-10-for-vxworks-released.html"/>
+<meta property="og:url" content="https://www.kad8.com/post/hardware/spi-bus-introduction.html"/>
 <meta property="og:site_name" content="北南南北" />
 <meta property="og:locale" content="zh-CN"/>
 <meta property="article:author" content="VxWorks OS" />
-<meta property="article:published_time" content="2022-10-06 05:35:25 -0400 EDT" />
-<meta property="article:modified_time" content="2022-10-06 05:35:25 -0400 EDT" />
+<meta property="article:published_time" content="2022-12-22 09:13:52 -0500 EST" />
+<meta property="article:modified_time" content="2022-12-22 09:13:52 -0500 EST" />
 
 
   
@@ -44,7 +44,7 @@
       content: "~ 我可是有底线的哟 ~";
     }
   </style>
-  <script class="next-config" data-name="page" type="application/json">{"comments":false,"isHome":false,"isPage":true,"path":"qt-5-15-10-for-vxworks-released.html","permalink":"https://www.kad8.com/post/vxworks/qt-5-15-10-for-vxworks-released.html","title":"针对VxWorks的QT 5.15.10发布了"}</script>
+  <script class="next-config" data-name="page" type="application/json">{"comments":false,"isHome":false,"isPage":true,"path":"spi-bus-introduction.html","permalink":"https://www.kad8.com/post/hardware/spi-bus-introduction.html","title":"SPI总线详解"}</script>
   <script type="text/javascript">
   document.addEventListener('DOMContentLoaded', () => {
     var script = document.createElement('script');
@@ -60,7 +60,7 @@
 
 
 
-  <title>针对VxWorks的QT 5.15.10发布了 - 北南南北</title>
+  <title>SPI总线详解 - 北南南北</title>
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
@@ -173,8 +173,13 @@
       <div class="post-toc-wrap sidebar-panel">
         <div class="post-toc animated"><nav id="TableOfContents">
   <ul>
-    <li><a href="#我们非常激动地发布了支持vxworks的qt-51510">我们非常激动地发布了支持VxWorks的QT 5.15.10</a></li>
-    <li><a href="#从这儿开始">从这儿开始</a></li>
+    <li><a href="#什么是spi">什么是SPI？</a></li>
+    <li><a href="#spi优点">SPI优点</a></li>
+    <li><a href="#缺点">缺点</a></li>
+    <li><a href="#特点">特点</a></li>
+    <li><a href="#spi电路连接">SPI电路连接</a></li>
+    <li><a href="#spi通信模式分析">SPI通信模式分析</a></li>
+    <li><a href="#spi-时序详解">SPI 时序详解</a></li>
   </ul>
 </nav></div>
       </div>
@@ -308,7 +313,7 @@
       
   <div class="post-block">
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://www.kad8.com/post/vxworks/qt-5-15-10-for-vxworks-released.html">
+    <link itemprop="mainEntityOfPage" href="https://www.kad8.com/post/hardware/spi-bus-introduction.html">
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
       <meta itemprop="name" content="VxWorks OS">
@@ -318,11 +323,11 @@
       <meta itemprop="description" content="Where there is embedded, there is VxWorks.">
     </span>
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="针对VxWorks的QT 5.15.10发布了">
-      <meta itemprop="description" content="支持VxWorks的Qt 5.15.10长期支持的商业发行是基于我们最新的QT 5.15.10(LTS)之上的源代码发布">
+      <meta itemprop="name" content="SPI总线详解">
+      <meta itemprop="description" content="SPI总线详解">
     </span>
     <header class="post-header">
-       <h1 class="post-title" itemprop="name headline">针对VxWorks的QT 5.15.10发布了 </h1> <div class="post-meta-container">
+       <h1 class="post-title" itemprop="name headline">SPI总线详解 </h1> <div class="post-meta-container">
   <div class="post-meta-items">
     
 
@@ -332,7 +337,7 @@
     <i class="far fa-calendar"></i>
   </span>
   <span class="post-meta-item-text">发表于：</span>
-  <time title="发表于：2022-10-06 05:35:25 -0400 EDT" itemprop="dateCreated datePublished" datetime="2022-10-06 05:35:25 -0400 EDT">2022-10-06</time>
+  <time title="发表于：2022-12-22 09:13:52 -0500 EST" itemprop="dateCreated datePublished" datetime="2022-12-22 09:13:52 -0500 EST">2022-12-22</time>
 </span>
     
     
@@ -342,8 +347,8 @@
   </span>
   <span class="post-meta-item-text">分类于：</span>
   <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-    <a href="/categories/vxworks" itemprop="url" rel="index">
-      <span itemprop="name">VxWorks</span>
+    <a href="/categories/hardware" itemprop="url" rel="index">
+      <span itemprop="name">Hardware</span>
     </a>
   </span>
 </span>
@@ -354,7 +359,7 @@
   <span class="post-meta-item-icon">
     <i class="far fa-file-word"></i>
   </span>
-  <span class="post-meta-item-text">字数：</span><span>20</span>
+  <span class="post-meta-item-text">字数：</span><span>79</span>
 </span>
     
 <span class="post-meta-item" title="阅读">
@@ -373,7 +378,7 @@
   <span class="post-meta-item-text">
   浏览：
   </span>
-  <span id="busuanzi_value_page_pv" data-path="/post/vxworks/qt-5-15-10-for-vxworks-released.html"><i class="fa fa-sync fa-spin"></i></span>
+  <span id="busuanzi_value_page_pv" data-path="/post/hardware/spi-bus-introduction.html"><i class="fa fa-sync fa-spin"></i></span>
 </span>
 
   </div>
@@ -384,41 +389,93 @@
     
     <div class="post-body  autonumber " itemprop="articleBody">
       
-  <p>Qt是一个多平台的C++图形用户界面应用程序框架。它提供给应用程序开发者建立艺术级的图形用户界面所需的所用功能。Qt是完全面向对象的编程，所以具有易扩展和组件编程的优势。</p>
-<p>相关的<code>VxWorks</code> 和 <code>QT</code>的文章，请参阅 
-<a href="https://www.vxworks.net/windml/10-qt-installation-and-execution-under-vxworks-6-8" title="VxWorks 6.8操作系统下QT的安装设置和运行方法" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
-    VxWorks 6.8操作系统下QT的安装设置和运行方法
-    <i class="fa fa-external-link-alt"></i>
-</a>。</p>
-<p><img src="//www.vxworks.net/images/news/Commercial_LTS_Qt-5-15-10_Released.png" alt="Commercial LTS QT 5.15.10 Released"></p>
-<h2 id="我们非常激动地发布了支持vxworks的qt-51510">我们非常激动地发布了支持VxWorks的QT 5.15.10</h2>
-<p>支持VxWorks的Qt 5.15.10长期支持的商业发行是基于我们最新的QT 5.15.10(LTS)之上的源代码发布。这个发行从早期的QT 5的版本官方升级了针对VxWorks的QT支持，这是对诸如航空和国防以及医疗等行业的市场需求的积极回应。它提供了QT版本的升级同时也提供了VxWorks系统具体的问题解决，还有别的一些改进。</p>
-<p>这次发行支持基于iMX6硬件的Ubuntu主机，我们也同时在准备基于x68和基于Windows主机的支持。此次的发行包开放给拥有QT账户的客户，也同时通过git仓库的形式开放给具有商业许可证的客户，请和我们联系以获取更多细节。</p>
-<h2 id="从这儿开始">从这儿开始</h2>
-<p>这儿有关于安装和配置的独立的文章，要获取更多关于QT和支持VxWorks的QT的详细信息，请查看这儿关于QT 5.15的在线文档。</p>
+  <p><code>SPI</code>是串行外设接口（Serial Peripheral Interface）的缩写，是一种高速的，全双工，同步的通信总线，并且在芯片的管脚上只占用四根线，节约了芯片的管脚，同时为PCB的布局上节省空间，提供方便，正是出于这种简单易用的特性，越来越多的芯片集成了这种通信协议，比如AT91RM9200。</p>
+<h2 id="什么是spi">什么是SPI？</h2>
+<p>SPI是串行外设接口(Serial Peripheral Interface)的缩写，是 Motorola 公司推出的一种同步串行接口技术，是一种高速、全双工、同步的通信总线。</p>
+<h2 id="spi优点">SPI优点</h2>
 <ul>
-<li>
-<p>
-<a href="https://doc.qt.io/qt-5/vxworks.html" title="https://doc.qt.io/qt-5/vxworks.html" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
-    https://doc.qt.io/qt-5/vxworks.html
-    <i class="fa fa-external-link-alt"></i>
-</a></p>
-</li>
-<li>
-<p>
-<a href="https://doc.qt.io/qt-5/index.html" title="https://doc.qt.io/qt-5/index.html" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
-    https://doc.qt.io/qt-5/index.html
-    <i class="fa fa-external-link-alt"></i>
-</a></p>
-</li>
-<li>
-<p>
-<a href="https://wiki.qt.io/Getting_Commercial_Qt_Sources" title="https://wiki.qt.io/Getting_Commercial_Qt_Sources" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
-    https://wiki.qt.io/Getting_Commercial_Qt_Sources
-    <i class="fa fa-external-link-alt"></i>
-</a></p>
-</li>
+<li>支持全双工通信</li>
+<li>通信简单</li>
+<li>数据传输速率块
+<img src="https://www.vxworks.net/images/kad/spi-bus-1.png" alt="SPI电路图">
+SPI电路图</li>
 </ul>
+<h2 id="缺点">缺点</h2>
+<p>没有指定的流控制，没有应答机制确认是否接收到数据，所以跟IIC总线协议比较在数据可靠性上有一定的缺陷。</p>
+<h2 id="特点">特点</h2>
+<ol>
+<li>高速、同步、全双工、非差分、总线式</li>
+<li>主从机通信模式</li>
+</ol>
+<h2 id="spi电路连接">SPI电路连接</h2>
+<ul>
+<li>SPI的通信原理很简单，它以主从方式工作，这种模式通常有一个主设备和一个或多个从设备，有三线制和四线制之分。信号线包括SDI(串行数据输入 Serial Digital IN)、SDO(串行数据输出 Serial Digital OUT)、SCLK(时钟)、CS(片选)。</li>
+<li>SDO/MOSI – 主设备数据输出，从设备数据输入</li>
+<li>SDI/MISO – 主设备数据输入，从设备数据输出</li>
+<li>SCLK – 时钟信号，由主设备产生;</li>
+<li>CS/SS – 从设备使能信号，由主设备控制。当有多个从设备的时候，因为每个从设备上都有一个片选引脚接入到主设备机中，当主设备和某个从设备通信时将需要将从设备对应的片选引脚电平拉低(一般低有效)。</li>
+</ul>
+<p><img src="https://www.vxworks.net/images/kad/spi-bus-2.png" alt="SPI电路图"></p>
+<h2 id="spi通信模式分析">SPI通信模式分析</h2>
+<p>SPI通信有4种不同的模式，不同的从设备在出厂时配置模式已经固定， 这是不能改变的，但通信双方设备必须工作在同一模式下，所以可以对主设备的SPI模式进行配置，通过CPOL（时钟极性）和CPHA（时钟相位）来控制主设备的通信模式。</p>
+<p>具体模式具体如下：</p>
+<ol>
+<li>Mode0：CPOL=0，CPHA=0</li>
+<li>Mode1：CPOL=0，CPHA=1</li>
+<li>Mode2：CPOL=1，CPHA=0</li>
+<li>Mode3：CPOL=1，CPHA=1</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>模式</th>
+<th>CPOL</th>
+<th>CPHA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mode0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Mode1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Mode2</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Mode3</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>时钟极性CPOL是用来配置SCLK电平的有效态的;</p>
+<p>时钟相位CPHA是用来配置数据采样是发生在第几个边沿的。</p>
+<ol>
+<li>CPOL=0表示当SCLK=0时处于空闲态，所以SCLK处于高电平时有效；</li>
+<li>CPOL=1表示当SCLK=1时处于空闲态，所以SCLK处于低电平时有效；</li>
+<li>CPHA=0表示数据采样是在第1个边沿，数据发送在第2个边沿；</li>
+<li>CPHA=1表示数据采样是在第2个边沿，数据发送在第1个边沿；
+SPI主模块和与之通信的外设通信时，两者的时钟相位和极性应该保持一致。</li>
+</ol>
+<h2 id="spi-时序详解">SPI 时序详解</h2>
+<p>CPOL=0，CPHA=0：此时空闲态时，SCLK处于低电平，数据采样是在第1个边沿，也就是SCLK由低电平到高电平的跳变，所以数据采样是在上升沿，数据发送是在下降沿。</p>
+<p>CPOL=0，CPHA=1：此时空闲态时，SCLK处于低电平，数据发送是在第1个边沿，也就是SCLK由低电平到高电平的跳变，所以数据采样是在下降沿，数据发送是在上升沿。</p>
+<p>CPOL=1，CPHA=0：此时空闲态时，SCLK处于高电平，数据采集是在第1个边沿，也就是SCLK由高电平到低电平的跳变，所以数据采集是在下降沿，数据发送是在上升沿。</p>
+<p>CPOL=1，CPHA=1：此时空闲态时，SCLK处于高电平，数据发送是在第1个边沿，也就是SCLK由高电平到低电平的跳变，所以数据采集是在上升沿，数据发送是在下降沿。</p>
+<p><img src="https://www.vxworks.net/images/kad/spi-bus-3.png" alt="SPI电路图"></p>
+<p>注意：SPI主设备能够控制时钟信号，因为SPI通信并不像UART或者IIC通信那样有专门的通信周期、通信起始信号、通信结束信号；所以SPI协议只能通过控制时钟信号线，在没有数据交流的时候，时钟线要么是保持高电平，要么是保持低电平。</p>
+<p>例如：工作在模式0这种时序（CPOL＝0，CPHA＝0），如下：</p>
+<p><img src="https://www.vxworks.net/images/kad/spi-bus-4.png" alt="SPI电路图"></p>
+<p>我们来关注SCK的第一个时钟周期，在时钟的前沿采样数据（上升沿，第一个时钟沿），在时钟的后沿输出数据（下降沿，第二个时钟沿）。首先来看主器件，主器件的输出口（MOSI）输出的数据bit1，在时钟的前沿被从器件采样，那主器件是在何时刻输出bit1的呢？bit1的输出时刻实际上在SCK信号有效以前，比SCK的上升沿还要早半个时钟周期。bit1的输出时刻与SSEL信号没有关系。再来看从器件，主器件的输入口MISO同样是在时钟的前沿采样从器件输出的bit1的，那从器件又是在何时刻输出bit1的呢。从器件是在SSEL信号有效后，立即输出bit1，尽管此时SCK信号还没有起效。</p>
+<p>从这张图就可以很清楚的看出主从器件的bit1是怎样输出的。</p>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1543398821442998"
      crossorigin="anonymous"></script>
 
@@ -438,14 +495,8 @@
 
 <div class="post-tags">
   
-    <a href="/tags/vxworks">
-    VxWorks
-  </a>
-    <a href="/tags/qt">
-    QT
-  </a>
-    <a href="/tags/%e5%9b%be%e5%83%8f">
-    图像
+    <a href="/tags/spi">
+    SPI
   </a>
 </div>
 
@@ -473,7 +524,7 @@
   <ul>
     <li class="post-copyright-title">
       <strong>文章标题：</strong>
-      针对VxWorks的QT 5.15.10发布了
+      SPI总线详解
     </li>
     <li class="post-copyright-author">
       <strong>本文作者： </strong>
@@ -481,7 +532,7 @@
     </li>
     <li class="post-copyright-link"> 
       <strong>本文链接：</strong>
-       <a id="post-cr-link" href="https://www.kad8.com/post/vxworks/qt-5-15-10-for-vxworks-released.html" title="针对VxWorks的QT 5.15.10发布了">https://www.kad8.com/post/vxworks/qt-5-15-10-for-vxworks-released.html</a>
+       <a id="post-cr-link" href="https://www.kad8.com/post/hardware/spi-bus-introduction.html" title="SPI总线详解">https://www.kad8.com/post/hardware/spi-bus-introduction.html</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -506,13 +557,13 @@
 </div>
 <div class="post-nav">
   <div class="post-nav-next post-nav-item">
-    <a href="/post/vxworks/vxworks-uart-read-write-programming.html" rel="next" title="VxWorks操作系统下的串口读写程序">
-      <i class="fa fa-chevron-left"></i> VxWorks操作系统下的串口读写程序
+    <a href="/post/welcome-to-vxworks-club/" rel="next" title="欢迎加入 VxWorks 俱乐部！">
+      <i class="fa fa-chevron-left"></i> 欢迎加入 VxWorks 俱乐部！
     </a>
   </div>
   <div class="post-nav-prev post-nav-item">
-    <a href="/post/vxworks/vxworks-real-time-feature-explore.html" rel="prev" title="VxWorks实时性能探究">
-      VxWorks实时性能探究
+    <a href="/post/linux/ten-great-c-language-open-source-project.html" rel="prev" title="10个超赞的C语言开源项目">
+      10个超赞的C语言开源项目
       <i class="fa fa-chevron-right"></i>
     </a>
   </div>
