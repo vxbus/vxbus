@@ -397,7 +397,7 @@
 <li>支持全双工通信</li>
 <li>通信简单</li>
 <li>数据传输速率块
-<img src="https://www.vxworks.net/images/kad/spi-bus-1.png" alt="SPI电路图">
+<img src="https://www.vxworks.net/images/kad8/spi-bus-1.png" alt="SPI电路图">
 SPI电路图</li>
 </ul>
 <h2 id="缺点">缺点</h2>
@@ -415,7 +415,7 @@ SPI电路图</li>
 <li>SCLK – 时钟信号，由主设备产生;</li>
 <li>CS/SS – 从设备使能信号，由主设备控制。当有多个从设备的时候，因为每个从设备上都有一个片选引脚接入到主设备机中，当主设备和某个从设备通信时将需要将从设备对应的片选引脚电平拉低(一般低有效)。</li>
 </ul>
-<p><img src="https://www.vxworks.net/images/kad/spi-bus-2.png" alt="SPI电路图"></p>
+<p><img src="https://www.vxworks.net/images/kad8/spi-bus-2.png" alt="SPI电路图"></p>
 <h2 id="spi通信模式分析">SPI通信模式分析</h2>
 <p>SPI通信有4种不同的模式，不同的从设备在出厂时配置模式已经固定， 这是不能改变的，但通信双方设备必须工作在同一模式下，所以可以对主设备的SPI模式进行配置，通过CPOL（时钟极性）和CPHA（时钟相位）来控制主设备的通信模式。</p>
 <p>具体模式具体如下：</p>
@@ -470,10 +470,10 @@ SPI主模块和与之通信的外设通信时，两者的时钟相位和极性�
 <p>CPOL=0，CPHA=1：此时空闲态时，SCLK处于低电平，数据发送是在第1个边沿，也就是SCLK由低电平到高电平的跳变，所以数据采样是在下降沿，数据发送是在上升沿。</p>
 <p>CPOL=1，CPHA=0：此时空闲态时，SCLK处于高电平，数据采集是在第1个边沿，也就是SCLK由高电平到低电平的跳变，所以数据采集是在下降沿，数据发送是在上升沿。</p>
 <p>CPOL=1，CPHA=1：此时空闲态时，SCLK处于高电平，数据发送是在第1个边沿，也就是SCLK由高电平到低电平的跳变，所以数据采集是在上升沿，数据发送是在下降沿。</p>
-<p><img src="https://www.vxworks.net/images/kad/spi-bus-3.png" alt="SPI电路图"></p>
+<p><img src="https://www.vxworks.net/images/kad8/spi-bus-3.png" alt="SPI电路图"></p>
 <p>注意：SPI主设备能够控制时钟信号，因为SPI通信并不像UART或者IIC通信那样有专门的通信周期、通信起始信号、通信结束信号；所以SPI协议只能通过控制时钟信号线，在没有数据交流的时候，时钟线要么是保持高电平，要么是保持低电平。</p>
 <p>例如：工作在模式0这种时序（CPOL＝0，CPHA＝0），如下：</p>
-<p><img src="https://www.vxworks.net/images/kad/spi-bus-4.png" alt="SPI电路图"></p>
+<p><img src="https://www.vxworks.net/images/kad8/spi-bus-4.png" alt="SPI电路图"></p>
 <p>我们来关注SCK的第一个时钟周期，在时钟的前沿采样数据（上升沿，第一个时钟沿），在时钟的后沿输出数据（下降沿，第二个时钟沿）。首先来看主器件，主器件的输出口（MOSI）输出的数据bit1，在时钟的前沿被从器件采样，那主器件是在何时刻输出bit1的呢？bit1的输出时刻实际上在SCK信号有效以前，比SCK的上升沿还要早半个时钟周期。bit1的输出时刻与SSEL信号没有关系。再来看从器件，主器件的输入口MISO同样是在时钟的前沿采样从器件输出的bit1的，那从器件又是在何时刻输出bit1的呢。从器件是在SSEL信号有效后，立即输出bit1，尽管此时SCK信号还没有起效。</p>
 <p>从这张图就可以很清楚的看出主从器件的bit1是怎样输出的。</p>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1543398821442998"
