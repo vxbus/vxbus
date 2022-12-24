@@ -6,7 +6,16 @@
     <description>Recent content in Hardware on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 24 Dec 2022 09:40:47 -0500</lastBuildDate><atom:link href="https://www.kad8.com/categories/hardware/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 Dec 2022 10:02:10 -0500</lastBuildDate><atom:link href="https://www.kad8.com/categories/hardware/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>从实用的角度聊聊MOS管</title>
+      <link>https://www.kad8.com/post/hardware/mosfet-tube-application-introduction.html</link>
+      <pubDate>Sat, 24 Dec 2022 10:02:10 -0500</pubDate>
+      
+      <guid>https://www.kad8.com/post/hardware/mosfet-tube-application-introduction.html</guid>
+      <description>&lt;p&gt;说起MOS管，有些人的脑子里可能是一团浆糊。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>MOS管驱动电路设计</title>
       <link>https://www.kad8.com/post/hardware/the-drive-circuit-design-of-MOS-tube.html</link>
