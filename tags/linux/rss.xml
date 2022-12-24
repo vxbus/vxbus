@@ -6,7 +6,16 @@
     <description>Recent content in linux on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 21 Dec 2022 09:53:46 -0500</lastBuildDate><atom:link href="https://www.kad8.com/tags/linux/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 Dec 2022 10:20:11 -0500</lastBuildDate><atom:link href="https://www.kad8.com/tags/linux/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux下大文件切割与合并</title>
+      <link>https://www.kad8.com/post/linux/linux-big-file-cut-and-cat.html</link>
+      <pubDate>Sat, 24 Dec 2022 10:20:11 -0500</pubDate>
+      
+      <guid>https://www.kad8.com/post/linux/linux-big-file-cut-and-cat.html</guid>
+      <description>&lt;p&gt;往往是因为网络传输的限制，导致很多时候，我们需要在 Linux 系统下进行大文件的切割。这样将一个大文件切割成为多个小文件，进行传输，传输完毕之后进行合并即可。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Linux环境监控工具基础参考</title>
       <link>https://www.kad8.com/post/linux/linux-environment-monitor-tool.html</link>

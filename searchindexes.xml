@@ -16,6 +16,19 @@
   </entry>
   
   <entry>
+    <title>Linux下大文件切割与合并</title>
+    <url>/post/linux/linux-big-file-cut-and-cat.html</url>
+    <categories><category>Linux</category>
+    </categories>
+    <tags>
+      <tag>linux</tag>
+      <tag>file</tag>
+    </tags>
+    <content type="html"><![CDATA[往往是因为网络传输的限制，导致很多时候，我们需要在 Linux 系统下进行大文件的切割。这样将一个大文件切割成为多个小文件，进行传输，传输完毕之后进行合并即可。
+文件切割split 在 Linux 系统下使用 split 命令进行大文件切割很方便  命令语法 split [-a] [-d] [-l &lt;行数&gt;] [-b &lt;字节&gt;] [-C &lt;字节&gt;] [要切割的文件] [输出文件名] 使用实例 $ split -l 300000 users.sql /data/users_ $ split -d -l 300000 users.sql /data/users_ $ split -d -b 100m users.sql /data/users_ 帮助信息 $ split --help 文件合并 - cat 在 Linux 系统下使用 cat 命令进行多个小文件的合并也很方便  命令语法 cat [-n] [-e] [-t] [输出文件名] 使用实例 $ cat /data/users_* &gt; users.sql 帮助信息 $ cat --h ]]></content>
+  </entry>
+  
+  <entry>
     <title>从实用的角度聊聊MOS管</title>
     <url>/post/hardware/mosfet-tube-application-introduction.html</url>
     <categories><category>Hardware</category>
