@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MOS Tube on 北南南北</title>
+    <link>https://www.kad8.com/tags/mos-tube/</link>
+    <description>Recent content in MOS Tube on 北南南北</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 24 Dec 2022 09:40:47 -0500</lastBuildDate><atom:link href="https://www.kad8.com/tags/mos-tube/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MOS管驱动电路设计</title>
+      <link>https://www.kad8.com/post/hardware/the-drive-circuit-design-of-MOS-tube.html</link>
+      <pubDate>Sat, 24 Dec 2022 09:40:47 -0500</pubDate>
+      
+      <guid>https://www.kad8.com/post/hardware/the-drive-circuit-design-of-MOS-tube.html</guid>
+      <description>&lt;p&gt;MOS管因为其导通内阻低，开关速度快，因此被广泛应用在开关电源上。而用好一个MOS管，其驱动电路的设计就很关键。下面分享几种常用的驱动电路。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
