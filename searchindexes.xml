@@ -383,6 +383,27 @@ Systemd方式(centos7及以上)
   </entry>
   
   <entry>
+    <title>如何为Ubuntu 22.04安装拼音输入法</title>
+    <url>/post/linux/how-to-install-pinyin-for-ubuntu-22.04.html</url>
+    <categories><category>Linux</category>
+    </categories>
+    <tags>
+      <tag>Input Method</tag>
+      <tag>Pinyin</tag>
+    </tags>
+    <content type="html"><![CDATA[本文的指令原本只是针对Vanilla Ubuntu，而且只是针对Ubuntu 22.04来讲述基于简体汉字的基本拼音输入法。
+Ubuntu到目前为止都没有提供一个简单，很好的文档化的指南来描述如何添加拼音输入法。但是，为了在Ubuntu 22.04上获得基本的拼音输入法的支持，你可以简单地：
+依次打开 Settings(设定) -&gt; Region &amp; Language(区域和语言) -&gt; Manage Installed Languages(管理安装的语言) -&gt; Install / Remove languages(安装/删除语言)。
+选择Chinese(Simplified)，确保键盘输入法系统已经选择了Ibus，然后点Apply(应用)，重启系统。
+重新登陆系统，再次打开Settings(设定)，依次选择到键盘。
+点击输入源的&quot;+&ldquo;图标，选择中文(中国)，然后中文(智能拼音)。
+现在你应该可以看到一个小的&quot;en&quot;图表(或者你的Ubuntu安装的任何语言代码)在你的主屏幕的右上角，你可以点击然后看到可用的输入法的列表，包含中文(智能拼音)。
+选中中文(智能拼音)，然后打开任何可以接受输入的应用(比如gedit, openoffice, vim, etc.)，你也可以通过快捷键 Win+space来进行输入法的切换。
+再次重新启动系统，确保输入法的图表还在那儿。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>I2C总线接上拉电阻的原因</title>
     <url>/post/hardware/why-add-pull-up-resistor-for-i2c.html</url>
     <categories><category>Hardware</category>

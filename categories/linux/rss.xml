@@ -77,6 +77,15 @@
     </item>
     
     <item>
+      <title>如何为Ubuntu 22.04安装拼音输入法</title>
+      <link>https://www.kad8.com/post/linux/how-to-install-pinyin-for-ubuntu-22.04.html</link>
+      <pubDate>Sun, 18 Dec 2022 09:30:20 -0500</pubDate>
+      
+      <guid>https://www.kad8.com/post/linux/how-to-install-pinyin-for-ubuntu-22.04.html</guid>
+      <description>&lt;p&gt;本文的指令原本只是针对Vanilla Ubuntu，而且只是针对Ubuntu 22.04来讲述基于简体汉字的基本拼音输入法。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Linux编程之经典多级时间轮定时器</title>
       <link>https://www.kad8.com/post/linux/linux-programming-multiple-time-wheel-timer.html</link>
       <pubDate>Fri, 04 Nov 2022 19:52:03 +0800</pubDate>
