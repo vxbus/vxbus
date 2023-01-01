@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hardware on 北南南北</title>
-    <link>https://www.kad8.com/categories/hardware/</link>
-    <description>Recent content in Hardware on 北南南北</description>
+    <title>DDR on 北南南北</title>
+    <link>https://www.kad8.com/tags/ddr/</link>
+    <description>Recent content in DDR on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 01 Jan 2023 09:14:46 -0500</lastBuildDate><atom:link href="https://www.kad8.com/categories/hardware/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Jan 2023 09:14:46 -0500</lastBuildDate><atom:link href="https://www.kad8.com/tags/ddr/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DDR、DDR2、DDR3、DDR4、LPDDR区别</title>
       <link>https://www.kad8.com/post/hardware/difference-between-different-generation-DDRs.html</link>
@@ -36,42 +36,6 @@ Burst Burst字面意思是突发，DDR的访问都是以突发的方式连续访
  Burst Length：一次突发访问几个列地址。 Read/Write: 是读还是写 Starting Column：从哪一列开始Burst Burst：突发的顺序。  下图是DDR3中突发类型和顺序，Burst是通过A12/BC#选择的。但对于DDR，DDR2和DDR4，不一定就是通过A12/BC#，详见PIN定义章节。
 DDR的tRDC，CL，tAC 在实际工作中，Bank地址与相应的行地址是同时发出的，此时这个命令称之为“行激活”（Row Active）。在此之后，将发送列地址寻址命令与具体的操作命令（是读还是写），这两个命令也是同时发出的，所以一般都会以“读/写命令”来表示列寻址。根据相关的标准，从行有效到读/写命令发出之间的间隔被定义为tRCD，即RAS to CAS Delay（RAS至CAS延迟，RAS就是行地址选通脉冲，CAS就是列地址选通脉冲），我们可以理解为行选通周期。tRCD是DDR的一个重要时序参数，广义的tRCD以时钟周期（tCK，Clock Time）数为单位，比如tRCD=3，就代表延迟周期为两个时钟周期，具体到确切的时间，则要根据时钟频率而定，DDR3-800，tRCD=3，代表30ns的延迟。
 接下来，相关的列地址被选中之后，将会触发数据传输，但从存储单元中输出到真正出现在内存芯片的 I/O 接口之间还需要一定的时间（数据触发本身就有延迟，而且还需要进行信号放大），这段时间就是非常著名的 CL（CAS Latency，列地址脉冲选通潜伏期）。CL 的数值与 tRCD 一样，以时钟周期数表示。如 DDR3-800，时钟频率为 100MHz，时钟周期为 10ns，如果 CL=2 就意味着 20ns 的潜伏期。不过CL只是针对读取操作。</description>
-    </item>
-    
-    <item>
-      <title>从实用的角度聊聊MOS管</title>
-      <link>https://www.kad8.com/post/hardware/mosfet-tube-application-introduction.html</link>
-      <pubDate>Sat, 24 Dec 2022 10:02:10 -0500</pubDate>
-      
-      <guid>https://www.kad8.com/post/hardware/mosfet-tube-application-introduction.html</guid>
-      <description>&lt;p&gt;说起MOS管，有些人的脑子里可能是一团浆糊。大部分的教材都会告诉你长长的一段话：MOS管全称金属氧化半导体场效应晶体管&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>MOS管驱动电路设计</title>
-      <link>https://www.kad8.com/post/hardware/the-drive-circuit-design-of-MOS-tube.html</link>
-      <pubDate>Sat, 24 Dec 2022 09:40:47 -0500</pubDate>
-      
-      <guid>https://www.kad8.com/post/hardware/the-drive-circuit-design-of-MOS-tube.html</guid>
-      <description>&lt;p&gt;MOS管因为其导通内阻低，开关速度快，因此被广泛应用在开关电源上。而用好一个MOS管，其驱动电路的设计就很关键。下面分享几种常用的驱动电路。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>SPI总线详解</title>
-      <link>https://www.kad8.com/post/hardware/spi-bus-introduction.html</link>
-      <pubDate>Thu, 22 Dec 2022 09:13:52 -0500</pubDate>
-      
-      <guid>https://www.kad8.com/post/hardware/spi-bus-introduction.html</guid>
-      <description>&lt;p&gt;&lt;code&gt;SPI&lt;/code&gt;是串行外设接口（Serial Peripheral Interface）的缩写，是一种高速的，全双工，同步的通信总线，并且在芯片的管脚上只占用四根线，节约了芯片的管脚，同时为PCB的布局上节省空间，提供方便，正是出于这种简单易用的特性，越来越多的芯片集成了这种通信协议，比如AT91RM9200。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>I2C总线接上拉电阻的原因</title>
-      <link>https://www.kad8.com/post/hardware/why-add-pull-up-resistor-for-i2c.html</link>
-      <pubDate>Sat, 17 Dec 2022 04:57:58 -0500</pubDate>
-      
-      <guid>https://www.kad8.com/post/hardware/why-add-pull-up-resistor-for-i2c.html</guid>
-      <description>&lt;p&gt;I2C为什么要接上拉电阻？因为它是开漏输出。&lt;/p&gt;</description>
     </item>
     
   </channel>
