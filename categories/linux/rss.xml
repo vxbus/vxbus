@@ -6,7 +6,16 @@
     <description>Recent content in Linux on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 24 Dec 2022 10:20:11 -0500</lastBuildDate><atom:link href="https://www.kad8.com/categories/linux/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 31 Dec 2022 09:30:20 -0500</lastBuildDate><atom:link href="https://www.kad8.com/categories/linux/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何为Ubuntu 22.04安装拼音输入法</title>
+      <link>https://www.kad8.com/post/linux/how-to-install-pinyin-for-ubuntu-22.04.html</link>
+      <pubDate>Sat, 31 Dec 2022 09:30:20 -0500</pubDate>
+      
+      <guid>https://www.kad8.com/post/linux/how-to-install-pinyin-for-ubuntu-22.04.html</guid>
+      <description>&lt;p&gt;本文的指令原本只是针对Vanilla Ubuntu，而且只是针对Ubuntu 22.04来讲述基于简体汉字的基本拼音输入法。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Linux下大文件切割与合并</title>
       <link>https://www.kad8.com/post/linux/linux-big-file-cut-and-cat.html</link>
@@ -74,15 +83,6 @@
       
       <guid>https://www.kad8.com/post/linux/linux-crontab-knowledge.html</guid>
       <description>&lt;p&gt;实际工作中，crontab出现的问题是多种多样的，下面就深入介绍下crontab在具体工作中容易出现的问题和解决问题的办法。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>如何为Ubuntu 22.04安装拼音输入法</title>
-      <link>https://www.kad8.com/post/linux/how-to-install-pinyin-for-ubuntu-22.04.html</link>
-      <pubDate>Sun, 18 Dec 2022 09:30:20 -0500</pubDate>
-      
-      <guid>https://www.kad8.com/post/linux/how-to-install-pinyin-for-ubuntu-22.04.html</guid>
-      <description>&lt;p&gt;本文的指令原本只是针对Vanilla Ubuntu，而且只是针对Ubuntu 22.04来讲述基于简体汉字的基本拼音输入法。&lt;/p&gt;</description>
     </item>
     
     <item>

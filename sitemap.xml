@@ -8,16 +8,46 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/categories/</loc>
-    <lastmod>2022-12-24T10:20:11-05:00</lastmod>
+    <lastmod>2022-12-31T09:30:20-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kad8.com/tags/file/</loc>
-    <lastmod>2022-12-24T10:20:11-05:00</lastmod>
+    <loc>https://www.kad8.com/tags/input-method/</loc>
+    <lastmod>2022-12-31T09:30:20-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/categories/linux/</loc>
+    <lastmod>2022-12-31T09:30:20-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/pinyin/</loc>
+    <lastmod>2022-12-31T09:30:20-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/post/</loc>
+    <lastmod>2022-12-31T09:30:20-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/</loc>
+    <lastmod>2022-12-31T09:30:20-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/</loc>
+    <lastmod>2022-12-31T09:30:20-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/post/linux/how-to-install-pinyin-for-ubuntu-22.04.html</loc>
+    <lastmod>2022-12-31T09:30:20-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.kad8.com/tags/file/</loc>
     <lastmod>2022-12-24T10:20:11-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -28,21 +58,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.kad8.com/post/linux/linux-big-file-cut-and-cat.html</loc>
-    <lastmod>2022-12-24T10:20:11-05:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/post/</loc>
-    <lastmod>2022-12-24T10:20:11-05:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/tags/</loc>
-    <lastmod>2022-12-24T10:20:11-05:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/</loc>
     <lastmod>2022-12-24T10:20:11-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -157,22 +172,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.kad8.com/tags/input-method/</loc>
-    <lastmod>2022-12-18T09:30:20-05:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/tags/pinyin/</loc>
-    <lastmod>2022-12-18T09:30:20-05:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.kad8.com/post/linux/linux-crontab-knowledge.html</loc>
-    <lastmod>2022-12-18T09:30:20-05:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.kad8.com/post/linux/how-to-install-pinyin-for-ubuntu-22.04.html</loc>
     <lastmod>2022-12-18T09:30:20-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
