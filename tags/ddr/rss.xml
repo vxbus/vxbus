@@ -13,29 +13,7 @@
       <pubDate>Sun, 01 Jan 2023 09:14:46 -0500</pubDate>
       
       <guid>https://www.kad8.com/post/hardware/difference-between-different-generation-DDRs.html</guid>
-      <description>什么是DDR DDR是Double Data Rate的缩写，即“双比特翻转”。DDR是一种技术，中国大陆工程师习惯用DDR称呼用了DDR技术的SDRAM，而在中国台湾以及欧美，工程师习惯用DRAM来称呼。
-DDR的核心要义是在一个时钟周期内，上升沿和下降沿都做一次数据采样，这样400MHz的主频可以实现800Mbps的数据传输速率。
-每一代DDR的基本区别 关键技术解释 VTT VTT为DDR的地址线，控制线等信号提供上拉电源，上拉电阻是50Ω左右。VTT=1/2VDDQ，并且VTT要跟随VDDQ，因此需要专用的电源同时提供VDDQ和VTT。例如芯片TPS51206DSQT，LP2996。用专门的电源芯片，还有一个重要的原因，在Fly-by的拓扑中，VTT提供电流，增强DDR信号线的驱动能力。
-DDR的接收器是一个比较器，其中一端是VREF，另一端是信号，例如地址线A2在有VTT上拉的时候，A2的信号在0和1.8V间跳动，当A2电压高于VTT时，电流流向VTT。当A2低于VTT时，VTT流向DDR。因此VTT需要有提供电流和吸收电流的能力，一般的开关电源不能作为VTT的提供者。此外，VTT电源相当于DDR接收器信号输入端的直流偏执，且这个偏执等于VREF，因此VTT的噪声要越小越好，否则当A2的状态为高阻态时，DDR接收器的比较器容易产生误触发。
-上文说过，VTT相当于DDR接收器的直流偏执，其实如果没有VTT，这个直流偏执也存在，它在芯片的内部，提供电流的能力很弱。如果只有1个或2个DDR芯片，走Fly-by拓扑，那么不需要外部的VTT上拉。如果有2个以上的DDR芯片，则一定需要VTT上拉。
-Prefetch Prefetch字面意思就是预存取，每一代的DDR预存取大小不同，详见第2章中表格。以DDR3为例，它的Prefetch=8n，相当于DDR的每一个IO都有一个宽度为8的buffer，从IO进来8个数据后，在第8个数据进来后，才把这8个数据一次性的写入DDR内部的存储单元。下图是一个形象的解释，同时我们关注一下几个速率。DDR3的时钟是800MHz，Data Rate是1600Mbps，由于这个Buffer的存在，DDR内部的时钟只需要200MHz就可以了（注意DDR内部不是双比特翻转采样）。
-我们来做一个频率对照表，如下：
-DDR内部的最小存储单元（1bit）是一个晶体管+一个电容，电容会放电，需要不断的“刷新”（充电）才能保持正常的工作状态，由于电容充放电需要时间，DDR内部的频率受限于此，很难提高，目前技术一般在100~200MHz。因此需要用Prefetch技术来提内部数据高吞吐率（其实就是串并转换原理）。Prefetch位宽的提高，是DDR2,3,4非常显著的变化。
-第一段提到，对于DDR3，在第8个数据进来后，FIFO满了，然后才把这8个数据一次性的写入DDR内部的存储单元，那么必须要求DDR的内部时钟和外部时钟有一定的约束关系，FIFO满的时候一定是以DQS下降沿采样结束的，数据手册中对DQS的下降沿与clk有一个建立时间和保持时间的约束要求的目的原来是这样。
-SSTL SSTL（Stub Series Terminated Logic）接口标准也是JEDEC所认可的标准之一。该标准专门针对高速内存(特别是SDRAM)接口。SSTL规定了开关特点和特殊的端接方案。
-SSTL标准规定了IC供电，IO的DC和AC输入输出门限，差分信号门限，Vref电压等。SSTL_3是3.3V标准，SSTL_2是2.5V标准，SSTL_18是1.8V标准，SSTL_15是1.5V。
-SSTL最大的特点是需要终端匹配电阻，也叫终端终结电阻，上拉到VTT（1/2VDDQ）。这个短接电阻最大的作用是为了信号完整性，特别是在1拖多的Fly-by走线拓扑下，还能增强驱动能力。
-Bank 以下图为例，一个Bank中包含若干个Array，Array相当于一个表单，选中“行地址”和“列地址”后，表单中的一个单元格就被选中，这个单元格就是一个bit。Bank中的所有Array的行地址是连在一起的，列地址也是。那么选中“行地址”和“列地址”后，将一起选中所有Array的bit。有多少个array，就有多少个bit被选中。以DDR3为例，Data线宽度是32，prefetch是8，那么Array就有32x8=256.内部一次操作会选中256bit的数据。
-Bank数量越多，需要的Bank选择线越多，DDR3有8个bank，需要3个BA信号BA0~2。BA，行地址，列地址共同组成了存储单元的访问地址，缺一不可。
-DDR的容量计算 下图是DDR3 1Gb的寻址配置，以其中128Mbx8为例说明，其中x8表示IO数据（DQ）位宽度。
-Image
-Image
-我的理解是，这个page size更像是逻辑上的一个页，并不是一个bank中，一行的所有bit，因为一行的所有bit要考虑prefetch宽度。
-上表是JESD-3D中的表格，Row Address和Column Address都是真实需要寻址的地址，其他用途的地址比如A10，A12或者A11等并没有计算在内。在计算时，不要因为有A13，就认为Column Address就是A0~A13。
-Burst Burst字面意思是突发，DDR的访问都是以突发的方式连续访问同一行的相邻几个单元。进行Brust时，需要有几个参数：
- Burst Length：一次突发访问几个列地址。 Read/Write: 是读还是写 Starting Column：从哪一列开始Burst Burst：突发的顺序。  下图是DDR3中突发类型和顺序，Burst是通过A12/BC#选择的。但对于DDR，DDR2和DDR4，不一定就是通过A12/BC#，详见PIN定义章节。
-DDR的tRDC，CL，tAC 在实际工作中，Bank地址与相应的行地址是同时发出的，此时这个命令称之为“行激活”（Row Active）。在此之后，将发送列地址寻址命令与具体的操作命令（是读还是写），这两个命令也是同时发出的，所以一般都会以“读/写命令”来表示列寻址。根据相关的标准，从行有效到读/写命令发出之间的间隔被定义为tRCD，即RAS to CAS Delay（RAS至CAS延迟，RAS就是行地址选通脉冲，CAS就是列地址选通脉冲），我们可以理解为行选通周期。tRCD是DDR的一个重要时序参数，广义的tRCD以时钟周期（tCK，Clock Time）数为单位，比如tRCD=3，就代表延迟周期为两个时钟周期，具体到确切的时间，则要根据时钟频率而定，DDR3-800，tRCD=3，代表30ns的延迟。
-接下来，相关的列地址被选中之后，将会触发数据传输，但从存储单元中输出到真正出现在内存芯片的 I/O 接口之间还需要一定的时间（数据触发本身就有延迟，而且还需要进行信号放大），这段时间就是非常著名的 CL（CAS Latency，列地址脉冲选通潜伏期）。CL 的数值与 tRCD 一样，以时钟周期数表示。如 DDR3-800，时钟频率为 100MHz，时钟周期为 10ns，如果 CL=2 就意味着 20ns 的潜伏期。不过CL只是针对读取操作。</description>
+      <description>&lt;p&gt;今天我们和大家介绍一下各代DDR的区别&lt;/p&gt;</description>
     </item>
     
   </channel>

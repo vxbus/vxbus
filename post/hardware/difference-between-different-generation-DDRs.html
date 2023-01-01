@@ -284,7 +284,7 @@
       </div>
     <div class="siteinfo-item">
       <div class="item-name"><i class="fa fa-font"></i>总字数：</div>
-      <div class="item-count" id="wordsCount" data-count="9425"></div>
+      <div class="item-count" id="wordsCount" data-count="9431"></div>
     </div>
     <div class="siteinfo-item">
       <div class="item-name"><i class="fa fa-mug-hot"></i>阅读约：</div>
@@ -370,7 +370,7 @@
   <span class="post-meta-item-icon">
     <i class="far fa-file-word"></i>
   </span>
-  <span class="post-meta-item-text">字数：</span><span>191</span>
+  <span class="post-meta-item-text">字数：</span><span>197</span>
 </span>
     
 <span class="post-meta-item" title="阅读">
@@ -400,7 +400,8 @@
     
     <div class="post-body  autonumber " itemprop="articleBody">
       
-  <h2 id="什么是ddr">什么是DDR</h2>
+  <p>今天我们和大家介绍一下各代DDR的区别</p>
+<h2 id="什么是ddr">什么是DDR</h2>
 <p>DDR是Double Data Rate的缩写，即“双比特翻转”。DDR是一种技术，中国大陆工程师习惯用DDR称呼用了DDR技术的SDRAM，而在中国台湾以及欧美，工程师习惯用DRAM来称呼。</p>
 <p>DDR的核心要义是在一个时钟周期内，上升沿和下降沿都做一次数据采样，这样400MHz的主频可以实现800Mbps的数据传输速率。</p>
 <h2 id="每一代ddr的基本区别">每一代DDR的基本区别</h2>
@@ -429,8 +430,8 @@
 <h3 id="ddr的容量计算">DDR的容量计算</h3>
 <p>下图是DDR3 1Gb的寻址配置，以其中128Mbx8为例说明，其中x8表示IO数据（DQ）位宽度。</p>
 <p><img src="https://www.vxworks.net/images/kad8/difference-between-different-generation-DDRs-6.png" alt="DDR、DDR2、DDR3、DDR4、LPDDR区别"></p>
-<p>Image</p>
-<p>Image</p>
+<p>DDD容量=2<sup>Bank Address</sup>x2<sup>Row Address</sup>x2<sup>Col Address</sup>x位宽=2<sup>3</sup>x2<sup>14</sup>x2<sup>10</sup>x8=1Gb
+Page Site=2<sup>Col Address</sup>x位宽➗8（Byte)</p>
 <p>我的理解是，这个page size更像是逻辑上的一个页，并不是一个bank中，一行的所有bit，因为一行的所有bit要考虑prefetch宽度。</p>
 <p>上表是JESD-3D中的表格，Row Address和Column Address都是真实需要寻址的地址，其他用途的地址比如A10，A12或者A11等并没有计算在内。在计算时，不要因为有A13，就认为Column Address就是A0~A13。</p>
 <h3 id="burst">Burst</h3>
@@ -519,7 +520,6 @@
 <p>DDR的信号线需要分组：</p>
 <p>数据线一组（DQ,DQS,DQM），误差控制在20mil以内；</p>
 <p>控制线一组（Address，控制线，时钟），以时钟为中心，误差控制在100mil以内。</p>
-
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1543398821442998"
      crossorigin="anonymous"></script>
 
