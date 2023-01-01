@@ -16,6 +16,19 @@
   </entry>
   
   <entry>
+    <title>什么是DSP</title>
+    <url>/post/dsp/what-is-dsp.html</url>
+    <categories><category>DSP</category>
+    </categories>
+    <tags>
+      <tag>DSP</tag>
+    </tags>
+    <content type="html"><![CDATA[嵌入式工程师都知道什么是CPU、MCU，还有一位成员——DSP，DSP到底是什么？
+免责声明：本文素材来源华为麒麟，版权归原作者所有。如涉及作品版权问题，请与我联系删除。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>如何为Ubuntu 22.04安装拼音输入法</title>
     <url>/post/linux/how-to-install-pinyin-for-ubuntu-22.04.html</url>
     <categories><category>Linux</category>
