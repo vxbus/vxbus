@@ -39,8 +39,7 @@ SSTL最大的特点是需要终端匹配电阻，也叫终端终结电阻，上�
 Bank 以下图为例，一个Bank中包含若干个Array，Array相当于一个表单，选中“行地址”和“列地址”后，表单中的一个单元格就被选中，这个单元格就是一个bit。Bank中的所有Array的行地址是连在一起的，列地址也是。那么选中“行地址”和“列地址”后，将一起选中所有Array的bit。有多少个array，就有多少个bit被选中。以DDR3为例，Data线宽度是32，prefetch是8，那么Array就有32x8=256.内部一次操作会选中256bit的数据。
 Bank数量越多，需要的Bank选择线越多，DDR3有8个bank，需要3个BA信号BA0~2。BA，行地址，列地址共同组成了存储单元的访问地址，缺一不可。
 DDR的容量计算 下图是DDR3 1Gb的寻址配置，以其中128Mbx8为例说明，其中x8表示IO数据（DQ）位宽度。
-DDD容量=2Bank Addressx2Row Addressx2Col Addressx位宽=23x214x210x8=1Gb Page Site=2Col Addressx位宽➗8（Byte)
-我的理解是，这个page size更像是逻辑上的一个页，并不是一个bank中，一行的所有bit，因为一行的所有bit要考虑prefetch宽度。
+ DDD容量=2Bank Addressx2Row Addressx2Col Addressx位宽=23x214x210x8=1Gb Page Site=2Col Addressx位宽➗8（Byte)  我的理解是，这个page size更像是逻辑上的一个页，并不是一个bank中，一行的所有bit，因为一行的所有bit要考虑prefetch宽度。
 上表是JESD-3D中的表格，Row Address和Column Address都是真实需要寻址的地址，其他用途的地址比如A10，A12或者A11等并没有计算在内。在计算时，不要因为有A13，就认为Column Address就是A0~A13。
 Burst Burst字面意思是突发，DDR的访问都是以突发的方式连续访问同一行的相邻几个单元。进行Brust时，需要有几个参数：
  Burst Length：一次突发访问几个列地址。 Read/Write: 是读还是写 Starting Column：从哪一列开始Burst Burst：突发的顺序。  下图是DDR3中突发类型和顺序，Burst是通过A12/BC#选择的。但对于DDR，DDR2和DDR4，不一定就是通过A12/BC#，详见PIN定义章节。

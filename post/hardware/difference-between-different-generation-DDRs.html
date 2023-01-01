@@ -430,8 +430,10 @@
 <h3 id="ddr的容量计算">DDR的容量计算</h3>
 <p>下图是DDR3 1Gb的寻址配置，以其中128Mbx8为例说明，其中x8表示IO数据（DQ）位宽度。</p>
 <p><img src="https://www.vxworks.net/images/kad8/difference-between-different-generation-DDRs-6.png" alt="DDR、DDR2、DDR3、DDR4、LPDDR区别"></p>
-<p>DDD容量=2<sup>Bank Address</sup>x2<sup>Row Address</sup>x2<sup>Col Address</sup>x位宽=2<sup>3</sup>x2<sup>14</sup>x2<sup>10</sup>x8=1Gb
-Page Site=2<sup>Col Address</sup>x位宽➗8（Byte)</p>
+<ul>
+<li>DDD容量=2<sup>Bank Address</sup>x2<sup>Row Address</sup>x2<sup>Col Address</sup>x位宽=2<sup>3</sup>x2<sup>14</sup>x2<sup>10</sup>x8=1Gb</li>
+<li>Page Site=2<sup>Col Address</sup>x位宽➗8（Byte)</li>
+</ul>
 <p>我的理解是，这个page size更像是逻辑上的一个页，并不是一个bank中，一行的所有bit，因为一行的所有bit要考虑prefetch宽度。</p>
 <p>上表是JESD-3D中的表格，Row Address和Column Address都是真实需要寻址的地址，其他用途的地址比如A10，A12或者A11等并没有计算在内。在计算时，不要因为有A13，就认为Column Address就是A0~A13。</p>
 <h3 id="burst">Burst</h3>
