@@ -6,7 +6,16 @@
     <description>Recent content in Linux on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 31 Dec 2022 09:30:20 -0500</lastBuildDate><atom:link href="https://www.kad8.com/categories/linux/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Jan 2023 09:17:29 -0500</lastBuildDate><atom:link href="https://www.kad8.com/categories/linux/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C语言回调函数，提升C技巧必备</title>
+      <link>https://www.kad8.com/post/linux/c-programming-callback-function.html</link>
+      <pubDate>Mon, 02 Jan 2023 09:17:29 -0500</pubDate>
+      
+      <guid>https://www.kad8.com/post/linux/c-programming-callback-function.html</guid>
+      <description>&lt;p&gt;本文简要介绍了C语言编程中的回调函数&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>如何为Ubuntu 22.04安装拼音输入法</title>
       <link>https://www.kad8.com/post/linux/how-to-install-pinyin-for-ubuntu-22.04.html</link>
