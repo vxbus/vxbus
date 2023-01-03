@@ -16,6 +16,29 @@
   </entry>
   
   <entry>
+    <title>Linux中touch命令的8个实际例子</title>
+    <url>/post/linux/8-examples-of-touch-cmd-in-linux.html</url>
+    <categories><category>Linux</category>
+    </categories>
+    <tags>
+      <tag>touch</tag>
+    </tags>
+    <content type="html"><![CDATA[在本文中，我们将介绍一些有用的 Linux   实际示例touch command。这touch command是一个标准程序Unix/Linux操作系统，用于创建、更改和修改文件的时间戳。在开始接触命令示例之前，请查看以下选项。
+touch命令选项   -a, 只更改访问时间 -c, 如果文件不存在，不创建 -d, 更新访问和修改时间 -m, 只更改修改时间 -r, 使用文件的访问和修改次数 -t, 使用指定时间创建文件  如何创建一个空文件  以下 touch 命令创建一个名为的空（零字节）新文件sheena.
+ # touch sheena 如何创建多个文件  通过使用 touch 命令，您还可以创建多个文件。例如，以下命令将创建 3 个名为的文件，sheena,meena和temp.
+ # touch sheena meena temp 如何更改文件访问和修改时间 更改或更新名为的文件的上次访问和修改时间temp， 使用-a选项如下。以下命令设置文件的当前时间和日期。如果temp文件不存在，它将创建具有名称的新空文件。  # touch -a temp  find 命令使用时间戳来列出和查找文件。
+ 如何避免创建新文件 使用-c带有 touch 命令的选项可避免创建新文件。例如，以下命令不会创建名为temp如果它不存在。  # touch -c temp ##如何更改文件修改时间
+如果您想更改名为的文件的唯一修改时间temp，然后使用-m带有触摸命令的选项。请注意，它只会更新文件的最后修改时间（而不是访问时间）。  # touch -m temp ##明确设置访问和修改时间
+ 您可以使用显式设置时间-c和-t带有触摸命令的选项。格式如下。
+ # touch -c -t YYDDHHMM temp  例如，以下命令设置文件的访问和修改日期和时间temp作为17:30(17:30 p.m.)August 10当年（2021）。
+ # touch -c -t 12101730 temp  接下来验证文件的访问和修改时间temp， 和ls -l命令。
+ # ls -l total 2 -rw-r--r--. 1 root root 0 Dec 10 17:30 temp 如何使用另一个文件的时间戳  以下触摸命令与-r选项，将更新文件的时间戳meena带有时间戳temp文件。因此，两个文件都拥有相同的时间戳。
+ # touch -r temp meena 使用指定时间创建文件  如果你想创建一个指定时间而不是当前时间的文件，那么格式应该是。
+ # touch -t YYMMDDHHMM.SS rumenz  例如下面的命令 touch 命令-t选项将给出rumenz归档时间戳18:30:55 p.m.在August 5,2021.
+ # touch -t 202108051830.55 rumenz ]]></content>
+  </entry>
+  
+  <entry>
     <title>C语言回调函数，提升C技巧必备</title>
     <url>/post/linux/c-programming-callback-function.html</url>
     <categories><category>Linux</category>
