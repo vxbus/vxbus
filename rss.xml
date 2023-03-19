@@ -6,7 +6,7 @@
     <description>Recent content on 北南南北</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 18 Mar 2023 11:35:48 -0400</lastBuildDate><atom:link href="https://www.kad8.com/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Mar 2023 04:31:28 -0400</lastBuildDate><atom:link href="https://www.kad8.com/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>欢迎加入 VxWorks 俱乐部！</title>
       <link>https://www.kad8.com/post/welcome-to-vxworks-club/</link>
@@ -16,6 +16,15 @@
       <description>欢迎来到 北南南北 文档站点！ 相关文章来源于 VxWorks 俱乐部  ，也可能发布于 AI 嵌入式开发  ，专注于技术分享和交流。
 免责声明 所有资源均来自网络，版权归原作者，如有侵权，请联系删除！
 欢迎投稿  欢迎广大网友投稿 欢迎加入网友微信群  </description>
+    </item>
+    
+    <item>
+      <title>Linux 进程概念: 冯 • 诺依曼体系结构</title>
+      <link>https://www.kad8.com/post/linux/linux-process-concept-von-neumann-architecture.html</link>
+      <pubDate>Sun, 19 Mar 2023 04:31:28 -0400</pubDate>
+      
+      <guid>https://www.kad8.com/post/linux/linux-process-concept-von-neumann-architecture.html</guid>
+      <description>&lt;p&gt;在 1945 年冯诺依曼和其他计算机科学家们提出了计算机具体实现的报告，其遵循了[图灵机]的设计，而且还提出用电子元件构造计算机，并约定了用二进制进行计算和存储。&lt;/p&gt;</description>
     </item>
     
     <item>
