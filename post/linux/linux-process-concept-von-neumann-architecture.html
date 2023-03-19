@@ -487,7 +487,9 @@
 <p><img src="https://www.vxworks.net/images/kad8/Von-Neumann-architecture-6-network.png" alt="网络数据流"></p>
 <p>那么如果是在 QQ 上发送文件呢？</p>
 <p>首先你的文件最开始是在你本地的磁盘上的，先从磁盘上把文件读到内存中，文件里面的东西其实还是数据，把数据再经过 CPU 封装成报文，然后刷新到我们的内存中，定期再经过网卡，把数据刷新到网卡上，然后再发出去。</p>
-<p>传文件的本质就是：两端的磁盘进行通信。</p>
+<div class="note danger ">
+  传文件的本质就是：两端的磁盘进行通信。
+</div>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1543398821442998"
      crossorigin="anonymous"></script>
 
