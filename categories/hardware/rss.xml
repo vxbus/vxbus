@@ -1,54 +1,54 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hardware on 北南南北</title>
-    <link>https://www.kad8.com/categories/hardware/</link>
-    <description>Recent content in Hardware on 北南南北</description>
+    <title>Hardware on VxBus</title>
+    <link>https://www.vxbus.com/categories/hardware/</link>
+    <description>Recent content in Hardware on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 01 Jan 2023 09:14:46 -0500</lastBuildDate><atom:link href="https://www.kad8.com/categories/hardware/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Jan 2023 09:14:46 -0500</lastBuildDate><atom:link href="https://www.vxbus.com/categories/hardware/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DDR、DDR2、DDR3、DDR4、LPDDR区别</title>
-      <link>https://www.kad8.com/post/hardware/difference-between-different-generation-DDRs.html</link>
+      <link>https://www.vxbus.com/post/hardware/difference-between-different-generation-DDRs.html</link>
       <pubDate>Sun, 01 Jan 2023 09:14:46 -0500</pubDate>
       
-      <guid>https://www.kad8.com/post/hardware/difference-between-different-generation-DDRs.html</guid>
+      <guid>https://www.vxbus.com/post/hardware/difference-between-different-generation-DDRs.html</guid>
       <description>&lt;p&gt;今天我们和大家介绍一下各代DDR的区别&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>从实用的角度聊聊MOS管</title>
-      <link>https://www.kad8.com/post/hardware/mosfet-tube-application-introduction.html</link>
+      <link>https://www.vxbus.com/post/hardware/mosfet-tube-application-introduction.html</link>
       <pubDate>Sat, 24 Dec 2022 10:02:10 -0500</pubDate>
       
-      <guid>https://www.kad8.com/post/hardware/mosfet-tube-application-introduction.html</guid>
+      <guid>https://www.vxbus.com/post/hardware/mosfet-tube-application-introduction.html</guid>
       <description>&lt;p&gt;说起MOS管，有些人的脑子里可能是一团浆糊。大部分的教材都会告诉你长长的一段话：MOS管全称金属氧化半导体场效应晶体管&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>MOS管驱动电路设计</title>
-      <link>https://www.kad8.com/post/hardware/the-drive-circuit-design-of-MOS-tube.html</link>
+      <link>https://www.vxbus.com/post/hardware/the-drive-circuit-design-of-MOS-tube.html</link>
       <pubDate>Sat, 24 Dec 2022 09:40:47 -0500</pubDate>
       
-      <guid>https://www.kad8.com/post/hardware/the-drive-circuit-design-of-MOS-tube.html</guid>
+      <guid>https://www.vxbus.com/post/hardware/the-drive-circuit-design-of-MOS-tube.html</guid>
       <description>&lt;p&gt;MOS管因为其导通内阻低，开关速度快，因此被广泛应用在开关电源上。而用好一个MOS管，其驱动电路的设计就很关键。下面分享几种常用的驱动电路。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>SPI总线详解</title>
-      <link>https://www.kad8.com/post/hardware/spi-bus-introduction.html</link>
+      <link>https://www.vxbus.com/post/hardware/spi-bus-introduction.html</link>
       <pubDate>Thu, 22 Dec 2022 09:13:52 -0500</pubDate>
       
-      <guid>https://www.kad8.com/post/hardware/spi-bus-introduction.html</guid>
+      <guid>https://www.vxbus.com/post/hardware/spi-bus-introduction.html</guid>
       <description>&lt;p&gt;&lt;code&gt;SPI&lt;/code&gt;是串行外设接口（Serial Peripheral Interface）的缩写，是一种高速的，全双工，同步的通信总线，并且在芯片的管脚上只占用四根线，节约了芯片的管脚，同时为PCB的布局上节省空间，提供方便，正是出于这种简单易用的特性，越来越多的芯片集成了这种通信协议，比如AT91RM9200。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>I2C总线接上拉电阻的原因</title>
-      <link>https://www.kad8.com/post/hardware/why-add-pull-up-resistor-for-i2c.html</link>
+      <link>https://www.vxbus.com/post/hardware/why-add-pull-up-resistor-for-i2c.html</link>
       <pubDate>Sat, 17 Dec 2022 04:57:58 -0500</pubDate>
       
-      <guid>https://www.kad8.com/post/hardware/why-add-pull-up-resistor-for-i2c.html</guid>
+      <guid>https://www.vxbus.com/post/hardware/why-add-pull-up-resistor-for-i2c.html</guid>
       <description>&lt;p&gt;I2C为什么要接上拉电阻？因为它是开漏输出。&lt;/p&gt;</description>
     </item>
     

@@ -1,36 +1,47 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Linux on 北南南北</title>
-    <link>https://www.kad8.com/categories/linux/</link>
-    <description>Recent content in Linux on 北南南北</description>
+    <title>Linux on VxBus</title>
+    <link>https://www.vxbus.com/categories/linux/</link>
+    <description>Recent content in Linux on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 19 Mar 2023 04:31:28 -0400</lastBuildDate><atom:link href="https://www.kad8.com/categories/linux/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Mar 2023 06:07:45 -0400</lastBuildDate><atom:link href="https://www.vxbus.com/categories/linux/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何在一台Linux主机上同时访问多个Github账户</title>
+      <link>https://www.vxbus.com/post/github/how-to-access-multiple-github-accounts-on-linux.html</link>
+      <pubDate>Sun, 26 Mar 2023 06:07:45 -0400</pubDate>
+      
+      <guid>https://www.vxbus.com/post/github/how-to-access-multiple-github-accounts-on-linux.html</guid>
+      <description>想必很多程序员都遇到过下面这个Github最著名报错，本文就将简要介绍以下针对这个报错的终极解决方案。
+&amp;ldquo;ERROR: Permission to xxx.git denied to XXX&amp;rdquo;
+ ```bash ERROR: Permission to hbxn740150254/BestoneGitHub.git denied to Chenzuohehe. fatal: Could not read from remote repository.Please make sure you have the correct access rights and the repository exists. ``` 当你遇到上述问题的时候，解决方法是要重新生成一个SSH KEY ## 生成SSH KEY ```bash //先进入本地ssh目录 AppledeiMac:~ Apple$ cd ~/.ssh //查看当前已有的密钥文件 AppledeiMac:.ssh Apple$ ls id_rsa id_rsa.pub known_hosts //生成密钥 AppledeiMac:.ssh Apple$ ssh-keygen -t rsa -C &#34;iMac_personnal_publicKey&#34; Generating public/private rsa key pair. Enter file in which to save the key (/Users/Apple/.</description>
+    </item>
+    
     <item>
       <title>Linux 进程概念: 冯 • 诺依曼体系结构</title>
-      <link>https://www.kad8.com/post/linux/linux-process-concept-von-neumann-architecture.html</link>
+      <link>https://www.vxbus.com/post/linux/linux-process-concept-von-neumann-architecture.html</link>
       <pubDate>Sun, 19 Mar 2023 04:31:28 -0400</pubDate>
       
-      <guid>https://www.kad8.com/post/linux/linux-process-concept-von-neumann-architecture.html</guid>
+      <guid>https://www.vxbus.com/post/linux/linux-process-concept-von-neumann-architecture.html</guid>
       <description>&lt;p&gt;在 1945 年冯诺依曼和其他计算机科学家们提出了计算机具体实现的报告，其遵循了[图灵机]的设计，而且还提出用电子元件构造计算机，并约定了用二进制进行计算和存储。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>40个简单但有效的Linux Shell脚本示例</title>
-      <link>https://www.kad8.com/post/linux/40-simple-and-useful-linux-shell-script.html</link>
+      <link>https://www.vxbus.com/post/linux/40-simple-and-useful-linux-shell-script.html</link>
       <pubDate>Sat, 18 Mar 2023 11:35:48 -0400</pubDate>
       
-      <guid>https://www.kad8.com/post/linux/40-simple-and-useful-linux-shell-script.html</guid>
+      <guid>https://www.vxbus.com/post/linux/40-simple-and-useful-linux-shell-script.html</guid>
       <description>&lt;p&gt;历史上，shell一直是类Unix系统的本地命令行解释器。它已被证明是Unix的主要功能之一，并发展成为一个全新的主题。Linux提供了各种功能强大的shell，包括Bash、Zsh、Tcsh和Ksh。这些外壳最令人惊讶的特性之一是其可编程性。创建简单而有效的Linux shell脚本来处理日常工作非常容易。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Linux中touch命令的8个实际例子</title>
-      <link>https://www.kad8.com/post/linux/8-examples-of-touch-cmd-in-linux.html</link>
+      <link>https://www.vxbus.com/post/linux/8-examples-of-touch-cmd-in-linux.html</link>
       <pubDate>Tue, 03 Jan 2023 08:06:27 -0500</pubDate>
       
-      <guid>https://www.kad8.com/post/linux/8-examples-of-touch-cmd-in-linux.html</guid>
+      <guid>https://www.vxbus.com/post/linux/8-examples-of-touch-cmd-in-linux.html</guid>
       <description>&lt;p&gt;在本文中，我们将介绍一些有用的 
 &lt;a href=&#34;https://www.vxworks.net/linux&#34; title=&#34;Linux&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;
     Linux
@@ -40,55 +51,55 @@
     
     <item>
       <title>C语言回调函数，提升C技巧必备</title>
-      <link>https://www.kad8.com/post/linux/c-programming-callback-function.html</link>
+      <link>https://www.vxbus.com/post/linux/c-programming-callback-function.html</link>
       <pubDate>Mon, 02 Jan 2023 09:17:29 -0500</pubDate>
       
-      <guid>https://www.kad8.com/post/linux/c-programming-callback-function.html</guid>
+      <guid>https://www.vxbus.com/post/linux/c-programming-callback-function.html</guid>
       <description>&lt;p&gt;本文简要介绍了C语言编程中的回调函数&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>如何为Ubuntu 22.04安装拼音输入法</title>
-      <link>https://www.kad8.com/post/linux/how-to-install-pinyin-for-ubuntu-22.04.html</link>
+      <link>https://www.vxbus.com/post/linux/how-to-install-pinyin-for-ubuntu-22.04.html</link>
       <pubDate>Sat, 31 Dec 2022 09:30:20 -0500</pubDate>
       
-      <guid>https://www.kad8.com/post/linux/how-to-install-pinyin-for-ubuntu-22.04.html</guid>
+      <guid>https://www.vxbus.com/post/linux/how-to-install-pinyin-for-ubuntu-22.04.html</guid>
       <description>&lt;p&gt;本文的指令原本只是针对Vanilla Ubuntu，而且只是针对Ubuntu 22.04来讲述基于简体汉字的基本拼音输入法。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Linux下大文件切割与合并</title>
-      <link>https://www.kad8.com/post/linux/linux-big-file-cut-and-cat.html</link>
+      <link>https://www.vxbus.com/post/linux/linux-big-file-cut-and-cat.html</link>
       <pubDate>Sat, 24 Dec 2022 10:20:11 -0500</pubDate>
       
-      <guid>https://www.kad8.com/post/linux/linux-big-file-cut-and-cat.html</guid>
+      <guid>https://www.vxbus.com/post/linux/linux-big-file-cut-and-cat.html</guid>
       <description>&lt;p&gt;往往是因为网络传输的限制，导致很多时候，我们需要在 Linux 系统下进行大文件的切割。这样将一个大文件切割成为多个小文件，进行传输，传输完毕之后进行合并即可。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>10个超赞的C语言开源项目</title>
-      <link>https://www.kad8.com/post/linux/ten-great-c-language-open-source-project.html</link>
+      <link>https://www.vxbus.com/post/linux/ten-great-c-language-open-source-project.html</link>
       <pubDate>Thu, 22 Dec 2022 08:41:53 -0500</pubDate>
       
-      <guid>https://www.kad8.com/post/linux/ten-great-c-language-open-source-project.html</guid>
+      <guid>https://www.vxbus.com/post/linux/ten-great-c-language-open-source-project.html</guid>
       <description>&lt;p&gt;今天给大家分享10个超赞的C语言开源项目，希望这些内容能对大家有所帮助！&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Linux环境监控工具基础参考</title>
-      <link>https://www.kad8.com/post/linux/linux-environment-monitor-tool.html</link>
+      <link>https://www.vxbus.com/post/linux/linux-environment-monitor-tool.html</link>
       <pubDate>Wed, 21 Dec 2022 09:53:46 -0500</pubDate>
       
-      <guid>https://www.kad8.com/post/linux/linux-environment-monitor-tool.html</guid>
+      <guid>https://www.vxbus.com/post/linux/linux-environment-monitor-tool.html</guid>
       <description>&lt;p&gt;Linux 操作系统有很多自带和第三方监控工具，这篇文章从不同维度整理了一些，但仅限基础了解，因为，单独讲任何一个指令，都可以成篇文章，具体指令参数，可以检索 man，从中理解。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>详解TCP和UDP协议的原理和区别</title>
-      <link>https://www.kad8.com/post/linux/tcp-and-udp-principle-and-difference.html</link>
+      <link>https://www.vxbus.com/post/linux/tcp-and-udp-principle-and-difference.html</link>
       <pubDate>Tue, 20 Dec 2022 08:21:45 -0500</pubDate>
       
-      <guid>https://www.kad8.com/post/linux/tcp-and-udp-principle-and-difference.html</guid>
+      <guid>https://www.vxbus.com/post/linux/tcp-and-udp-principle-and-difference.html</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;最近重新认知了一下TCP和UDP的原理以及区别，做一个简单的总结。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -96,10 +107,10 @@
     
     <item>
       <title>分享一种通信协议的应用编程原理和思路</title>
-      <link>https://www.kad8.com/post/linux/communication-protocol-programming-principle-and-idea.html</link>
+      <link>https://www.vxbus.com/post/linux/communication-protocol-programming-principle-and-idea.html</link>
       <pubDate>Mon, 19 Dec 2022 08:57:23 -0500</pubDate>
       
-      <guid>https://www.kad8.com/post/linux/communication-protocol-programming-principle-and-idea.html</guid>
+      <guid>https://www.vxbus.com/post/linux/communication-protocol-programming-principle-and-idea.html</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;嵌入式开发过程中，&lt;code&gt;UART&lt;/code&gt;、 &lt;code&gt;CAN&lt;/code&gt;、 &lt;code&gt;USB&lt;/code&gt;等通信基本离不开通信协议。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -108,66 +119,66 @@
     
     <item>
       <title>Linux之awk使用技巧</title>
-      <link>https://www.kad8.com/post/linux/awk-usage-skills.html</link>
+      <link>https://www.vxbus.com/post/linux/awk-usage-skills.html</link>
       <pubDate>Mon, 19 Dec 2022 08:18:31 -0500</pubDate>
       
-      <guid>https://www.kad8.com/post/linux/awk-usage-skills.html</guid>
+      <guid>https://www.vxbus.com/post/linux/awk-usage-skills.html</guid>
       <description>&lt;p&gt;AWK 是一种处理文本文件的语言，是一个强大的文本分析工具。&lt;/p&gt;
 &lt;p&gt;之所以叫 AWK 是因为其取了三位创始人 Alfred Aho，Peter Weinberger, 和 Brian Kernighan 的 Family Name 的首字符。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>关于Linux下的crontab，你不知道的那些知识点</title>
-      <link>https://www.kad8.com/post/linux/linux-crontab-knowledge.html</link>
+      <link>https://www.vxbus.com/post/linux/linux-crontab-knowledge.html</link>
       <pubDate>Sun, 18 Dec 2022 09:30:20 -0500</pubDate>
       
-      <guid>https://www.kad8.com/post/linux/linux-crontab-knowledge.html</guid>
+      <guid>https://www.vxbus.com/post/linux/linux-crontab-knowledge.html</guid>
       <description>&lt;p&gt;实际工作中，crontab出现的问题是多种多样的，下面就深入介绍下crontab在具体工作中容易出现的问题和解决问题的办法。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Linux编程之经典多级时间轮定时器</title>
-      <link>https://www.kad8.com/post/linux/linux-programming-multiple-time-wheel-timer.html</link>
+      <link>https://www.vxbus.com/post/linux/linux-programming-multiple-time-wheel-timer.html</link>
       <pubDate>Fri, 04 Nov 2022 19:52:03 +0800</pubDate>
       
-      <guid>https://www.kad8.com/post/linux/linux-programming-multiple-time-wheel-timer.html</guid>
+      <guid>https://www.vxbus.com/post/linux/linux-programming-multiple-time-wheel-timer.html</guid>
       <description>&lt;p&gt;mmap用于把文件映射到内存空间中，简单说mmap就是把一个文件的内容在内存里面做一个映像。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Linux mmap内存映射详解</title>
-      <link>https://www.kad8.com/post/linux/linux-mmap-explanation.html</link>
+      <link>https://www.vxbus.com/post/linux/linux-mmap-explanation.html</link>
       <pubDate>Fri, 04 Nov 2022 17:52:03 +0800</pubDate>
       
-      <guid>https://www.kad8.com/post/linux/linux-mmap-explanation.html</guid>
+      <guid>https://www.vxbus.com/post/linux/linux-mmap-explanation.html</guid>
       <description>&lt;p&gt;mmap用于把文件映射到内存空间中，简单说mmap就是把一个文件的内容在内存里面做一个映像。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>几道简单的Linux驱动相关面试题</title>
-      <link>https://www.kad8.com/post/linux/linux-device-driver-questions-and-answers.html</link>
+      <link>https://www.vxbus.com/post/linux/linux-device-driver-questions-and-answers.html</link>
       <pubDate>Fri, 04 Nov 2022 11:52:03 +0800</pubDate>
       
-      <guid>https://www.kad8.com/post/linux/linux-device-driver-questions-and-answers.html</guid>
+      <guid>https://www.vxbus.com/post/linux/linux-device-driver-questions-and-answers.html</guid>
       <description>&lt;p&gt;今天给大家分享几道Linux设备驱动相关的面试题，希望能对需要的网友一些帮助！&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>带你走进Linux内核源码中最常见的数据结构之「mutex」</title>
-      <link>https://www.kad8.com/post/linux/linux-kernel-source-code-data-structure-mutex.html</link>
+      <link>https://www.vxbus.com/post/linux/linux-kernel-source-code-data-structure-mutex.html</link>
       <pubDate>Sun, 16 Oct 2022 11:52:03 +0800</pubDate>
       
-      <guid>https://www.kad8.com/post/linux/linux-kernel-source-code-data-structure-mutex.html</guid>
+      <guid>https://www.vxbus.com/post/linux/linux-kernel-source-code-data-structure-mutex.html</guid>
       <description>&lt;h2 id=&#34;定义&#34;&gt;定义&lt;/h2&gt;
 &lt;p&gt;互斥锁（英语：Mutual exclusion，缩写 Mutex）是一种用于多线程编程中，防止两条线程同时对同一公共资源（比如全域变量）进行读写的机制。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>openssl命令</title>
-      <link>https://www.kad8.com/post/linux/openssl.html</link>
+      <link>https://www.vxbus.com/post/linux/openssl.html</link>
       <pubDate>Sat, 15 Oct 2022 21:52:03 +0800</pubDate>
       
-      <guid>https://www.kad8.com/post/linux/openssl.html</guid>
+      <guid>https://www.vxbus.com/post/linux/openssl.html</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;强大的安全套接字层密码库&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -176,10 +187,10 @@
     
     <item>
       <title>syslog命令</title>
-      <link>https://www.kad8.com/post/linux/syslog.html</link>
+      <link>https://www.vxbus.com/post/linux/syslog.html</link>
       <pubDate>Sat, 15 Oct 2022 20:52:03 +0800</pubDate>
       
-      <guid>https://www.kad8.com/post/linux/syslog.html</guid>
+      <guid>https://www.vxbus.com/post/linux/syslog.html</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;系统默认的日志守护进程&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -188,10 +199,10 @@
     
     <item>
       <title>如何在Ubuntu Linux下将mp4转成mp3</title>
-      <link>https://www.kad8.com/post/linux/how-to-convert-mp4-to-mp3-in-ubuntu-linux.html</link>
+      <link>https://www.vxbus.com/post/linux/how-to-convert-mp4-to-mp3-in-ubuntu-linux.html</link>
       <pubDate>Sat, 15 Oct 2022 11:52:03 +0800</pubDate>
       
-      <guid>https://www.kad8.com/post/linux/how-to-convert-mp4-to-mp3-in-ubuntu-linux.html</guid>
+      <guid>https://www.vxbus.com/post/linux/how-to-convert-mp4-to-mp3-in-ubuntu-linux.html</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;&lt;code&gt;FFmpeg&lt;/code&gt;是一款开源软件，用于生成处理多媒体数据的各类库和程序。FFmpeg可以转码、处理视频和图片（调整视频、图片大小，去噪等）、打包、传输及播放视频。&lt;/p&gt;
 &lt;/blockquote&gt;
