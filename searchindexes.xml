@@ -69,7 +69,7 @@ CXL 通过固定宽度的 528 位微片传输数据，该微片由四个 16 字�
       <tag>STM32</tag>
       <tag>ARM Cortex A8</tag>
     </tags>
-    <content type="html"><![CDATA[概述 Cortex-A8是ARM公司研发的一款微处理器内核。
+    <content type="html"><![CDATA[Cortex-A8是ARM公司研发的一款微处理器内核。
 STM32为ST公司（意法半导体）系列产品的简称，尤其是以STM32系列中Cortex-M3与Cortex-M4架构MCU（单片机）最为著称。
 Cortex-A8 ARM Cortex™-A8处理器基于 ARMv7 体系结构，处理器主频常见从300MHz至1GHz不等，单核，能够运行WinCE、Linux、Android、RTOS等软件系统。
 基于Cortex-A8内核的典型微处理器，包括苹果A4芯片、NXP(原飞思卡尔)i.MX5X系列芯片、三星S5PV210芯片、TI OMAP35XX与AM335X系列芯片等。通用市场中，三星S5PV210与TI AM335X应用较为广泛。
