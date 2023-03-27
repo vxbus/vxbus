@@ -16,6 +16,33 @@
   </entry>
   
   <entry>
+    <title>i.MXRT中FlexSPI外设不常用的读选通采样时钟源</title>
+    <url>/post/hardware/read-select-sampling-clk-source-of-flexspi.html</url>
+    <categories><category>Hardware</category>
+    </categories>
+    <tags>
+      <tag>i.MXRT</tag>
+      <tag>FlexSPI</tag>
+    </tags>
+    <content type="html"><![CDATA[今天给大家分享的是i.MXRT中FlexSPI外设不常用的读选通采样时钟源 - loopbackFromSckPad。
+最近碰到一个客户，他们在 i.MXRT500 上使能了 FlexSPI-&gt;MCR0[RXCLKSRC] = 2（即 loopbackFromSckPad），这个选项字面上的意思是设置读选通采样时钟源为 SCK 引脚，这个选项在恩智浦官方的代码包里未曾使能过。客户在使用过程中遇到高频时 SCK 引脚被降压的问题（从正常的 1.8V 降至 1.2V），那么这个 loopbackFromSckPad 选项到底是什么作用以及有什么使用限制呢？
+ Note1: 参考手册里显示支持 loopbackFromSckPad 选项的型号有 i.MXRT1040/1050/1060/1064/1180/500 Note2: 参考手册里没有提及支持 loopbackFromSckPad 选项的型号有 i.MXRT1010/1015/1020/1024/1160/1170/600   为什么存在Read Strobe？ 对于串行 SPI 接口存储器，FlexSPI 外设主要支持如下两种读数据时序：一是所谓的经典 SPI 模式，IO0 (MOSI) 专用于发送命令和地址，IO1 (MISO) 专用于接收数据（图中上面的时序）。二是 Multi-I/O SPI 模式，SIO[n:0] 一起用于发送命令地址以及接收数据（图中下面的时序）。
+显然经典 SPI 模式下 IO[1:0] 是单向的，而 Multi-I/O SPI 模式下，SIO[n:0] 是双向的。当 SIO 用于双向传输时，过程中必然存在引脚方向切换，而 FlexSPI 外设在处理 SIO 方向切换时无法做到零等待周期读取数据，这就是为什么 Multi-I/O SPI 读时序中总是会存在 Dummy 周期。
+因为 Dummy 周期的存在，FlexSPI 外设内部实际上有一个 Read Strobe 信号（即 DQS）来控制数据的选通性（即什么时候开始数据有效，将数据存入内部 FIFO）。更直白点说，Read Strobe 信号的存在就是由于 FlexSPI 外设无法支持如下这种情况的读时序（下图中 COMMAND 实际应为 COMMAND&amp;ADDR）。
+FlexSPI内部Read Strobe设计 在 i.MXRT 参考手册里有如下 FlexSPI 前端采样单元框图，其中 ipp_ind_dqs_fa/b_int[x] 即是 Read Strobe 信号，它控制着 FIFO 中实际数据的存储。
+ipp_ind_dqs_fa/b_int[x] 信号共有四种来源，最原始的信号源由 FlexSPI-&gt;MCR0[RXCLKSRC] 选择，中间可能还会经过 DLLxCR 单元（这部分以后会另写文章单独介绍）、Phase Chain 单元做处理，然后送到采样单元里。
+下图是 FlexSPI-&gt;MCR0[RXCLKSRC] = 0 的情况，此时 Read Strobe 经由 ipp_do_dqs0_fa/b 纯内部 loopback 回来，没有经过任何延迟单元。这种配置一般仅用于经典 SPI 传输模式（低速 60MHz SDR 场合），适用低容量 SPI NOR / EEPROM，这时候 FlexSPI DQS Pad 可用作其它功能或者 GPIO。
+下图是 FlexSPI-&gt;MCR0[RXCLKSRC] = 1 的情况，此时 Read Strobe 经由悬空的 DQS 引脚 ipp_do_dqs1_fa/b 再 loopback 回来，此时有了 DQS 引脚绕一圈的延迟。这种配置可用于 Multi-I/O SPI 传输模式（较高速 133MHz SDR 场合），适用不含 DQS 引脚的大容量 QuadSPI NOR Flash，但是 FlexSPI DQS Pad 需要悬空。
+下图是 FlexSPI-&gt;MCR0[RXCLKSRC] = 3 的情况，此时 Read Strobe 完全由外部存储器的 DQS 引脚输出 ipp_ind_dqs3_fa/b 直通进来。这种配置可用于 Multi-I/O SPI 传输模式（最高速 166MHz/200MHz DDR 场合），适用于包含 DQS 引脚的 OctalSPI NOR Flash，这时 FlexSPI DQS Pad 与外部存储器相连。
+loopbackFromSckPad选项意义 前面铺垫了那么多，终于来到本文的主题了，即下图 FlexSPI-&gt;MCR0[RXCLKSRC] = 2 的情况，此时 Read Strobe 经由 SCK 引脚 ipp_ind_sck_fa/b 再 loopback 回来，此时有了 SCK 引脚绕一圈的延迟。
+这种配置从应用角度与 FlexSPI-&gt;MCR0[RXCLKSRC] = 1（即 loopbackFromDqsPad） 差不多，也可用于 Multi-I/O SPI 传输模式（较高速 133MHz SDR 场合），适用不含 DQS 引脚的大容量 QuadSPI NOR Flash，但是这时候 FlexSPI DQS Pad 被解放出来了，这也是它的最主要意义。
+别小看只是省了一个 DQS 引脚，也许你认为 i.MXRT I/O 那么多，省一个引脚意义不大，但是如果某些 FlexSPI 引脚组不带 DQS 信号，你又想配置 FlexSPI 以 60MHz 以上频率去访问 Flash，这时候 FlexSPI-&gt;MCR0[RXCLKSRC] = 2 选项就会帮上大忙了。
+loopbackFromSckPad使用限制 FlexSPI-&gt;MCR0[RXCLKSRC] = 2 选项虽好，但有如下两个实际使用限制：
+ 存在信号完整性问题：主要出现在 SCK 频率过高或者板级 PCB 上 SCK 信号走线过长时。 SCK自由运行模式下不可用：对于某些 FPGA 应用，有时需要设置 FlexSPI-&gt;MCR0[SCKFREERUNEN] = 1，即 SCK 需要持续给外部设备内部 PLL 提供参考时钟。   至此，i.MXRT中FlexSPI外设不常用的读选通采样时钟源 - loopbackFromSckPad痞子衡便介绍完毕了。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>RS-485接口电路设计完全指南</title>
     <url>/post/hardware/design-guide-of-rs-485-interface-circuit.html</url>
     <categories><category>Hardware</category>

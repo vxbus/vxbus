@@ -6,7 +6,25 @@
     <description>Recent content in Tags on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 27 Mar 2023 12:16:57 -0400</lastBuildDate><atom:link href="https://www.vxbus.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Mar 2023 13:10:04 -0400</lastBuildDate><atom:link href="https://www.vxbus.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FlexSPI</title>
+      <link>https://www.vxbus.com/tags/flexspi/</link>
+      <pubDate>Mon, 27 Mar 2023 13:10:04 -0400</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/flexspi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>i.MXRT</title>
+      <link>https://www.vxbus.com/tags/i.mxrt/</link>
+      <pubDate>Mon, 27 Mar 2023 13:10:04 -0400</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/i.mxrt/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>RS-485</title>
       <link>https://www.vxbus.com/tags/rs-485/</link>
