@@ -6,7 +6,25 @@
     <description>Recent content in Tags on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 27 Mar 2023 11:27:46 -0400</lastBuildDate><atom:link href="https://www.vxbus.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Mar 2023 12:16:57 -0400</lastBuildDate><atom:link href="https://www.vxbus.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RS-485</title>
+      <link>https://www.vxbus.com/tags/rs-485/</link>
+      <pubDate>Mon, 27 Mar 2023 12:16:57 -0400</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/rs-485/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UART</title>
+      <link>https://www.vxbus.com/tags/uart/</link>
+      <pubDate>Mon, 27 Mar 2023 12:16:57 -0400</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/uart/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>E Books</title>
       <link>https://www.vxbus.com/tags/e-books/</link>
@@ -265,15 +283,6 @@
       <pubDate>Mon, 19 Dec 2022 08:57:23 -0500</pubDate>
       
       <guid>https://www.vxbus.com/tags/programming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>uart</title>
-      <link>https://www.vxbus.com/tags/uart/</link>
-      <pubDate>Mon, 19 Dec 2022 08:57:23 -0500</pubDate>
-      
-      <guid>https://www.vxbus.com/tags/uart/</guid>
       <description></description>
     </item>
     
