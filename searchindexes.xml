@@ -16,6 +16,119 @@
   </entry>
   
   <entry>
+    <title>嵌入式工程师的100本专业书籍</title>
+    <url>/post/linux/embedded-book.html</url>
+    <categories><category>Linux</category>
+    </categories>
+    <tags>
+      <tag>Embedded</tag>
+      <tag>E Books</tag>
+    </tags>
+    <content type="html"><![CDATA[嵌入式工程师的100本专业书籍，推荐给需要的朋友！
+001《大话数据结构》
+002《鸟哥的 linux 私房菜》
+003《疯狂 android 讲义》
+004《第一行代码》
+005《linux 内核设计与实现》
+006《驱动设计开发》
+007《linux 内核解密》
+008《unix 环境高级编程》
+009《linux 内核设计与实现》
+010《essential C++》
+011《嵌入式 linux》
+012《linux 设备驱动》
+013《C 语言深度解剖》
+014《linux 下的 C编程》
+015《C Primer Plus（第五版）》
+016《ARM 体系结构与编程（第二版）》
+017《lINUX 设备驱动开发详解（第三版）》
+018《android 开发艺术探讨》
+019《c++plus》
+020《Unix 环境高级编程》
+021《与大数据同行——学习和教育的未来》
+022《用户体验的要素》
+023《编程与艺术》
+024《ARM 嵌入式体系结构与接口技术》
+025《cortex-m0 接口编程》
+026《C 语言程序设计:现代方法》
+027《C++ Primer》
+028《数据结构》(严蔚敏)
+029《算法导论》
+030《Linux 设备驱动开发》
+031《代码大全》
+032《深入理解计算机系统》
+033《UNIX 环境高级编程》
+034《计算机安全原理》
+035《UNIX 网络编程》
+036《HeadFirst 设计模式》
+037《linux 驱动》（宋保华）
+038《C++ primer4》
+039《qt5 精彩实例》
+040《ldd3》
+041《C++高级编程》
+042《C语言教程》
+043《实战 linux 编程精髓》
+044《ARM 教程》
+045《JAVA 编程思想》
+046《HTML+CSS 网页设计与布局从入门到精通》
+047《C 语言深度解剖》
+048《深度实践嵌入式 Linux 系统移植》
+049《unix 高级编程》
+050《C 嵌入式一站式教学》
+051《编译原理》
+052《深度实践嵌入式 Linux 系统移植》
+053《UNIX 环境高级编程》
+054《linux 网络编程》
+055《C 语言程序设计》
+056《unix 环境高级编程》
+057《嵌入式 linuxc 语言程序设计基础教程》
+058《Java 编程思想》
+059《TCP/IP 详解》
+060《linux 技术手册》
+061《C 语言深度剖析》
+062《Unix 高级环境编程》
+063《C++primerplus》
+064《QT》
+065《C 程序设计》
+066《C 和指针》
+067《C++primer》
+068《C 程序设计语言》
+069《ProgrammingC#》
+070《thinking in C++》
+071《Linux Device driver》
+072《Linux kernel development》
+073《软件工程》
+074《C 和指针》
+075《Android 核心代码》
+076《Android 技术内幕》
+077《Android 底层移植》
+078《Unix 编程手册（上下卷）》
+079《Linux 驱动设计第三版》
+080《ARM 实战开发》
+081《unix 环境高级编程》
+082《tcp/ip 编程详解》
+083《Linux 网络编程》
+084《Unix 编程艺术》
+085《计算机程序的构造和解释》
+086《C Primer plus》
+087《LINUX 权威指南》
+088《LINUX 设备驱动程序》
+089《The C Programming Language》
+090《ajax 高级程序设计》
+091《angula js 权威教程》
+092《ARM 体系结构》
+093《Unix 环境高级编程》
+094《Linux 设备驱动程序》
+095《现代操作系统》
+096《TCP/IP 协议详解》
+097《嵌入式 C 语言设计模式》
+098《Struts In Action》
+099《C 程序设计语言（第二版）》
+100《深入理解 Linux 内核（第三版）》
+]]></content>
+  </entry>
+  
+  <entry>
     <title>处理器互联：Gen-Z 终“认输”，并入CXL</title>
     <url>/post/server/gen-z-vs-cxl.html</url>
     <categories><category>Server</category>

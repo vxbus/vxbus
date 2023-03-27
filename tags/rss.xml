@@ -6,7 +6,25 @@
     <description>Recent content in Tags on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 26 Mar 2023 10:15:50 -0400</lastBuildDate><atom:link href="https://www.vxbus.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Mar 2023 11:27:46 -0400</lastBuildDate><atom:link href="https://www.vxbus.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>E Books</title>
+      <link>https://www.vxbus.com/tags/e-books/</link>
+      <pubDate>Mon, 27 Mar 2023 11:27:46 -0400</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/e-books/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Embedded</title>
+      <link>https://www.vxbus.com/tags/embedded/</link>
+      <pubDate>Mon, 27 Mar 2023 11:27:46 -0400</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/embedded/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>CXL</title>
       <link>https://www.vxbus.com/tags/cxl/</link>
