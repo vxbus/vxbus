@@ -431,7 +431,7 @@ id_rsa.pub        id_rsa_personal.pub
 <p>但是，如果你有很多对秘钥，服务器怎么知道你要用哪个呢？答案在第三步。</p>
 <h2 id="将公钥添加到github的ssh-keys里面">将公钥添加到Github的SSH keys里面</h2>
 <p>打开新生成的~/.ssh/id_rsa_personal.pub文件，复制里面的内容，然后将内容添加到GitHub上SSH keys里面
-<img src="//https://www.vxworks.net/images/vxbus/ssh-pub-key.png" alt="Github-SSH-Key"></p>
+<img src="https://www.vxworks.net/images/vxbus/ssh-pub-key.png" alt="Github-SSH-Key"></p>
 <h2 id="配置ssh-config文件">配置SSH config文件</h2>
 <p>没有config文件则创建一个，终端输入touch config，创建完以后用<code>vim</code>或者任何一个编辑器打开。</p>
 <p>在不影响默认的github设置下我们重新添加一个<code>Host</code>，建一个自己能辨识的github别名，我取的是github-personal，新建的帐号使用这个别名做<code>clone</code>和更新动作。或者直接复制代码添加到已有的config文件里面，添加之后的样子请参考下面的内容。</p>
