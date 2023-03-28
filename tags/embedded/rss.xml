@@ -6,7 +6,16 @@
     <description>Recent content in Embedded on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 27 Mar 2023 11:27:46 -0400</lastBuildDate><atom:link href="https://www.vxbus.com/tags/embedded/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Mar 2023 11:46:25 -0400</lastBuildDate><atom:link href="https://www.vxbus.com/tags/embedded/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>嵌入式开发中的C语言</title>
+      <link>https://www.vxbus.com/post/software/c-programming-language-in-embedded.html</link>
+      <pubDate>Tue, 28 Mar 2023 11:46:25 -0400</pubDate>
+      
+      <guid>https://www.vxbus.com/post/software/c-programming-language-in-embedded.html</guid>
+      <description>&lt;p&gt;本文首先分析了C语言的陷阱和缺陷，对容易犯错的地方进行归纳整理；&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>嵌入式工程师的100本专业书籍</title>
       <link>https://www.vxbus.com/post/linux/embedded-book.html</link>

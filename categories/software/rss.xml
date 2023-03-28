@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software on VxBus</title>
+    <link>https://www.vxbus.com/categories/software/</link>
+    <description>Recent content in Software on VxBus</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 28 Mar 2023 11:46:25 -0400</lastBuildDate><atom:link href="https://www.vxbus.com/categories/software/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>嵌入式开发中的C语言</title>
+      <link>https://www.vxbus.com/post/software/c-programming-language-in-embedded.html</link>
+      <pubDate>Tue, 28 Mar 2023 11:46:25 -0400</pubDate>
+      
+      <guid>https://www.vxbus.com/post/software/c-programming-language-in-embedded.html</guid>
+      <description>&lt;p&gt;本文首先分析了C语言的陷阱和缺陷，对容易犯错的地方进行归纳整理；&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
