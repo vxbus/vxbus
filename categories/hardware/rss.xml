@@ -6,7 +6,16 @@
     <description>Recent content in Hardware on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 27 Mar 2023 13:10:04 -0400</lastBuildDate><atom:link href="https://www.vxbus.com/categories/hardware/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 31 Mar 2023 11:47:04 -0400</lastBuildDate><atom:link href="https://www.vxbus.com/categories/hardware/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>0欧电阻、电感、磁珠单点接地时有什么区别</title>
+      <link>https://www.vxbus.com/post/hardware/difference-between-inductor-resistor-magnetic-beeds-when-pull-down-to-ground.html</link>
+      <pubDate>Fri, 31 Mar 2023 11:47:04 -0400</pubDate>
+      
+      <guid>https://www.vxbus.com/post/hardware/difference-between-inductor-resistor-magnetic-beeds-when-pull-down-to-ground.html</guid>
+      <description>&lt;p&gt;只要是地，最终都要接到一起，然后入大地。如果不接在一起就是“浮地”，存在压差，容易积累电荷，造成静电。地是参考0电位，所有电压都是参考地得出的，地的标准要一致，故各种地应短接在一起。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>i.MXRT中FlexSPI外设不常用的读选通采样时钟源</title>
       <link>https://www.vxbus.com/post/hardware/read-select-sampling-clk-source-of-flexspi.html</link>

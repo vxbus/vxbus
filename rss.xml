@@ -6,7 +6,7 @@
     <description>Recent content on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 28 Mar 2023 11:46:25 -0400</lastBuildDate><atom:link href="https://www.vxbus.com/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 31 Mar 2023 11:47:04 -0400</lastBuildDate><atom:link href="https://www.vxbus.com/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>欢迎加入 VxWorks 俱乐部！</title>
       <link>https://www.vxbus.com/post/welcome-to-vxworks-club/</link>
@@ -16,6 +16,15 @@
       <description>欢迎来到 北南南北 文档站点！ 相关文章来源于 VxWorks 俱乐部  ，也可能发布于 AI 嵌入式开发  ，专注于技术分享和交流。
 免责声明 所有资源均来自网络，版权归原作者，如有侵权，请联系删除！
 欢迎投稿  欢迎广大网友投稿 欢迎加入网友微信群  </description>
+    </item>
+    
+    <item>
+      <title>0欧电阻、电感、磁珠单点接地时有什么区别</title>
+      <link>https://www.vxbus.com/post/hardware/difference-between-inductor-resistor-magnetic-beeds-when-pull-down-to-ground.html</link>
+      <pubDate>Fri, 31 Mar 2023 11:47:04 -0400</pubDate>
+      
+      <guid>https://www.vxbus.com/post/hardware/difference-between-inductor-resistor-magnetic-beeds-when-pull-down-to-ground.html</guid>
+      <description>&lt;p&gt;只要是地，最终都要接到一起，然后入大地。如果不接在一起就是“浮地”，存在压差，容易积累电荷，造成静电。地是参考0电位，所有电压都是参考地得出的，地的标准要一致，故各种地应短接在一起。&lt;/p&gt;</description>
     </item>
     
     <item>
