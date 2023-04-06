@@ -7,17 +7,52 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.vxbus.com/post/hardware/difference-between-inductor-resistor-magnetic-beeds-when-pull-down-to-ground.html</loc>
-    <lastmod>2023-03-31T11:47:04-04:00</lastmod>
+    <loc>https://www.vxbus.com/tags/capacitor/</loc>
+    <lastmod>2023-04-06T10:03:11-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/categories/</loc>
-    <lastmod>2023-03-31T11:47:04-04:00</lastmod>
+    <lastmod>2023-04-06T10:03:11-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/coupling-circuit/</loc>
+    <lastmod>2023-04-06T10:03:11-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/decoupling/</loc>
+    <lastmod>2023-04-06T10:03:11-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/categories/hardware/</loc>
+    <lastmod>2023-04-06T10:03:11-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/post/</loc>
+    <lastmod>2023-04-06T10:03:11-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/</loc>
+    <lastmod>2023-04-06T10:03:11-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/</loc>
+    <lastmod>2023-04-06T10:03:11-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/post/hardware/selection-of-the-coupling-capacitor-capacity-in-the-decoupling-circuit.html</loc>
+    <lastmod>2023-04-06T10:03:11-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/post/hardware/difference-between-inductor-resistor-magnetic-beeds-when-pull-down-to-ground.html</loc>
     <lastmod>2023-03-31T11:47:04-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -32,22 +67,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.vxbus.com/post/</loc>
-    <lastmod>2023-03-31T11:47:04-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.vxbus.com/tags/resistor/</loc>
-    <lastmod>2023-03-31T11:47:04-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/tags/</loc>
-    <lastmod>2023-03-31T11:47:04-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/</loc>
     <lastmod>2023-03-31T11:47:04-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
