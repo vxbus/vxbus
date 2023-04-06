@@ -16,6 +16,41 @@
   </entry>
   
   <entry>
+    <title>嵌入式开发中的C语言-测试</title>
+    <url>/post/software/c-programming-language-test.html</url>
+    <categories><category>Software</category>
+    </categories>
+    <tags>
+      <tag>Embedded</tag>
+      <tag>C programming language</tag>
+      <tag>Test</tag>
+    </tags>
+    <content type="html"><![CDATA[思维再缜密的程序员也不可能编写完全无缺陷的C语言程序，测试的目的正是尽可能多的发现这些缺陷并改正。
+这里说的测试，是指程序员的自测试。前期的自测试能够更早的发现错误，相应的修复成本也会很低，如果你不彻底测试自己的代码，恐怕你开发的就不只是代码，可能还会声名狼藉。
+优质嵌入式C程序跟优质的基础元素关系密切，可以将函数作为基础元素，我们的测试正是从最基本的函数开始。判断哪些函数需要测试需要一定的经验积累，虽然代码行数跟逻辑复杂度并不成正比，但如果你不能判断某个函数是否要测试，一个简单粗暴的方法是：当函数有效代码超过20行，就测试它。
+程序员对自己的代码以及逻辑关系十分清楚，测试时，按照每一个逻辑分支全面测试。很多错误发生在我们认为不会出错的地方，所以即便某个逻辑分支很简单，也建议测试一遍。第一个原因是我们自己看自己的代码总是不容易发现错误，而测试能暴露这些错误；另一方面，语法正确、逻辑正确的代码，经过编译器编译后，生成的汇编代码很可能与你的逻辑相差甚远。
+比如我们前文提及的使用volatile以及不使用volatile关键字编译后生成的汇编代码，再比如我们用低优化级别编译和使用高优化级别编译后生成的汇编代码，都可能相差很大，实际运行测试，可以暴漏这些隐含错误。最后，虽然可能性极小，编译器本身也可能有BUG，特别是构造复杂表达式的情况下（应极力避免复杂表达式）。
+使用硬件调试器测试 使用硬件调试器（比如J-link）测试是最通用的手段。可以单步运行、设置断点，可以很方便的查看当前寄存器、变量的值。在寻找缺陷方面，使用硬件调试器测试是最简单却又最有效的手段。
+硬件调试器已经在公司普遍使用，这方面的测试不做介绍，想必大家都已经很熟悉了。
+有些缺陷很难缠 就像没有一种方法能完美解决所有问题，在实际项目中，硬件调试器也有难以触及的地方。可以举几个例子说明：
+ 使用了比较大的协议栈，需要跟进到协议栈内部调试的缺陷  比如公司使用lwIP协议栈，如果跟踪数据的处理过程，需要从接收数据开始一直到应用层处理数据，之间会经过驱动层、IP层、TCP层和应用层，会经过十几个文件几十个函数，使用硬件调试器跟踪费时费力；
+ 具有随机性的缺陷  有一些缺陷，可能是不定时出现的，有可能是几分钟出现，也有可能是几个小时甚至几天才出现，像这样的缺陷很难用硬件调试器捕捉到；
+ 需要外界一系列有时间限制的输入条件触发，但这一过程中有缺陷  比如我们用组合键来完成某个功能，规定按下按键1不小于3秒后松开，然后在6秒内分别按下按键2、按键3、按键4这三个按键来执行我们的特定程序，要测试类似这种过程，硬件调试器很难做到；
+除了测试缺陷需要，有时候我们在做稳定性测试时，需要知道软件每时每刻运行到那些分支、执行了哪些操作、我们关心的变量当前值是什么等等，这些都表明，我们还需要一种和硬件调试器互补的测试手段。
+这个测试手段就是在程序中增加额外调试语句，当程序运行时，通过这些调试语句将运行信息输出到可以方便查看的设备上，可以是PC机、LCD显示屏、存储卡等等。
+以串口输出到PC机为例，下面提供完整的测试思路。在此之前，我们先对这种测试手段提一些要求：
+ 必须简单易用  我们在初学C语言的时候，都接触过printf函数，这个函数可以方便的输出信息，并可以将各种变量格式化为指定格式的字符串，我们应当提供类似的函数；
+ 调试语句必须方便的从代码中移除  在编码阶段，我们可能会往程序中加入大量的调试语句，但是程序发布时，需要将这些调试语句从代码中移除，这将是件恐怖的过程。我们必须提供一种策略，可以方便的移除这些调试语句。
+简单易用的调试函数 使用库函数printf。以MDK为例，方法如下   初始化串口
+  重构fputc函数，printf函数会调用fputc函数执行底层串口的数据发送。
+  /** * @brief 将C库中的printf函数重定向到指定的串口. * @param ch:要发送的字符 * @param f:文件指针 */ int fputc(int ch, FILE *f) { /* 这里是一个跟硬件相关函数，将一个字符写到UART */ //举例： USART_SendData(UART_COM1, (unit8_t) ch); 	return ch; } 在Options for Targer窗口，Targer标签栏下，勾选Use MicroLIB前的复选框以便避免使用半主机功能。（注：标准C库printf函数默认开启半主机功能，如果非要使用标准C库，请自行查阅资料）  构建自己的调试函数 使用库函数比较方便，但也少了一些灵活性，不利于随心所欲的定制输出格式。自己编写类似printf函数则会更灵活一些，而且不依赖任何编译器。下面给出一个完整的类printf函数实现，该函数支持有限的格式参数，使用方法与库函数一致。
+同库函数类似，该也需要提供一个底层串口发送函数（原型为：int32_t UARTwrite(const uint8_t *pcBuf, uint32_t ulLen)），用来发送指定数目的字符，并返回最终发送的字符个数。
+#include &lt;stdarg.h&gt; /*支持函数接收不定量参数*/  const char * const g_pcHex = &#34;0123456789abcdef&#34;; /** * 简介: 一个简单的printf函数,支持\%c, \%d, \%p, \%s, \%u,\%x, and \%X. */ void UARTprintf(const uint8_t *pcString, ...) { uint32_t ulIdx; uint32_t ulValue; //保存从不定量参数堆栈中取出的数值型变量  uint32_t ulPos, ulCount; uint32_t ulBase; //保存进制基数,如十进制则为10,十六进制数则为16  uint32_t ulNeg; //为1表示从变量为负数  uint8_t *pcStr; //保存从不定量参数堆栈中取出的字符型变量  uint8_t pcBuf[32]; //保存数值型变量字符化后的字符  uint8_t cFill; //&#39;%08x&#39;-&gt;不足8个字符用&#39;0&#39;填充,cFill=&#39;0&#39;;  //&#39;%8x &#39;-&gt;不足8个字符用空格填充,cFill=&#39; &#39;  va_list vaArgP; va_start(vaArgP, pcString); while(*pcString) { // 首先搜寻非%核字符串结束字符  for(ulIdx = 0; (pcString[ulIdx] != &#39;%&#39;) &amp;&amp; (pcString[ulIdx] != &#39;\0&#39;); ulIdx++) { } UARTwrite(pcString, ulIdx); pcString += ulIdx; if(*pcString == &#39;%&#39;) { pcString++; ulCount = 0; cFill = &#39; &#39;; again: switch(*pcString++) { case &#39;0&#39;: case &#39;1&#39;: case &#39;2&#39;: case &#39;3&#39;: case &#39;4&#39;: case &#39;5&#39;: case &#39;6&#39;: case &#39;7&#39;: case &#39;8&#39;: case &#39;9&#39;: { // 如果第一个数字为0, 则使用0做填充,则用空格填充)  if((pcString[-1] == &#39;0&#39;) &amp;&amp; (ulCount == 0)) { cFill = &#39;0&#39;; } ulCount *= 10; ulCount += pcString[-1] - &#39;0&#39;; goto again; } case &#39;c&#39;: { ulValue = va_arg(vaArgP, unsigned long); UARTwrite((unsigned char *)&amp;ulValue, 1); break; } case &#39;d&#39;: { ulValue = va_arg(vaArgP, unsigned long); ulPos = 0; if((long)ulValue &lt; 0) { ulValue = -(long)ulValue; ulNeg = 1; } else { ulNeg = 0; } ulBase = 10; goto convert; } case &#39;s&#39;: { pcStr = va_arg(vaArgP, unsigned char *); for(ulIdx = 0; pcStr[ulIdx] != &#39;\0&#39;; ulIdx++) { } UARTwrite(pcStr, ulIdx); if(ulCount &gt; ulIdx) { ulCount -= ulIdx; while(ulCount--) { UARTwrite(&#34; &#34;, 1); } } break; } case &#39;u&#39;: { ulValue = va_arg(vaArgP, unsigned long); ulPos = 0; ulBase = 10; ulNeg = 0; goto convert; } case &#39;x&#39;: case &#39;X&#39;: case &#39;p&#39;: { ulValue = va_arg(vaArgP, unsigned long); ulPos = 0; ulBase = 16; ulNeg = 0; convert: //将数值转换成字符  for(ulIdx = 1; (((ulIdx * ulBase) &lt;= ulValue) &amp;&amp;(((ulIdx * ulBase) / ulBase) == ulIdx)); ulIdx *= ulBase, ulCount--) { } if(ulNeg) { ulCount--; } if(ulNeg &amp;&amp; (cFill == &#39;0&#39;)) { pcBuf[ulPos++] = &#39;-&#39;; ulNeg = 0; } if((ulCount &gt; 1) &amp;&amp; (ulCount &lt; 16)) { for(ulCount--; ulCount; ulCount--) { pcBuf[ulPos++] = cFill; } } if(ulNeg) { pcBuf[ulPos++] = &#39;-&#39;; } for(; ulIdx; ulIdx /= ulBase) { pcBuf[ulPos++] = g_pcHex[(ulValue / ulIdx)% ulBase]; } UARTwrite(pcBuf, ulPos); break; } case &#39;%&#39;: { UARTwrite(pcString - 1, 1); break; } default: { UARTwrite(&#34;ERROR&#34;, 5); break; } } } } //可变参数处理结束  va_end(vaArgP); } 对调试函数进一步封装 上文说到，我们增加的调试语句应能很方便的从最终发行版中去掉，因此我们不能直接调用printf或者自定义的UARTprintf函数，需要将这些调试函数做一层封装，以便随时从代码中去除这些调试语句。参考方法如下：
+#ifdef MY_DEBUG #define MY_DEBUG(message) do { \ {UARTprintf message;} \ } while(0) #else #define MY_DEBUG(message) #endif /* PLC_DEBUG */在我们编码测试期间，定义宏MY_DEBUG，并使用宏MY_DEBUGF（注意比前面那个宏多了一个‘F’）输出调试信息。经过预处理后，宏MY_DEBUGF(message)会被UARTprintf message代替，从而实现了调试信息的输出；当正式发布时，只需要将宏MY_DEBUG注释掉，经过预处理后，所有MY_DEBUGF(message)语句都会被空格代替，而从将调试信息从代码中去除掉。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>如何在去耦电路中选择耦合电容的容量</title>
     <url>/post/hardware/selection-of-the-coupling-capacitor-capacity-in-the-decoupling-circuit.html</url>
     <categories><category>Hardware</category>
