@@ -6,7 +6,16 @@
     <description>Recent content in Process on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 19 Mar 2023 04:31:28 -0400</lastBuildDate><atom:link href="https://www.vxbus.com/tags/process/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 May 2023 03:00:41 -0400</lastBuildDate><atom:link href="https://www.vxbus.com/tags/process/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux进程管理工具htop</title>
+      <link>https://www.vxbus.com/post/linux/linux-system-process-management-tool-htop.html</link>
+      <pubDate>Mon, 01 May 2023 03:00:41 -0400</pubDate>
+      
+      <guid>https://www.vxbus.com/post/linux/linux-system-process-management-tool-htop.html</guid>
+      <description>&lt;p&gt;今天我要给大家分享一个比Top更好用的进程管理工具htop（High Top）。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Linux 进程概念: 冯 • 诺依曼体系结构</title>
       <link>https://www.vxbus.com/post/linux/linux-process-concept-von-neumann-architecture.html</link>

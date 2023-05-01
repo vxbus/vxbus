@@ -7,12 +7,52 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.vxbus.com/tags/c-programming-language/</loc>
-    <lastmod>2023-04-06T10:27:51-04:00</lastmod>
+    <loc>https://www.vxbus.com/categories/</loc>
+    <lastmod>2023-05-01T03:00:41-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.vxbus.com/categories/</loc>
+    <loc>https://www.vxbus.com/tags/htop/</loc>
+    <lastmod>2023-05-01T03:00:41-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/categories/linux/</loc>
+    <lastmod>2023-05-01T03:00:41-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/post/linux/linux-system-process-management-tool-htop.html</loc>
+    <lastmod>2023-05-01T03:00:41-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/post/</loc>
+    <lastmod>2023-05-01T03:00:41-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/process/</loc>
+    <lastmod>2023-05-01T03:00:41-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/</loc>
+    <lastmod>2023-05-01T03:00:41-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/top/</loc>
+    <lastmod>2023-05-01T03:00:41-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/</loc>
+    <lastmod>2023-05-01T03:00:41-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/c-programming-language/</loc>
     <lastmod>2023-04-06T10:27:51-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -22,27 +62,12 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.vxbus.com/post/</loc>
-    <lastmod>2023-04-06T10:27:51-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.vxbus.com/categories/software/</loc>
     <lastmod>2023-04-06T10:27:51-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.vxbus.com/tags/</loc>
-    <lastmod>2023-04-06T10:27:51-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.vxbus.com/tags/test/</loc>
-    <lastmod>2023-04-06T10:27:51-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/</loc>
     <lastmod>2023-04-06T10:27:51-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -137,11 +162,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.vxbus.com/categories/linux/</loc>
-    <lastmod>2023-03-27T11:27:46-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.vxbus.com/post/linux/embedded-book.html</loc>
     <lastmod>2023-03-27T11:27:46-04:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -198,11 +218,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/post/linux/linux-process-concept-von-neumann-architecture.html</loc>
-    <lastmod>2023-03-19T04:31:28-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/tags/process/</loc>
     <lastmod>2023-03-19T04:31:28-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
