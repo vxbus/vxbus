@@ -6,7 +6,43 @@
     <description>Recent content in Tags on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 01 May 2023 03:00:41 -0400</lastBuildDate><atom:link href="https://www.vxbus.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Jun 2023 07:15:37 -0400</lastBuildDate><atom:link href="https://www.vxbus.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exception</title>
+      <link>https://www.vxbus.com/tags/exception/</link>
+      <pubDate>Sun, 18 Jun 2023 07:15:37 -0400</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/exception/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programming</title>
+      <link>https://www.vxbus.com/tags/programming/</link>
+      <pubDate>Sun, 18 Jun 2023 07:15:37 -0400</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Task</title>
+      <link>https://www.vxbus.com/tags/task/</link>
+      <pubDate>Sun, 18 Jun 2023 07:15:37 -0400</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/task/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VxWorks</title>
+      <link>https://www.vxbus.com/tags/vxworks/</link>
+      <pubDate>Sun, 18 Jun 2023 07:15:37 -0400</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/vxworks/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>htop</title>
       <link>https://www.vxbus.com/tags/htop/</link>
@@ -386,15 +422,6 @@
     </item>
     
     <item>
-      <title>programming</title>
-      <link>https://www.vxbus.com/tags/programming/</link>
-      <pubDate>Mon, 19 Dec 2022 08:57:23 -0500</pubDate>
-      
-      <guid>https://www.vxbus.com/tags/programming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>usb</title>
       <link>https://www.vxbus.com/tags/usb/</link>
       <pubDate>Mon, 19 Dec 2022 08:57:23 -0500</pubDate>
@@ -652,15 +679,6 @@
       <pubDate>Fri, 07 Oct 2022 05:35:25 -0400</pubDate>
       
       <guid>https://www.vxbus.com/tags/qt/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>VxWorks</title>
-      <link>https://www.vxbus.com/tags/vxworks/</link>
-      <pubDate>Fri, 07 Oct 2022 05:35:25 -0400</pubDate>
-      
-      <guid>https://www.vxbus.com/tags/vxworks/</guid>
       <description></description>
     </item>
     
