@@ -6,7 +6,16 @@
     <description>Recent content in DSP on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 01 Jan 2023 08:34:16 -0500</lastBuildDate><atom:link href="https://www.vxbus.com/categories/dsp/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Jun 2023 22:45:26 -0400</lastBuildDate><atom:link href="https://www.vxbus.com/categories/dsp/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>信号带宽与上升沿的关系</title>
+      <link>https://www.vxbus.com/post/dsp/signal-bandwidth-vs-rising-edge.html</link>
+      <pubDate>Fri, 23 Jun 2023 22:45:26 -0400</pubDate>
+      
+      <guid>https://www.vxbus.com/post/dsp/signal-bandwidth-vs-rising-edge.html</guid>
+      <description>&lt;p&gt;前面我发过一篇文章，探讨的是带宽和上升时间的系数0.35是怎么来的？&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>什么是DSP</title>
       <link>https://www.vxbus.com/post/dsp/what-is-dsp.html</link>
