@@ -8,16 +8,46 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/categories/</loc>
-    <lastmod>2023-07-30T02:57:28-04:00</lastmod>
+    <lastmod>2023-07-30T03:42:19-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.vxbus.com/tags/linux/</loc>
-    <lastmod>2023-07-30T02:57:28-04:00</lastmod>
+    <loc>https://www.vxbus.com/tags/iscsi/</loc>
+    <lastmod>2023-07-30T03:42:19-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/categories/linux/</loc>
+    <lastmod>2023-07-30T03:42:19-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/post/linux/linux-iSCSI-network-drive.html</loc>
+    <lastmod>2023-07-30T03:42:19-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/network-drive/</loc>
+    <lastmod>2023-07-30T03:42:19-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/post/</loc>
+    <lastmod>2023-07-30T03:42:19-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/</loc>
+    <lastmod>2023-07-30T03:42:19-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/</loc>
+    <lastmod>2023-07-30T03:42:19-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/linux/</loc>
     <lastmod>2023-07-30T02:57:28-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -33,16 +63,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/post/server/detailed-explanation-of-ssh-remote-connection-service.html</loc>
-    <lastmod>2023-07-30T02:57:28-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/tags/</loc>
-    <lastmod>2023-07-30T02:57:28-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/</loc>
     <lastmod>2023-07-30T02:57:28-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -98,11 +118,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/tags/htop/</loc>
-    <lastmod>2023-05-01T03:00:41-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/categories/linux/</loc>
     <lastmod>2023-05-01T03:00:41-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

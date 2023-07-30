@@ -6,7 +6,7 @@
     <description>Recent content in Posts on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 30 Jul 2023 02:57:28 -0400</lastBuildDate><atom:link href="https://www.vxbus.com/post/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 Jul 2023 03:42:19 -0400</lastBuildDate><atom:link href="https://www.vxbus.com/post/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>欢迎加入 VxWorks 俱乐部！</title>
       <link>https://www.vxbus.com/post/welcome-to-vxworks-club/</link>
@@ -16,6 +16,15 @@
       <description>欢迎来到 北南南北 文档站点！ 相关文章来源于 VxWorks 俱乐部  ，也可能发布于 AI 嵌入式开发  ，专注于技术分享和交流。
 免责声明 所有资源均来自网络，版权归原作者，如有侵权，请联系删除！
 欢迎投稿  欢迎广大网友投稿 欢迎加入网友微信群  </description>
+    </item>
+    
+    <item>
+      <title>Linux iSCSI 网络磁盘</title>
+      <link>https://www.vxbus.com/post/linux/linux-iSCSI-network-drive.html</link>
+      <pubDate>Sun, 30 Jul 2023 03:42:19 -0400</pubDate>
+      
+      <guid>https://www.vxbus.com/post/linux/linux-iSCSI-network-drive.html</guid>
+      <description>&lt;p&gt;ISCSI网络磁盘是一种利用TCP/IP协议在网络上传输SCSI命令的技术，可以实现远程访问存储设备的功能。ISCSI网络磁盘可以用于存储整合和灾难恢复的场景，也可以节省专用光纤网络的成本。&lt;/p&gt;</description>
     </item>
     
     <item>
