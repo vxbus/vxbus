@@ -7,8 +7,53 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://www.vxbus.com/tags/adc/</loc>
+    <lastmod>2023-07-30T03:56:58-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://www.vxbus.com/categories/</loc>
-    <lastmod>2023-07-30T03:42:19-04:00</lastmod>
+    <lastmod>2023-07-30T03:56:58-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/dac/</loc>
+    <lastmod>2023-07-30T03:56:58-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/eeprom/</loc>
+    <lastmod>2023-07-30T03:56:58-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/categories/hardware/</loc>
+    <lastmod>2023-07-30T03:56:58-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/i2c/</loc>
+    <lastmod>2023-07-30T03:56:58-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/post/hardware/i2c-bus-communication-trouble-shooting.html</loc>
+    <lastmod>2023-07-30T03:56:58-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/post/</loc>
+    <lastmod>2023-07-30T03:56:58-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/</loc>
+    <lastmod>2023-07-30T03:56:58-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/</loc>
+    <lastmod>2023-07-30T03:56:58-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -28,21 +73,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/tags/network-drive/</loc>
-    <lastmod>2023-07-30T03:42:19-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/post/</loc>
-    <lastmod>2023-07-30T03:42:19-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/tags/</loc>
-    <lastmod>2023-07-30T03:42:19-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/</loc>
     <lastmod>2023-07-30T03:42:19-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -173,11 +203,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/tags/decoupling/</loc>
-    <lastmod>2023-04-06T10:03:11-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/categories/hardware/</loc>
     <lastmod>2023-04-06T10:03:11-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -484,11 +509,6 @@
   </url><url>
     <loc>https://www.vxbus.com/post/linux/linux-crontab-knowledge.html</loc>
     <lastmod>2022-12-18T09:30:20-05:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/tags/i2c/</loc>
-    <lastmod>2022-12-17T04:57:58-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>

@@ -6,7 +6,43 @@
     <description>Recent content in Tags on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 30 Jul 2023 03:42:19 -0400</lastBuildDate><atom:link href="https://www.vxbus.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 Jul 2023 03:56:58 -0400</lastBuildDate><atom:link href="https://www.vxbus.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ADC</title>
+      <link>https://www.vxbus.com/tags/adc/</link>
+      <pubDate>Sun, 30 Jul 2023 03:56:58 -0400</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/adc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DAC</title>
+      <link>https://www.vxbus.com/tags/dac/</link>
+      <pubDate>Sun, 30 Jul 2023 03:56:58 -0400</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/dac/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EEPROM</title>
+      <link>https://www.vxbus.com/tags/eeprom/</link>
+      <pubDate>Sun, 30 Jul 2023 03:56:58 -0400</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/eeprom/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>I2C</title>
+      <link>https://www.vxbus.com/tags/i2c/</link>
+      <pubDate>Sun, 30 Jul 2023 03:56:58 -0400</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/i2c/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>iSCSI</title>
       <link>https://www.vxbus.com/tags/iscsi/</link>
@@ -481,15 +517,6 @@
       <pubDate>Sun, 18 Dec 2022 09:30:20 -0500</pubDate>
       
       <guid>https://www.vxbus.com/tags/crontab/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>I2C</title>
-      <link>https://www.vxbus.com/tags/i2c/</link>
-      <pubDate>Sat, 17 Dec 2022 04:57:58 -0500</pubDate>
-      
-      <guid>https://www.vxbus.com/tags/i2c/</guid>
       <description></description>
     </item>
     
