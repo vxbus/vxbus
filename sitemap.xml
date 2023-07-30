@@ -8,7 +8,42 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/categories/</loc>
-    <lastmod>2023-06-23T22:45:26-04:00</lastmod>
+    <lastmod>2023-07-30T02:57:28-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/linux/</loc>
+    <lastmod>2023-07-30T02:57:28-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/post/</loc>
+    <lastmod>2023-07-30T02:57:28-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/categories/server/</loc>
+    <lastmod>2023-07-30T02:57:28-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/ssh/</loc>
+    <lastmod>2023-07-30T02:57:28-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/post/linux/detailed-explanation-of-ssh-remote-connection-service.html</loc>
+    <lastmod>2023-07-30T02:57:28-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/</loc>
+    <lastmod>2023-07-30T02:57:28-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/</loc>
+    <lastmod>2023-07-30T02:57:28-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -17,22 +52,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.vxbus.com/post/</loc>
-    <lastmod>2023-06-23T22:45:26-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.vxbus.com/tags/signal-bandwidth/</loc>
-    <lastmod>2023-06-23T22:45:26-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/tags/</loc>
-    <lastmod>2023-06-23T22:45:26-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/</loc>
     <lastmod>2023-06-23T22:45:26-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -227,11 +247,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.vxbus.com/categories/server/</loc>
-    <lastmod>2023-03-26T10:15:50-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.vxbus.com/post/server/gen-z-vs-cxl.html</loc>
     <lastmod>2023-03-26T10:15:50-04:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -278,11 +293,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/post/linux/40-simple-and-useful-linux-shell-script.html</loc>
-    <lastmod>2023-03-18T11:35:48-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/tags/linux/</loc>
     <lastmod>2023-03-18T11:35:48-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

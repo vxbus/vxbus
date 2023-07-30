@@ -16,6 +16,37 @@
   </entry>
   
   <entry>
+    <title>SSH远程连接服务详解</title>
+    <url>/post/linux/detailed-explanation-of-ssh-remote-connection-service.html</url>
+    <categories><category>Server</category>
+    </categories>
+    <tags>
+      <tag>SSH</tag>
+      <tag>Linux</tag>
+    </tags>
+    <content type="html"><![CDATA[SSH（Secure Shell ，安全外壳）是一种网络安全协议，通过加密和认证机制实现安全的访问和文件传输等业务。
+SSH远程服务 SSH概述 what？ SSH（Secure Shell ，安全外壳）是一种网络安全协议，通过加密和认证机制实现安全的访问和文件传输等业务。
+传统远程登录和文件传输方式，例如Telnet、FTP，使用明文传输数据，存在很多的安全隐患。随着人们对网络安全的重视，这些方式已经慢慢不被接受。SSH协议通过对网络数据进行加密和验证，在不安全的网络环境中提供了安全的网络服务。作为Telnet和其他不安全远程shell协议的安全替代方案，目前SSH协议已经被全世界广泛使用，大多数设备都支持SSH功能。
+除了ssh，远程连接服务还有哪些？
+# windows -rdp 端口 3389 remote desktop protocol # linux ssh 监听22端口 加密传输 默认支持root登录 telnet 监听23端口 明文传输 不支持root用户登录 ftp 监听21端口 why ssh？SSH服务主要功能？  提供远程连接服务器的服务 对传输的数据进行加密  传统的互联网通信使用明文传输数据，内容一旦被截获就会完全暴露，存在很多安全隐患。SSH协议通过对网络数据进行加密和验证，建立SSH客户端和SSH服务器之间的安全隧道，在不安全的网络环境中为网络服务提供了安全的传输通道。
+SSH最常用的场景是远程登录和文件传输。在SSH协议出现之前，Telnet广泛应用于远程登录场景，为远程管理网络设备提供了极大便利，而FTP作为常用的文件传输协议，兼具操作简单和传输效率高的优点，但它们都存在相同的问题，即明文传输数据带来的安全隐患。SSH采用加密传输数据、提升认证强度等手段，克服了Telnet和FTP应用中的安全性问题，实现了安全的远程登录和文件传输业务。
+SSH常用场景：
+面试题：下列服务都是哪些端口
+ftp 21 dns 53 ssh 22 telnet 23 mysql 3306 http 80 https 443 rsync 873 实践：使用网络抓包软件wireshark抓包验证telnet明文传输和ssh加密传输
+ 安装telnet并启动，查看端口  yum install telnet-server -y //telnet-client (或 telnet)，提供的是 telnet 客户端程序；telnet-server软件包才是真正的 Telnet server 软件包。 systemctl start telnet.socket xshell新建一个telnet连接，发现telnet无法用root登录。需先创建一个普通用户，创建密码  useradd xxx echo 1 | passwd --stdin xxx xshell使用普通用户进行telnet连接登录  安装wireshark，检测vmnet8网卡上telnet的流量  搜索wireshark包含telnet相关的流量
+右键&ndash;&gt;追踪流&ndash;&gt;tcp流，看下都是明文的。
+wireshark分析SSH流量，发现都是加密的  SSH工作原理简介 SSH由服务器和客户端组成，为建立安全的SSH通道，双方需要先建立TCP连接，然后协商使用的版本号和各类算法，并生成相同的会话密钥用于后续的对称加密。在完成用户认证后，双方即可建立会话进行数据交互。
+常用SSH连接工具 由于SSH是一套协议标准，需要依赖基于SSH实现的工具完成SSH客户端和SSH服务器之间的连接，PuTTY和OpenSSH应运而生。
+PuTTY是Windows上经典的免费SSH连接工具，通常用于使用SSH协议远程登录设备，最新版本可以在PuTTY官网下载。
+OpenSSH是SSH协议的开源实现，支持在Unix操作系统上运行，最新版本可以在OpenSSH官网下载。目前Windows10已经包含OpenSSH客户端和服务器软件，可在“设置—应用—应用与功能—可选功能”中搜索安装。
+SSH使用 查看Linux里的ssh软件包信息
+# 查看Linux里的ssh软件包信息（Cent7系统默认安装中已包含SSH服务软件openssh和openssl） [root@web01 ~]# rpm -qa|grep openssh openssh-server-7.4p1-16.el7.x86_64 # ssh服务端软件，包括配置文件、守护进程SSHD，sshd-keygen秘钥创建工具等 openssh-7.4p1-16.el7.x86_64 openssh-clients-7.4p1-16.el7.x86_64 # ssh客户端软件。在ssh客户端软件中包含ssh、slogin远程登陆、scp远程拷贝、sftp文件传输、ssh-copy-id秘钥分发等应用程序。 用ssh登录其他远程服务器
+# 用ssh登录其他远程服务器： ssh 当前用户@要连接的IP # //没有秘钥对认证时是密码认证 -p 指定端口 （默认-p22可省略） 比如拿web01连backup： [root@web01 ~]# ssh -p22 root@10.0.0.41 或者 [root@web01 ~]# ssh 10.0.0.41 //直接省略，默认使用当前登录用户 [root@web01 ~]# ssh root@10.0.0.41 &#39;ip a&#39; //登录之后查看backup机器的内容 ...输入密码 [root@backup ~]# ifconfig // 登录后变backup了 （省略输出） logout或exit退出当前用户 # -p怎么用？例如 [root@web01 ~]# vim /etc/ssh/sshd_config //web01改端口号为333： Port 333 [root@web01 ~]# systemctl restart sshd //重启ssh服务 再用backup连web01，发现连不上了： [root@backup ~]# ssh root@10.0.0.7 ssh: connect to host 10.0.0.7 port 22: Connection refused [root@backup ~]# ssh root@10.0.0.7 &#39;ifconfig&#39; ssh: connect to host 10.0.0.7 port 22: Connection refused -p指定端口号即可 [root@backup ~]# ssh -p 333 root@10.0.0.7 [root@backup ~]# ssh -p 333 root@10.0.0.7 &#39;ifconfig&#39; root@10.0.0.7&#39;s password: eth0: flags=4163&lt;UP,BROADCAST,RUNNING,MULTICAST&gt; mtu 1500 inet 10.0.0.7 netmask 255.255.255.0 broadcast 10.0.0.255 inet6 fe80::20c:29ff:fe63:27a prefixlen 64 scopeid 0x20&lt;link&gt; （省略输出） # 注意把端口号改回去，不然等下xshell也连不上了 scp远程复制命令
+# scp 远程复制数据至远程服务器（全量复制） -r 表示递归拷贝目录 -p 表示在拷贝文件前后保持文件或目录属性不变 -l 限速(默认kb) 比如限速为8096kb：cp -rp -l 8096 （换算为MB，要除以 8096/8=1024KB=1MB） -P 指定端口，默认22端口可不写 推 scp 选项 要推的文件 要推到哪里 （用户@IP:目标路径） scp -r /etc/passwd root@10.0.0.41:/opt 拉 scp -r root@10.0.0.41:/opt/passwd /tmp # 注： 1、scp通过ssh协议加密方式进行拷贝 2、scp的连接用户作为拷贝文件或者目录的权限。比如本来属组属主xxx，拉过来之后变你当前登录用户 3、scp是全量拷贝，效率低 Sftp远程数据传输命令
+[root@web01 ~]# sftp root@10.0.0.41 //默认可以通过sftp命令连接sftp服务 root@10.0.0.41&#39;s password: Connected to 10.0.0.41. sftp&gt; get 1.txt /tmp #//sftp使用get下载文件至于本地服务器 Fetching /root/1.txt to /tmp/1.txt /root/1.txt 100% 6 1.0KB/s 00:00 sftp&gt; get backup.sh File &#34;/root/backup.sh&#34; not found. sftp&gt; put /root/2.txt /toot #//sftp使用put上传本地文件于远程服务器 ]]></content>
+  </entry>
+  
+  <entry>
     <title>信号带宽与上升沿的关系</title>
     <url>/post/dsp/signal-bandwidth-vs-rising-edge.html</url>
     <categories><category>DSP</category>
