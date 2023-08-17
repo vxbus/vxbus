@@ -7,12 +7,52 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.vxbus.com/tags/adc/</loc>
-    <lastmod>2023-07-30T03:56:58-04:00</lastmod>
+    <loc>https://www.vxbus.com/tags/ai/</loc>
+    <lastmod>2023-08-17T10:09:03-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/categories/</loc>
+    <lastmod>2023-08-17T10:09:03-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/gh200-grace-hopper/</loc>
+    <lastmod>2023-08-17T10:09:03-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/nvidia/</loc>
+    <lastmod>2023-08-17T10:09:03-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/post/</loc>
+    <lastmod>2023-08-17T10:09:03-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/categories/server/</loc>
+    <lastmod>2023-08-17T10:09:03-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/</loc>
+    <lastmod>2023-08-17T10:09:03-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/</loc>
+    <lastmod>2023-08-17T10:09:03-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/post/server/gen-z-vs-cxl.html</loc>
+    <lastmod>2023-08-17T10:09:03-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/adc/</loc>
     <lastmod>2023-07-30T03:56:58-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -42,21 +82,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.vxbus.com/post/</loc>
-    <lastmod>2023-07-30T03:56:58-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/tags/</loc>
-    <lastmod>2023-07-30T03:56:58-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/</loc>
-    <lastmod>2023-07-30T03:56:58-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.vxbus.com/tags/iscsi/</loc>
     <lastmod>2023-07-30T03:42:19-04:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -78,11 +103,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/tags/linux/</loc>
-    <lastmod>2023-07-30T02:57:28-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/categories/server/</loc>
     <lastmod>2023-07-30T02:57:28-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
