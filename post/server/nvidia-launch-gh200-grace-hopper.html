@@ -10,26 +10,26 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/imgs/icons/favicon_16x16_next.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/imgs/icons/favicon_32_32_next.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/imgs/icons/apple_touch_icon_next.png">
-<meta itemprop="name" content="I2C通讯不了？是不是硬件有问题" />
-<meta itemprop="description" content="I2C通讯不了？是不是硬件有问题" />
+<meta itemprop="name" content="英伟达再度释放AI“炸弹”" />
+<meta itemprop="description" content="英伟达再度释放AI“炸弹”" />
 <meta itemprop="datePublished" ZgotmplZ />
 <meta itemprop="dateModified" ZgotmplZ />
 <meta itemprop="image" content="https://www.vxbus.com/imgs/vxbus_logo.png" />
-<meta itemprop="keywords" content="I2C,ADC,DAC,EEPROM" />
+<meta itemprop="keywords" content="AI,NVIDIA,GH200 Grace Hopper" />
 
 <meta property="og:type" content="article" />
-<meta property="og:title" content="I2C通讯不了？是不是硬件有问题" />
-<meta property="og:description" content="I2C通讯不了？是不是硬件有问题" />
+<meta property="og:title" content="英伟达再度释放AI“炸弹”" />
+<meta property="og:description" content="英伟达再度释放AI“炸弹”" />
 <meta property="og:image" content="/imgs/vxbus_logo.png" />
 <meta property="og:image:width" content="312" />
 <meta property="og:image:height" content="312" />
 <meta property="og:image:type" content="image/jpeg/png/svg/jpg" />
-<meta property="og:url" content="https://www.vxbus.com/post/hardware/i2c-bus-communication-trouble-shooting.html"/>
+<meta property="og:url" content="https://www.vxbus.com/post/server/nvidia-launch-gh200-grace-hopper.html"/>
 <meta property="og:site_name" content="VxBus" />
 <meta property="og:locale" content="zh-CN"/>
 <meta property="article:author" content="VxWorks OS" />
-<meta property="article:published_time" content="2023-07-30 03:56:58 -0400 EDT" />
-<meta property="article:modified_time" content="2023-07-30 03:56:58 -0400 EDT" />
+<meta property="article:published_time" content="2023-08-17 10:09:03 -0400 EDT" />
+<meta property="article:modified_time" content="2023-08-17 10:09:03 -0400 EDT" />
 
 
   
@@ -44,7 +44,7 @@
       content: "~ 我可是有底线的哟 ~";
     }
   </style>
-  <script class="next-config" data-name="page" type="application/json">{"comments":false,"isHome":false,"isPage":true,"path":"i2c-bus-communication-trouble-shooting.html","permalink":"https://www.vxbus.com/post/hardware/i2c-bus-communication-trouble-shooting.html","title":"I2C通讯不了？是不是硬件有问题"}</script>
+  <script class="next-config" data-name="page" type="application/json">{"comments":false,"isHome":false,"isPage":true,"path":"nvidia-launch-gh200-grace-hopper.html","permalink":"https://www.vxbus.com/post/server/nvidia-launch-gh200-grace-hopper.html","title":"英伟达再度释放AI“炸弹”"}</script>
   <script type="text/javascript">
   document.addEventListener('DOMContentLoaded', () => {
     var script = document.createElement('script');
@@ -60,7 +60,7 @@
 
 
 
-  <title>I2C通讯不了？是不是硬件有问题 - VxBus</title>
+  <title>英伟达再度释放AI“炸弹” - VxBus</title>
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
@@ -174,20 +174,10 @@
       <div class="post-toc-wrap sidebar-panel">
         <div class="post-toc animated"><nav id="TableOfContents">
   <ul>
-    <li><a href="#概述">概述</a></li>
-    <li><a href="#电特性">电特性</a>
-      <ul>
-        <li><a href="#用于双向通讯的开漏极">用于双向通讯的开漏极</a></li>
-        <li><a href="#开漏极拉低">开漏极拉低</a></li>
-        <li><a href="#开漏极释放总线">开漏极释放总线</a></li>
-      </ul>
-    </li>
-    <li><a href="#i2c接口">I2C接口</a>
-      <ul>
-        <li><a href="#i2c的常用操作">I2C的常用操作</a></li>
-        <li><a href="#i2c总线数据">I2C总线数据</a></li>
-      </ul>
-    </li>
+    <li><a href="#性能更高的gh200芯片">性能更高的GH200芯片</a></li>
+    <li><a href="#为什么内存对大模型重要">为什么内存对大模型重要</a></li>
+    <li><a href="#对ai领域的影响">对AI领域的影响</a></li>
+    <li><a href="#英伟达的野心">英伟达的野心</a></li>
   </ul>
 </nav></div>
       </div>
@@ -321,7 +311,7 @@
       
   <div class="post-block">
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://www.vxbus.com/post/hardware/i2c-bus-communication-trouble-shooting.html">
+    <link itemprop="mainEntityOfPage" href="https://www.vxbus.com/post/server/nvidia-launch-gh200-grace-hopper.html">
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
       <meta itemprop="name" content="VxWorks OS">
@@ -331,11 +321,11 @@
       <meta itemprop="description" content="Where there is embedded, there is VxWorks.">
     </span>
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="I2C通讯不了？是不是硬件有问题">
-      <meta itemprop="description" content="I2C通讯不了？是不是硬件有问题">
+      <meta itemprop="name" content="英伟达再度释放AI“炸弹”">
+      <meta itemprop="description" content="英伟达再度释放AI“炸弹”">
     </span>
     <header class="post-header">
-       <h1 class="post-title" itemprop="name headline">I2C通讯不了？是不是硬件有问题 </h1> <div class="post-meta-container">
+       <h1 class="post-title" itemprop="name headline">英伟达再度释放AI“炸弹” </h1> <div class="post-meta-container">
   <div class="post-meta-items">
     
 
@@ -345,7 +335,7 @@
     <i class="far fa-calendar"></i>
   </span>
   <span class="post-meta-item-text">发表于：</span>
-  <time title="发表于：2023-07-30 03:56:58 -0400 EDT" itemprop="dateCreated datePublished" datetime="2023-07-30 03:56:58 -0400 EDT">2023-07-30</time>
+  <time title="发表于：2023-08-17 10:09:03 -0400 EDT" itemprop="dateCreated datePublished" datetime="2023-08-17 10:09:03 -0400 EDT">2023-08-17</time>
 </span>
     
     
@@ -355,8 +345,8 @@
   </span>
   <span class="post-meta-item-text">分类于：</span>
   <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-    <a href="/categories/hardware" itemprop="url" rel="index">
-      <span itemprop="name">Hardware</span>
+    <a href="/categories/server" itemprop="url" rel="index">
+      <span itemprop="name">Server</span>
     </a>
   </span>
 </span>
@@ -367,7 +357,7 @@
   <span class="post-meta-item-icon">
     <i class="far fa-file-word"></i>
   </span>
-  <span class="post-meta-item-text">字数：</span><span>60</span>
+  <span class="post-meta-item-text">字数：</span><span>103</span>
 </span>
     
 <span class="post-meta-item" title="阅读">
@@ -386,7 +376,7 @@
   <span class="post-meta-item-text">
   浏览：
   </span>
-  <span id="busuanzi_value_page_pv" data-path="/post/hardware/i2c-bus-communication-trouble-shooting.html"><i class="fa fa-sync fa-spin"></i></span>
+  <span id="busuanzi_value_page_pv" data-path="/post/server/nvidia-launch-gh200-grace-hopper.html"><i class="fa fa-sync fa-spin"></i></span>
 </span>
 
   </div>
@@ -397,81 +387,70 @@
     
     <div class="post-body  autonumber " itemprop="articleBody">
       
-  <p>做硬件我们经常会遇到各种各样的问题，一些通信接口也会出现，I2C自然也不例外。假如遇到I2C没反应，那么可能会出现这种情况：“软件工程师说，我软件都已经配好了，但是就是读写不到数据，是不是硬件有问题”。</p>
-<p>这个时候，就需要我们了解I2C的通信时序，我们可以通过示波器抓取通信的波形，看是否满足通信时序要求，主机有没有发送数据？I2C通信地址对不对？如果主机有发送数据，从机是否有正常应答？通信信号质量是否OK？如此这般，一般是能够查到问题在哪里的。</p>
-<p>基于上面的问题，这会要求我们掌握I2C的通信时序。毕竟，你只有知道它是长什么样子，你才能知道它对不对。下面就简单介绍下I2C的通信时序。</p>
-<h2 id="概述">概述</h2>
-<p>I2C总线是一种十分流行并且强大的总线，其多用于一个主机（或多个）与单个或多个从设备通讯的场景。图1表明了多种不同的外设可以共享这种只需要两根线便可以连接到处理器的总线，相对于其他接口来说，这也是I2C总线可以提供的最大优势之一。</p>
-<p>这篇应用笔记的目标是帮助用户理解I2C总线是如何工作的。</p>
-<p>图1展示了一个典型的用于嵌入式系统中的I2C总线，其上挂载了多种从设备。作为I2C主机的从微控制器控制着IO拓展、不同传感器、EEPROM、多个ADC/多个DAC、等等。所有这些设备只需要通过来自主机的两根引脚来控制。</p>
-<p><img src="https://www.vxbus.com/imgs/post/i2c-bus-1.png" alt="I2C Bus"></p>
-<h2 id="电特性">电特性</h2>
-<p>I2C总线使用开漏输出控制器，在同一线路上带有一个输入缓冲器，这样便可以允许在单根数据线上实现双向数据流传输。</p>
-<h3 id="用于双向通讯的开漏极">用于双向通讯的开漏极</h3>
-<p>开漏输出极允许将总线上的电压拉低（大多数情况下是到地），或释放总线以允许其被上拉电阻拉高。当总线被主机或从机释放，线上的上拉电阻负责将线上电压上拉到电源轨。由于并没有设备可以在总线上输出高电平，这也就意味着总线在通讯中，将不会碰到一个设备输出高，而另一个设备试图输出低所导致的短路问题（电源轨到地）。I2C总线要求处于多主机环境下的单个主机在输出高而读回的实际总线电平为低时（这意味着另一个设备拉低了它）中止通讯，因为另一个设备正在使用总线。采用推挽输出方式的接口就没有这么自由了，这也正是I2C总线的一个优势。</p>
-<p><img src="https://www.vxbus.com/imgs/post/i2c-bus-2.png" alt="I2C Bus"></p>
-<p>图2展示了位于SDA/SCL线上的主从设备的内部简化结构，其由一个用于读取数据的缓冲器，以及一个用于发送数据的下拉场效应管组成。一个设备只被允许拉低总线（规定为短路到地）或释放总线（对地呈现高阻态）以允许上拉电阻拉升总线电平。当处理I2C设备时，有一个重要的概念需要阐明：没有设备可以保持总线为高。这个特性使得双向通讯得以实现。</p>
-<h3 id="开漏极拉低">开漏极拉低</h3>
-<p>正如前面章节所述，开漏输出只能将总线拉低，或者释放总线然后依靠上拉电阻拉高总线。图3展示了总线拉低时的电流流向。当逻辑电路想要发送一个低电平时，其会使能下拉场效应管，场效应管会通过短路到地的方式拉低线路。</p>
-<p><img src="https://www.vxbus.com/imgs/post/i2c-bus-3.png" alt="I2C Bus"></p>
-<h3 id="开漏极释放总线">开漏极释放总线</h3>
-<p>当从机或主机想要传输一个逻辑电平高，它只能通过使能场效应管的方式释放总线。这将会使得总线处于浮空状态，同时上拉电阻将会将总线电平拉高到供电轨，此电平被当作高电平看待。图4展示了电流如何流过用于拉高总线的上拉电阻。</p>
-<p><img src="https://www.vxbus.com/imgs/post/i2c-bus-4.png" alt="I2C Bus"></p>
-<h2 id="i2c接口">I2C接口</h2>
-<h3 id="i2c的常用操作">I2C的常用操作</h3>
-<p>I2C总线是一种双向接口，其使用被称为主机的控制器与从设备进行通讯。从机不会主动传输任何数据，除非其被主机寻址。每个处于I2C总线上的设备均有独有的设备地址，以用于与位于同一总线上的其他设备做区分。很多从机需要在启动后进行配置以设置设备行为。这通常在主机访问从机的内部寄存器映射时完成，这些寄存器均有独一无二的寄存器地址。单个设备可以具有一个或多个寄存器，这些寄存器可以用来存储或读写数据。</p>
-<p>I2C总线的物理接口由串行时钟线（SCL）和串行数据线（SDA）组成。SCL和SDA均需要通过上拉电阻连接到Vcc。上拉电阻的大小由I2C线路上的等效电容大小决定（想要了解更多，可以参考TI的I2C Pull-up Resistor Calculation这份文档，文档号：SLVA689；也可以看我的笔记里面的文章《I2C上升沿过长与上拉电阻》）。数据传送只能在总线空闲时初始化。如果SDA和SCL在一个STOP标志后均处于高电平状态，这时可以认为总线处在空闲状态。</p>
-<p>主机访问从机的大体流程如下所示：</p>
-<ol>
-<li>假设一个主机想要向从机发送数据：</li>
-</ol>
-<ul>
-<li>发送方主机发送一个START标志并且寻址接收方从机</li>
-<li>发送方主机发送数据到接收方从机</li>
-<li>发送方主机通过发送STOP标志结束传输</li>
-</ul>
-<ol start="2">
-<li>如果主机想要从从机接收/读取数据：</li>
-</ol>
-<ul>
-<li>接收方主机发送START标志并寻址发送方从机</li>
-<li>接收方主机发送需要读取的寄存器地址到发送方从机</li>
-<li>接收方主机从发送方从机接收数据</li>
-<li>接收方主机通过发送STOP标志结束通讯</li>
-</ul>
-<p>START与STOP标志</p>
-<p>主机可以通过发送START标志初始化与设备的I2C通讯，或者发送STOP标志结束通讯。当SCL处于高电平时，SDA上的下降沿意味着一个START标志，而SDA上的上升沿意味着一个STOP标志。</p>
-<p><img src="https://www.vxbus.com/imgs/post/i2c-bus-5.png" alt="I2C Bus"></p>
-<p>重复的START标志</p>
-<p>重复的START标志与通常的START标志作用类似，其用于STOP标志后紧接START标志的情况时，用于代替这两者。它看上去与START标志一致，但是与START标志不同的是，重复的START标志在STOP标志之前出现（也就是总线不处于空闲状态时）。当主机希望开始一次新的通讯，但又不希望发送STOP标志使总线进入空闲状态时这会非常管用，这样可以防止当前主机的总线控制权被其他主机抢夺（当处于多主机环境下）。</p>
-<p>数据有效性与字节格式</p>
-<p>数据位伴随着SCL上的每一个时钟脉冲被传输。单个字节由SDA线上的8位数据组成，其可以是设备地址、寄存器地址或者读自/写入设备的数据。数据以大端在前（MSB）的方式传输。在START标志与STOP标志之间可以传输任意数量的数据字节。SDA线上的数据必须在时钟电平为高时保持稳定，因为SCL线为高时，SDA线上的变动将会被当作控制指令（START或STOP）。</p>
-<p><img src="https://www.vxbus.com/imgs/post/i2c-bus-6.png" alt="I2C Bus"></p>
-<p>应答（ACK）和非应答（NACK）</p>
-<p>数据的每一字节（包括地址字节）后总是伴随着来自接收方的1位ACK位。ACK位使得接收方可以告知发送方当前字节已成功接收，并且可以发送下一字节。</p>
-<p>在接收方发送ACK位前，发送方必须释放总线。接收方通过在ACK/NACK时钟周期（第9时钟周期）的低电平相位拉低SDA线来发送一个ACK位，如此一来，SDA线将会在ACK/NACK时钟周期的高电平相位保持为低电平。设置与保持时间必须着重注意。</p>
-<p>如果SDA线在ACK/NACK时钟周期保持为高电平，这将会被作为NACK。有好几种状态将会导致NACK的产生：</p>
-<ol>
-<li>接收方无法进行接收或发送，因为其正在执行一些实时性功能（real-time function），无法与主机进行通讯。</li>
-<li>在发送期间，接收方收到了无法识别的数据或指令。</li>
-<li>在发送期间，接收方无法接收更多数据字节（也就是缓冲区满了）。</li>
-<li>作为接收方的主机完成了数据读取，因此通过发送一个NACK通知从机。</li>
-</ol>
-<p><img src="https://www.vxbus.com/imgs/post/i2c-bus-7.png" alt="I2C Bus"></p>
-<h3 id="i2c总线数据">I2C总线数据</h3>
-<p>数据可以写入/读自从机，但是这是通过读写从设备内部的寄存器完成的。</p>
-<p>包含信息的寄存器处于从机的内存中，无论这些信息是配置信息还是一些需要回发给主机的采样数据。为了指示从机去执行某一任务，主机必须向这些寄存器内写入信息。</p>
-<p>虽然通常来说I2C从机是具有多个寄存器的，但也需要注意并不是所有从机都是这样。对于一个只具有单个寄存器的简易从机来说，可以通过在从机地址后直接发送数据的方式来直接写这个单一的寄存器，而不需要再对寄存器进行寻址。一个通过I2C总线控制的8位I2C开关可以很好的作为单寄存器设备的例子。由于它通过1位来使能/失能一个通道，因此只需要1个寄存器，主机可以在从机地址后直接写入寄存器数据，跳过寄存器编码部分。</p>
-<p>写位于I2C总线上的从机</p>
-<p>要在I2C总线上执行写操作，主机会发送一个START标志以及从机地址到总线上，并且将最后1位（读写位）设为0以表明这是写操作。当从机发送应答位之后，主机便发送希望写入的寄存器地址。从机再一次应答，通知主机从机已准备好。这之后，主机开始发送寄存器数据到从机。当主机发送完所有需要发送的数据（有时只是一个字节），其将会通过发送STOP标志结束通讯。</p>
-<p>图8展示了一个写入单个字节到从机寄存器的例子。</p>
-<p><img src="https://www.vxbus.com/imgs/post/i2c-bus-8.png" alt="I2C Bus"></p>
-<p>读位于I2C总线上的从机</p>
-<p>从从机读取数据与写入数据类似，但是有一些额外的步骤。</p>
-<p>为了读取从机，主机必须先指示从机自己想要读取哪个寄存器。这一步通过执行与写操作类似的开始通讯步骤完成，发送读写位为0的设备地址（意味着一次写操作），紧跟着希望读的寄存器的地址。一旦从机应答了此地址，主机将会再一次发送START标志，并发送读写位为1的设备地址（意味着一次读操作）。这时，从机将会应答读请求，同时主机释放总线但是保持到从机的时钟供应。在通讯流程的这一部分，主机将会作为接收方主机，同时从机将会作为发送方从机。</p>
-<p>主机将会继续发送时钟脉冲，但是会释放SDA线以便于从机传输数据。在每个字节数据的结尾，主机将会发送一个ACK到从机，让从机知道主机准备好接收更多的数据。一旦主机接收完成期待的字节数量，它将会发送一个NACK，通知从机终止通讯并要求从机释放总线。紧接着主机将会发送一个STOP标志结束通讯。</p>
-<p>图9展示了从从机寄存器读取单个字节的例子。</p>
-<p><img src="https://www.vxbus.com/imgs/post/i2c-bus-9.png" alt="I2C Bus"></p>
+  <p>近日，在计算机图形学顶会SIGGRAPH 2023现场，英伟达再度释放深夜“炸弹”，大模型专用芯片迎来升级版本。</p>
+<p><img src="https://www.gaitpu.com/wp-content/uploads/2023/08/NVIDIA-GH200-850x550.png" alt="NVIDIA GH200 Grace Hopper"></p>
+<p>英伟达在会上发布了新一代GH200 Grace Hopper平台，该平台依托于搭载全球首款搭载HBM3e处理器的新型Grace Hopper超级芯片——GH200，专为处理大语言模型、推荐系统、矢量数据库等全球最复杂的生成式AI工作负载而构建。</p>
+<p>据悉，GH200芯片将成为世界上第一个配备HBM3e（High Bandwidth Memory 3e）内存的GPU芯片。</p>
+<p>与当前一代产品相比，最新版本的GH200超级芯片内存容量增加了3.5倍，带宽增加了3倍；相比最热门的H100芯片，其内存增加1.7倍，传输频宽增加1.5倍。</p>
+<p>在当前生成式AI不断激增的需求下，GH200超级芯片的推出，进一步吹响了AI算力之战的号角。</p>
+<h2 id="性能更高的gh200芯片">性能更高的GH200芯片</h2>
+<p>据介绍，GH200 Grace Hopper平台的HBM3e内存比当前HBM3快50%，可提供总计10TB/s的带宽。这使得新平台能够运行比上一版本大3.5倍的模型，同时凭借快3倍的内存带宽提升性能。</p>
+<p>同时，该平台采用双配置，包括一个拥有144个Arm Neoverse内核、8 petaflops的AI性能和282GB最新HBM3e内存技术的单个服务器。</p>
+<p>英伟达创始人兼首席执行官黄仁勋表示：“为了满足对生成式 AI不断激增的需求，数据中心需要能够满足特定需求的加速计算平台。全新GH200 Grace Hopper超级芯片平台以出色的内存技术和带宽，提高了吞吐量，在不影响性能的情况下可连接多GPU以整合性能，并且具有可以轻松部署到整个数据中心的服务器设计。”</p>
+<p>据英伟达公布信息，新平台可以通过 NVIDIA NVLink™ 与其他超级芯片连接，使它们能够协同工作，从而部署当下大型生成式AI模型。这种高速、一致性技术使GPU可以完全访问CPU 内存，在双配置中可提供总计1.2TB的快速内存。</p>
+<p>值得注意的是，新平台采用的新款超级芯片GH200与此前发布的H100相比，二者使用同样的GPU，但GH200将同时配备高达141G的内存和72核ARM中央处理器，每秒5TB带宽，内存增加了1.7倍，带宽增加了1.5倍。</p>
+<p>新平台和芯片的加持，也让大模型训练的成本得到有效降低。黄仁勋表示，一台服务器可以同时装载两个GH200超级芯片，大型语言模型的推理成本将会大幅降低。</p>
+<p>据介绍，投资800万美元Grace Hopper，就相当于8800个价值1亿美元的x86 GPU，意味着成本降低12倍，能耗降低20倍。</p>
+<p>英伟达称，GH200已于5月全面投产，基于GH200 Grace Hopper平台的新系统将于2024年第二季度交付。</p>
+<p>不过一个关键的问题是，英伟达没有透露超级芯片GH200的价格，这对计算成本高昂的大模型来说尤为重要，H100系列目前售价约为4万美元。</p>
+<h2 id="为什么内存对大模型重要">为什么内存对大模型重要</h2>
+<p>事实上，GH200超级芯片本身并不是一个新产品，而是今年5月在中国台北Computex展上发布的GH200芯片的更新版。</p>
+<p>英伟达超大规模和高性能计算副总裁兼总经理伊恩·巴克（Ian Buck）表示：“我们对这款新的GH200感到非常兴奋。HBM3e不仅增加了GPU的容量和内存量，而且速度也更快。”</p>
+<p>但为什么GPU内存这么重要？</p>
+<p>这是因为随着支撑生成式人工智能应用程序的基础AI模型尺寸的增加，为了能够在不连接独立芯片和系统的情况下运行，大模型需要更大的内存量，以避免性能下降。</p>
+<p>拥有更大的内存允许模型保留在单个GPU上，并且不需要多个系统或多个GPU来运行，而额外的内存只会提高 GPU的性能。</p>
+<p>目前即使使用英伟达最顶级的H100芯片，有些模型也必须在其他GPU中“分解”模型才能运行。</p>
+<p>据英伟达介绍，最新版本GH200配备141GB的HBM3e内存，旨在处理“世界上最复杂的生成式人工智能工作负载，涵盖大型语言模型、推荐系统和矢量数据库”。</p>
+<h2 id="对ai领域的影响">对AI领域的影响</h2>
+<p>伟达的GH200超级芯片和DGX GH200超级计算机是AI领域的重大突破，它们为大规模生成式AI工作负载提供了前所未有的性能和内存空间，使得训练千亿甚至万亿参数的巨型模型成为可能。</p>
+<p>这些模型可以在自然语言处理、计算机视觉、推荐系统、图形分析等领域实现更高的精度和效率，为人类解决更复杂的问题提供了强大的工具。</p>
+<p>在多位AI从业者看来，当前大模型的训练需求过于迫切，对性能的要求也很高，而GPU的适配和生态转移都需要很长时间，因此目前大家都优先选择英伟达，和其他厂商的测试验证也在进行中。</p>
+<p>一场新的算力之战已经拉开帷幕，如果说算力是一个江湖，那么此刻英伟达就是一名绝世高手。</p>
+<p>它身怀加速计算的绝技，尤其在AI战场上一骑绝尘，似乎每一次都能精准地踏在浪潮的节奏上。从游戏PC市场、到深度学习的崛起、到云计算的普及、再到生成式AI的降临，英伟达的技术所向披靡。</p>
+<p>回头看，英伟达早已超越了GPU本身的概念，AI成为最大的标签，算力的绝世武功撑起了新的万亿帝国。</p>
+<p>2022年，英伟达推出了多款重磅产品，分别是基于全新Hopper架构的H100 GPU、CPU和GPU的合体Grace Hopper、两个CPU组合的Grace CPU Superchip，CPU的产品在2023年上市。</p>
+<p>其中，设计GPU新架构Hopper时，英伟达增添了一个Transformer引擎，专门为Transformer算法做了硬件优化，加快AI计算的效率。</p>
+<p>一位国内芯片从业者直言：“H100出来，其实就是一个新时代了，Grace-Hopper再一个组合，加上高配的互联，完全不给活路，英伟达赢家通吃，AMD、Intel继续苦追。”</p>
+<p>同时他也表示：“目前国内一些企业还是在盯着CNN做优化，英伟达已经有Transformer引擎，然后AIGC火热，恰好能做支持。这个眼光，只能佩服他们的科学家们对这个领域深刻的认识。”</p>
+<p>一位学术界人士也分析道：“从H100上，包括专用的Transformer引擎以及对FP8格式的支持，可以看到计算硬件在向应用定制的方向前进。Grace CPU说明了整合异构计算系统的重要性。单纯的加速器优化和设计已经不能够满足现在对于计算系统的算力和能效比的要求，需要各个部分的协同优化和设计。”</p>
+<p>他还表示，Grace CPU通过提高通信带宽和在CPU和GPU之间建立一致（coherent）的内存模型来解决运算中的瓶颈，这也和学界（近存计算，存内计算）与业界（CXL，CCI等等系统互联协议）一直在关注的方向是一致的。</p>
+<p>总而言之，在GPU和CPU的各种排列组合中，英伟达又将算力提升到了新高度。正如黄仁勋所言：“我们正在重新发明计算机，加速计算和人工智能标志着计算正在被重新定义。”</p>
+<p>黄仁勋在采访中还提到，数据中心需要用的CPU越来越少，不再是传统上购买数百万个CPU，而是转而购买数百万个GPU。换言之，在他看来，AI算力江湖已经是GPU的主场。</p>
+<h2 id="英伟达的野心">英伟达的野心</h2>
+<p>事实上，随着ChatGPT引发AI大模型需求热潮，作为加速计算领导者，英伟达今年以来股价累计涨幅已超过210%，近三个月内涨幅就达56%，过去7年股价增长超40倍，目前市值冲破1.1万亿美元。</p>
+<p>公开数据显示，英伟达占据全球80%以上的GPU服务器市场份额，同时拥有全球91.4%的企业GPU市场份额。</p>
+<p>据投资者服务公司穆迪今年5月份发布的一份研究报告，英伟达在未来几个季度将实现“无与伦比”的收入增长，其数据中心业务的收入将超过竞争对手英特尔和AMD的总和。</p>
+<p>但摩根士丹利策略分析师斯坦利（Edward Stanley）在最新报告中称，根据历史背景，英伟达的股价飙升处于“后期”阶段，摩根士丹利认为这标志着 AI 行业的“泡沫”。</p>
+<p>GPU持续紧缺下，如今英伟达产品价格已同比上涨超30%，英伟达A800单卡现货近13万元一颗，eBay上H100售价高达4.5万美元。</p>
+<p>同时，OpenAI的GPT-4大模型需要至少2.5万张英伟达A100 GPU芯片，而该公司目前至少已拥有1000万颗GPU芯片。</p>
+<p>正如黄仁勋常说的，“你GPU买得越多，你越省钱”。主要原因是新的GPU产品能显著提升加速计算，比CPU性能更强、算力更大、功耗更低。</p>
+<p>但英伟达的布局还不止于此。</p>
+<p>一个现实问题是，高性能的算力也意味着高昂的价格。大模型训练成本动辄成千上百万美元，并不是所有公司都能承受。</p>
+<p>而英伟达同时提出了云服务的解决方案NVIDIA AI foundations，黄仁勋表示要做“AI界的台积电”。台积电大大降低了芯片设计公司生产门槛，英伟达也要做代工厂的角色，通过和大模型厂商、云厂商合作提供高性价比的云服务。</p>
+<p>在帮助下游企业降低大模型训练成本的同时，英伟达还在逐步参与到上游的产业链升级中。今年，英伟达牵手台积电、ASML、新思，发布了计算光刻库cuLitho。</p>
+<p>计算光刻是在芯片设计和制造领域的关键步骤，也是最大的计算负载之一。计算光刻库的技术突破就在于，可以通过部署有大量GPU的DGX AI计算系统对计算光刻进行加速，使其达到原有的基于CPU的计算速度的几十倍，同时降低计算过程的总能耗。</p>
+<p>这将有助于晶圆厂缩短原型周期时间、提高产量、减少碳排放，为2nm及更先进的工艺奠定基础，并为曲线掩模、高数值孔径极紫外、亚原子级光刻胶模型等新技术节点所需的新型解决方案和创新技术提供更多可能性。</p>
+<p>在多位产业界人士看来，虽然短期内不会影响到下游的应用方面，但是这些上游的研发和升级将长期影响产业的发展，累积形成代际差。</p>
+<p>“英伟达在GPU架构的迭代上，一直都有属于自己的发展路径，这几年的发展，也让英伟达跃居AI算力芯片领域的领导者，也因为领先，所以英伟达会思考如何做更多元的布局与行业内的深度合作，这样更能了解行业的需求，比方和台积电等合作便是很好的例子”，某芯片行业专家表示。</p>
+<p>当然，英特尔和AMD都已经吹响反攻的号角。</p>
+<p>7月，英特尔面向中国市场推出了AI芯片Habana Gaudi 2；6月，AMD推出AI芯片Instinct MI 300X，两者都直接对标英伟达100系列。</p>
+<p>目前，在数据中心市场，英伟达和Intel、AMD形成三足鼎立之势。但随着GH200的正式发布，Grace CPU正式登台争角，最应该感到如芒在背的应该是Intel、AMD。虽说大家都知道GH200迟早发布，但等真正发布了，还是有所触动。</p>
+<p>围绕着算力的权力游戏还将继续。</p>
+<p>引用地址 
+<a href="https://www.gaitpu.com/ai/nvidia-launch-gh200-grace-hopper" title="英伟达再度释放AI“炸弹”" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    英伟达再度释放AI“炸弹”
+    <i class="fa fa-external-link-alt"></i>
+</a></p>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1543398821442998"
      crossorigin="anonymous"></script>
 
@@ -491,17 +470,14 @@
 
 <div class="post-tags">
   
-    <a href="/tags/i2c">
-    I2C
+    <a href="/tags/ai">
+    AI
   </a>
-    <a href="/tags/adc">
-    ADC
+    <a href="/tags/nvidia">
+    NVIDIA
   </a>
-    <a href="/tags/dac">
-    DAC
-  </a>
-    <a href="/tags/eeprom">
-    EEPROM
+    <a href="/tags/gh200-grace-hopper">
+    GH200 Grace Hopper
   </a>
 </div>
 
@@ -529,7 +505,7 @@
   <ul>
     <li class="post-copyright-title">
       <strong>文章标题：</strong>
-      I2C通讯不了？是不是硬件有问题
+      英伟达再度释放AI“炸弹”
     </li>
     <li class="post-copyright-author">
       <strong>本文作者： </strong>
@@ -537,7 +513,7 @@
     </li>
     <li class="post-copyright-link"> 
       <strong>本文链接：</strong>
-       <a id="post-cr-link" href="https://www.vxbus.com/post/hardware/i2c-bus-communication-trouble-shooting.html" title="I2C通讯不了？是不是硬件有问题">https://www.vxbus.com/post/hardware/i2c-bus-communication-trouble-shooting.html</a>
+       <a id="post-cr-link" href="https://www.vxbus.com/post/server/nvidia-launch-gh200-grace-hopper.html" title="英伟达再度释放AI“炸弹”">https://www.vxbus.com/post/server/nvidia-launch-gh200-grace-hopper.html</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -562,13 +538,13 @@
 </div>
 <div class="post-nav">
   <div class="post-nav-next post-nav-item">
-    <a href="/post/server/nvidia-launch-gh200-grace-hopper.html" rel="next" title="英伟达再度释放AI“炸弹”">
-      <i class="fa fa-chevron-left"></i> 英伟达再度释放AI“炸弹”
+    <a href="/post/welcome-to-vxworks-club/" rel="next" title="欢迎加入 VxWorks 俱乐部！">
+      <i class="fa fa-chevron-left"></i> 欢迎加入 VxWorks 俱乐部！
     </a>
   </div>
   <div class="post-nav-prev post-nav-item">
-    <a href="/post/linux/linux-iSCSI-network-drive.html" rel="prev" title="Linux iSCSI 网络磁盘">
-      Linux iSCSI 网络磁盘
+    <a href="/post/hardware/i2c-bus-communication-trouble-shooting.html" rel="prev" title="I2C通讯不了？是不是硬件有问题">
+      I2C通讯不了？是不是硬件有问题
       <i class="fa fa-chevron-right"></i>
     </a>
   </div>
