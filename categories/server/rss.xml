@@ -6,7 +6,16 @@
     <description>Recent content in Server on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 17 Aug 2023 10:09:03 -0400</lastBuildDate><atom:link href="https://www.vxbus.com/categories/server/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Aug 2023 13:08:16 -0400</lastBuildDate><atom:link href="https://www.vxbus.com/categories/server/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>高端存储进化：技术和架构的革新</title>
+      <link>https://www.vxbus.com/post/server/the-challenges-and-opportunities-for-high-end-storage.html</link>
+      <pubDate>Tue, 29 Aug 2023 13:08:16 -0400</pubDate>
+      
+      <guid>https://www.vxbus.com/post/server/the-challenges-and-opportunities-for-high-end-storage.html</guid>
+      <description>&lt;p&gt;在我们的讨论中，我们深入探讨了关于单体和分布式、可扩展的存储系统的话题，以了解Rob对高端存储发展的观点。他认为，FC的未来发展可能受限，并预测高端存储将与三大主要公有云平台进行集成。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>英伟达再度释放AI“炸弹”</title>
       <link>https://www.vxbus.com/post/server/nvidia-launch-gh200-grace-hopper.html</link>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Storage on VxBus</title>
+    <link>https://www.vxbus.com/tags/storage/</link>
+    <description>Recent content in Storage on VxBus</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 29 Aug 2023 13:08:16 -0400</lastBuildDate><atom:link href="https://www.vxbus.com/tags/storage/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>高端存储进化：技术和架构的革新</title>
+      <link>https://www.vxbus.com/post/server/the-challenges-and-opportunities-for-high-end-storage.html</link>
+      <pubDate>Tue, 29 Aug 2023 13:08:16 -0400</pubDate>
+      
+      <guid>https://www.vxbus.com/post/server/the-challenges-and-opportunities-for-high-end-storage.html</guid>
+      <description>&lt;p&gt;在我们的讨论中，我们深入探讨了关于单体和分布式、可扩展的存储系统的话题，以了解Rob对高端存储发展的观点。他认为，FC的未来发展可能受限，并预测高端存储将与三大主要公有云平台进行集成。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
