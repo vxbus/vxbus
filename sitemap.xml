@@ -8,21 +8,46 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/categories/</loc>
-    <lastmod>2023-09-02T06:31:09-04:00</lastmod>
+    <lastmod>2023-11-06T18:59:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.vxbus.com/categories/hardware/</loc>
-    <lastmod>2023-09-02T06:31:09-04:00</lastmod>
+    <loc>https://www.vxbus.com/categories/linux/</loc>
+    <lastmod>2023-11-06T18:59:48+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/linux/</loc>
+    <lastmod>2023-11-06T18:59:48+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/post/linux/use-linux-shell-script-to-monitor-disk-usage.html</loc>
+    <lastmod>2023-11-06T18:59:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/post/</loc>
-    <lastmod>2023-09-02T06:31:09-04:00</lastmod>
+    <lastmod>2023-11-06T18:59:48+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/shell-scripte/</loc>
+    <lastmod>2023-11-06T18:59:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/tags/</loc>
+    <lastmod>2023-11-06T18:59:48+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/</loc>
+    <lastmod>2023-11-06T18:59:48+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/categories/hardware/</loc>
     <lastmod>2023-09-02T06:31:09-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -33,11 +58,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/post/hardware/uart-communication.html</loc>
-    <lastmod>2023-09-02T06:31:09-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/</loc>
     <lastmod>2023-09-02T06:31:09-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -127,11 +147,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.vxbus.com/categories/linux/</loc>
-    <lastmod>2023-07-30T03:42:19-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.vxbus.com/post/linux/linux-iSCSI-network-drive.html</loc>
     <lastmod>2023-07-30T03:42:19-04:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -139,11 +154,6 @@
   </url><url>
     <loc>https://www.vxbus.com/tags/network-drive/</loc>
     <lastmod>2023-07-30T03:42:19-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/tags/linux/</loc>
-    <lastmod>2023-07-30T02:57:28-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
