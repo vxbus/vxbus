@@ -6,7 +6,16 @@
     <description>Recent content in Server on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 29 Aug 2023 13:08:16 -0400</lastBuildDate><atom:link href="https://www.vxbus.com/categories/server/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Nov 2023 19:21:55 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/categories/server/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>25G/50G/100G以太网技术</title>
+      <link>https://www.vxbus.com/post/server/25G-50G-100G-ethernet-technology.html</link>
+      <pubDate>Mon, 06 Nov 2023 19:21:55 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/post/server/25G-50G-100G-ethernet-technology.html</guid>
+      <description>&lt;p&gt;在过去十年里，10G和40G技术占据了以太网市场的大部分。但随着用户对高带宽的需求以及特殊应用的发展需求，25G/50G/100G技术越来越受用户关注，它们凭借着能为高速率提供有效路径，逐渐在网络部署中脱颖而出。下面我们将着重介绍25G/50G/100G技术及其三者的关系。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>高端存储进化：技术和架构的革新</title>
       <link>https://www.vxbus.com/post/server/the-challenges-and-opportunities-for-high-end-storage.html</link>
