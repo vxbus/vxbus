@@ -7,17 +7,47 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.vxbus.com/categories/</loc>
-    <lastmod>2023-11-07T21:51:59+08:00</lastmod>
+    <loc>https://www.vxbus.com/tags/buck-circuit/</loc>
+    <lastmod>2023-11-07T22:17:55+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.vxbus.com/tags/crosstalk/</loc>
-    <lastmod>2023-11-07T21:51:59+08:00</lastmod>
+    <loc>https://www.vxbus.com/post/hardware/method-to-reduce-input-ripple-voltage-for-buck-circuit.html</loc>
+    <lastmod>2023-11-07T22:17:55+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/categories/</loc>
+    <lastmod>2023-11-07T22:17:55+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/categories/hardware/</loc>
+    <lastmod>2023-11-07T22:17:55+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/post/</loc>
+    <lastmod>2023-11-07T22:17:55+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/ripple/</loc>
+    <lastmod>2023-11-07T22:17:55+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/</loc>
+    <lastmod>2023-11-07T22:17:55+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/</loc>
+    <lastmod>2023-11-07T22:17:55+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/crosstalk/</loc>
     <lastmod>2023-11-07T21:51:59+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -33,21 +63,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/post/hardware/15-questions-on-pcb-design-tips.html</loc>
-    <lastmod>2023-11-07T21:51:59+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/post/</loc>
-    <lastmod>2023-11-07T21:51:59+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/tags/</loc>
-    <lastmod>2023-11-07T21:51:59+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/</loc>
     <lastmod>2023-11-07T21:51:59+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

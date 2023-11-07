@@ -16,6 +16,32 @@
   </entry>
   
   <entry>
+    <title>BUCK电路减小输入纹波电压的方法</title>
+    <url>/post/hardware/method-to-reduce-input-ripple-voltage-for-buck-circuit.html</url>
+    <categories><category>Hardware</category>
+    </categories>
+    <tags>
+      <tag>Buck Circuit</tag>
+      <tag>Ripple</tag>
+    </tags>
+    <content type="html"><![CDATA[本文讲述了BUCK电路减小输入纹波电压的方法。
+简介 &ldquo;BUCK电路输入纹波电压的计算公式和最大值&quot;中分析了BUCK电路输入纹波电压的表达式如下所示：
+其中，C_IN 是输入电容[F]，ESR_CIN 是输入电容的等效串联电阻参数[Ω]，F_SW 是开关频率[Hz]，I_OUT 是负载电流[A]，D 是降压电路CCM模式下的占空比[无量纲]。
+此文，我们将基于上述公式(3.171)，分析总结BUCK电路减小输入纹波电压的方法。
+减小输入纹波电压的方法 基于输入纹波电压公式(3.171)可知：
+ 在D、 I_OUT 不变的情况下，∆V_CIN 与 ESR_CIN 成正比关系 在D、 I_OUT 不变的情况下，∆V_CIN 与 C_IN 成反比关系 在D、 I_OUT 不变的情况下，∆V_CIN 与 F_SW 成反比关系  所以，理论上，减小 ESR_CIN 、增大 C_IN 和 F_SW ，都可以减小BUCK电路输入纹波电压的大小。
+如果输入端使用了大容量的电解电容（通常具有较大的ESR），可以并联ESR较小的陶瓷电容，以达到减小输入端整体ESR，从而减小输入纹波电压的目的。所以，实际上，增大输入端电容 C_IN 的容值和并联低ESR的陶瓷电容，就是通常用于减小输入纹波电压的两种方法。
+这是因为：
+  BUCK电路的占空比 D=Vout/Vin，在 Vout 不变的条件下，会随着输入电压 Vin 改变的；公式(3.171)中的 D*(1-D) 仅在 D=0.5 时取得最大值0.25，在 D 取其他值时，D*(1-D) 的大小是不固定的；
+  在降压电路设计完成或者已经工作之后，负载电流 I_OUT 的大小是由后端负载决定的。虽然实际降压电路中负载电流 I_OUT 的大小会影响输入纹波电压的大小，但是并不能期望通过减小负载电流 I_OUT 这个参数来降低输入纹波电压。所以，才有上述“负载电流 I_OUT 不变”的假设。
+  在降压电路设计完成或者已经工作在CCM模式下之后，开关频率 F_SW 这个参数也是固定的，无法通过增大 F_SW 的方法来减小输入纹波电压。
+  如果想通过增大 F_SW 减小输入纹波电压，则需要在电路设计时确认好环路响应等其他相关电路参数。但是，需要注意的是，开关频率这个参数是开关电源中“牵一发而动全身”的参数，在已经工作良好的电源电路的基础上，需要谨慎变更开关频率这个参数。
+小结 此文，总结了实际应用中减小输入纹波电压的两种方法：增大输入端电容 C_IN 的容值、并联低ESR的陶瓷电容。
+另外，输入电容在 PCB Layout 方面最优的摆件方案是：所有输入电容尽量靠近输入电源引脚、从远到输入电源引脚的电容值依次是从大到小（也就是先过滤低频纹波，再过滤高频纹波）。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>PCB设计技巧十五问</title>
     <url>/post/hardware/15-questions-on-pcb-design-tips.html</url>
     <categories><category>Hardware</category>
