@@ -16,6 +16,37 @@
   </entry>
   
   <entry>
+    <title>如何通过命令行重新启动 Linux</title>
+    <url>/post/linux/how-to-start-linux-from-command-line-interface.html</url>
+    <categories><category>Linux</category>
+    </categories>
+    <tags>
+      <tag>linux</tag>
+      <tag>command line</tag>
+    </tags>
+    <content type="html"><![CDATA[使用个人电脑工作的时候，可能会因为各种原因而关闭机器。对于 Linux 初学者来说，与电源相关（关机、重启等）的任务总是最后才想到如何去实现的，所以有可能对于如何重新启动远程服务器不太了解。
+今天我们介绍一些可以用来通过终端来重新启动 Linux 系统的命令。
+如果想要立刻重新启动 Linux 服务器，可使用如下命令：
+reboot now 关机命令如下：
+shutdown -r now 重启 Linux 的命令 关于 Linux 系统重启或者关机的命令，主要有以下三种：
+ reboot halt poweroff  有一点需要知道，运行比如 halt 命令，特别是在使用选项的时候，可能会导致不稳定的结果，比如内存丢失、数据损坏。所以，在编辑文本的时候不要练习使用这些命令。另外，基于用户权限问题，你需要是 sudo 用户才能运行这些命令。
+reboot 命令 reboot 命令语法如下所示：
+reboot [options] reboot 将执行 halt 命令的操作，会停止所有的进程，然后系统重新启动，而不触发 ACPI 信号。
+halt 命令 halt 命令的语法如下所示：
+halt [options] 该命令会发出一个硬件命令，停止所有 CPU 进程。这个命令来自于早先的计算时代，当运行该命令时，会发送一个信号来停止所有进程，一旦这样做是安全的，用户就会收到一个通知，他们可以关闭机器。
+现在执行 halt 命令的时候，也会停止所有进程，但是不会发送 ACPI（高级配置和电源接口）信号。
+poweroff 命令 poweroff 命令的语法如下：
+poweroff [options] 依据惯例，ACPI 信号是“停止”和“关机”之间的区别。你可能会发现，运行 halt 命令实际上会关闭电源，至少没有任何选项。为了确保这一结果，我们希望使用指定的 poweroff 命令。这会执行 halt 操作，但也会向硬件发送关闭电源的信号。
+另外，可以使用 shutdown 命令带 -r 选项来重新启动系统。
+重启命令的选项 下面我们介绍一些关于上述命令的常用选项。
+force 顾名思义，就是强制关闭进程，这也意味着当前正在 ram 中运行的程序有可能会遭到损坏或者数据丢失，还有可能会丢失最近保存的数据。所以一般情况下我们不建议使用 force 选项。
+-f --force Force immediate halt/power-off/reboot WTMP only 不执行操作，但是将注销事件写入 var/log/wtmp：
+-w --wtmp-only No WTMP 执行指定的操作，但不创建记录。
+-d --no-wtmp No Wall 在执行命令之前不发送 wall 消息，这意味着此刻登录到 系统中的用户 不会看到系统将会重启的信息。
+--no-wall Don&#39;t send wall message before halt/power-off/reboot ]]></content>
+  </entry>
+  
+  <entry>
     <title>发现了一个很棒的开源项目CSON</title>
     <url>/post/software/one-wonderful-open-source-project-CSON.html</url>
     <categories><category>Software</category>

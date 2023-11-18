@@ -6,7 +6,16 @@
     <description>Recent content in linux on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 06 Nov 2023 18:59:48 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/linux/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Nov 2023 11:58:43 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/linux/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何通过命令行重新启动 Linux</title>
+      <link>https://www.vxbus.com/post/linux/how-to-start-linux-from-command-line-interface.html</link>
+      <pubDate>Sat, 18 Nov 2023 11:58:43 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/post/linux/how-to-start-linux-from-command-line-interface.html</guid>
+      <description>&lt;p&gt;使用个人电脑工作的时候，可能会因为各种原因而关闭机器。对于 Linux 初学者来说，与电源相关（关机、重启等）的任务总是最后才想到如何去实现的，所以有可能对于如何重新启动远程服务器不太了解。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Linux Shell 脚本监控磁盘利用率</title>
       <link>https://www.vxbus.com/post/linux/use-linux-shell-script-to-monitor-disk-usage.html</link>
