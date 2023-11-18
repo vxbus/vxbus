@@ -16,6 +16,31 @@
   </entry>
   
   <entry>
+    <title>Intel官方确认：14代酷睿中国特供版快来了</title>
+    <url>/post/news/the-14th-core-process-dedicated-for-china-is-coming.html</url>
+    <categories><category>News</category>
+    </categories>
+    <tags>
+      <tag>Intel</tag>
+      <tag>Core</tag>
+    </tags>
+    <content type="html"><![CDATA[ Intel  日前发布了14代酷睿的125W K/KF系列，这只是个开始，后续还有更多型号。
+Intel在一次会议期间确认，14代酷睿的65W S系列桌面主流版本、55W HX系列高端移动版即将推出。
+如果没什么意外的话，我们会在明年初的CES 2024期间看到它们登场，这也是的多年来的惯例了。
+值得一提的是，14代酷睿同样会有针对中国市场的定制特供版本，出自成都封测工厂。
+12代有i5-12490F，13代有i5-13490F、i7-13790F，14代继续有类似型号也不例外，但何时发布尚无说法，可能要更晚一些。
+至于代号Meteor Lake的全新第一代酷睿Ultra，已经安排在12月14日提前发布，而到了CES上可能会有更多介绍和笔记本产品展示。
+酷睿Ultra将带来Intel处理器诞生52年来史上最大的一次变革，首次在消费级领域采用分离式模块化架构，升级全新的Intel 4制造工艺和封装技术、全新的CPU架构与3D高性能混合架构、全新的锐炫GPU核显、全新的NPU AI引擎。
+不过，酷睿Ultra仅限主流和轻薄笔记本领域，已知型号包括：
+H45系列的酷睿Ultra 9 185H、酷睿Ultra 7 165H/155H、酷睿Ultra 5 135H/125H
+U15系列的酷睿Ultra 7 155U、酷睿Ultra 5 125U
+U9系列的Ultra 7 164U、酷睿Ultra 5 134U
+Emerald Rapids可以视为现有第四代Sapphire Rapids的升级版本，平台兼容，Chiplet设计由四芯片简化为双芯片，但增加到最多64核心128线程，在同样的功耗水平下提供更高的性能和存储速度。
+明年，Intel将推出首次纯E核设计的Sierra Forest，最多双芯堆叠288核心288线程，还有纯P核的Clearwater Forest，都升级Intel 3制造工艺。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>怎么在Linux中高效运行终端命令</title>
     <url>/post/linux/how-to-execute-console-command-effectively-in-linux.html</url>
     <categories><category>Linux</category>
