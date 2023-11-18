@@ -24,7 +24,11 @@
       <pubDate>Sat, 18 Nov 2023 11:58:43 +0800</pubDate>
       
       <guid>https://www.vxbus.com/post/linux/how-to-start-linux-from-command-line-interface.html</guid>
-      <description>&lt;p&gt;使用个人电脑工作的时候，可能会因为各种原因而关闭机器。对于 Linux 初学者来说，与电源相关（关机、重启等）的任务总是最后才想到如何去实现的，所以有可能对于如何重新启动远程服务器不太了解。&lt;/p&gt;</description>
+      <description>&lt;p&gt;使用个人电脑工作的时候，可能会因为各种原因而关闭机器。对于 
+&lt;a href=&#34;https://www.vxworks.net/linux&#34; title=&#34;Linux&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;
+    Linux
+    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;
+&lt;/a&gt; 初学者来说，与电源相关（关机、重启等）的任务总是最后才想到如何去实现的，所以有可能对于如何重新启动远程服务器不太了解。&lt;/p&gt;</description>
     </item>
     
     <item>
