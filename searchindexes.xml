@@ -16,6 +16,21 @@
   </entry>
   
   <entry>
+    <title>怎么在Linux中高效运行终端命令</title>
+    <url>/post/linux/how-to-execute-console-command-effectively-in-linux.html</url>
+    <categories><category>Linux</category>
+    </categories>
+    <tags>
+      <tag>linux</tag>
+      <tag>command line</tag>
+    </tags>
+    <content type="html"><![CDATA[在 Linux 中，终端命令是非常重要的，因为它们是与操作系统进行交互的主要方式。以下是一些让你在 Linux 中高效运行终端命令的技巧。
+使用历史命令 在终端中输入历史命令的方式是使用方向键向上或向下滚动。此外，你还可以使用以下命令：
+ history：显示已输入的历史命令列表。 !!：重复最近的命令。 !&lt;number&gt;：重复一个特定编号的命令。 !&lt;string&gt;：重复以特定字符串开头的最近的命令。  例如，输入 !ls 将运行最近的 ls 命令。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>英特尔停止了CPU热电冷却技术的开发</title>
     <url>/post/server/Intel-stops-development-of-CPU-thermoelectric-cooling-technology.html</url>
     <categories><category>Server</category>

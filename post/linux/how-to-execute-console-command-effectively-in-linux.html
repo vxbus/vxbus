@@ -10,26 +10,26 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/imgs/icons/favicon_16x16_next.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/imgs/icons/favicon_32_32_next.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/imgs/icons/apple_touch_icon_next.png">
-<meta itemprop="name" content="详细讲解MMU—为什么嵌入式Linux没他不行" />
-<meta itemprop="description" content="详细讲解MMU—为什么嵌入式Linux没他不行" />
+<meta itemprop="name" content="怎么在Linux中高效运行终端命令" />
+<meta itemprop="description" content="怎么在Linux中高效运行终端命令" />
 <meta itemprop="datePublished" ZgotmplZ />
 <meta itemprop="dateModified" ZgotmplZ />
 <meta itemprop="image" content="https://www.vxbus.com/imgs/vxbus_logo.png" />
-<meta itemprop="keywords" content="embedded linux,mmu" />
+<meta itemprop="keywords" content="linux,command line" />
 
 <meta property="og:type" content="article" />
-<meta property="og:title" content="详细讲解MMU—为什么嵌入式Linux没他不行" />
-<meta property="og:description" content="详细讲解MMU—为什么嵌入式Linux没他不行" />
+<meta property="og:title" content="怎么在Linux中高效运行终端命令" />
+<meta property="og:description" content="怎么在Linux中高效运行终端命令" />
 <meta property="og:image" content="/imgs/vxbus_logo.png" />
 <meta property="og:image:width" content="312" />
 <meta property="og:image:height" content="312" />
 <meta property="og:image:type" content="image/jpeg/png/svg/jpg" />
-<meta property="og:url" content="https://www.vxbus.com/post/linux/why-embedded-linux-need-mmu.html"/>
+<meta property="og:url" content="https://www.vxbus.com/post/linux/how-to-execute-console-command-effectively-in-linux.html"/>
 <meta property="og:site_name" content="VxBus" />
 <meta property="og:locale" content="zh-CN"/>
 <meta property="article:author" content="VxWorks OS" />
-<meta property="article:published_time" content="2023-11-13 18:57:33 &#43;0800 CST" />
-<meta property="article:modified_time" content="2023-11-13 18:57:33 &#43;0800 CST" />
+<meta property="article:published_time" content="2023-11-18 17:45:32 &#43;0800 CST" />
+<meta property="article:modified_time" content="2023-11-18 17:45:32 &#43;0800 CST" />
 
 
   
@@ -44,7 +44,7 @@
       content: "~ 我可是有底线的哟 ~";
     }
   </style>
-  <script class="next-config" data-name="page" type="application/json">{"comments":false,"isHome":false,"isPage":true,"path":"why-embedded-linux-need-mmu.html","permalink":"https://www.vxbus.com/post/linux/why-embedded-linux-need-mmu.html","title":"详细讲解MMU—为什么嵌入式Linux没他不行"}</script>
+  <script class="next-config" data-name="page" type="application/json">{"comments":false,"isHome":false,"isPage":true,"path":"how-to-execute-console-command-effectively-in-linux.html","permalink":"https://www.vxbus.com/post/linux/how-to-execute-console-command-effectively-in-linux.html","title":"怎么在Linux中高效运行终端命令"}</script>
   <script type="text/javascript">
   document.addEventListener('DOMContentLoaded', () => {
     var script = document.createElement('script');
@@ -60,7 +60,7 @@
 
 
 
-  <title>详细讲解MMU—为什么嵌入式Linux没他不行 - VxBus</title>
+  <title>怎么在Linux中高效运行终端命令 - VxBus</title>
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
@@ -174,12 +174,7 @@
       <div class="post-toc-wrap sidebar-panel">
         <div class="post-toc animated"><nav id="TableOfContents">
   <ul>
-    <li><a href="#mmu-内存管理">MMU 内存管理</a></li>
-    <li><a href="#举个例子">举个例子</a></li>
-    <li><a href="#为什么相同的虚拟地址空间在物理地址不会发生冲突呢">为什么相同的虚拟地址空间在物理地址不会发生冲突呢？</a></li>
-    <li><a href="#页表是什么">页表是什么？</a></li>
-    <li><a href="#为什么没有-mmu-就无法运行-linux-系统">为什么没有 MMU 就无法运行 Linux 系统？</a></li>
-    <li><a href="#为什么有些较为简单的-soc-可能没有-mmu但仍然可以运行一些嵌入式操作系统或者裸机程序">为什么有些较为简单的 SOC 可能没有 MMU，但仍然可以运行一些嵌入式操作系统或者裸机程序？</a></li>
+    <li><a href="#使用历史命令">使用历史命令</a></li>
   </ul>
 </nav></div>
       </div>
@@ -313,7 +308,7 @@
       
   <div class="post-block">
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://www.vxbus.com/post/linux/why-embedded-linux-need-mmu.html">
+    <link itemprop="mainEntityOfPage" href="https://www.vxbus.com/post/linux/how-to-execute-console-command-effectively-in-linux.html">
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
       <meta itemprop="name" content="VxWorks OS">
@@ -323,11 +318,11 @@
       <meta itemprop="description" content="Where there is embedded, there is VxWorks.">
     </span>
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="详细讲解MMU—为什么嵌入式Linux没他不行">
-      <meta itemprop="description" content="详细讲解MMU—为什么嵌入式Linux没他不行">
+      <meta itemprop="name" content="怎么在Linux中高效运行终端命令">
+      <meta itemprop="description" content="怎么在Linux中高效运行终端命令">
     </span>
     <header class="post-header">
-       <h1 class="post-title" itemprop="name headline">详细讲解MMU—为什么嵌入式Linux没他不行 </h1> <div class="post-meta-container">
+       <h1 class="post-title" itemprop="name headline">怎么在Linux中高效运行终端命令 </h1> <div class="post-meta-container">
   <div class="post-meta-items">
     
 
@@ -337,7 +332,7 @@
     <i class="far fa-calendar"></i>
   </span>
   <span class="post-meta-item-text">发表于：</span>
-  <time title="发表于：2023-11-13 18:57:33 &#43;0800 CST" itemprop="dateCreated datePublished" datetime="2023-11-13 18:57:33 &#43;0800 CST">2023-11-13</time>
+  <time title="发表于：2023-11-18 17:45:32 &#43;0800 CST" itemprop="dateCreated datePublished" datetime="2023-11-18 17:45:32 &#43;0800 CST">2023-11-18</time>
 </span>
     
     
@@ -359,7 +354,7 @@
   <span class="post-meta-item-icon">
     <i class="far fa-file-word"></i>
   </span>
-  <span class="post-meta-item-text">字数：</span><span>104</span>
+  <span class="post-meta-item-text">字数：</span><span>16</span>
 </span>
     
 <span class="post-meta-item" title="阅读">
@@ -378,7 +373,7 @@
   <span class="post-meta-item-text">
   浏览：
   </span>
-  <span id="busuanzi_value_page_pv" data-path="/post/linux/why-embedded-linux-need-mmu.html"><i class="fa fa-sync fa-spin"></i></span>
+  <span id="busuanzi_value_page_pv" data-path="/post/linux/how-to-execute-console-command-effectively-in-linux.html"><i class="fa fa-sync fa-spin"></i></span>
 </span>
 
   </div>
@@ -389,49 +384,16 @@
     
     <div class="post-body  autonumber " itemprop="articleBody">
       
-  <p>MMU（Memory Management Unit，内存管理单元）是一种硬件模块，用于在 CPU 和内存之间实现虚拟内存管理。</p>
-<p><img src="https://www.vxbus.com/imgs/post/linux-need-mmu-1.png" alt="MMU"></p>
-<h2 id="mmu-内存管理">MMU 内存管理</h2>
-<p>MMU（Memory Management Unit，内存管理单元）是一种硬件模块，用于在 CPU 和内存之间实现虚拟内存管理。</p>
-<p>其主要功能是将虚拟地址转换为物理地址，同时提供访问权限的控制和缓存管理等功能。MMU 是现代计算机操作系统中重要的组成部分，可以提高系统的稳定性和安全性。</p>
-<p>在内存管理方面，MMU 可以通过页面表（Page Table）实现虚拟内存管理。页面表是一种数据结构，记录了每个虚拟页面和其对应的物理页面之间的映射关系。</p>
-<p>当 CPU 发出一个虚拟地址时，MMU 会通过页面表查找并将其转换为对应的物理地址。</p>
-<p>此外，MMU 还可以通过页面表实现内存保护和共享等功能，从而提高系统的安全性和效率。</p>
-<p>总之，MMU 是内存管理中一个重要的硬件组件，可以实现虚拟内存管理、内存保护、共享和缓存等功能，为现代计算机操作系统的稳定性和安全性提供支持。</p>
-<h2 id="举个例子">举个例子</h2>
-<p>假设我们有一个程序，它需要访问两个内存区域：一个是只读的代码区域，一个是可读写的数据区域。</p>
-<p>我们现在想要在一个没有 MMU 的系统上运行这个程序。如果没有 MMU，代码区域和数据区域就只能被映射到两个固定的物理地址上。这就意味着，如果程序尝试访问一个不正确的地址，可能会导致系统崩溃。</p>
-<p>现在，如果我们在一个具有 MMU 的系统上运行这个程序，情况会有所不同。MMU 可以将程序尝试访问的地址映射到不同的物理地址，这样可以使得代码区域和数据区域在物理内存中不再是固定的位置。</p>
-<p>这意味着，如果程序尝试访问不正确的地址，MMU 可以通过重新映射来保护系统不崩溃。</p>
-<p>MMU 还可以将多个虚拟地址映射到同一个物理地址上，这就是所谓的页共享（page sharing），可以减少物理内存的使用。</p>
-<p>如果没有 MMU，程序访问内存时只能使用物理地址，而物理地址是直接映射到内存芯片上的地址，程序可以随意访问任何一个物理地址。</p>
-<p>这种情况下，程序如果访问了错误的地址或试图访问未被授权的地址，就会产生访问错误或非法访问，可能导致系统崩溃、数据丢失等问题。</p>
-<p>而有了 MMU，程序访问的是虚拟地址，由 MMU 负责将虚拟地址映射到物理地址上，这样程序就无法直接访问物理地址。</p>
-<p>同时，MMU 可以根据内存访问权限来限制程序对内存的访问，确保系统的安全性和稳定性。</p>
-<p>因此，没有 MMU 时，程序可能会访问到其他地址，而有了 MMU，程序只能访问被允许访问的地址，可以有效地避免非法访问的问题。</p>
-<p><img src="https://www.vxbus.com/imgs/post/linux-need-mmu-2.png" alt="MMU"></p>
-<h2 id="为什么相同的虚拟地址空间在物理地址不会发生冲突呢">为什么相同的虚拟地址空间在物理地址不会发生冲突呢？</h2>
-<p>相同的虚拟地址空间在不同的进程中可能会映射到不同的物理地址，这个映射的过程是由 MMU 完成的。在操作系统中，每个进程都有独立的虚拟地址空间，且这些虚拟地址空间互不干扰。</p>
-<p>MMU 会将每个进程的虚拟地址映射到对应的物理地址上，使得不同进程间的内存访问不会相互干扰。同时，MMU 也会提供一些安全机制，如页面保护等，来防止进程越界访问内存或访问其他进程的内存。</p>
-<p>因此，MMU 起到了保护进程间内存互不干扰的作用，也是现代操作系统的重要组成部分。</p>
-<h2 id="页表是什么">页表是什么？</h2>
-<p>页表是一种用于存储虚拟内存地址与物理内存地址映射关系的数据结构。在使用虚拟内存的系统中，每个进程都有自己的虚拟地址空间，而这些虚拟地址空间被分割成许多页（通常大小为 4KB 或更大），而不是一整块连续的内存。</p>
-<p>因此，当进程需要访问某个虚拟地址时，需要将其翻译成对应的物理地址。这个翻译过程就是通过页表来完成的。</p>
-<p>页表的基本原理是将虚拟地址划分成一个页号和一个偏移量。</p>
-<p>页号用于在页表中查找对应的物理页帧号，而偏移量则用于计算该虚拟地址在物理页帧中的偏移量。通过这种方式，就可以将虚拟地址映射到物理地址，使得进程可以访问对应的内存区域。</p>
-<p>页表一般由操作系统来维护，因为操作系统需要掌握虚拟地址和物理地址之间的映射关系。</p>
-<p>在使用 MMU（Memory Management Unit）的硬件支持的系统中，当进程访问虚拟地址时，MMU 会通过页表将虚拟地址转换为物理地址，并将访问指向正确的物理地址。这样，进程就可以在不知道自己真实物理地址的情况下访问内存。</p>
-<h2 id="为什么没有-mmu-就无法运行-linux-系统">为什么没有 MMU 就无法运行 Linux 系统？</h2>
-<p>这是因为 Linux 内核将虚拟地址空间分为多个页面，并将这些页面映射到物理地址空间上，以实现内存隔离、保护和虚拟内存等功能。</p>
-<p>没有 MMU，就无法实现这种映射，从而无法运行 Linux 系统。</p>
-<h2 id="为什么有些较为简单的-soc-可能没有-mmu但仍然可以运行一些嵌入式操作系统或者裸机程序">为什么有些较为简单的 SOC 可能没有 MMU，但仍然可以运行一些嵌入式操作系统或者裸机程序？</h2>
-<p>
-<a href="https://www.vxworks.net" title="RTOS" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
-    RTOS
-    <i class="fa fa-external-link-alt"></i>
-</a> 可以运行在没有 MMU 的系统上，因为 RTOS 通常不需要进行内存保护和虚拟地址映射等高级特性。</p>
-<p>相反，RTOS 的设计侧重于实时性和低延迟，因此通常只需要简单的内存管理和任务调度即可。</p>
-<p>这使得 RTOS 可以运行在许多嵌入式系统上，包括一些没有 MMU 的系统。</p>
+  <p>在 Linux 中，终端命令是非常重要的，因为它们是与操作系统进行交互的主要方式。以下是一些让你在 Linux 中高效运行终端命令的技巧。</p>
+<h2 id="使用历史命令">使用历史命令</h2>
+<p>在终端中输入历史命令的方式是使用方向键向上或向下滚动。此外，你还可以使用以下命令：</p>
+<ul>
+<li><code>history</code>：显示已输入的历史命令列表。</li>
+<li><code>!!</code>：重复最近的命令。</li>
+<li><code>!&lt;number&gt;</code>：重复一个特定编号的命令。</li>
+<li><code>!&lt;string&gt;</code>：重复以特定字符串开头的最近的命令。</li>
+</ul>
+<p>例如，输入 <code>!ls</code> 将运行最近的 <code>ls</code> 命令。</p>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1543398821442998"
      crossorigin="anonymous"></script>
 
@@ -451,11 +413,11 @@
 
 <div class="post-tags">
   
-    <a href="/tags/embedded-linux">
-    embedded linux
+    <a href="/tags/linux">
+    linux
   </a>
-    <a href="/tags/mmu">
-    mmu
+    <a href="/tags/command-line">
+    command line
   </a>
 </div>
 
@@ -483,7 +445,7 @@
   <ul>
     <li class="post-copyright-title">
       <strong>文章标题：</strong>
-      详细讲解MMU—为什么嵌入式Linux没他不行
+      怎么在Linux中高效运行终端命令
     </li>
     <li class="post-copyright-author">
       <strong>本文作者： </strong>
@@ -491,7 +453,7 @@
     </li>
     <li class="post-copyright-link"> 
       <strong>本文链接：</strong>
-       <a id="post-cr-link" href="https://www.vxbus.com/post/linux/why-embedded-linux-need-mmu.html" title="详细讲解MMU—为什么嵌入式Linux没他不行">https://www.vxbus.com/post/linux/why-embedded-linux-need-mmu.html</a>
+       <a id="post-cr-link" href="https://www.vxbus.com/post/linux/how-to-execute-console-command-effectively-in-linux.html" title="怎么在Linux中高效运行终端命令">https://www.vxbus.com/post/linux/how-to-execute-console-command-effectively-in-linux.html</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -516,13 +478,13 @@
 </div>
 <div class="post-nav">
   <div class="post-nav-next post-nav-item">
-    <a href="/post/news/RTX-4090-is-officially-banned-from-sale-in-China-starting-today.html" rel="next" title="RTX 4090今起正式在国内禁售 强制下架">
-      <i class="fa fa-chevron-left"></i> RTX 4090今起正式在国内禁售 强制下架
+    <a href="/post/welcome-to-vxworks-club/" rel="next" title="欢迎加入 VxWorks 俱乐部！">
+      <i class="fa fa-chevron-left"></i> 欢迎加入 VxWorks 俱乐部！
     </a>
   </div>
   <div class="post-nav-prev post-nav-item">
-    <a href="/post/hardware/method-to-reduce-input-ripple-voltage-for-buck-circuit.html" rel="prev" title="BUCK电路减小输入纹波电压的方法">
-      BUCK电路减小输入纹波电压的方法
+    <a href="/post/server/Intel-stops-development-of-CPU-thermoelectric-cooling-technology.html" rel="prev" title="英特尔停止了CPU热电冷却技术的开发">
+      英特尔停止了CPU热电冷却技术的开发
       <i class="fa fa-chevron-right"></i>
     </a>
   </div>
