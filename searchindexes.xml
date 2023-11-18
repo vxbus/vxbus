@@ -16,6 +16,26 @@
   </entry>
   
   <entry>
+    <title>英特尔停止了CPU热电冷却技术的开发</title>
+    <url>/post/server/Intel-stops-development-of-CPU-thermoelectric-cooling-technology.html</url>
+    <categories><category>Server</category>
+    </categories>
+    <tags>
+      <tag>Intel</tag>
+      <tag>CPU</tag>
+    </tags>
+    <content type="html"><![CDATA[2020 年，英特尔在第十代酷睿“Comet Lake-S”处理器上推出了一种基于热电制冷（TEC）和液体冷却结合的 Cryo 冷却技术，旨在为台式机提供增强的性能和全新的超频体验。
+Cryo 冷却技术基于珀耳帖效应，利用硬件、软件和冷却器的组合来精确控制冷却性能。该冷却系统的制造商在水冷头内部集成了热电（TEC）制冷板和控制电路，当 TEC 板通电时，TEC 的冷侧吸收 CPU 热量，而热侧则将热量传递给水冷头内的冷却液，以加快散热速度。系统内的电路和传感器，在智能软件的配合下可监控 CPU 的状况，以确保 CPU 周围不会产生凝露。
+图：Cryo 冷却技术利用TEC制冷片+液冷的结合来增强 CPU 冷却
+热电冷却利用珀耳帖效应来传递热量，具有结构紧凑和精确温度控制等优点，然而它几乎需要消耗同等的能量来传递热量，急剧增加了系统的能耗，而且还带来了电路板周围水汽冷凝导致的短路风险。
+近期，英特尔在其支持页面发布的更新中透露，该公司已停止开发旨在为其顶级处理器提供增强散热的热电效应 Cryo 冷却技术。因此，英特尔将不再为其最新的第 14 代酷睿 &ldquo;Raptor Lake Refresh &ldquo;处理器提供 Cryo Cooling 软件支持。
+英特尔公司在声明中写道：&ldquo;截至 2023 年 7 月 1 日，英特尔低温冷却技术解决方案的开发工作已经停止。&ldquo;所有版本的软件均按原样提供。2023 年 12 月 31 日之后，将不再提供功能、注释安全或其他更新。不支持英特尔酷睿处理器第 14 代。请向您的辅助冷却提供商咨询替代解决方案&rdquo;。
+图：英特尔声明停止 Cryo 冷却技术的开发（截图自英特尔支持页面）
+2020 年，EKWB 和 Cooler Master 相继为第十代酷睿“Comet Lake-S”处理器发布了 Cryo 冷却技术的散热器，然而在英特尔停止开发工作后，这些散热器已不再支持最新的 CPU 。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>如何通过命令行重新启动 Linux</title>
     <url>/post/linux/how-to-start-linux-from-command-line-interface.html</url>
     <categories><category>Linux</category>

@@ -6,7 +6,16 @@
     <description>Recent content in CPU on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 29 Oct 2022 06:53:45 -0400</lastBuildDate><atom:link href="https://www.vxbus.com/tags/cpu/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Nov 2023 13:54:21 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/cpu/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>英特尔停止了CPU热电冷却技术的开发</title>
+      <link>https://www.vxbus.com/post/server/Intel-stops-development-of-CPU-thermoelectric-cooling-technology.html</link>
+      <pubDate>Sat, 18 Nov 2023 13:54:21 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/post/server/Intel-stops-development-of-CPU-thermoelectric-cooling-technology.html</guid>
+      <description>&lt;p&gt;2020 年，英特尔在第十代酷睿“Comet Lake-S”处理器上推出了一种基于热电制冷（TEC）和液体冷却结合的 Cryo 冷却技术，旨在为台式机提供增强的性能和全新的超频体验。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>FPGA硬核和软核处理器的区别</title>
       <link>https://www.vxbus.com/post/fpga/difference-between-hard-core-processor-and-soft-core-processor-of-fpga.html</link>
