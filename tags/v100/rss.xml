@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>V100 on VxBus</title>
+    <link>https://www.vxbus.com/tags/v100/</link>
+    <description>Recent content in V100 on VxBus</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 18 Nov 2023 19:58:26 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/v100/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>聊聊GPU产品选型那些事</title>
+      <link>https://www.vxbus.com/post/server/how-to-select-gpu.html</link>
+      <pubDate>Sat, 18 Nov 2023 19:58:26 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/post/server/how-to-select-gpu.html</guid>
+      <description>&lt;p&gt;Image&lt;/p&gt;
+&lt;p&gt;本篇讲述了A100、V100、H100该如何选择？&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
