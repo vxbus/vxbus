@@ -7,8 +7,48 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://www.vxbus.com/tags/android/</loc>
+    <lastmod>2023-11-18T11:47:13+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://www.vxbus.com/categories/</loc>
-    <lastmod>2023-11-17T10:11:15+08:00</lastmod>
+    <lastmod>2023-11-18T11:47:13+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/cson/</loc>
+    <lastmod>2023-11-18T11:47:13+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/json/</loc>
+    <lastmod>2023-11-18T11:47:13+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/post/</loc>
+    <lastmod>2023-11-18T11:47:13+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/categories/software/</loc>
+    <lastmod>2023-11-18T11:47:13+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/</loc>
+    <lastmod>2023-11-18T11:47:13+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/</loc>
+    <lastmod>2023-11-18T11:47:13+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/post/software/one-wonderful-open-source-project-CSON.html</loc>
+    <lastmod>2023-11-18T11:47:13+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -32,27 +72,12 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.vxbus.com/post/</loc>
-    <lastmod>2023-11-17T10:11:15+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.vxbus.com/tags/rtx-4090/</loc>
     <lastmod>2023-11-17T10:11:15+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/post/news/RTX-4090-is-officially-banned-from-sale-in-China-starting-today.html</loc>
-    <lastmod>2023-11-17T10:11:15+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/tags/</loc>
-    <lastmod>2023-11-17T10:11:15+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/</loc>
     <lastmod>2023-11-17T10:11:15+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -338,11 +363,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/tags/embedded/</loc>
-    <lastmod>2023-04-06T10:27:51-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/categories/software/</loc>
     <lastmod>2023-04-06T10:27:51-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
