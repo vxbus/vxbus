@@ -175,6 +175,12 @@
         <div class="post-toc animated"><nav id="TableOfContents">
   <ul>
     <li><a href="#使用历史命令">使用历史命令</a></li>
+    <li><a href="#使用别名">使用别名</a></li>
+    <li><a href="#使用-tab-自动补全">使用 Tab 自动补全</a></li>
+    <li><a href="#组合使用命令">组合使用命令</a></li>
+    <li><a href="#使用查找命令">使用查找命令</a></li>
+    <li><a href="#使用编辑器">使用编辑器</a></li>
+    <li><a href="#学习和使用快捷键">学习和使用快捷键</a></li>
   </ul>
 </nav></div>
       </div>
@@ -268,7 +274,7 @@
       </div>
     <div class="siteinfo-item">
       <div class="item-name"><i class="fa fa-font"></i>总字数：</div>
-      <div class="item-count" id="wordsCount" data-count="16731"></div>
+      <div class="item-count" id="wordsCount" data-count="16803"></div>
     </div>
     <div class="siteinfo-item">
       <div class="item-name"><i class="fa fa-mug-hot"></i>阅读约：</div>
@@ -354,7 +360,7 @@
   <span class="post-meta-item-icon">
     <i class="far fa-file-word"></i>
   </span>
-  <span class="post-meta-item-text">字数：</span><span>16</span>
+  <span class="post-meta-item-text">字数：</span><span>88</span>
 </span>
     
 <span class="post-meta-item" title="阅读">
@@ -394,6 +400,38 @@
 <li><code>!&lt;string&gt;</code>：重复以特定字符串开头的最近的命令。</li>
 </ul>
 <p>例如，输入 <code>!ls</code> 将运行最近的 <code>ls</code> 命令。</p>
+<h2 id="使用别名">使用别名</h2>
+<p>你可以设置别名来简化长命令的输入并减少打字次数。例如，将 ls -alh 设置为 ll，可以使用以下命令：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">alias ll<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;ls -alh&#39;</span>
+</code></pre></div><p>你可以将别名添加到 <code>~/.bashrc</code> 中，以便每次启动命令行时都自动设置别名。</p>
+<h2 id="使用-tab-自动补全">使用 Tab 自动补全</h2>
+<p>当你在输入命令时按下 Tab 键时，它将自动填充所需的命令或路径等。</p>
+<p>例如，输入 <code>cd /u/l/b</code> 然后按 Tab 键将自动补全为：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">cd /usr/local/bin
+</code></pre></div><p>此外，你可以使用 Tab 补全文件名、目录、命令和变量名称，以及其他多种选项。</p>
+<h2 id="组合使用命令">组合使用命令</h2>
+<p>你可以通过使用管道、重定向、通配符和其他命令来将多个命令组合在一起执行。例如，运行以下命令会将文件 <code>/var/log/messages</code> 中包含关键字 &ldquo;error&rdquo; 的行输出到文件 <code>errors.txt</code> 中：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">grep <span style="color:#e6db74">&#34;error&#34;</span> /var/log/messages &gt; errors.txt
+</code></pre></div><h2 id="使用查找命令">使用查找命令</h2>
+<p>在 Linux 中，你可以使用多个查找命令来查找文件、目录、文本和其他内容。以下是一些最常用的命令：</p>
+<ul>
+<li><code>find</code>：查找文件和目录。</li>
+<li><code>grep</code>：在文件中查找文本。</li>
+<li><code>locate</code>：通过查找文件数据库来查找文件。</li>
+</ul>
+<p>这些命令和其他命令的选项和参数不止于此。你可以查看相关文档以获取更多信息。</p>
+<h2 id="使用编辑器">使用编辑器</h2>
+<p>当你需要编辑非常长或复杂的命令时，你可以将其复制到文本编辑器中编辑，然后复制回终端运行。这可以帮助你避免打字错误，并更容易发现和更正错误。</p>
+<h2 id="学习和使用快捷键">学习和使用快捷键</h2>
+<p>最后，学习和使用终端快捷键可以节省时间和提高效率。以下是一些常用的快捷键：</p>
+<ul>
+<li><code>Ctrl + c</code>：停止当前运行的命令。</li>
+<li><code>Ctrl + d</code>：在行首输入此键将关闭当前 shell。</li>
+<li><code>Ctrl + r</code>：在历史命令中搜索。</li>
+<li><code>Ctrl + l</code>：清空终端屏幕。</li>
+</ul>
+<p>当然，还有很多其他的快捷键，你可以在文档中查看完整列表。</p>
+<p>综上所述，在 Linux 中高效运行终端命令需要使用多种技巧和工具，包括历史命令、别名、Tab 自动补全、命令组合、查找命令、文本编辑器和快捷键。通过使用这些技巧和工具，你可以更快、更准确地使用终端命令。</p>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1543398821442998"
      crossorigin="anonymous"></script>
 
