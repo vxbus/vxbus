@@ -16,6 +16,36 @@
   </entry>
   
   <entry>
+    <title>AMD能否借助MI300加速器再次加速</title>
+    <url>/post/soc/can-AMD-accelerate-again-with-the-MI300-accelerator.html</url>
+    <categories><category>SOC</category>
+    </categories>
+    <tags>
+      <tag>AMD</tag>
+      <tag>MI300</tag>
+    </tags>
+    <content type="html"><![CDATA[ AMD  宣布将于 2023 年 12 月 6 日举办“ Advancing AI ”现场直播活动，AMD董事会主席兼首席执行官苏姿丰博士（Dr. Lisa Su）将携手其他AMD高管、AI生态系统合作伙伴和客户共同探讨AMD产品和软件将如何重塑AI和自适应高性能计算领域。
+基本上板上钉钉的是，这场活动中的“聚焦点”，是AMD将推出下一代 AMD Instinct MI300 数据中心 GPU 加速器系列。
+总结：
+ AMD的 MI300 AI 加速器可能成为该公司未来几年的主要增长动力，使其能够与NVIDIA等公司竞争。 MI300A以及MI300X加速器预计将明显增强AMD的数据中心业务，并有可能产生10亿美元的销售额。 AMD 在数据中心人工智能市场的强势地位，加上对 ROCm 软件生态系统的投资，将进一步支持其增长潜力。  MI300加速器预计成为AMD最快达成10亿美元销售额产品 在2023 财年第三季度财报电话会议上，AMD 管理层预计第四季度数据中心 GPU 收入约为 4 亿美元，2024 年将超过 20 亿美元，全年收入将持续增长。
+22财年，AMD在数据中心业务上创造了60亿美元的收入，占集团总收入的25.6%。MI300A和MI300X加速器的出货极大地促进了他们的数据中心业务。Lisa Su表示，MI300 预计将成为公司历史上销售额最快达到 10 亿美元的产品。
+MI300A是一款由1460亿个晶体管组成的CPU+GPU加速器，而MI300X则是一款专为数据中心市场设计的纯GPU产品。据透露，AMD有望在未来几周内开始向领先的云和 OEM 客户生产 Instinct MI300X GPU 加速器。此外，Instinct MI300A APU 于 10 月初开始生产发货，以支持 El Capitan Exascale 超级计算机。
+MI300系列和NVIDIA H100的AI争夺战 MI300A 和 MI300X 都将成为 AMD 未来几年的重要增长动力。首先，尽管 AMD 的 GPU 产品比 NVIDIA更晚进入市场，但 MI300X 将8个加速器集成到一个平台上，并具有1.5TB HBM3 内存。凭借如此强大的计算能力，MI300X非常适合AI机器学习中的大型语言模型。
+业界谈论到AI加速器，NVIDIA是绕不开的话题。
+AMD 的 MI300X 使该公司能够与NVIDIA的 H100 GPU 产品竞争。Lisa Su声称MI300X提供5.2TBps的内存带宽，比NVIDIA H100 GPU好1.6倍。
+值得注意的是，Lisa Su指的是NVIDIA H100 SXM版本，但NVIDIA同样具有高版本的H100 NVL——通过NVLink桥接2个GPU，提供7.8 TBps的内存带宽——仍然略高于AMD的MI300X。
+不过，AMD MI300X的强大，足以满足大型语言模型的计算需求。
+数据中心人工智能市场规模巨大，AMD预计今年的潜在市场总额将达到300亿美元，预计到2027年将增长至1500亿美元。
+这些都给AMD在此领域留下足够想象的扩展空间。
+ROCm 软件生态系统 成功的软件对于人工智能加速器的重要性不可低估。
+NVIDIA 的 CUDA 软件已经成功建立了其生态系统，涵盖硬件、软件和外部合作伙伴。同样，AMD 也一直在投资其 ROCm 软件。最新的 ROCm 软件套件完全支持 AMD 的 MI300 加速器。
+由于 CUDA 的先发优势，GitHub 上的许多现有代码主要基于 CUDA，为弥补这一差距，AMD 一直在为 AMD GPU 开发 PyTorch/TensorFlow 代码环境。该环境可与 AMD GPU 上基于 CUDA 的代码存储库兼容，从而促进 AMD 生态系统的扩展，并帮助客户更高效地构建机器学习应用程序。
+顺应AI计算的浪潮。新推出的 MI300 AI 加速器预计将维持收入增长的高速势头。许多企业优先考虑云和人工智能投资，极大地推动了对加速器的需求。
+研究和市场预测 GPU 市场的复合年增长率将达到 29.57%，将从 2021 年的 310 亿美元增至 2028 年的 1900 亿美元。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>GH200，来自英伟达的AI超级计算机</title>
     <url>/post/news/gh200-from-nvidia.html</url>
     <categories><category>News</category>

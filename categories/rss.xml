@@ -6,7 +6,16 @@
     <description>Recent content in Categories on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 19 Nov 2023 10:47:43 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/categories/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Nov 2023 22:23:38 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/categories/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SOC</title>
+      <link>https://www.vxbus.com/categories/soc/</link>
+      <pubDate>Sun, 19 Nov 2023 22:23:38 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/categories/soc/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>News</title>
       <link>https://www.vxbus.com/categories/news/</link>
