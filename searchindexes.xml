@@ -16,6 +16,24 @@
   </entry>
   
   <entry>
+    <title>传三星斩获AMD部分订单</title>
+    <url>/post/news/samsung-is-rumored-to-have-won-some-orders-from-AMD.html</url>
+    <categories><category>News</category>
+    </categories>
+    <tags>
+      <tag>AMD</tag>
+      <tag>Samsung</tag>
+      <tag>Zen5c</tag>
+    </tags>
+    <content type="html"><![CDATA[据报道，三星已获得 AMD  的订单，将使用其的4nm工艺技术，为AMD生产基于Zen 5c架构的处理器。目前，这一消息在多个渠道得到了证实。
+如果这笔交易最终达成，这标志着AMD对其制造战略进行了调整，以实现多元化供应。其中，AMD的考量已经从工艺节点、生产良率、成本等因素，扩展到产能、生态链等多个角度。
+据悉，AMD的“Prometheus”处理器将由三星和台积电共同生产。其中，三星将使用其先进的4nm工艺技术制造基础版本的“Prometheus”处理器，而台积电则将使用更先进的3nm工艺技术来生产更高级别的“Prometheus”处理器。
+如今，三星正在积极扩展其4nm工艺，以能够从台积电那里获得更多订单。在关键的良率方面，业内人士普遍认为，台积电的4nm工艺良率达到了80%，而三星的4nm工艺已经从年初的50%提升到75%，与台积电相当。对此，外界猜测高通、英伟达等大客户可能会回流采用三星工艺。
+据此前曝出的苹果高层会议纪录显示，台积电3nm制程的良率接近63%，报价比4nm高出一倍。因此，随着三星今年较大幅度改善良率和产能，再加上台积电今年决定涨价，很多大客户可能会从成本等角度考量，寻找第二供应商以分散外包生产订单。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>AMD能否借助MI300加速器再次加速</title>
     <url>/post/server/can-AMD-accelerate-again-with-the-MI300-accelerator.html</url>
     <categories><category>server</category>
