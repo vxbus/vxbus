@@ -16,6 +16,33 @@
   </entry>
   
   <entry>
+    <title>Intel 4工艺太难了！酷睿Ultra终于突破5GHz</title>
+    <url>/post/news/gpt-4.0-is-finally-free-to-use.html</url>
+    <categories><category>News</category>
+    </categories>
+    <tags>
+      <tag>GPT 4.0</tag>
+      <tag>Copilot</tag>
+      <tag>Microsoft Ignite</tag>
+    </tags>
+    <content type="html"><![CDATA[2023年末将至，今年几乎每个产业都在经历着集体转型， AI  技术的发展为工作方式带来了新的变革。在最近的Microsoft Ignite技术大会上，微软展示了他们最新的技术和产品进展，让每个人都能体验到科技创新的力量。
+Microsoft Ignite是一年一度针对开发者和IT专业人士举办的大会。AIGC无疑是本届大会的最大的热点。而最重磅的莫过于微软宣布，Bing Chat更名为Copilot，面向所有用户免费开启GPT-4功能。
+Bing Chat正式更名为Copilot，品牌升级意味着Copilot正在成为一个独立的新产品，用户无需先导航到Bing就可以访问。Copilot现在可以通过Bing和Windows使用，与ChatGPT一样，微软Copilot也有了自己的独立域名：copilot.microsoft.com，但与ChatGPT不同，Copilot上像GPT-4、DALL-E 3等功能全部免费开放！你只需登录微软账户即可使用（而ChatGPT需要订阅会员，每月20刀）。
+就连OpenAI上周发布的GPT自定义版本，微软也开始免费提供，命名为Copilot Studio。
+此前，微软内部曾有十几种产品共享“Copilot”品牌，Copilot品牌起源于2021年的 GitHub Copilot，今年微软又推出了Dynamics 365 Copilot、Windows Copilot、Microsoft Security Copilot和Microsoft 365 Copilot等，似乎每项业务都有自己的“Copilot”。
+那为什么要在Copilot家族中再添两名新成员？微软表示是为了给消费者和企业客户带来统一的Copilot体验。
+现在，Bing Chat成为了微软的第六个Copilot，也可以视作是最通用的一个Copilot。未来，Bing将为其提供支持。另外，Copilot基于最新OpenAI模型，包括GPT-4和DALL-E 3，提供统一的文本和图像生成功能。
+有分析认为，Bing Chat本身并未为Bing带来太多效益，所以微软将其从搜索引擎中剥离出来。此举颇为讽刺，因为微软此前大力利用AI产品来提升自家搜索引擎，意图从谷歌手中夺取市场份额。今年初，微软CEO纳德拉甚至称“谷歌是搜索领域800磅重的大猩猩”，微软将让它“跳舞”。但谷歌并未像微软那样急于在搜索中加入生成式AI。从现在看来，这种“不变”并未对谷歌造成什么不良影响：在Bing Chat推出近10个月后，谷歌搜索引擎的市场份额仍超过91%。
+微软特别提到，从12月1日起，使用Microsoft Entra登录时，在Bing、Edge和Windows中使用Copilot的用户将享有商业数据保护功能。Copilot不会保存用户的prompt和回复，微软无法直接访问这些数据，也不会用于模型训练。
+此外，微软还推出了其他Copilot产品：Microsoft Copilot Studio、Copilot for Azure、Copilot for Service和Copilot in Dynamics 365 Guides。
+其中，Microsoft Copilot Studio对应OpenAI上周发布的GPTs产品。该新平台提供将微软AI应用与第三方数据连接的工具，企业可以用它创建定制的Copilot或集成自定义的ChatGPT对话机器人。该产品已向现有Copilot for Microsoft 365订阅用户开放公测版。
+现在，无论是Edge、Chrome、Safari，还是移动端，都可以使用Copilot。需要注意的是，虽然Copilot仅需要登录微软账户就可免费使用，但Microsoft 365等其他Copilot产品仍需付费。
+与OpenAI GPTs相比，微软Copilot Studio还有些不同。它的主要设计目的是扩展Microsoft 365 Copilot。用户可以利用该应用自定义集成不同数据集和自动化流程的Copilot。
+除了将Bing Chat改名Copilot，微软还发布了期待已久的自研芯片。这是为云基础设施设计的两款高端定制芯片，分别是Azure Maia 100 AI芯片和Cobalt 100 CPU。两款芯片均由微软内部构建，深度针对整个云服务器堆栈进行了优化，在性能、功耗和成本方面具有竞争优势，计划2024年推出。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>聊聊GPU产品选型那些事</title>
     <url>/post/server/how-to-select-gpu.html</url>
     <categories><category>Server</category>
