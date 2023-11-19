@@ -32,7 +32,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.vxbus.com/categories/soc/</loc>
+    <loc>https://www.vxbus.com/categories/server/</loc>
     <lastmod>2023-11-19T22:23:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -108,11 +108,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/tags/cpu/</loc>
-    <lastmod>2023-11-18T19:58:26+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/categories/server/</loc>
     <lastmod>2023-11-18T19:58:26+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
