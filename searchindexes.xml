@@ -16,6 +16,23 @@
   </entry>
   
   <entry>
+    <title>GH200，来自英伟达的AI超级计算机</title>
+    <url>/post/news/gh200-from-nvidia.html</url>
+    <categories><category>News</category>
+    </categories>
+    <tags>
+      <tag>Nvidia</tag>
+      <tag>GH200</tag>
+    </tags>
+    <content type="html"><![CDATA[Nvidia的GH200 AI超级计算机是一款巨大的进步，相比于之前的H100，其在使用TB级数据训练和部署AI模型方面的性能提升了3-7倍。
+GH200拥有144TB的共享内存和141GB HBM3e内存，这个共享内存比标准的A100多出了500倍。
+每一个GH200 GPU都能够访问其他GPU的内存，以及所有NVIDIA Grace CPU的扩展GPU内存，速度高达每秒900GB。这大大加快了大型语言模型（LLM）的训练速度，并显著降低了LLM推理的成本。有了这些超级计算机，就不再需要成千上万的机器来训练和运行LLM的推理。
+有了GH200，就不再需要成千上万台机器来训练LLM和进行推理，这对初创公司和大型企业都是一个变革性的时刻。特别是对那些旨在训练、微调和部署LLM的初创公司来说，GH200为它们提供了以前只有大公司才能拥有的计算能力。
+随着时间的推移，硬件将变得更加强大和便宜，不久的将来，我们甚至可能在我们的笔记本电脑上运行我们自己的强大的个人LLM。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>英伟达发布H200, 高性价比全面升级</title>
     <url>/post/news/nvidia-launch-h200-gpu.html</url>
     <categories><category>News</category>
