@@ -6,7 +6,20 @@
     <description>Recent content in GPU on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 17 Nov 2023 10:11:15 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/gpu/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Nov 2023 13:27:13 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/gpu/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>为什么GPU比CPU更快</title>
+      <link>https://www.vxbus.com/post/server/why-gpu-is-faster-than-cpu.html</link>
+      <pubDate>Tue, 21 Nov 2023 13:27:13 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/post/server/why-gpu-is-faster-than-cpu.html</guid>
+      <description>&lt;p&gt;在过去几十年里，
+&lt;a href=&#34;https://www.gaitpu.com/category/ai&#34; title=&#34;GPU&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;
+    GPU
+    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;
+&lt;/a&gt;变得越来越流行，尤其是最近ChatGPT大火，背后训练大模型的硬件设备GPU达到了一片难求的地步。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>RTX 4090今起正式在国内禁售 强制下架</title>
       <link>https://www.vxbus.com/post/news/RTX-4090-is-officially-banned-from-sale-in-China-starting-today.html</link>
