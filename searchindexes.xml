@@ -16,6 +16,47 @@
   </entry>
   
   <entry>
+    <title>如何将BootLoader与APP合并成一个固件</title>
+    <url>/post/software/how-to-combine-bootloader-and-app-to-a-firmware.html</url>
+    <categories><category>Software</category>
+    </categories>
+    <tags>
+      <tag>Embedded</tag>
+      <tag>Bootloader</tag>
+      <tag>Firmware</tag>
+    </tags>
+    <content type="html"><![CDATA[嵌入式固件一般分为 BootLoader  和App，BootLoader用于启动校验、App升级、App版本回滚等功能，BootLoader在cpu上电第一阶段中运行，之后跳转至App地址执行应用程序。
+前言 因此，在发布固件的时候，会存在BootLoader固件和App固件；此时我们期望是将BootLoader固件和App固件合并成为一个固件，这样在量产时只需烧录一次即可。
+传统方式 一些传统的方法都是“土办法”，没什么毛病，但比较繁琐。
+项目种类增加，或者版本发布频繁时更加体现出繁琐性，且易出错，操作稍微失误可能导致固件不完整；烧录不完整的固件，机子变“砖头”。
+ 烧录两次，分别烧录BootLoader和App固件 烧录固件到芯片后，再从芯片读取固件，另存为hex文件 手动复制、合并固件 BootLoader支持App固件传输功能的，只烧录BootLoader，后期再升级App  高效方式 我们目标是通过自动化脚本合并生成一个发布固件，提高效率和确保固件的完整性。
+合并文件 Linux下的脚本我们用得很多，其实Windows的脚本也非常优秀，利用Windows的脚本可以快速实现增、删、查、改文件。常用Windows脚本命令如下。
+ 合并两个文件：copy /b 重命名文件：ren &lt;source_file&gt; &lt;dect_file&gt; 删除文件：del  很显然，我们利用其合并命令，只需一条指令即可将BootLoader和App文件合并。
+例子：
+假设当前目录存在Boot.bin和App.bin文件，合并后文件命名为Firmware.bin。
+copy /b .\Boot.bin + .\App.bin Firmware.bin 注：Windows的目录路径为反斜杠，与Linux不同。
+bin转hex 我们知道，二进制（bin）文件是不存在地址信息的，cpu上电执行并不一定是从地址0开始执行代码，如STM32芯片起始执行地址为0x8000000。
+因此不能通过串口工具烧录bin文件，只能通过J-link或者ST-link烧录，并且在烧录前指定存储起始地址。因此，将bin文件转换为hex文件是有必要的。
+bin转hex方式：  使用jflash工具，把合并后的bin文件，使用jflash打开，另存为hex格式文件 将bin文件烧录置芯片，读取出来，另存为hex文件 自己动手写一个bin转hex工具 借助第三方bin转hex工具  前两者太繁琐，效率低下；第三个比较灵活，但需要花点时间；如果使用优秀的现成工具是最快捷的办法。推荐使用“srec_cat.exe”工具，可以结合Windows脚本一起使用。
+srec_cat工具 srec_cat一个功能非常强大的文件合并、转换工具，支持功能众多，包括：
+ 文件合并 文件分割 bin转hex hex转bin 数据填充 CRC校验  此外，还存在srec的系列工具，文件比较工具 srec_cmp.exe和文件信息查看工具 srec_info.exe，可以从文章后面官方网站下载使用。
+文件合并 命令格式：
+srec_cat.exe &lt;源文件0&gt; &lt;文件类型&gt; &lt;源文件1&gt; &lt;文件类型&gt; &lt;目标文件&gt; &lt;文件类型&gt; 例子：
+srec_cat.exe source0.bin -Binary source1.bin -Binary -o merge.bin -Binary srec_cat.exe source0.hex -Intel source1.hex -Intel -o merge.hex -Intel 如果BootLoader和App生产的文件为hex格式，可以直接使用该命令合并为一个hex文件，注意地址的连续性。
+bin转hex 命令格式：
+srec_cat.exe &lt;bin源文件&gt; &lt;-Binary&gt; &lt;-offset&gt; &lt;偏移地址&gt; &lt;-Output&gt; &lt;hex目标文件&gt; &lt;-Intel&gt; 例子：
+将Boot.bin和App.bin合并的Firmware.bin转换为hex格式文件。
+srec_cat.exe Firmware.bin -Binary -offset 0x8000000 -o Firmware.hex -Intel 0x8000000，是STM32的起始执行地址
+更多的srec应用和工具下载详见官方网站：http://srecord.sourceforge.net/download.html
+完整示例 第一步，在需要生成固件目录新建一个txt文件
+第二步，键入如下内容(Boot固件和App固件可以指定目录)
+copy /b .\Boot.bin + .\App.bin Firmware.bin srec_cat.exe Firmware.bin -Binary -offset 0x8000000 -o Firmware.hex -Intel del Firmware.bin 第三步，重命名txt文件为&quot;.bat&quot;后缀文件，即是Windows可执行脚本的文件类型 第四步，双击运行脚本，即可生成目标文件 出现任何目标文件生成失败的情况，检查相关源文件是否存在，路径是否正确。
+举一反三 以此类比，存在多个App文件的情况，可以通过该方式分别进行合并出一个固件。
+另外，实际项目中，经常会使用内部flash空闲扇区保存一些设备参数信息，如校准系数、设备地址、序列号等信息，我们可以将参数信息保存为一个bin文件，通过该方式和固件合并，这样量产时将参数和固件一并写入，提高生产效率！
+]]></content>
+  </entry>
+  
+  <entry>
     <title>嵌入式设备OTA升级的大致过程</title>
     <url>/post/software/OTA-update-process-for-embedded-device.html</url>
     <categories><category>Software</category>
