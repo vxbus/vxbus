@@ -24,7 +24,7 @@
       <tag>Embedded</tag>
       <tag>OTA</tag>
     </tags>
-    <content type="html"><![CDATA[大家都把我的这个旅游过程叫做 OTA，也就是在线升级。
+    <content type="html"><![CDATA[大家都把我的这个旅游过程叫做 OTA  ，也就是在线升级。
 OTA概述 大家好，我是一个软件升级包。这几天呢，我将会进行一次神奇的网络之旅，从开发者的电脑中，一直跑到终端嵌入式设备中。
 大家都把我的这个旅游过程叫做 OTA，也就是在线升级。
 那么啥叫 OTA 呢？全称是：Over the Air Technology，其实就是通过网络来把一个新的软件包从服务器上下载下来，更新到设备上。
