@@ -6,7 +6,16 @@
     <description>Recent content in Software on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 20 Nov 2023 23:22:31 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/categories/software/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Nov 2023 21:50:43 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/categories/software/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>嵌入式程序设计中的4种常用模式</title>
+      <link>https://www.vxbus.com/post/software/4-common-patterns-in-embedded-programming.html</link>
+      <pubDate>Wed, 22 Nov 2023 21:50:43 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/post/software/4-common-patterns-in-embedded-programming.html</guid>
+      <description>&lt;p&gt;模板方法模式是框架中最常用的设计模式。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>新手必看的RTOS基础知识</title>
       <link>https://www.vxbus.com/post/software/basis-of-rtos.html</link>

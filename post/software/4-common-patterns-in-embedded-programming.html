@@ -10,26 +10,26 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/imgs/icons/favicon_16x16_next.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/imgs/icons/favicon_32_32_next.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/imgs/icons/apple_touch_icon_next.png">
-<meta itemprop="name" content="Mermaid支持流程图" />
-<meta itemprop="description" content="mermaid-flow-chart" />
+<meta itemprop="name" content="嵌入式程序设计中的4种常用模式" />
+<meta itemprop="description" content="嵌入式程序设计中的4种常用模式" />
 <meta itemprop="datePublished" ZgotmplZ />
 <meta itemprop="dateModified" ZgotmplZ />
 <meta itemprop="image" content="https://www.vxbus.com/imgs/vxbus_logo.png" />
-<meta itemprop="keywords" content="流程图,时序图" />
+<meta itemprop="keywords" content="Embedded" />
 
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Mermaid支持流程图" />
-<meta property="og:description" content="mermaid-flow-chart" />
+<meta property="og:title" content="嵌入式程序设计中的4种常用模式" />
+<meta property="og:description" content="嵌入式程序设计中的4种常用模式" />
 <meta property="og:image" content="/imgs/vxbus_logo.png" />
 <meta property="og:image:width" content="312" />
 <meta property="og:image:height" content="312" />
 <meta property="og:image:type" content="image/jpeg/png/svg/jpg" />
-<meta property="og:url" content="https://www.vxbus.com/post/mermaid-charts.html"/>
+<meta property="og:url" content="https://www.vxbus.com/post/software/4-common-patterns-in-embedded-programming.html"/>
 <meta property="og:site_name" content="VxBus" />
 <meta property="og:locale" content="zh-CN"/>
 <meta property="article:author" content="VxWorks OS" />
-<meta property="article:published_time" content="2021-09-18 20:58:13 &#43;0800 CST" />
-<meta property="article:modified_time" content="2021-09-18 20:58:13 &#43;0800 CST" />
+<meta property="article:published_time" content="2023-11-22 21:50:43 &#43;0800 CST" />
+<meta property="article:modified_time" content="2023-11-22 21:50:43 &#43;0800 CST" />
 
 
   
@@ -44,7 +44,7 @@
       content: "~ 我可是有底线的哟 ~";
     }
   </style>
-  <script class="next-config" data-name="page" type="application/json">{"comments":false,"isHome":false,"isPage":true,"path":"mermaid-charts.html","permalink":"https://www.vxbus.com/post/mermaid-charts.html","title":"Mermaid支持流程图"}</script>
+  <script class="next-config" data-name="page" type="application/json">{"comments":false,"isHome":false,"isPage":true,"path":"4-common-patterns-in-embedded-programming.html","permalink":"https://www.vxbus.com/post/software/4-common-patterns-in-embedded-programming.html","title":"嵌入式程序设计中的4种常用模式"}</script>
   <script type="text/javascript">
   document.addEventListener('DOMContentLoaded', () => {
     var script = document.createElement('script');
@@ -60,7 +60,7 @@
 
 
 
-  <title>Mermaid支持流程图 - VxBus</title>
+  <title>嵌入式程序设计中的4种常用模式 - VxBus</title>
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
@@ -174,13 +174,10 @@
       <div class="post-toc-wrap sidebar-panel">
         <div class="post-toc animated"><nav id="TableOfContents">
   <ul>
-    <li><a href="#使用说明">使用说明</a></li>
-    <li><a href="#流程图">流程图</a></li>
-    <li><a href="#时序图">时序图</a></li>
-    <li><a href="#类图">类图</a></li>
-    <li><a href="#甘特图">甘特图</a></li>
-    <li><a href="#实体关系图">实体关系图</a></li>
-    <li><a href="#用户旅程">用户旅程</a></li>
+    <li><a href="#模板方法模式">模板方法模式</a></li>
+    <li><a href="#创建型模式">创建型模式</a></li>
+    <li><a href="#消息订阅模式">消息订阅模式</a></li>
+    <li><a href="#装饰器模式">装饰器模式</a></li>
   </ul>
 </nav></div>
       </div>
@@ -314,7 +311,7 @@
       
   <div class="post-block">
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://www.vxbus.com/post/mermaid-charts.html">
+    <link itemprop="mainEntityOfPage" href="https://www.vxbus.com/post/software/4-common-patterns-in-embedded-programming.html">
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
       <meta itemprop="name" content="VxWorks OS">
@@ -324,11 +321,11 @@
       <meta itemprop="description" content="Where there is embedded, there is VxWorks.">
     </span>
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Mermaid支持流程图">
-      <meta itemprop="description" content="mermaid-flow-chart">
+      <meta itemprop="name" content="嵌入式程序设计中的4种常用模式">
+      <meta itemprop="description" content="嵌入式程序设计中的4种常用模式">
     </span>
     <header class="post-header">
-       <h1 class="post-title" itemprop="name headline">Mermaid支持流程图 </h1> <div class="post-meta-container">
+       <h1 class="post-title" itemprop="name headline">嵌入式程序设计中的4种常用模式 </h1> <div class="post-meta-container">
   <div class="post-meta-items">
     
 
@@ -338,7 +335,7 @@
     <i class="far fa-calendar"></i>
   </span>
   <span class="post-meta-item-text">发表于：</span>
-  <time title="发表于：2021-09-18 20:58:13 &#43;0800 CST" itemprop="dateCreated datePublished" datetime="2021-09-18 20:58:13 &#43;0800 CST">2021-09-18</time>
+  <time title="发表于：2023-11-22 21:50:43 &#43;0800 CST" itemprop="dateCreated datePublished" datetime="2023-11-22 21:50:43 &#43;0800 CST">2023-11-22</time>
 </span>
     
     
@@ -348,8 +345,8 @@
   </span>
   <span class="post-meta-item-text">分类于：</span>
   <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-    <a href="/categories/%E7%A4%BA%E4%BE%8B" itemprop="url" rel="index">
-      <span itemprop="name">示例</span>
+    <a href="/categories/software" itemprop="url" rel="index">
+      <span itemprop="name">Software</span>
     </a>
   </span>
 </span>
@@ -360,7 +357,7 @@
   <span class="post-meta-item-icon">
     <i class="far fa-file-word"></i>
   </span>
-  <span class="post-meta-item-text">字数：</span><span>407</span>
+  <span class="post-meta-item-text">字数：</span><span>72</span>
 </span>
     
 <span class="post-meta-item" title="阅读">
@@ -368,7 +365,7 @@
     <i class="far fa-clock"></i>
   </span>
   <span class="post-meta-item-text">阅读：&asymp;</span>
-  <span>2分钟</span>
+  <span>1分钟</span>
 </span>
 
     
@@ -379,7 +376,7 @@
   <span class="post-meta-item-text">
   浏览：
   </span>
-  <span id="busuanzi_value_page_pv" data-path="/post/mermaid-charts.html"><i class="fa fa-sync fa-spin"></i></span>
+  <span id="busuanzi_value_page_pv" data-path="/post/software/4-common-patterns-in-embedded-programming.html"><i class="fa fa-sync fa-spin"></i></span>
 </span>
 
   </div>
@@ -390,168 +387,50 @@
     
     <div class="post-body  autonumber " itemprop="articleBody">
       
-  <p>本主题已支持 <code>Mermaid</code> 实现以纯文本的方式绘制流程图、序列图、甘特图、状态图、关系图行等等，随着 <code>Mermaid</code> 也在逐步发展，后续还会有各种各样的图被引入进来，更多的类型及使用方式可关注其官方网站：
-<a href="https://mermaid-js.github.io/" title="https://mermaid-js.github.io/" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
-    https://mermaid-js.github.io/
-    <i class="fa fa-external-link-alt"></i>
-</a>。</p>
-<h2 id="使用说明">使用说明</h2>
-<div class="note info ">
-  <ul>
-<li>通过 <code>hugo new</code> 命令创建一篇新的文章</li>
-<li>在文章头部配置 <code>mermaid: true</code></li>
-<li>使用短代码书写各种类型的图，自带2个参数： align（对齐） 和 bc（背景色），可参考如下使用示例</li>
-</ul>
-
-</div>
-<h2 id="流程图">流程图</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-shell" data-lang="shell"><span style="color:#f92672">{{</span>&lt; mermaid align<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;left&#34;</span> &gt;<span style="color:#f92672">}}</span>
-graph TD;
-    A--&gt;B;
-    A--&gt;C;
-    B--&gt;D;
-    C--&gt;D;
-<span style="color:#f92672">{{</span>&lt; /mermaid &gt;<span style="color:#f92672">}}</span>
-</code></pre></div><div class="mermaid" align="left"  > 
-  
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-
-</div>
-<h2 id="时序图">时序图</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-shell" data-lang="shell"><span style="color:#f92672">{{</span>&lt; mermaid bc<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#eee&#34;</span>  &gt;<span style="color:#f92672">}}</span>
-sequenceDiagram
-    participant Alice
-    participant Bob
-    Alice-&gt;&gt;John: Hello John, how are you?
-    loop Healthcheck
-        John-&gt;&gt;John: Fight against hypochondria
-    end
-    Note right of John: Rational thoughts &lt;br/&gt;prevail!
-    John--&gt;&gt;Alice: Great!
-    John-&gt;&gt;Bob: How about you?
-    Bob--&gt;&gt;John: Jolly good!
-<span style="color:#f92672">{{</span>&lt; /mermaid &gt;<span style="color:#f92672">}}</span>
-</code></pre></div><div class="mermaid" align="center"   style="background: #eee" > 
-  
-sequenceDiagram
-    participant Alice
-    participant Bob
-    Alice->>John: Hello John, how are you?
-    loop Healthcheck
-        John->>John: Fight against hypochondria
-    end
-    Note right of John: Rational thoughts <br/>prevail!
-    John-->>Alice: Great!
-    John->>Bob: How about you?
-    Bob-->>John: Jolly good!
-
-</div>
-<h2 id="类图">类图</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-shell" data-lang="shell"><span style="color:#f92672">{{</span>&lt; mermaid &gt;<span style="color:#f92672">}}</span>
-classDiagram
-Class01 &lt;|-- AveryLongClass : Cool
-Class03 *-- Class04
-Class05 o-- Class06
-Class07 .. Class08
-Class09 --&gt; C2 : Where am i?
-Class09 --* C3
-Class09 --|&gt; Class07
-Class07 : equals<span style="color:#f92672">()</span>
-Class07 : Object<span style="color:#f92672">[]</span> elementData
-Class01 : size<span style="color:#f92672">()</span>
-Class01 : int chimp
-Class01 : int gorilla
-Class08 &lt;--&gt; C2: Cool label
-<span style="color:#f92672">{{</span>&lt; /mermaid &gt;<span style="color:#f92672">}}</span>
-</code></pre></div><div class="mermaid" align="center"  > 
-  
-classDiagram
-Class01 <|-- AveryLongClass : Cool
-Class03 *-- Class04
-Class05 o-- Class06
-Class07 .. Class08
-Class09 --> C2 : Where am i?
-Class09 --* C3
-Class09 --|> Class07
-Class07 : equals()
-Class07 : Object[] elementData
-Class01 : size()
-Class01 : int chimp
-Class01 : int gorilla
-Class08 <--> C2: Cool label
-
-</div>
-<h2 id="甘特图">甘特图</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-shell" data-lang="shell"><span style="color:#f92672">{{</span>&lt; mermaid &gt;<span style="color:#f92672">}}</span>
-gantt
-dateFormat  YYYY-MM-DD
-title Adding GANTT diagram to mermaid
-excludes weekdays 2014-01-10
-
-section A section
-Completed task            :done,    des1, 2014-01-06,2014-01-08
-Active task               :active,  des2, 2014-01-09, 3d
-Future task               :         des3, after des2, 5d
-Future task2               :         des4, after des3, 5d
-<span style="color:#f92672">{{</span>&lt; /mermaid &gt;<span style="color:#f92672">}}</span>
-</code></pre></div><div class="mermaid" align="center"  > 
-  
-gantt
-dateFormat  YYYY-MM-DD
-title Adding GANTT diagram to mermaid
-excludes weekdays 2014-01-10
-
-section A section
-Completed task            :done,    des1, 2014-01-06,2014-01-08
-Active task               :active,  des2, 2014-01-09, 3d
-Future task               :         des3, after des2, 5d
-Future task2               :         des4, after des3, 5d
-
-</div>
-<h2 id="实体关系图">实体关系图</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-shell" data-lang="shell"><span style="color:#f92672">{{</span>&lt; mermaid &gt;<span style="color:#f92672">}}</span>
-erDiagram
-    CUSTOMER <span style="color:#f92672">||</span>--o<span style="color:#f92672">{</span> ORDER : places
-    ORDER <span style="color:#f92672">||</span>--|<span style="color:#f92672">{</span> LINE-ITEM : contains
-    CUSTOMER <span style="color:#f92672">}</span>|..|<span style="color:#f92672">{</span> DELIVERY-ADDRESS : uses
-<span style="color:#f92672">{{</span>&lt; /mermaid &gt;<span style="color:#f92672">}}</span>
-</code></pre></div><div class="mermaid" align="center"  > 
-  
-erDiagram
-    CUSTOMER ||--o{ ORDER : places
-    ORDER ||--|{ LINE-ITEM : contains
-    CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
-
-</div>
-<h2 id="用户旅程">用户旅程</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-shell" data-lang="shell"><span style="color:#f92672">{{</span>&lt; mermaid &gt;<span style="color:#f92672">}}</span>
-journey
-    title My working day
-    section Go to work
-      Make tea: 5: Me
-      Go upstairs: 3: Me
-      Do work: 1: Me, Cat
-    section Go home
-      Go downstairs: 5: Me
-      Sit down: 5: Me
-<span style="color:#f92672">{{</span>&lt; /mermaid &gt;<span style="color:#f92672">}}</span>
-</code></pre></div><div class="mermaid" align="center"  > 
-  
-journey
-    title My working day
-    section Go to work
-      Make tea: 5: Me
-      Go upstairs: 3: Me
-      Do work: 1: Me, Cat
-    section Go home
-      Go downstairs: 5: Me
-      Sit down: 5: Me
-
-</div>
+  <p>模板方法模式是框架中最常用的设计模式。</p>
+<h2 id="模板方法模式">模板方法模式</h2>
+<p>其根本的思路是将算法由框架固定，而将算法中具体的操作交给二次开发者实现。</p>
+<p>例如一个设备初始化的逻辑，框架代码如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-c" data-lang="c">TBool CBaseDevice<span style="color:#f92672">::</span>Init()
+{
+  <span style="color:#66d9ef">if</span> ( DownloadFPGA() <span style="color:#f92672">!=</span> KErrNone )
+  {
+    LOG(LOG_ERROR,_L(<span style="color:#960050;background-color:#1e0010">“</span>Download FPGA fail<span style="color:#960050;background-color:#1e0010">”</span>));
+    <span style="color:#66d9ef">return</span> EFalse;
+  }
+  <span style="color:#66d9ef">if</span> ( InitKeyPad() <span style="color:#f92672">!=</span> KerrNone )
+  {
+    LOG(LOG_ERROR,_L(<span style="color:#960050;background-color:#1e0010">“</span>Initialize keypad fail<span style="color:#960050;background-color:#1e0010">”</span>));
+    <span style="color:#66d9ef">return</span> EFalse;
+  }
+  <span style="color:#66d9ef">return</span> ETrue;
+}
+</code></pre></div><p>DownloadFPGA和InitKeyPad都是CBaseDevice定义的虚函数，二次开发者创建一个继承于CBaseDevice的子类，具体来实现这两个接口。</p>
+<p>框架定义了调用的次序和错误的处理方式，二次开发者无须关心，也无权决定。</p>
+<h2 id="创建型模式">创建型模式</h2>
+<p>由于框架通常都涉及到各种不同子类对象的创建，创建型模式是经常使用的。</p>
+<p>例如一个绘图软件的框架，有一个基类定义了图形对象的接口，基于它可以派生出椭圆，矩形，直线各种子类。</p>
+<p>当用户绘制一个图形时，框架就要实例化该子类。这时候可以用工厂方法，原型方法等等。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-c" data-lang="c">class CDrawObj
+{
+  public:
+    virtual <span style="color:#66d9ef">int</span> DrawObjTypeID()<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>;
+    virtual Icon <span style="color:#a6e22e">GetToolBarIcon</span>()<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>;
+    virtual <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">Draw</span>(Rect rect)<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>;
+    virtual CDrawObj<span style="color:#f92672">*</span> <span style="color:#a6e22e">Clone</span>()<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>;
+};
+</code></pre></div><h2 id="消息订阅模式">消息订阅模式</h2>
+<p>消息订阅模式是最常用的分离数据和界面的方式。界面开发者只需要注册需要的数据，当数据变化时框架就会将数据“推”到界面。界面开发者可以无须关注数据的来源和内部组织形式。</p>
+<p>消息订阅模式最常见的问题是同步模式下如何处理重入和超时。作为框架设计者，一定要考虑好这个问题。</p>
+<p>所谓重入，是二次开发者在消息的回调函数中执行订阅/取消订阅的操作，这会破坏消息订阅的机制。</p>
+<p>所谓超时是指二次开发者的消息回调函数处理时间过长，导致其他消息无法响应。最简单的办法是使用异步模式，让订阅者和数据发布者在独立进程/线程中运行。</p>
+<p>如果不具备此条件，则必须作为框架的重要约定，禁止二次开发者产生此类问题。</p>
+<h2 id="装饰器模式">装饰器模式</h2>
+<p>装饰器模式赋予了框架在后期增加功能的能力。框架定义装饰器的抽象基类，而由具体的实现者实现，动态地添加到框架中。</p>
+<p>举一个游戏中的例子，图形绘制引擎是一个独立的模块，比如可以绘制人物的静止，跑动等图像。</p>
+<p>如果策划决定在游戏中增加一种叫“隐身衣”的道具，要求穿着此道具的玩家在屏幕上显示的是若有若无的半透明图像。应</p>
+<p>该如何设计图像引擎来适应后期的游戏升级呢？</p>
+<p>当隐身衣被装备后，就向图像引擎添加一个过滤器。这是个极度简化的例子，实际的游戏引擎要比这个复杂。装饰器模式还常见用于数据的前置和后置处理上。</p>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1543398821442998"
      crossorigin="anonymous"></script>
 
@@ -571,11 +450,8 @@ journey
 
 <div class="post-tags">
   
-    <a href="/tags/%e6%b5%81%e7%a8%8b%e5%9b%be">
-    流程图
-  </a>
-    <a href="/tags/%e6%97%b6%e5%ba%8f%e5%9b%be">
-    时序图
+    <a href="/tags/embedded">
+    Embedded
   </a>
 </div>
 
@@ -603,7 +479,7 @@ journey
   <ul>
     <li class="post-copyright-title">
       <strong>文章标题：</strong>
-      Mermaid支持流程图
+      嵌入式程序设计中的4种常用模式
     </li>
     <li class="post-copyright-author">
       <strong>本文作者： </strong>
@@ -611,7 +487,7 @@ journey
     </li>
     <li class="post-copyright-link"> 
       <strong>本文链接：</strong>
-       <a id="post-cr-link" href="https://www.vxbus.com/post/mermaid-charts.html" title="Mermaid支持流程图">https://www.vxbus.com/post/mermaid-charts.html</a>
+       <a id="post-cr-link" href="https://www.vxbus.com/post/software/4-common-patterns-in-embedded-programming.html" title="嵌入式程序设计中的4种常用模式">https://www.vxbus.com/post/software/4-common-patterns-in-embedded-programming.html</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -636,13 +512,13 @@ journey
 </div>
 <div class="post-nav">
   <div class="post-nav-next post-nav-item">
-    <a href="/post/vxworks/windriver-capital-transaction.html" rel="next" title="风河公司的资本交易历史">
-      <i class="fa fa-chevron-left"></i> 风河公司的资本交易历史
+    <a href="/post/welcome-to-vxworks-club/" rel="next" title="欢迎加入 VxWorks 俱乐部！">
+      <i class="fa fa-chevron-left"></i> 欢迎加入 VxWorks 俱乐部！
     </a>
   </div>
   <div class="post-nav-prev post-nav-item">
-    <a href="/post/math-formula.html" rel="prev" title="数学公式渲染">
-      数学公式渲染
+    <a href="/post/server/pushing-the-limits-of-hpc-and-ai-is-becoming-a-sustainability-headache.html" rel="prev" title="可持续性难题：推动HPC和AI极限扩展">
+      可持续性难题：推动HPC和AI极限扩展
       <i class="fa fa-chevron-right"></i>
     </a>
   </div>
@@ -707,30 +583,6 @@ journey
 
 <script type="text/javascript" src="/js/main.min.7e59cf1a98d842830d8a6f149f78fbbcf9e795b7a9eb76feb34b48c9bf1554d7.js" defer></script>
 
-
-
-
-  
-
-
-  
-  <script type="text/javascript" src="https://unpkg.com/mermaid@9.1.7/dist/mermaid.min.js"></script>
-
-
-
-
-<script type="text/javascript">
-  document.addEventListener('DOMContentLoaded', () => {
-    mermaid.initialize({
-      sequence: { 
-        showSequenceNumbers: true,
-        actorMargin: 50, 
-        diagramMarginX:10, 
-        diagramMarginY:10
-      }
-    });
-  });
-</script>
 
 
 

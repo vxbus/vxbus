@@ -7,12 +7,42 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.vxbus.com/tags/ai/</loc>
-    <lastmod>2023-11-21T22:23:27+08:00</lastmod>
+    <loc>https://www.vxbus.com/categories/</loc>
+    <lastmod>2023-11-22T21:50:43+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.vxbus.com/categories/</loc>
+    <loc>https://www.vxbus.com/tags/embedded/</loc>
+    <lastmod>2023-11-22T21:50:43+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/post/</loc>
+    <lastmod>2023-11-22T21:50:43+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/categories/software/</loc>
+    <lastmod>2023-11-22T21:50:43+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/</loc>
+    <lastmod>2023-11-22T21:50:43+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/</loc>
+    <lastmod>2023-11-22T21:50:43+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/post/software/4-common-patterns-in-embedded-programming.html</loc>
+    <lastmod>2023-11-22T21:50:43+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/ai/</loc>
     <lastmod>2023-11-21T22:23:27+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -22,22 +52,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.vxbus.com/post/</loc>
-    <lastmod>2023-11-21T22:23:27+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.vxbus.com/categories/server/</loc>
-    <lastmod>2023-11-21T22:23:27+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/tags/</loc>
-    <lastmod>2023-11-21T22:23:27+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/</loc>
     <lastmod>2023-11-21T22:23:27+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -77,17 +92,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.vxbus.com/tags/embedded/</loc>
-    <lastmod>2023-11-20T23:22:31+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.vxbus.com/tags/rtos/</loc>
-    <lastmod>2023-11-20T23:22:31+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/categories/software/</loc>
     <lastmod>2023-11-20T23:22:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

@@ -16,6 +16,35 @@
   </entry>
   
   <entry>
+    <title>嵌入式程序设计中的4种常用模式</title>
+    <url>/post/software/4-common-patterns-in-embedded-programming.html</url>
+    <categories><category>Software</category>
+    </categories>
+    <tags>
+      <tag>Embedded</tag>
+    </tags>
+    <content type="html"><![CDATA[模板方法模式是框架中最常用的设计模式。
+模板方法模式 其根本的思路是将算法由框架固定，而将算法中具体的操作交给二次开发者实现。
+例如一个设备初始化的逻辑，框架代码如下：
+TBool CBaseDevice::Init() { if ( DownloadFPGA() != KErrNone ) { LOG(LOG_ERROR,_L(“Download FPGA fail”)); return EFalse; } if ( InitKeyPad() != KerrNone ) { LOG(LOG_ERROR,_L(“Initialize keypad fail”)); return EFalse; } return ETrue; } DownloadFPGA和InitKeyPad都是CBaseDevice定义的虚函数，二次开发者创建一个继承于CBaseDevice的子类，具体来实现这两个接口。
+框架定义了调用的次序和错误的处理方式，二次开发者无须关心，也无权决定。
+创建型模式 由于框架通常都涉及到各种不同子类对象的创建，创建型模式是经常使用的。
+例如一个绘图软件的框架，有一个基类定义了图形对象的接口，基于它可以派生出椭圆，矩形，直线各种子类。
+当用户绘制一个图形时，框架就要实例化该子类。这时候可以用工厂方法，原型方法等等。
+class CDrawObj { public: virtual int DrawObjTypeID()=0; virtual Icon GetToolBarIcon()=0; virtual void Draw(Rect rect)=0; virtual CDrawObj* Clone()=0; }; 消息订阅模式 消息订阅模式是最常用的分离数据和界面的方式。界面开发者只需要注册需要的数据，当数据变化时框架就会将数据“推”到界面。界面开发者可以无须关注数据的来源和内部组织形式。
+消息订阅模式最常见的问题是同步模式下如何处理重入和超时。作为框架设计者，一定要考虑好这个问题。
+所谓重入，是二次开发者在消息的回调函数中执行订阅/取消订阅的操作，这会破坏消息订阅的机制。
+所谓超时是指二次开发者的消息回调函数处理时间过长，导致其他消息无法响应。最简单的办法是使用异步模式，让订阅者和数据发布者在独立进程/线程中运行。
+如果不具备此条件，则必须作为框架的重要约定，禁止二次开发者产生此类问题。
+装饰器模式 装饰器模式赋予了框架在后期增加功能的能力。框架定义装饰器的抽象基类，而由具体的实现者实现，动态地添加到框架中。
+举一个游戏中的例子，图形绘制引擎是一个独立的模块，比如可以绘制人物的静止，跑动等图像。
+如果策划决定在游戏中增加一种叫“隐身衣”的道具，要求穿着此道具的玩家在屏幕上显示的是若有若无的半透明图像。应
+该如何设计图像引擎来适应后期的游戏升级呢？
+当隐身衣被装备后，就向图像引擎添加一个过滤器。这是个极度简化的例子，实际的游戏引擎要比这个复杂。装饰器模式还常见用于数据的前置和后置处理上。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>可持续性难题：推动HPC和AI极限扩展</title>
     <url>/post/server/pushing-the-limits-of-hpc-and-ai-is-becoming-a-sustainability-headache.html</url>
     <categories><category>Server</category>
