@@ -6,13 +6,22 @@
     <description>Recent content in Tags on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 22 Nov 2023 21:50:43 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Nov 2023 22:04:46 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Embedded</title>
       <link>https://www.vxbus.com/tags/embedded/</link>
-      <pubDate>Wed, 22 Nov 2023 21:50:43 +0800</pubDate>
+      <pubDate>Wed, 22 Nov 2023 22:04:46 +0800</pubDate>
       
       <guid>https://www.vxbus.com/tags/embedded/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OTA</title>
+      <link>https://www.vxbus.com/tags/ota/</link>
+      <pubDate>Wed, 22 Nov 2023 22:04:46 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/ota/</guid>
       <description></description>
     </item>
     
