@@ -6,7 +6,7 @@
     <description>Recent content on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 26 Nov 2023 10:18:49 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Nov 2023 16:26:21 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>欢迎加入 VxWorks 俱乐部！</title>
       <link>https://www.vxbus.com/post/welcome-to-vxworks-club/</link>
@@ -16,6 +16,22 @@
       <description>欢迎来到 北南南北 文档站点！ 相关文章来源于 VxWorks 俱乐部  ，也可能发布于 AI 嵌入式开发  ，专注于技术分享和交流。
 免责声明 所有资源均来自网络，版权归原作者，如有侵权，请联系删除！
 欢迎投稿  欢迎广大网友投稿 欢迎加入网友微信群  </description>
+    </item>
+    
+    <item>
+      <title>Git：软件开发的黄金标配</title>
+      <link>https://www.vxbus.com/post/software/git-for-software-development.html</link>
+      <pubDate>Sun, 26 Nov 2023 16:26:21 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/post/software/git-for-software-development.html</guid>
+      <description>Git，它为软件开发提供了无与伦比的版本管理体验。
+前言 在上一篇文章中，我们讨论了为何使用版本管理工具是一个比手动拷贝更好的选择。
+今天，我们将了解其中的佼佼者——Git，它为软件开发提供了无与伦比的版本管理体验。
+为何选择Git？  分布式特性  Git是一种分布式版本控制系统，每个开发者都有一个完整的本地仓库。这使得即使在没有网络连接的情况下，开发者也能够独立工作，不受限制。   强大的分支管理  Git的分支管理是其最大的亮点之一。开发者可以轻松创建、合并、删除分支，使得并行开发变得十分简单。   版本回滚和恢复  Git允许你轻松地回滚到之前的任何一个提交，甚至可以创建一个新的分支来实验性地进行修改，而不影响主分支。   高效的合并机制  Git的合并机制非常智能，能够自动解决大部分合并冲突，减轻了开发者的工作负担。   轻量级和高速  Git的设计注重性能，使得大型项目也能够在相对较短的时间内进行版本控制操作。  基本概念 在介绍Git之前，让我们回顾一下版本管理的基本概念。Git是一种分布式版本控制系统，它通过记录文件的变更历史，帮助团队协同工作，追踪项目的演变。以下是Git的基本概念：
+ 仓库（Repository）：存放项目所有文件及变更历史的地方。 提交（Commit）：保存项目在某一时刻的状态，每次提交都有一个唯一的标识。 分支（Branch）：是项目的一个独立线路，可以用于独立开发某个功能，然后合并回主线。 远程仓库（Remote）：位于网络服务器上的Git仓库，用于团队协作。 推送（Push）和拉取（Pull）：将本地的提交推送到远程仓库，或者将远程仓库的变更拉取到本地。   工作区域 在 Git 中的文件有三种状态：
+ 已提交：表示数据已经安全的保存在本地数据库中； 已修改：表示修改了文件，但还没保存到数据库中； 已暂存：表示对一个已修改文件的当前版本做了标记，使之包含在下次提交的快照中。  因此也引入了Git项目的三个工作区域的概念：
+ 工作区：就是项目文件所在的目录，目前可以看到的文件信息 暂存区：stage 或 index。一般存放在 .git/index 文件中，所以我们把暂存区有时也叫作索引 版本库：工作区下隐藏目录 .git，这里记录着仓库的版本信息和历史记录  基本使用 大致的使用流程：
+ 克隆仓库：使用git clone命令可以将远程仓库复制到本地，形成一个完整的本地仓库。 创建分支：使用git branch命令可以创建一个新的分支，开发者可以在不影响主干的情况下进行工作。 提交变更：使用git add和git commit命令可以将修改保存到本地仓库。 推送与拉取：使用git push命令可以将本地的修改推送到远程仓库，而使用git pull命令可以将远程仓库的变化拉取到本地。 合并分支：使用git merge命令可以将一个分支的变化合并到另一个分支，保持代码的一致性。  看提交效果，可以清楚地知道每次提交都改动了什么东西</description>
     </item>
     
     <item>
