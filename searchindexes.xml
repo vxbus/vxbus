@@ -16,6 +16,23 @@
   </entry>
   
   <entry>
+    <title>git 解决push报错：[rejected] master -> master (fetch first) error: failed to push some refs to</title>
+    <url>/post/github/git-push-error-failed-to-push-some-refs-to.html</url>
+    <categories><category>Git</category>
+    </categories>
+    <tags>
+      <tag>github</tag>
+      <tag>error</tag>
+    </tags>
+    <content type="html"><![CDATA[今天对代码进行了修改优化，然后往往远程push，但push后报错了
+git操作 git add . git commit -m&#34;fix&#34; git push origin master:dev-gaochao 报错信息 To https://amc-msra.visualstudio.com/trading-algo/_git/real-trading ! [rejected] master -&gt; dev-gaochao (fetch first) error: failed to push some refs to &#39;https://amc-msra.visualstudio.com/trading-algo/_git/real-trading&#39; hint: Updates were rejected because the remote contains work that you do hint: not have locally. This is usually caused by another repository pushing hint: to the same ref. You may want to first integrate the remote changes hint: (e.g., &#39;git pull ...&#39;) before pushing again. hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; for details. 原因 之所以出现这个原因，是因为我在线上生成、编辑了README.md文件，而本地代码文件中不包含它，所以线上线下就对不上了。
+解决 将线上、线下代码进行合并
+git pull --rebase origin dev-gaochao 然后再进行push
+git push origin master:dev-gaochao 成功：
+Enumerating objects: 11, done. Counting objects: 100% (11/11), done. Delta compression using up to 4 threads Compressing objects: 100% (7/7), done. Writing objects: 100% (7/7), 1.90 KiB | 487.00 KiB/s, done. Total 7 (delta 4), reused 0 (delta 0) remote: Analyzing objects... (7/7) (13 ms) remote: Checking for credentials and other secrets... (1/1) done (1008 ms) remote: Storing packfile... done (157 ms) remote: Storing index... done (87 ms) To https://amc-msra.visualstudio.com/trading-algo/_git/real-trading 1919525..6f3asa4dd6 master -&gt; dev-gaochao ]]></content>
+  </entry>
+  
+  <entry>
     <title>Git：软件开发的黄金标配</title>
     <url>/post/software/git-for-software-development.html</url>
     <categories><category>Software</category>
@@ -1696,7 +1713,7 @@ MCU一般运行RTOS或前后台软件，擅长实时任务处理，更适合低�
   <entry>
     <title>如何在一台Linux主机上同时访问多个Github账户</title>
     <url>/post/github/how-to-access-multiple-github-accounts-on-linux.html</url>
-    <categories><category>Linux</category>
+    <categories><category>Git</category>
     </categories>
     <tags>
       <tag>github</tag>
