@@ -6,7 +6,20 @@
     <description>Recent content in Server on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 26 Nov 2023 10:18:49 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/categories/server/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Nov 2023 13:02:54 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/categories/server/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>数据中心变革：构建可持续AI基础设施</title>
+      <link>https://www.vxbus.com/post/server/data-center-transformation-building-a-sustainable-ai-infrastructure.html</link>
+      <pubDate>Wed, 29 Nov 2023 13:02:54 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/post/server/data-center-transformation-building-a-sustainable-ai-infrastructure.html</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;https://www.gaitpu.com/category/ai&#34; title=&#34;AI&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;
+    AI
+    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;
+&lt;/a&gt;时代的到来在各行各业引发了持续的热情，像ChatGPT这样的新工具承诺为企业带来竞争优势。然而，随着企业感受到将AI融入运营的推动力，它们的支撑基础设施可能未能为成功奠定基础。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>为什么有时候会选择使用三层交换机而不是路由器</title>
       <link>https://www.vxbus.com/post/server/why-do-you-sometimes-choose-to-user-layer-3-switch-instead-of-router.html</link>
