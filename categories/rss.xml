@@ -6,22 +6,22 @@
     <description>Recent content in Categories on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 29 Nov 2023 13:02:54 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/categories/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Dec 2023 22:00:59 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/categories/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>News</title>
+      <link>https://www.vxbus.com/categories/news/</link>
+      <pubDate>Sat, 02 Dec 2023 22:00:59 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/categories/news/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Server</title>
       <link>https://www.vxbus.com/categories/server/</link>
       <pubDate>Wed, 29 Nov 2023 13:02:54 +0800</pubDate>
       
       <guid>https://www.vxbus.com/categories/server/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>News</title>
-      <link>https://www.vxbus.com/categories/news/</link>
-      <pubDate>Tue, 28 Nov 2023 22:53:18 +0800</pubDate>
-      
-      <guid>https://www.vxbus.com/categories/news/</guid>
       <description></description>
     </item>
     

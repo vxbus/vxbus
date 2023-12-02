@@ -6,13 +6,49 @@
     <description>Recent content in Tags on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 29 Nov 2023 13:02:54 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Dec 2023 22:00:59 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI</title>
       <link>https://www.vxbus.com/tags/ai/</link>
-      <pubDate>Wed, 29 Nov 2023 13:02:54 +0800</pubDate>
+      <pubDate>Sat, 02 Dec 2023 22:00:59 +0800</pubDate>
       
       <guid>https://www.vxbus.com/tags/ai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GPU</title>
+      <link>https://www.vxbus.com/tags/gpu/</link>
+      <pubDate>Sat, 02 Dec 2023 22:00:59 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/gpu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jensen Huang</title>
+      <link>https://www.vxbus.com/tags/jensen-huang/</link>
+      <pubDate>Sat, 02 Dec 2023 22:00:59 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/jensen-huang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nvidia</title>
+      <link>https://www.vxbus.com/tags/nvidia/</link>
+      <pubDate>Sat, 02 Dec 2023 22:00:59 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/nvidia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OpenAI</title>
+      <link>https://www.vxbus.com/tags/openai/</link>
+      <pubDate>Sat, 02 Dec 2023 22:00:59 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/openai/</guid>
       <description></description>
     </item>
     
@@ -152,15 +188,6 @@
     </item>
     
     <item>
-      <title>GPU</title>
-      <link>https://www.vxbus.com/tags/gpu/</link>
-      <pubDate>Tue, 21 Nov 2023 13:27:13 +0800</pubDate>
-      
-      <guid>https://www.vxbus.com/tags/gpu/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>PCI Express</title>
       <link>https://www.vxbus.com/tags/pci-express/</link>
       <pubDate>Mon, 20 Nov 2023 23:37:03 +0800</pubDate>
@@ -229,15 +256,6 @@
       <pubDate>Sun, 19 Nov 2023 10:47:43 +0800</pubDate>
       
       <guid>https://www.vxbus.com/tags/gh200/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Nvidia</title>
-      <link>https://www.vxbus.com/tags/nvidia/</link>
-      <pubDate>Sun, 19 Nov 2023 10:47:43 +0800</pubDate>
-      
-      <guid>https://www.vxbus.com/tags/nvidia/</guid>
       <description></description>
     </item>
     
