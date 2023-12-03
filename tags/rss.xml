@@ -6,7 +6,34 @@
     <description>Recent content in Tags on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 02 Dec 2023 22:00:59 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Dec 2023 19:30:54 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C programming language</title>
+      <link>https://www.vxbus.com/tags/c-programming-language/</link>
+      <pubDate>Sun, 03 Dec 2023 19:30:54 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/c-programming-language/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Embedded</title>
+      <link>https://www.vxbus.com/tags/embedded/</link>
+      <pubDate>Sun, 03 Dec 2023 19:30:54 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/embedded/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Global Variables</title>
+      <link>https://www.vxbus.com/tags/global-variables/</link>
+      <pubDate>Sun, 03 Dec 2023 19:30:54 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/global-variables/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>AI</title>
       <link>https://www.vxbus.com/tags/ai/</link>
@@ -139,15 +166,6 @@
       <pubDate>Wed, 22 Nov 2023 22:41:12 +0800</pubDate>
       
       <guid>https://www.vxbus.com/tags/bootloader/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Embedded</title>
-      <link>https://www.vxbus.com/tags/embedded/</link>
-      <pubDate>Wed, 22 Nov 2023 22:41:12 +0800</pubDate>
-      
-      <guid>https://www.vxbus.com/tags/embedded/</guid>
       <description></description>
     </item>
     
@@ -706,15 +724,6 @@
       <pubDate>Mon, 01 May 2023 03:00:41 -0400</pubDate>
       
       <guid>https://www.vxbus.com/tags/top/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>C programming language</title>
-      <link>https://www.vxbus.com/tags/c-programming-language/</link>
-      <pubDate>Thu, 06 Apr 2023 10:27:51 -0400</pubDate>
-      
-      <guid>https://www.vxbus.com/tags/c-programming-language/</guid>
       <description></description>
     </item>
     

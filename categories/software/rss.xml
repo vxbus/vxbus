@@ -6,7 +6,16 @@
     <description>Recent content in Software on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 26 Nov 2023 16:26:21 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/categories/software/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Dec 2023 19:30:54 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/categories/software/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何搞定嵌入式 C 语言中的全局变量问题</title>
+      <link>https://www.vxbus.com/post/software/global-variables-in-embedded-C-language.html</link>
+      <pubDate>Sun, 03 Dec 2023 19:30:54 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/post/software/global-variables-in-embedded-C-language.html</guid>
+      <description>&lt;p&gt;今天分享一篇关于嵌入式C编程中全局变量问题的文章。希望对大家有所启发。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Git：软件开发的黄金标配</title>
       <link>https://www.vxbus.com/post/software/git-for-software-development.html</link>
