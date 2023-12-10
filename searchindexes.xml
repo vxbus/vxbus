@@ -16,6 +16,35 @@
   </entry>
   
   <entry>
+    <title>NVIDIA特殊新卡首曝：命名5880</title>
+    <url>/post/news/NVIDIA-may-launch-RTX-5880-ADA.html</url>
+    <categories><category>News</category>
+    </categories>
+    <tags>
+      <tag>NVIDIA</tag>
+      <tag>GPU</tag>
+      <tag>RTX5880 ADA</tag>
+    </tags>
+    <content type="html"><![CDATA[ NVIDIA   RTX企业版驱动中，最近出现了一款面向工作站的新卡“RTX 5880 ADA”。
+如此命名非常奇怪，让人高度怀疑它是针对中国市场特供的。
+根据美国政府的规定，除了计算加速卡，RTX 6000 ADA工作站显卡、RTX 4090游戏显卡也都被禁止在中国内地和港澳地区生产、销售。
+为了绕过限制，NVIDIA为中国定制了各种特供型号，比如A800、H800、RTX 4090D。
+RTX 5880 ADA无论出现的时机，还是命名的方式，都非常符合特供特色。
+具体规格参数不详，但估计和RTX 4090D/4090的关系差不多，也是在RTX 6000 ADA的基础上精简。
+比如CUDA核心数量少于18176个、张量核心少于568个、FP32浮点算力低于91.1TFlops，但显存容量有可能维持384-bit 48GB GDDR6。
+其实对于这种中国特供版产品，美国政府也盯得很紧，甚至明确警告NVIDIA，它们也可能会被禁售。
+虽然受到美政府的严格约束，甚至被直接点名，但是NVIDIA仍将坚持在中国市场上推出特供版本的RTX 4090D，具体时间很可能会在2024年1月底。
+RTX 4090D仍将基于AD102 GPU  核心，但是编号从AD102-300变为AD102-250，对应着规格的降级。
+300变250
+具体的CUDA核心数量仍然不详，但肯定少于RTX 4090 16384个。
+意外的是，核心基准频率将从2235MHz小幅提高到2280MHz，但加速频率维持在2520MHz，TGP整卡功耗从450W小幅下调到425W。
+如果你打算通过超频恢复一部分实力，那恐怕要失望了，RTX 4090D会锁定频率，不开放任何超频设定，当然更不可能“开核”。
+至于价格，暂无更新说法，之前传闻将维持12999元起。
+据了解，NVIDIA将在本周内向各家AIC品牌发送AD102-250核心的样品进行测试，相信很快就会看到更多曝料。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>几种高效的电路分析方法</title>
     <url>/post/hardware/several-efficient-circuit-analysis-methods.html</url>
     <categories><category>Hardware</category>
