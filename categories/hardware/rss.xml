@@ -6,7 +6,20 @@
     <description>Recent content in Hardware on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 10 Dec 2023 11:37:46 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/categories/hardware/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Dec 2023 12:42:27 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/categories/hardware/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Serial NOR flash 能 XIP 吗</title>
+      <link>https://www.vxbus.com/post/hardware/can-serial-nor-flash-xip.html</link>
+      <pubDate>Mon, 11 Dec 2023 12:42:27 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/post/hardware/can-serial-nor-flash-xip.html</guid>
+      <description>&lt;p&gt;在小型
+&lt;a href=&#34;https://www.gaitpu.com/category/embedded&#34; title=&#34;嵌入式系统&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;
+    嵌入式系统
+    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;
+&lt;/a&gt;中，曾经比较流行用 Parallel NOR Flash。而目前绝大多数外挂 Flash 采用 Serial NOR flash 而不是 Parallel NOR Flash，这样能节省 PIN 脚的数目，有利于减小 PCB 的面积。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>几种高效的电路分析方法</title>
       <link>https://www.vxbus.com/post/hardware/several-efficient-circuit-analysis-methods.html</link>

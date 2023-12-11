@@ -16,6 +16,29 @@
   </entry>
   
   <entry>
+    <title>Serial NOR flash 能 XIP 吗</title>
+    <url>/post/hardware/can-serial-nor-flash-xip.html</url>
+    <categories><category>Hardware</category>
+    </categories>
+    <tags>
+      <tag>Serial Nor Flash</tag>
+      <tag>XIP</tag>
+    </tags>
+    <content type="html"><![CDATA[在小型 嵌入式系统  中，曾经比较流行用 Parallel NOR Flash。而目前绝大多数外挂 Flash 采用 Serial NOR flash 而不是 Parallel NOR Flash，这样能节省 PIN 脚的数目，有利于减小 PCB 的面积。
+我们知道，Parallel NOR Flash 具有 XIP 特性。
+XIP：eXecute In Place，即就地执行，也称片内执行，指存放在存储设备中的代码，被 CPU 执行前无需提前搬运到 RAM 中。比方说，Mask ROM，当编译后的程序指令掩膜到 ROM 中后，CPU 就可以直接从 ROM 中取指执行，而无需将 ROM 中的程序提前拷贝到 RAM 中。
+类似的，Parallel NOR Flash 的 XIP， 就是指存储在 Flash 闪存中的程序指令，可以被 CPU 直接取指后执行，而不用提前拷贝到 RAM 中。
+这个特性对于小型嵌入式系统是非常重要的，因为小型嵌入式系统对成本敏感，一般只会内置少量的 SRAM。如果存储程序指令的设备没有 XIP 能力，那么就必须要求外挂更大的容量的 RAM，用来加载程序。这无疑会增加成本。况且不少主控芯片本身也出于成本控制并不支持外挂 RAM。
+Parallel NOR Flash 之所以能 XIP，就是因为它的 IO 接口类似于 SRAM，能满足 CPU 取指的条件。如下图所示，它具有并行的地址线和数据线。
+Serial NOR flash，它并没有并行的地址线和数据线，那么它能 XIP 吗？
+由于 Serial NOR flash 并没有并行的地址线和数据线，只能通过 Serial 接口比如 SPI 来与主控通信， CPU   显然不能直接读取存放在其中的程序指令。如果要实现 CPU 从 Serial NOR flash 取指的功能，必须借助额外的硬件部件，完成 Flash 串行总线到 CPU 并行总线的转换。
+幸运地是，目前很多嵌入式主控芯片都支持了这个功能，在芯片内部实现了针对串行 Flash 的控制器。不同的芯片厂商，可能叫法不一样，比如 FlexSPI、SFC 等。
+CPU 的取指操作会反映到 AHB 总线上，中间经过 Serial Flash 的控制器，转换成Serial Flash 支持的通信协议，并且会有适当的缓存，以提升性能。
+另外，XIP 相当于实时地读取 Flash 中的代码指令，所以对于 Flash 的传输带宽是有要求的。传统的 SPI 模式无法满足 XIP 的要求，需要 Serial Flash 支持高性能的 Dual/Quad SPI 模式，在此模式下，有 2/4 根 IO 线用作 DATA 传输。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>NVIDIA特殊新卡首曝：命名5880</title>
     <url>/post/news/NVIDIA-may-launch-RTX-5880-ADA.html</url>
     <categories><category>News</category>
