@@ -16,6 +16,37 @@
   </entry>
   
   <entry>
+    <title>解惑I2C总线的几个问题</title>
+    <url>/post/hardware/some-questions-and-answers-about-i2c.html</url>
+    <categories><category>Hardware</category>
+    </categories>
+    <tags>
+      <tag>I2C</tag>
+    </tags>
+    <content type="html"><![CDATA[本文解惑I2C总线的几个问题!
+问题1：为什么I2C线上需要​330 Ω的串阻? 回答：330 Ω的串阻用来提高对I2C射频(RF)噪声的抗干扰能力。
+串阻配合管脚电容组成了低通滤波器，用来滤除耦合到I2C总线的高频噪声。
+问题2：I2C总线上的上拉电阻范围是多少？ 回答: 总线电容是走线部分、连接部分、管脚部分的电容的总和。总线电容限制了上拉电阻(Rp) 的最大值，因为I2C规定了上升时间（SDA和SCL信号的上升时间）。
+而供电电压限制了上拉电阻的最小值，因为I2C规定了标准和快速模式下的最小3 mA、超快速模式下的最小20 mA的灌电流。以下列出了最大和最小上拉电阻的计算公式：
+ Rp(最大) = t­­r / 0.8473 ×Cb Rp(最小)最大)) = (VDD – VOL(最大)) / IOL tr – I2C规范规定的SDA和SCL的上升时间 Cb – 经过检测的总线电容 VDD – I2C总线供电电压 IOL – I2C规范规定的最小总线灌电流 VOL(最大) – I2C规范规定的低电平输出电压。  问题3：3.3 V供电时I2C总线的最大通信速率是多少? 我能够在3.3 V供电时使I2C运行在400 kHz的速率吗? 回答：I2C的时钟参数选项指定I2C接口运行所需的时钟速率。三个时钟速度可以选择：50 kHz 标准\100 kHz 标准\400 kHz 快速
+I2C的400 kHz速率，只有在内部主时钟(IMO)或者说系统时钟(SysClk)为24 MHz时可以正常使用。
+I2C的最高通信速率和电压设置无关，和SysClk有关。
+所以，如果SysClk在全局资源中设置为了24 MHz，您可以将I2C运行在400 kHz的最大速率。I2C的用户模块的时钟速率选项假设了SysClk为24 MHz。
+如果SysClk在全局资源中设置为慢速内部时钟(SLIMO，6 MHz SysClk)，用户模块中的I2C速率设置数值也会成倍降低。
+比如，如果SysClk是6 MHz，I2C时钟速率选项则为12.5 kHz，24 kHz和100 kHz。SysClk从中央处理器单元（CPU）时钟分出来。
+问题4: I2C时钟是怎样影响I2C从机的时钟延展宽度的？ 回答：时钟延展是一种I2C从机在每次数据传输过程时，从第9个时钟起，即从应答（ACK）信号发出的时钟起，将SCL电平拉低的现象。
+时钟被拉低的时间取决于CPU处理中断的时间，因此改时间取决于CPU速率而不是I2C时钟速率。
+问题5: 时钟延展的最长时间是多少？ 回答: 时钟延展是一种I2C从机在每次数据传输过程时，从第9个时钟起，即从应答（ACK）信号发出的时钟起，将SCL电平拉低的现象。
+当PSoC配置为I2C从机时，收到一组I2C数据后，会立即拉低SCL电平。伴随该事件会产生一个中断，在该中断中，CPU会准备写入ACK/NAK到I2C的控制寄存器中，以释放时钟线。
+时钟延展的最长时间可以根据以下公式计算得到：
+假设：程序中已使能的中断数量为N（包括I2C中断）
+时钟延展时间 = (25 Cycles × N) × CPU_CLK + (N个中断处理时间之和)
+注意：一个中断的处理时间可以通过该中断中CPU时钟运行的周期数乘以CPU时钟计算得到。
+问题 6: PSoC对I2C通信时的SCL和SDA的上升和下降时间是怎样规定的？ 回答: 下表列出了在超快速、快速和标准模式的速率运行时，SCL和SDA的上升及下降时间规范。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>RTX 40 SUPER发布时间定了</title>
     <url>/post/news/NVIDIA-RTX-40-SUPER-announce-plan-in-place.html</url>
     <categories><category>News</category>

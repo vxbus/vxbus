@@ -6,7 +6,16 @@
     <description>Recent content in I2C on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 30 Jul 2023 03:56:58 -0400</lastBuildDate><atom:link href="https://www.vxbus.com/tags/i2c/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Dec 2023 14:41:22 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/i2c/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>解惑I2C总线的几个问题</title>
+      <link>https://www.vxbus.com/post/hardware/some-questions-and-answers-about-i2c.html</link>
+      <pubDate>Sat, 16 Dec 2023 14:41:22 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/post/hardware/some-questions-and-answers-about-i2c.html</guid>
+      <description>&lt;p&gt;本文解惑I2C总线的几个问题!&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>I2C通讯不了？是不是硬件有问题</title>
       <link>https://www.vxbus.com/post/hardware/i2c-bus-communication-trouble-shooting.html</link>

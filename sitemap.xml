@@ -8,7 +8,37 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/categories/</loc>
-    <lastmod>2023-12-16T11:57:02+08:00</lastmod>
+    <lastmod>2023-12-16T14:41:22+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/categories/hardware/</loc>
+    <lastmod>2023-12-16T14:41:22+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/i2c/</loc>
+    <lastmod>2023-12-16T14:41:22+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/post/</loc>
+    <lastmod>2023-12-16T14:41:22+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/</loc>
+    <lastmod>2023-12-16T14:41:22+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/</loc>
+    <lastmod>2023-12-16T14:41:22+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/post/hardware/some-questions-and-answers-about-i2c.html</loc>
+    <lastmod>2023-12-16T14:41:22+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -18,11 +48,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/tags/nvidia/</loc>
-    <lastmod>2023-12-16T11:57:02+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/post/</loc>
     <lastmod>2023-12-16T11:57:02+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -47,16 +72,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.vxbus.com/tags/</loc>
-    <lastmod>2023-12-16T11:57:02+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/</loc>
-    <lastmod>2023-12-16T11:57:02+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.vxbus.com/tags/flash-memory/</loc>
     <lastmod>2023-12-12T14:53:47+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -64,11 +79,6 @@
   </url><url>
     <loc>https://www.vxbus.com/post/news/flash-memory-prices-are-going-up-again.html</loc>
     <lastmod>2023-12-12T14:53:47+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/categories/hardware/</loc>
-    <lastmod>2023-12-11T12:42:27+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -638,11 +648,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/tags/eeprom/</loc>
-    <lastmod>2023-07-30T03:56:58-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/tags/i2c/</loc>
     <lastmod>2023-07-30T03:56:58-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
