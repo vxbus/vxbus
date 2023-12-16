@@ -6,7 +6,16 @@
     <description>Recent content in Hardware on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 16 Dec 2023 14:41:22 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/categories/hardware/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Dec 2023 18:18:47 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/categories/hardware/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CPU缓存简介</title>
+      <link>https://www.vxbus.com/post/hardware/brief-introduction-to-cpu-cache.html</link>
+      <pubDate>Sat, 16 Dec 2023 18:18:47 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/post/hardware/brief-introduction-to-cpu-cache.html</guid>
+      <description>&lt;p&gt;　　CPU的核心功能包括数据运算和指令控制。CPU运算的数据和执行的指令全部存储在CPU的寄存器中，这些数据和指令又都来自于CPU高速缓存。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>解惑I2C总线的几个问题</title>
       <link>https://www.vxbus.com/post/hardware/some-questions-and-answers-about-i2c.html</link>
