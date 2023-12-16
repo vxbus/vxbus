@@ -16,6 +16,33 @@
   </entry>
   
   <entry>
+    <title>RTX 40 SUPER发布时间定了</title>
+    <url>/post/news/NVIDIA-RTX-40-SUPER-announce-plan-in-place.html</url>
+    <categories><category>News</category>
+    </categories>
+    <tags>
+      <tag>Nvidia</tag>
+      <tag>RTX 8040</tag>
+      <tag>RTX 4070</tag>
+      <tag>RTX 4090D</tag>
+    </tags>
+    <content type="html"><![CDATA[NVIDIA RTX 40 SUPER系列显卡基本确定将在2024年1月8日正式发布，也就是CES 2024大展期间，随后在1月中下旬陆续解禁上市。
+RTX 4070 SUPER 1月16日解禁公版/原价丐版，1月17日解禁高价高配版，上市开卖，起价599-649美元左右。
+AD104-350或者AD103-175核心，CUDA核心数量从5888个增至7168个，二级缓存从36MB增加到48MB，显存还是12GB，整卡功耗从200W略微增至220W。
+性能提升幅度推测14％左右，可接近现在的RTX 4070 Ti。
+RTX 4070 Ti SUPER 1月23日解禁公版/原价丐版，1月14日解禁高价高配版，上市开卖，起价799-849美元左右。
+AD103-275或者AD102-175核心，CUDA核心数量从7680个增加到8448个，二级缓存48MB。
+显存位宽从192-bit升至256-bit，容量也从12GB增至16GB，但频率不会太高，保持总带宽低于RTX 4080 SUPER。
+功耗不变还是285W。
+性能提升幅度推测15％左右。
+RTX 4080 SUPER 1月30日解禁公版/原价丐版，1月31日解禁高价高配版，上市开卖，起价999-1099美元左右。
+AD13-400核心，二级缓存64MB，CUDA核心数量从9728个增加到10240个，显存还是16GB，功耗还是320W。
+性能提升幅度将会是最小的，估计只有5％左右。
+PS：中国特供的RTX 4090D将在1月底发布。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>闪存又要涨价了</title>
     <url>/post/news/flash-memory-prices-are-going-up-again.html</url>
     <categories><category>News</category>
