@@ -16,6 +16,29 @@
   </entry>
   
   <entry>
+    <title>AMD Zen5实物首曝：192核心、512MB三级缓存遥遥领先</title>
+    <url>/post/server/AMD-Zen5-Turin-is-on-the-way.html</url>
+    <categories><category>Server</category>
+    </categories>
+    <tags>
+      <tag>AMD</tag>
+      <tag>Turin</tag>
+      <tag>Zen5</tag>
+    </tags>
+    <content type="html"><![CDATA[ AMD   Zen4架构的EPYC 9004/8004系列已经全员齐备，下一代Zen5架构的产品也越来越近了，今天就第一次看到了实物，还有部分规格信息。
+Zen5架构的EPYC代号为“Turin”(都灵)，分为Zen5标准版的Turin Classic、Zen5c精简版的Turin Dense，一如现在Zen4、Zen4c的划分。
+当然，Zen c系列算不上小核心，因为只是精简了三级缓存、提高了能效，其他几乎都不变，IPC性能、ISA指令集均保持一致。
+经常曝料Intel/AMD服务器新品的YuuKi_AnS给出了Zen5 EPYC的第一张实物照，可以看到外形和现在完全相同，接口继续使用SP5 LGA6096。
+同时曝出的还有两张内核布局图，一个是Zen5 Turin Classic，1颗IOD搭配16颗CCD。
+IOD内集成PCIe 5.0控制器(通道数量不详)、CXL 2.0控制器、12通道的DDR5-6000内存控制器(现在是DDR5-4800)、第三代Infinity Fabric互连控制器，以及一颗新加入的安全协处理器。
+CCD内还是每颗8个核心、32MB三级缓存，但是从12颗增加到16颗之后，总计达到128核心256线程、512MB三级缓存。
+另一个是Zen5c Turin Dense，变成了1颗IOD搭配12颗CCD。
+其中，IOD部分完全相同，但是每颗CCD内部拥有多达16个核心，因此总计有192核心384线程、384MB三级缓存。
+再往后的Zen6 Venice EPYC，预计会升级到每CCD 32核心、16通道内存，总计可达256核心，但需要换新的SP7、SP8接口了。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>这些技巧会帮助你更好地设计电路</title>
     <url>/post/hardware/these-skills-will-help-you-design-the-circuit-better.html</url>
     <categories><category>Hardware</category>
