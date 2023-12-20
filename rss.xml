@@ -6,7 +6,7 @@
     <description>Recent content on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 20 Dec 2023 16:05:30 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Dec 2023 16:54:19 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>欢迎加入 VxWorks 俱乐部！</title>
       <link>https://www.vxbus.com/post/welcome-to-vxworks-club/</link>
@@ -16,6 +16,15 @@
       <description>欢迎来到 北南南北 文档站点！ 相关文章来源于 VxWorks 俱乐部  ，也可能发布于 AI 嵌入式开发  ，专注于技术分享和交流。
 免责声明 所有资源均来自网络，版权归原作者，如有侵权，请联系删除！
 欢迎投稿  欢迎广大网友投稿 欢迎加入网友微信群  </description>
+    </item>
+    
+    <item>
+      <title>一文读懂C&#43;&#43;如何实现多返回值</title>
+      <link>https://www.vxbus.com/post/software/how-to-implement-multiple-return-values-in-C-plus.html</link>
+      <pubDate>Wed, 20 Dec 2023 16:54:19 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/post/software/how-to-implement-multiple-return-values-in-C-plus.html</guid>
+      <description>&lt;p&gt;在C++编程的旅程中，我们时常会遇到需要一次性返回多个值的情况。传统的C++中，我们可能会通过引用、指针或结构体等方式来实现这个目标。然而，随着C++11的引入，元组的出现为多返回值带来了一种全新的解决方案。&lt;/p&gt;</description>
     </item>
     
     <item>
