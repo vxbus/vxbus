@@ -6,7 +6,16 @@
     <description>Recent content in FPGA on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 29 Oct 2022 06:53:45 -0400</lastBuildDate><atom:link href="https://www.vxbus.com/categories/fpga/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Dec 2023 11:06:18 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/categories/fpga/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>将 CPU 与 FPGA Fabrics 结合使用的案例</title>
+      <link>https://www.vxbus.com/post/fpga/example-of-using-cpu-and-fpga.html</link>
+      <pubDate>Sat, 23 Dec 2023 11:06:18 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/post/fpga/example-of-using-cpu-and-fpga.html</guid>
+      <description>&lt;p&gt;如何在规模效益下降时继续推动性能提升，本文就介绍一个将 CPU 与 FPGA Fabrics 结合使用的案例。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>FPGA硬核和软核处理器的区别</title>
       <link>https://www.vxbus.com/post/fpga/difference-between-hard-core-processor-and-soft-core-processor-of-fpga.html</link>

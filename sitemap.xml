@@ -8,7 +8,72 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/categories/</loc>
-    <lastmod>2023-12-21T19:53:48+08:00</lastmod>
+    <lastmod>2023-12-23T11:13:04+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/ethernet/</loc>
+    <lastmod>2023-12-23T11:13:04+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/lan/</loc>
+    <lastmod>2023-12-23T11:13:04+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/post/</loc>
+    <lastmod>2023-12-23T11:13:04+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/categories/server/</loc>
+    <lastmod>2023-12-23T11:13:04+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/</loc>
+    <lastmod>2023-12-23T11:13:04+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/</loc>
+    <lastmod>2023-12-23T11:13:04+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/post/server/a-brief-explanation-of-Ethernet-technology.html</loc>
+    <lastmod>2023-12-23T11:13:04+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/cpu/</loc>
+    <lastmod>2023-12-23T11:06:18+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/efpga/</loc>
+    <lastmod>2023-12-23T11:06:18+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/fabric/</loc>
+    <lastmod>2023-12-23T11:06:18+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/categories/fpga/</loc>
+    <lastmod>2023-12-23T11:06:18+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/fpga/</loc>
+    <lastmod>2023-12-23T11:06:18+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/post/fpga/example-of-using-cpu-and-fpga.html</loc>
+    <lastmod>2023-12-23T11:06:18+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -27,27 +92,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.vxbus.com/post/</loc>
-    <lastmod>2023-12-21T19:53:48+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/tags/</loc>
-    <lastmod>2023-12-21T19:53:48+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/</loc>
-    <lastmod>2023-12-21T19:53:48+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.vxbus.com/tags/firewall/</loc>
-    <lastmod>2023-12-21T13:41:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/categories/server/</loc>
     <lastmod>2023-12-21T13:41:41+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -417,11 +462,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.vxbus.com/tags/cpu/</loc>
-    <lastmod>2023-11-21T13:27:13+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.vxbus.com/post/server/why-gpu-is-faster-than-cpu.html</loc>
     <lastmod>2023-11-21T13:27:13+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -688,11 +728,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/tags/50g/</loc>
-    <lastmod>2023-11-06T19:21:55+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/tags/ethernet/</loc>
     <lastmod>2023-11-06T19:21:55+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -1228,16 +1263,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/tags/altera/</loc>
-    <lastmod>2022-10-29T06:53:45-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/categories/fpga/</loc>
-    <lastmod>2022-10-29T06:53:45-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/tags/fpga/</loc>
     <lastmod>2022-10-29T06:53:45-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

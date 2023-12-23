@@ -16,6 +16,44 @@
   </entry>
   
   <entry>
+    <title>以太网（Ethernet）技术小解</title>
+    <url>/post/server/a-brief-explanation-of-Ethernet-technology.html</url>
+    <categories><category>Server</category>
+    </categories>
+    <tags>
+      <tag>Ethernet</tag>
+      <tag>LAN</tag>
+    </tags>
+    <content type="html"><![CDATA[以太网（Ethernet）是一种常见的局域网（LAN）技术，它使用多种协议来实现数据通信。Ethernet的协议分为多层，其中二层协议主要涉及数据链路层。在Ethernet中，数据链路层使用帧（frame）来传输数据，而帧的结构由多个字段组成。
+以下是Ethernet二层协议解码中可能涉及的一些重要字段：
+ Preamble（前导码）：Preamble是一系列重复的模式，用于同步接收方的时钟。它通常是 8 字节的模式，以帮助接收方正确解析后续的数据。 Start Frame Delimiter（起始帧定界符）：紧随Preamble之后的一个特殊模式，指示帧的开始。 目标MAC地址（Destination MAC Address）：6字节，指示帧要发送到哪个设备。 源MAC地址（Source MAC Address）：6字节，指示帧的发送者。 EtherType/Length字段：指示上层协议的类型或者数据帧的长度。如果该字段的值小于等于 1500（0x05DC），则表示长度字段；如果大于 1500，则表示 EtherType 字段，标识上层协议类型。 数据（Payload）：包含传输的实际数据。上层协议的格式和内容由EtherType字段决定。 Frame Check Sequence (FCS)：4字节，用于检测在传输过程中是否发生了错误。 VLAN标签（802.1Q）：当使用虚拟局域网（VLAN）时，帧的头部可能包含一个4字节的VLAN标签。这个标签包括VLAN标识符、优先级和标准的EtherType字段。 802.1Qad（QinQ）：在QinQ配置中，两个VLAN标签可能会被嵌套在一起，提供更高层次的VLAN隔离。 MAC控制：这是一个3字节的字段，用于指定帧的控制信息，例如是否是一个帧的开始或结束。 流控制（Flow Control）：Ethernet帧中的一些字段可能用于实现流控制，以防止网络拥塞。 冗余检测（STP - Spanning Tree Protocol）：Ethernet网络中可能会使用STP来防止网络环路，STP帧包含用于构建网络拓扑的信息。 LACP（Link Aggregation Control Protocol）：用于组合多个物理连接成为一个逻辑连接，提高带宽和冗余性。 LLDP（Link Layer Discovery Protocol）：用于发现和描述直接连接的设备和它们的能力。 广播和多播地址：Ethernet支持广播和多播通信，所以目标MAC地址中可能包含广播地址（全1）或多播地址（最低有效位为1）。 物理层信息：Ethernet帧并不涉及具体的物理层传输细节，但理解底层物理层的特性（如速率、半双工/全双工）对于完全理解以太网帧的传输环境是有帮助的。 Jumbo Frames：除了标准的以太网帧大小（最大1518字节），一些网络设备和标准支持更大的Jumbo Frames，通常可以达到9000字节。使用Jumbo Frames可以提高数据传输效率，但需要确保所有网络设备都支持。 以太网类型（EtherType）：除了IPv4和IPv6之外，还有其他以太网类型，例如ARP（Address Resolution Protocol）、IPv6的ICMPv6、PPPoE（Point-to-Point Protocol over Ethernet）等。解码时需要根据EtherType字段来确定上层协议。 MAC地址的学习和过滤：在交换机等设备中，有关MAC地址的学习和过滤是重要的。交换机通过学习源MAC地址来建立MAC地址表，并使用该表来转发数据帧。 MAC地址欺骗（MAC Spoofing）：攻击者可能尝试欺骗网络，发送带有伪造源MAC地址的帧。网络安全中需要考虑如何防范和检测这种类型的攻击。 以太网帧的生命周期：了解以太网帧在网络中的传播和处理过程，包括交换机、路由器、网桥等设备的作用。 QoS（Quality of Service）：以太网帧头部的优先级字段用于指定帧的服务质量，有助于实现流量的优先级和管理。 MAC层的广播和多播协议：了解广播和多播的概念，以及在MAC层如何处理这些帧。 截断MAC地址：有时在显示中可能会看到截断的MAC地址，这是为了简化而只显示前面几个字节，通常是前三个字节表示厂商标识符。 Link Layer Discovery Protocol (LLDP)：LLDP是一种用于发现直接连接的设备及其能力的协议。LLDP帧包含有关设备的信息，如设备类型、设备标识符、端口标识符等。 Link Aggregation Control Protocol (LACP)：LACP用于在两个设备之间协调和管理链路聚合（Link Aggregation）。LACP帧用于协商和验证链路聚合的成员关系。 802.1X认证：802.1X是一种网络访问控制协议，用于对接入网络的用户进行身份验证。相关的EAPOL（Extensible Authentication Protocol over LAN）帧用于在认证过程中传输信息。 ARP（Address Resolution Protocol）：ARP帧用于在IPv4网络中解析IP地址和MAC地址之间的映射关系。它是一种解析层协议，用于确定目标设备的MAC地址。 IPv6在以太网中的表示：IPv6帧与IPv4帧有所不同，包括更大的地址空间和去除了校验和字段。IPv6的EtherType值为0x86DD。 MPLS（Multiprotocol Label Switching）标签：在一些网络中，以太网帧可能携带MPLS标签，用于进行流量工程和服务提供商的标记。 EtherChannel和Port Aggregation：类似于LACP，一些厂商使用EtherChannel或Port Aggregation的术语来描述将多个物理链路组合成一个逻辑链路以提高带宽和冗余性的过程。 Frame Priority and VLAN Priority：除了VLAN标签外，帧头部可能包含用于QoS的优先级字段，这有助于实现流量的优先级和管理。 错误检测和处理：了解以太网帧中的FCS字段如何用于检测传输错误，以及在发现错误时的处理方式。 网络分析工具：Wireshark等网络分析工具可以用于捕获和分析以太网帧，帮助诊断网络问题和了解网络流量。 QoS和DiffServ标记：在以太网帧头部，可能包含用于服务质量（QoS）和不同服务（DiffServ）的标记，用于实现流量的优先级和区分。 帧序号和流量控制：一些以太网标准支持帧序号和流控制机制，以确保数据的可靠传输。 VXLAN和NVGRE：用于实现虚拟局域网（VLAN）扩展的封装协议，它们在以太网帧中添加了虚拟网络标识。 SDN（Software-Defined Networking）：SDN引入了控制平面和数据平面的分离，以太网帧在SDN环境中可能会包含与SDN控制器的通信信息。 MACsec（MAC Security）：用于在以太网帧层实现加密和完整性保护。802.1X认证扩展：在802.1X认证的基础上，可能会使用EAP（Extensible Authentication Protocol）进行更灵活的身份验证。 PTP（Precision Time Protocol）：用于在网络中同步时钟，以太网帧可能包含PTP消息。 802.11帧：在无线局域网（WLAN）中，以太网帧的格式与有线以太网有所不同，需要考虑无线特定的字段，如信道、信号强度等。 sFlow和NetFlow：这些是用于网络监控和分析的流量采样协议，可以在以太网帧中包含有关流量的信息。 PROFINET、EtherCAT等：在工业控制系统中，有一些特定的以太网协议和帧格式，用于实时通信和控制。 IPv6 over IPv4 Tunneling：为了支持IPv6的过渡，以太网帧中可能包含IPv6数据报通过IPv4网络的隧道。 6LoWPAN（IPv6 over Low-power Wireless Personal Area Networks）：在物联网中，以太网帧可能在低功耗、有限带宽的网络中传输，需要考虑这些特定环境的协议和机制。 ]]></content>
+  </entry>
+  
+  <entry>
+    <title>将 CPU 与 FPGA Fabrics 结合使用的案例</title>
+    <url>/post/fpga/example-of-using-cpu-and-fpga.html</url>
+    <categories><category>FPGA</category>
+    </categories>
+    <tags>
+      <tag>FPGA</tag>
+      <tag>eFPGA</tag>
+      <tag>CPU</tag>
+      <tag>Fabric</tag>
+    </tags>
+    <content type="html"><![CDATA[如何在规模效益下降时继续推动性能提升，本文就介绍一个将 CPU 与 FPGA Fabrics 结合使用的案例。
+鉴于半导体行业通过进一步缩小工艺几何尺寸在物理和经济上所能实现的目标已开始达到极限，缩小特征尺寸和增加晶体管数量已不再能达到以往的效果。取而代之的是，整个行业都在关注全新的系统架构，并通过重新思考如何在每个设备中完成任务来更好地利用现有硅片。当我们进入这个新的技术时代时，以 嵌入式   FPGA 的形式将 FPGA   结构与 CPU 集成成为一种极具吸引力的解决方案。
+虽然 FPGA 和 CPU 都使用内存和逻辑组合来保存和处理数据和指令，但两者之间存在重要的根本区别。中央处理器针对快速上下文切换进行了优化，而 FPGA 的配置速度较慢，但能以类似于硬连线电路的速度模拟数字逻辑。因此，CPU 擅长执行各种任务，而 FPGA 则擅长执行重复性（尤其是高度并行化）任务，这些任务重复执行数千次，偶尔才会重新定义。
+市场指标 有明显的证据表明，CPU 和 FPGA 技术的结合可以通过更紧密的集成带来真正的价值。这方面的第一个例子是英特尔公司斥资 167 亿美元收购 Altera 公司，用于加速数据中心功能。第二个例子是微软的 Catapult 计划，该计划表明，通过在每台服务器中集成 FPGA 来加速必应搜索、Azure 和 Microsoft 365，可以将数据中心服务器的计算能力提高一倍。这些例子表明，业界已经开始认识到 CPU 和 FPGA 异构架构的优势。这些类型的异构架构将不可避免地转移到同一设备上，FPGA 结构将作为 IP 块集成到 ASIC 中。
+迈入 eFPGA 时代 Achronix 现在是这一领域的主要推动者，它已经推出了嵌入式 FPGA IP，这些 IP 源自其早期以高性能和复杂路由架构著称的独立 FPGA 系列。Speedcore™ eFPGA IP 展示了将 FPGA 结构集成到 CPU/SoC 中的许多可能优势。下图显示了如何将 Speedcore IP 集成到 SoC 子系统中。
+图 1：SoC 子系统中的速核 eFPGA
+由于 eFPGA 位于同一设备上，信号无需经过 SerDes 和 PCIe 等协议编码。因此，延迟时间要低一个数量级。此外，由于片上互连的带宽更高，采用 eFPGA 结构的 SoC 比采用独立 FPGA 的 SoC 性能更高。
+集成 FPGA 结构还大大降低了功耗。由于在片上集成了 FPGA 结构，去除了时钟发生器、无源元件等一些辅助元件，因此这种功耗节省还延伸到了系统层面。
+分立 FPGA 的尺寸和性能范围是固定的，而 eFPGA IP 块中逻辑门和存储器之间的组合则不同，可以由客户自行定义，这样就能获得适当数量的 FPGA，以加速相应的功能。这种功能可确保在 SoC 中实现最佳的 CPU 大小与 FPGA 资源比，从而优化硅面积、功耗和成本。
+总之，毫无疑问，eFPGA 将成为未来几年的主要架构趋势。其优势实在是太引人注目了。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>Linux常用命令TOP 10超详细汇总</title>
     <url>/post/linux/linux-top-10-commands.html</url>
     <categories><category>Linux</category>

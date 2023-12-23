@@ -6,7 +6,16 @@
     <description>Recent content in Ethernet on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 06 Nov 2023 19:21:55 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/ethernet/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Dec 2023 11:13:04 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/ethernet/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>以太网（Ethernet）技术小解</title>
+      <link>https://www.vxbus.com/post/server/a-brief-explanation-of-Ethernet-technology.html</link>
+      <pubDate>Sat, 23 Dec 2023 11:13:04 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/post/server/a-brief-explanation-of-Ethernet-technology.html</guid>
+      <description>&lt;p&gt;以太网（Ethernet）是一种常见的局域网（LAN）技术，它使用多种协议来实现数据通信。Ethernet的协议分为多层，其中二层协议主要涉及数据链路层。在Ethernet中，数据链路层使用帧（frame）来传输数据，而帧的结构由多个字段组成。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>25G/50G/100G以太网技术</title>
       <link>https://www.vxbus.com/post/server/25G-50G-100G-ethernet-technology.html</link>

@@ -6,7 +6,7 @@
     <description>Recent content in Posts on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 21 Dec 2023 19:53:48 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/post/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Dec 2023 11:13:04 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/post/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>欢迎加入 VxWorks 俱乐部！</title>
       <link>https://www.vxbus.com/post/welcome-to-vxworks-club/</link>
@@ -16,6 +16,24 @@
       <description>欢迎来到 北南南北 文档站点！ 相关文章来源于 VxWorks 俱乐部  ，也可能发布于 AI 嵌入式开发  ，专注于技术分享和交流。
 免责声明 所有资源均来自网络，版权归原作者，如有侵权，请联系删除！
 欢迎投稿  欢迎广大网友投稿 欢迎加入网友微信群  </description>
+    </item>
+    
+    <item>
+      <title>以太网（Ethernet）技术小解</title>
+      <link>https://www.vxbus.com/post/server/a-brief-explanation-of-Ethernet-technology.html</link>
+      <pubDate>Sat, 23 Dec 2023 11:13:04 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/post/server/a-brief-explanation-of-Ethernet-technology.html</guid>
+      <description>&lt;p&gt;以太网（Ethernet）是一种常见的局域网（LAN）技术，它使用多种协议来实现数据通信。Ethernet的协议分为多层，其中二层协议主要涉及数据链路层。在Ethernet中，数据链路层使用帧（frame）来传输数据，而帧的结构由多个字段组成。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>将 CPU 与 FPGA Fabrics 结合使用的案例</title>
+      <link>https://www.vxbus.com/post/fpga/example-of-using-cpu-and-fpga.html</link>
+      <pubDate>Sat, 23 Dec 2023 11:06:18 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/post/fpga/example-of-using-cpu-and-fpga.html</guid>
+      <description>&lt;p&gt;如何在规模效益下降时继续推动性能提升，本文就介绍一个将 CPU 与 FPGA Fabrics 结合使用的案例。&lt;/p&gt;</description>
     </item>
     
     <item>

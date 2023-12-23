@@ -6,22 +6,31 @@
     <description>Recent content in Categories on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 21 Dec 2023 19:53:48 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/categories/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Dec 2023 11:13:04 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/categories/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Server</title>
+      <link>https://www.vxbus.com/categories/server/</link>
+      <pubDate>Sat, 23 Dec 2023 11:13:04 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/categories/server/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FPGA</title>
+      <link>https://www.vxbus.com/categories/fpga/</link>
+      <pubDate>Sat, 23 Dec 2023 11:06:18 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/categories/fpga/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Linux</title>
       <link>https://www.vxbus.com/categories/linux/</link>
       <pubDate>Thu, 21 Dec 2023 19:53:48 +0800</pubDate>
       
       <guid>https://www.vxbus.com/categories/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Server</title>
-      <link>https://www.vxbus.com/categories/server/</link>
-      <pubDate>Thu, 21 Dec 2023 13:41:41 +0800</pubDate>
-      
-      <guid>https://www.vxbus.com/categories/server/</guid>
       <description></description>
     </item>
     
@@ -85,15 +94,6 @@
       <pubDate>Sat, 29 Oct 2022 07:53:45 -0400</pubDate>
       
       <guid>https://www.vxbus.com/categories/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>FPGA</title>
-      <link>https://www.vxbus.com/categories/fpga/</link>
-      <pubDate>Sat, 29 Oct 2022 06:53:45 -0400</pubDate>
-      
-      <guid>https://www.vxbus.com/categories/fpga/</guid>
       <description></description>
     </item>
     
