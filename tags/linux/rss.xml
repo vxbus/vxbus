@@ -6,7 +6,20 @@
     <description>Recent content in linux on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 18 Nov 2023 17:45:32 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/linux/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 Dec 2023 16:40:01 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/linux/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux下大文件切割与合并</title>
+      <link>https://www.vxbus.com/post/linux/selection-of-linux-or-windows-for-file-server.html</link>
+      <pubDate>Sun, 24 Dec 2023 16:40:01 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/post/linux/selection-of-linux-or-windows-for-file-server.html</guid>
+      <description>&lt;p&gt;文件服务器是一种用于存储和共享文件的网络设备，它可以提高数据的安全性和可用性。文件服务器的选择取决于多种因素，如成本、性能、兼容性、易用性等。本文将从这些方面对比Windows和
+&lt;a href=&#34;https://www.vxworks.net/linux&#34; title=&#34;Linux&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;
+    Linux
+    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;
+&lt;/a&gt;两种文件服务器的优缺点。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>怎么在Linux中高效运行终端命令</title>
       <link>https://www.vxbus.com/post/linux/how-to-execute-console-command-effectively-in-linux.html</link>
