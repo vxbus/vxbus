@@ -40,7 +40,7 @@ AHB 从AHB总线延伸出来的两条APB2和APB1总线是最常见的总线，GP
   </entry>
   
   <entry>
-    <title>Linux下大文件切割与合并</title>
+    <title>文件服务器到底是选Windows还是选Linux比较好</title>
     <url>/post/linux/selection-of-linux-or-windows-for-file-server.html</url>
     <categories><category>Linux</category>
     </categories>
