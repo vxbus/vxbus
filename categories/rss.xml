@@ -6,7 +6,16 @@
     <description>Recent content in Categories on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 24 Dec 2023 16:40:01 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/categories/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 Dec 2023 16:49:38 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/categories/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hardware</title>
+      <link>https://www.vxbus.com/categories/hardware/</link>
+      <pubDate>Sun, 24 Dec 2023 16:49:38 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/categories/hardware/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Linux</title>
       <link>https://www.vxbus.com/categories/linux/</link>
@@ -49,15 +58,6 @@
       <pubDate>Wed, 20 Dec 2023 16:54:19 +0800</pubDate>
       
       <guid>https://www.vxbus.com/categories/software/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hardware</title>
-      <link>https://www.vxbus.com/categories/hardware/</link>
-      <pubDate>Mon, 18 Dec 2023 13:21:51 +0800</pubDate>
-      
-      <guid>https://www.vxbus.com/categories/hardware/</guid>
       <description></description>
     </item>
     
