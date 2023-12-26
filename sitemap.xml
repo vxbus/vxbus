@@ -7,17 +7,52 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.vxbus.com/categories/</loc>
-    <lastmod>2023-12-24T16:49:38+08:00</lastmod>
+    <loc>https://www.vxbus.com/tags/asml/</loc>
+    <lastmod>2023-12-26T11:42:40+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.vxbus.com/categories/hardware/</loc>
-    <lastmod>2023-12-24T16:49:38+08:00</lastmod>
+    <loc>https://www.vxbus.com/categories/</loc>
+    <lastmod>2023-12-26T11:42:40+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/duv/</loc>
+    <lastmod>2023-12-26T11:42:40+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/evu/</loc>
+    <lastmod>2023-12-26T11:42:40+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/categories/news/</loc>
+    <lastmod>2023-12-26T11:42:40+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/post/</loc>
+    <lastmod>2023-12-26T11:42:40+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/</loc>
+    <lastmod>2023-12-26T11:42:40+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/</loc>
+    <lastmod>2023-12-26T11:42:40+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/post/news/china-also-releases-new-lithography-machine.html</loc>
+    <lastmod>2023-12-26T11:42:40+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/categories/hardware/</loc>
     <lastmod>2023-12-24T16:49:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -28,16 +63,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/post/hardware/the-internal-architecture-of-STM32-chip.html</loc>
-    <lastmod>2023-12-24T16:49:38+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/tags/</loc>
-    <lastmod>2023-12-24T16:49:38+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/</loc>
     <lastmod>2023-12-24T16:49:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -83,11 +108,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/tags/lay-off/</loc>
-    <lastmod>2023-12-23T11:23:03+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/categories/news/</loc>
     <lastmod>2023-12-23T11:23:03+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
