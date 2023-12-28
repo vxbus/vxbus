@@ -6,20 +6,11 @@
     <description>Recent content in Tags on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 28 Dec 2023 14:47:17 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/rss.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Array</title>
-      <link>https://www.vxbus.com/tags/array/</link>
-      <pubDate>Thu, 28 Dec 2023 14:47:17 +0800</pubDate>
-      
-      <guid>https://www.vxbus.com/tags/array/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Thu, 28 Dec 2023 14:54:47 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Raid</title>
       <link>https://www.vxbus.com/tags/raid/</link>
-      <pubDate>Thu, 28 Dec 2023 14:47:17 +0800</pubDate>
+      <pubDate>Thu, 28 Dec 2023 14:54:47 +0800</pubDate>
       
       <guid>https://www.vxbus.com/tags/raid/</guid>
       <description></description>
@@ -28,9 +19,18 @@
     <item>
       <title>SSD</title>
       <link>https://www.vxbus.com/tags/ssd/</link>
-      <pubDate>Thu, 28 Dec 2023 14:47:17 +0800</pubDate>
+      <pubDate>Thu, 28 Dec 2023 14:54:47 +0800</pubDate>
       
       <guid>https://www.vxbus.com/tags/ssd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Array</title>
+      <link>https://www.vxbus.com/tags/array/</link>
+      <pubDate>Thu, 28 Dec 2023 14:47:17 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/array/</guid>
       <description></description>
     </item>
     
