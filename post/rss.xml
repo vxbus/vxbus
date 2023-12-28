@@ -6,7 +6,7 @@
     <description>Recent content in Posts on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 26 Dec 2023 11:42:40 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/post/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Dec 2023 12:07:57 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/post/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>欢迎加入 VxWorks 俱乐部！</title>
       <link>https://www.vxbus.com/post/welcome-to-vxworks-club/</link>
@@ -16,6 +16,17 @@
       <description>欢迎来到 北南南北 文档站点！ 相关文章来源于 VxWorks 俱乐部  ，也可能发布于 AI 嵌入式开发  ，专注于技术分享和交流。
 免责声明 所有资源均来自网络，版权归原作者，如有侵权，请联系删除！
 欢迎投稿  欢迎广大网友投稿 欢迎加入网友微信群  </description>
+    </item>
+    
+    <item>
+      <title>美机构：立即停止使用C和C&#43;&#43;</title>
+      <link>https://www.vxbus.com/post/software/US-organizations-warn-stop-using-C-and-C-plus-plus.html</link>
+      <pubDate>Thu, 28 Dec 2023 12:07:57 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/post/software/US-organizations-warn-stop-using-C-and-C-plus-plus.html</guid>
+      <description>&lt;p&gt;对于嵌入式软件工程师来说，C/C++语言是最常用的编程语言之一，它是一种高效、简洁、灵活的编程语言，尤其在嵌入式、单片机领域，它创造了许多奇迹，包括智能手机、家用电器、汽车或是医疗设备。&lt;/p&gt;
+&lt;p&gt;但每每提及“安全”问题时，大部分人便将C/C++划在围城之外。12月6日，美国网络安全和基础设施局 （CISA）联合美国国家安全局（NSA）、美国联邦调查局 （FBI）及澳大利亚、加拿大、英国和新西兰的网络安全机构发布《内存安全路线图指南》，点名C/C++存在内存安全漏洞，软件开发商应放弃使用，改用C#、Rust、Go、Java、Python和Swift等内存安全的编程语言 (MSL)。&lt;/p&gt;
+&lt;p&gt;那么，这究竟是什么情况，我们还能安心使用C/C++吗？&lt;/p&gt;</description>
     </item>
     
     <item>
