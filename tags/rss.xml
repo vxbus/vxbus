@@ -6,7 +6,34 @@
     <description>Recent content in Tags on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 28 Dec 2023 12:07:57 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Dec 2023 14:28:20 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI</title>
+      <link>https://www.vxbus.com/tags/ai/</link>
+      <pubDate>Thu, 28 Dec 2023 14:28:20 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/ai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ML</title>
+      <link>https://www.vxbus.com/tags/ml/</link>
+      <pubDate>Thu, 28 Dec 2023 14:28:20 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/ml/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Storage</title>
+      <link>https://www.vxbus.com/tags/storage/</link>
+      <pubDate>Thu, 28 Dec 2023 14:28:20 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/storage/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>c</title>
       <link>https://www.vxbus.com/tags/c/</link>
@@ -409,15 +436,6 @@
       <pubDate>Sun, 03 Dec 2023 19:30:54 +0800</pubDate>
       
       <guid>https://www.vxbus.com/tags/global-variables/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>AI</title>
-      <link>https://www.vxbus.com/tags/ai/</link>
-      <pubDate>Sat, 02 Dec 2023 22:00:59 +0800</pubDate>
-      
-      <guid>https://www.vxbus.com/tags/ai/</guid>
       <description></description>
     </item>
     
@@ -868,15 +886,6 @@
       <pubDate>Sat, 02 Sep 2023 04:40:54 -0400</pubDate>
       
       <guid>https://www.vxbus.com/tags/ipo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Storage</title>
-      <link>https://www.vxbus.com/tags/storage/</link>
-      <pubDate>Tue, 29 Aug 2023 13:08:16 -0400</pubDate>
-      
-      <guid>https://www.vxbus.com/tags/storage/</guid>
       <description></description>
     </item>
     
