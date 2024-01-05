@@ -162,7 +162,22 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://www.vxbus.com/tags/nvidia/</loc>
+    <lastmod>2023-12-24T10:19:10+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/spectrum-x/</loc>
+    <lastmod>2023-12-24T10:19:10+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://www.vxbus.com/post/server/how-does-data-center-operate.html</loc>
+    <lastmod>2023-12-24T10:19:10+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/post/server/nvidia-also-has-the-Spectrum-X-network-solution.html</loc>
     <lastmod>2023-12-24T10:19:10+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -359,11 +374,6 @@
   </url><url>
     <loc>https://www.vxbus.com/post/hardware/some-questions-and-answers-about-i2c.html</loc>
     <lastmod>2023-12-16T14:41:22+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/tags/nvidia/</loc>
-    <lastmod>2023-12-16T11:57:02+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
