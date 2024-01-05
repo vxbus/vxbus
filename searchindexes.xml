@@ -16,6 +16,27 @@
   </entry>
   
   <entry>
+    <title>英伟达GH200增加HBM3e内存</title>
+    <url>/post/server/NVIDIA-GH200-adds-HBM3e-memory.html</url>
+    <categories><category>Server</category>
+    </categories>
+    <tags>
+      <tag>NVIDIA</tag>
+      <tag>GH200</tag>
+      <tag>HBM3e</tag>
+    </tags>
+    <content type="html"><![CDATA[英伟达Grace-Hopper提供了一个紧密集成的CPU + GPU解决方案，针对生成式人工智能逐渐成为主导的市场环境。
+为了提高性能，这家GPU制造商将HBM3e内存放入了名为GH200的新型芯片封装中，该封装包括一个Grace CPU和一个Hopper GPU。Hopper以前在芯片封装中使用HBM3存储器。
+英伟达将把两个GH200芯片（每个都有一个72核CPU和一个Hopper GPU）连接到一个更大的芯片集群中，用于扩展数据中心。 HBM3e内存比HBM3快50%，总带宽为每秒10TB；CPU基于Neoverse V2设计。英伟达CEO黄仁勋表示:“这些芯片正在生产中，我们将在2023年年底左右进行样品测试。”
+一个封装中的两个GH200芯片将具有282GB的HBM3e内存，这相比于之前GH100芯片的192GB HBM内存是一大改进。它还将拥有每秒8千万亿次的人工智能计算能力，以及每秒10 TB的HBM3e性能。
+该芯片组可以接受任何大型语言模型，“可以疯狂地进行推理”。英伟达表示，这些芯片可以运行3.5倍大的模型，并通过更快的内存带宽获得性能提升。
+该公司打算将256个GH200 GPU配置到一个名为Grace Hopper的超级计算机系统中，该系统将提供1百亿亿次的人工智能性能。黄仁勋将该系统称为“世界上最大的单一GPU”，所有256个GH200协同工作。
+目前所有的大型学习模型都是在Grace Hopper超级计算机这样的系统上训练的。黄仁勋说，未来随着人工智能在设备之间的分布越来越广，每个应用程序都将使用一个大型语言模型。随着越来越多的公司探索人工智能来提高运营效率，Hopper GPU现在很受欢迎。该公司承认GPU供应短缺。
+黄仁勋还描绘了如何分解其GPU路线图以满足分布式模型。Grace Hopper超级计算机位于顶部，然后可以将其分配到具有不同要求的服务器和桌面GPU上的不同GPU上。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>英伟达不仅有NVLink、InfiniBand，还有以太网Spectrum-X方案</title>
     <url>/post/server/nvidia-also-has-the-Spectrum-X-network-solution.html</url>
     <categories><category>Server</category>
