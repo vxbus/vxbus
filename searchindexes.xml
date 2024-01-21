@@ -16,6 +16,29 @@
   </entry>
   
   <entry>
+    <title>为什么DDR5要在一个dimm里面设计两个channel</title>
+    <url>/post/hardware/why-does-DDR5-need-to-design-two-channels-in-one-DIMM.html</url>
+    <categories><category>Hardware</category>
+    </categories>
+    <tags>
+      <tag>DDR5</tag>
+      <tag>Channel</tag>
+    </tags>
+    <content type="html"><![CDATA[为什么 DDR5  要设计sub channel的概念，sub channel的设计初衷是什么？一个sub channel的带宽是32bit，要组成一个64bit的cache line岂不是还是需要两个channel同时工作？
+首先引入2个概念:
+ Burst Length: 突发(Burst) 是指在同一行中相邻的存储单元连续进行数据传输的方式。连续传输的周期数就是突发长度 (Burst Lengths，简称BL)。  对于DDR3和DDR4内存，其BL=8: 对于DDR5内存，其BL=16.
+Cache line: 我们知道CPU是不能直接读取内存当中的数据，CPU要想读取内存当中的数据，首先要将数据从内存里加载到高速缓存cache中，然后再读取cache中的数据  我们将一个cache平均分成相等的很多块，每一个块大小我们称之为cache line。
+例如: 一个32 Bytes大小的cache，如果我们将其平均分成32块，那么每一块cache line就是1Byte，总共有32行cache line。如果我们将其平均分成8块，那么cache line大小就是4 Bytes，总共8行cache line。
+cache line是cache和内存之间数据传输的最小单位。什么是最小单位?
+例: cache从Memory获取数据的最小单位是64Bytes，当cache要从内存里读取一个32 Bytes的数据时，不会只把这32 Bytes的数据读进来，而是会把64 Bytes的数据一起读进来
+而对于X86架构的CPU来讲，它的Cache line大小正好就是64Bytes。
+在我们DDR4时，数据位宽是64位的，就是我们一次读写64bit的数据，每次读写最高的BurstLength是8位，乘起来就是64bit*8=512bit=64Byte，也就是我们X86架构的CPU cache line 的大小。
+那么到了DDR5的时候，每次读写最高的Burst Length变为了16位，如果我们的通道还是维持64bit的位宽，那么我们乘起来就是64bit*16=1024bit，1024bit超过了我们的cpu cache line%的传统大小。如果我们依然要这么做的话，那么我们的内存控制器的架构，从底层硬件到上层读写数据的软件配套都要去改，这样改动就非常大。所以在DDR5时，就引入了sub-channel的概念
+每个sub-channel有效数据位是32位，32bit*16 (Burst Length) =512bit，这样就能够满足我们cpu cache line 的需求。所以就是DDR5引入sub-channel的原因。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>英伟达GH200增加HBM3e内存</title>
     <url>/post/server/NVIDIA-GH200-adds-HBM3e-memory.html</url>
     <categories><category>Server</category>
