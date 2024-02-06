@@ -6,7 +6,7 @@
     <description>Recent content on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 06 Feb 2024 11:30:56 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Feb 2024 11:49:44 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>欢迎加入 VxWorks 俱乐部！</title>
       <link>https://www.vxbus.com/post/welcome-to-vxworks-club/</link>
@@ -16,6 +16,15 @@
       <description>欢迎来到 北南南北 文档站点！ 相关文章来源于 VxWorks 俱乐部  ，也可能发布于 AI 嵌入式开发  ，专注于技术分享和交流。
 免责声明 所有资源均来自网络，版权归原作者，如有侵权，请联系删除！
 欢迎投稿  欢迎广大网友投稿 欢迎加入网友微信群  </description>
+    </item>
+    
+    <item>
+      <title>PCIe的发展史：从诞生到广泛应用</title>
+      <link>https://www.vxbus.com/post/hardware/the-development-history-of-PCIe.html</link>
+      <pubDate>Tue, 06 Feb 2024 11:49:44 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/post/hardware/the-development-history-of-PCIe.html</guid>
+      <description>&lt;p&gt;随着科技的不断发展，计算机硬件也在不断地更新换代。在这个过程中，PCIe（Peripheral Component Interconnect Express，外围组件互联高速）作为一种全新的总线标准，逐渐取代了AGP和PCI，成为计算机系统中不可或缺的一部分。本文将为您详细介绍PCIe的发展史，带您了解这一技术从诞生到广泛应用的历程。&lt;/p&gt;</description>
     </item>
     
     <item>
