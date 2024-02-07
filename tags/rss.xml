@@ -6,7 +6,43 @@
     <description>Recent content in Tags on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 06 Feb 2024 11:49:44 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Feb 2024 14:43:22 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A100</title>
+      <link>https://www.vxbus.com/tags/a100/</link>
+      <pubDate>Wed, 07 Feb 2024 14:43:22 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/a100/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CPU</title>
+      <link>https://www.vxbus.com/tags/cpu/</link>
+      <pubDate>Wed, 07 Feb 2024 14:43:22 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/cpu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>H100</title>
+      <link>https://www.vxbus.com/tags/h100/</link>
+      <pubDate>Wed, 07 Feb 2024 14:43:22 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/h100/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>V100</title>
+      <link>https://www.vxbus.com/tags/v100/</link>
+      <pubDate>Wed, 07 Feb 2024 14:43:22 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/v100/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>PCIe</title>
       <link>https://www.vxbus.com/tags/pcie/</link>
@@ -265,15 +301,6 @@
       <pubDate>Sat, 23 Dec 2023 11:13:04 +0800</pubDate>
       
       <guid>https://www.vxbus.com/tags/lan/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>CPU</title>
-      <link>https://www.vxbus.com/tags/cpu/</link>
-      <pubDate>Sat, 23 Dec 2023 11:06:18 +0800</pubDate>
-      
-      <guid>https://www.vxbus.com/tags/cpu/</guid>
       <description></description>
     </item>
     
@@ -710,15 +737,6 @@
     </item>
     
     <item>
-      <title>H100</title>
-      <link>https://www.vxbus.com/tags/h100/</link>
-      <pubDate>Sun, 19 Nov 2023 09:40:58 +0800</pubDate>
-      
-      <guid>https://www.vxbus.com/tags/h100/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>H200</title>
       <link>https://www.vxbus.com/tags/h200/</link>
       <pubDate>Sun, 19 Nov 2023 09:40:58 +0800</pubDate>
@@ -751,24 +769,6 @@
       <pubDate>Sun, 19 Nov 2023 09:16:09 +0800</pubDate>
       
       <guid>https://www.vxbus.com/tags/microsoft-ignite/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>A100</title>
-      <link>https://www.vxbus.com/tags/a100/</link>
-      <pubDate>Sat, 18 Nov 2023 19:58:26 +0800</pubDate>
-      
-      <guid>https://www.vxbus.com/tags/a100/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>V100</title>
-      <link>https://www.vxbus.com/tags/v100/</link>
-      <pubDate>Sat, 18 Nov 2023 19:58:26 +0800</pubDate>
-      
-      <guid>https://www.vxbus.com/tags/v100/</guid>
       <description></description>
     </item>
     
