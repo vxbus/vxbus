@@ -16,6 +16,26 @@
   </entry>
   
   <entry>
+    <title>AI PC的崛起，开启个人计算机的新纪元</title>
+    <url>/post/hardware/the-rise-of-AI-PC-opens-a-new-era-of-personal-computers.html</url>
+    <categories><category>Hardware</category>
+    </categories>
+    <tags>
+      <tag>AI</tag>
+      <tag>PC</tag>
+    </tags>
+    <content type="html"><![CDATA[“AI”这个词汇相信大多数人都比较熟悉了。随着人工智能（AI）技术的不断发展，它变得越来越贴近我们的生活。
+对于我们做BIOS的来讲，AI PC显得这么近却又那么远，说近是因为AI应用到PC上了，而说远则是几乎不用BIOS做什么事情。但是为了与时俱进，我还是花时间AI做了一些了解。
+进入正题，伴随着强大的AI模型如OpenAI的ChatGPT、微软的Copilot和谷歌的Gemini，以及国内的文心一言、通义千问等的问世，人工智能已经从幕后研究走向日常应用的前台。这些大模型在语言理解、编程协作、数据处理和认知服务等多领域展现出强大的能力。
+什么是AI PC AI PC是指在硬件层面集成了特定的AI处理单元，可以提供深度学习和机器学习等能力的个人计算机。这些计算机通常配备有高性能的中央处理器(CPU)，图形处理器(GPU)以及神经处理单元(NPU)等，以满足人工智能应用程序的特定需求。据trendforce报道，微软对AI PC定义的理想标准包括至少拥有40 TOPS的算力和至少16GB的DRAM。Intel于2023年12月推出的 Meteor Lake 的 CPU+GPU+NPU 综合算力为 34 TOPS，未达到微软的标准。然而，Intel即将推出的 Lunar Lake 可能会突破 40 TOPS 的门槛。
+与普通PC相比，AI PC具备更强大的算力和高效的数据处理能力。它可以实时地执行复杂算法，如图像识别、自然语言处理和机器学习任务，引领用户享受到智能助理、自然交互和定制化服务的便捷。
+软硬件厂商产品 行业巨头如Intel、AMD、高通不断推动AI PC的技术进步。Intel的Lunar Lake处理器，AMD的Strix Point，以及高通的Snapdragon X Elite，都是为AI和机器学习应用量身定制的芯片，它们的推出预示着AI将成为人们生活和工作的重要组成部分。
+微软作为软件和操作系统的领导者，也在通过其Windows操作系统和Office套件主导AI的集成，计划将Copilot集成到下一代Windows中。它将允许用户享受到更加智能化和定制化的计算体验——一个对话式的计算环境，可以通过自然语言理解并执行用户的命令。
+最后 AI PC的市场需求正在快速增长，其未来前景看起来同样光明。随着更多软硬件的整合和创新，AI PC预计将改变人们的工作方式，提高生产效率，推动教育革新，并在家庭娱乐中引入前所未有的交互形式。从企业到教育机构，再到家庭用户，AI PC的多样化用例将促使个人计算走向一个更加智慧和互联的未来。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>展望2024：半导体行业收入将增长17%</title>
     <url>/post/server/outlook-2024-semiconductor-revenue-to-grow-17.html</url>
     <categories><category>Server</category>
