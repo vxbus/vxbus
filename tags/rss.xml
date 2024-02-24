@@ -6,7 +6,16 @@
     <description>Recent content in Tags on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 24 Feb 2024 19:13:27 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 Feb 2024 23:08:22 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I2C</title>
+      <link>https://www.vxbus.com/tags/i2c/</link>
+      <pubDate>Sat, 24 Feb 2024 23:08:22 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/i2c/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>AI</title>
       <link>https://www.vxbus.com/tags/ai/</link>
@@ -472,15 +481,6 @@
       <pubDate>Sat, 16 Dec 2023 18:18:47 +0800</pubDate>
       
       <guid>https://www.vxbus.com/tags/cpu-cache/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>I2C</title>
-      <link>https://www.vxbus.com/tags/i2c/</link>
-      <pubDate>Sat, 16 Dec 2023 14:41:22 +0800</pubDate>
-      
-      <guid>https://www.vxbus.com/tags/i2c/</guid>
       <description></description>
     </item>
     

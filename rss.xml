@@ -6,7 +6,7 @@
     <description>Recent content on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 24 Feb 2024 19:13:27 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 Feb 2024 23:08:22 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>欢迎加入 VxWorks 俱乐部！</title>
       <link>https://www.vxbus.com/post/welcome-to-vxworks-club/</link>
@@ -16,6 +16,15 @@
       <description>欢迎来到 北南南北 文档站点！ 相关文章来源于 VxWorks 俱乐部  ，也可能发布于 AI 嵌入式开发  ，专注于技术分享和交流。
 免责声明 所有资源均来自网络，版权归原作者，如有侵权，请联系删除！
 欢迎投稿  欢迎广大网友投稿 欢迎加入网友微信群  </description>
+    </item>
+    
+    <item>
+      <title>I2C总线基础知识分享</title>
+      <link>https://www.vxbus.com/post/hardware/spi-bus-introduction.html</link>
+      <pubDate>Sat, 24 Feb 2024 23:08:22 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/post/hardware/spi-bus-introduction.html</guid>
+      <description>&lt;p&gt;很多电子工程师都应该从 EEPROM 通信了解到的I²C总线，其实，I²C总线远不止于 EEPROM 存储器，它也有类似485、SPI等应用场景。&lt;/p&gt;</description>
     </item>
     
     <item>
