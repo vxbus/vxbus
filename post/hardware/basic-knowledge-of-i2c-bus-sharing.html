@@ -10,26 +10,26 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/imgs/icons/favicon_16x16_next.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/imgs/icons/favicon_32_32_next.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/imgs/icons/apple_touch_icon_next.png">
-<meta itemprop="name" content="欢迎加入 VxWorks 俱乐部！" />
-<meta itemprop="description" content="VxWorks 俱乐部专注于分享嵌入式实时操作系统相关的专业知识和实践经验!" />
+<meta itemprop="name" content="I2C总线基础知识分享" />
+<meta itemprop="description" content="I2C总线基础知识分享" />
 <meta itemprop="datePublished" ZgotmplZ />
 <meta itemprop="dateModified" ZgotmplZ />
 <meta itemprop="image" content="https://www.vxbus.com/imgs/vxbus_logo.png" />
-<meta itemprop="keywords" content="VxWorks,WindRiver" />
+<meta itemprop="keywords" content="I2C" />
 
 <meta property="og:type" content="article" />
-<meta property="og:title" content="欢迎加入 VxWorks 俱乐部！" />
-<meta property="og:description" content="VxWorks 俱乐部专注于分享嵌入式实时操作系统相关的专业知识和实践经验!" />
+<meta property="og:title" content="I2C总线基础知识分享" />
+<meta property="og:description" content="I2C总线基础知识分享" />
 <meta property="og:image" content="/imgs/vxbus_logo.png" />
 <meta property="og:image:width" content="312" />
 <meta property="og:image:height" content="312" />
 <meta property="og:image:type" content="image/jpeg/png/svg/jpg" />
-<meta property="og:url" content="https://www.vxbus.com/post/welcome-to-vxworks-club/"/>
+<meta property="og:url" content="https://www.vxbus.com/post/hardware/basic-knowledge-of-i2c-bus-sharing.html"/>
 <meta property="og:site_name" content="VxBus" />
 <meta property="og:locale" content="zh-CN"/>
 <meta property="article:author" content="VxWorks OS" />
-<meta property="article:published_time" content="2022-05-02 15:59:41 &#43;0800 CST" />
-<meta property="article:modified_time" content="2022-05-02 15:59:41 &#43;0800 CST" />
+<meta property="article:published_time" content="2024-02-24 23:08:22 &#43;0800 CST" />
+<meta property="article:modified_time" content="2024-02-24 23:08:22 &#43;0800 CST" />
 
 
   
@@ -44,7 +44,7 @@
       content: "~ 我可是有底线的哟 ~";
     }
   </style>
-  <script class="next-config" data-name="page" type="application/json">{"comments":false,"isHome":false,"isPage":true,"path":"welcome-to-vxworks-club","permalink":"https://www.vxbus.com/post/welcome-to-vxworks-club/","title":"欢迎加入 VxWorks 俱乐部！"}</script>
+  <script class="next-config" data-name="page" type="application/json">{"comments":false,"isHome":false,"isPage":true,"path":"basic-knowledge-of-i2c-bus-sharing.html","permalink":"https://www.vxbus.com/post/hardware/basic-knowledge-of-i2c-bus-sharing.html","title":"I2C总线基础知识分享"}</script>
   <script type="text/javascript">
   document.addEventListener('DOMContentLoaded', () => {
     var script = document.createElement('script');
@@ -60,7 +60,7 @@
 
 
 
-  <title>欢迎加入 VxWorks 俱乐部！ - VxBus</title>
+  <title>I2C总线基础知识分享 - VxBus</title>
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
@@ -174,8 +174,20 @@
       <div class="post-toc-wrap sidebar-panel">
         <div class="post-toc animated"><nav id="TableOfContents">
   <ul>
-    <li><a href="#免责声明">免责声明</a></li>
-    <li><a href="#欢迎投稿">欢迎投稿</a></li>
+    <li><a href="#位传输">位传输</a></li>
+    <li><a href="#数据传输">数据传输</a>
+      <ul>
+        <li><a href="#字节传输">字节传输</a></li>
+        <li><a href="#丛机地址">丛机地址</a></li>
+      </ul>
+    </li>
+    <li><a href="#读写过程">读写过程</a>
+      <ul>
+        <li><a href="#写数据过程">写数据过程</a></li>
+        <li><a href="#读数据过程">读数据过程</a></li>
+      </ul>
+    </li>
+    <li><a href="#结语">结语</a></li>
   </ul>
 </nav></div>
       </div>
@@ -309,7 +321,7 @@
       
   <div class="post-block">
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://www.vxbus.com/post/welcome-to-vxworks-club/">
+    <link itemprop="mainEntityOfPage" href="https://www.vxbus.com/post/hardware/basic-knowledge-of-i2c-bus-sharing.html">
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
       <meta itemprop="name" content="VxWorks OS">
@@ -319,14 +331,11 @@
       <meta itemprop="description" content="Where there is embedded, there is VxWorks.">
     </span>
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="欢迎加入 VxWorks 俱乐部！">
-      <meta itemprop="description" content="VxWorks 俱乐部专注于分享嵌入式实时操作系统相关的专业知识和实践经验!">
+      <meta itemprop="name" content="I2C总线基础知识分享">
+      <meta itemprop="description" content="I2C总线基础知识分享">
     </span>
     <header class="post-header">
-       <h1 class="post-title" itemprop="name headline">
-  <span class="post-sticky-flag" title="置顶">
-    <i class="fa fa-thumbtack"></i>
-  </span>欢迎加入 VxWorks 俱乐部！ </h1> <div class="post-meta-container">
+       <h1 class="post-title" itemprop="name headline">I2C总线基础知识分享 </h1> <div class="post-meta-container">
   <div class="post-meta-items">
     
 
@@ -336,7 +345,7 @@
     <i class="far fa-calendar"></i>
   </span>
   <span class="post-meta-item-text">发表于：</span>
-  <time title="发表于：2022-05-02 15:59:41 &#43;0800 CST" itemprop="dateCreated datePublished" datetime="2022-05-02 15:59:41 &#43;0800 CST">2022-05-02</time>
+  <time title="发表于：2024-02-24 23:08:22 &#43;0800 CST" itemprop="dateCreated datePublished" datetime="2024-02-24 23:08:22 &#43;0800 CST">2024-02-24</time>
 </span>
     
     
@@ -346,8 +355,8 @@
   </span>
   <span class="post-meta-item-text">分类于：</span>
   <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-    <a href="/categories/announce" itemprop="url" rel="index">
-      <span itemprop="name">Announce</span>
+    <a href="/categories/hardware" itemprop="url" rel="index">
+      <span itemprop="name">Hardware</span>
     </a>
   </span>
 </span>
@@ -358,7 +367,7 @@
   <span class="post-meta-item-icon">
     <i class="far fa-file-word"></i>
   </span>
-  <span class="post-meta-item-text">字数：</span><span>15</span>
+  <span class="post-meta-item-text">字数：</span><span>41</span>
 </span>
     
 <span class="post-meta-item" title="阅读">
@@ -377,7 +386,7 @@
   <span class="post-meta-item-text">
   浏览：
   </span>
-  <span id="busuanzi_value_page_pv" data-path="/post/welcome-to-vxworks-club/"><i class="fa fa-sync fa-spin"></i></span>
+  <span id="busuanzi_value_page_pv" data-path="/post/hardware/basic-knowledge-of-i2c-bus-sharing.html"><i class="fa fa-sync fa-spin"></i></span>
 </span>
 
   </div>
@@ -388,23 +397,53 @@
     
     <div class="post-body  autonumber " itemprop="articleBody">
       
-  <p>欢迎来到 <code>北南南北</code> 文档站点！ 相关文章来源于 
-<a href="https://www.vxworks.net/" title="VxWorks 俱乐部" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
-    VxWorks 俱乐部
-    <i class="fa fa-external-link-alt"></i>
-</a>，也可能发布于
-<a href="https://www.gaitpu.com/" title="AI 嵌入式开发" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
-    AI 嵌入式开发
-    <i class="fa fa-external-link-alt"></i>
-</a>，专注于技术分享和交流。</p>
-<h2 id="免责声明">免责声明</h2>
-<p>所有资源均来自网络，版权归原作者，如有侵权，请联系删除！</p>
-<h2 id="欢迎投稿">欢迎投稿</h2>
-<ul>
-<li>欢迎广大网友投稿</li>
-<li>欢迎加入网友微信群</li>
-</ul>
-
+  <p>很多电子工程师都应该从 EEPROM 通信了解到的I²C总线，其实，I²C总线远不止于 EEPROM 存储器，它也有类似485、SPI等应用场景。</p>
+<p><img src="https://www.vxbus.com/imgs/post/i2c-bus-basic-knowledge-1.png" alt="I2C Bus Basic Knowledge">
+EEPROM存储器系统架构图</p>
+<h2 id="位传输">位传输</h2>
+<p>I2C总线是由飞利浦(Philips)公司开发的一种双向二线制同步串行总线，实现有效的IC间的控制，它只需要两根线(SDA和SCL)即可在连接于总线上的器件之间传送信息。</p>
+<p>I2C总线在传输数据都是按照bit来传送。SCL为时钟线，SDA为数据线；在SCL时钟线为高电平时，SDA数据线上的电平不允许被修改，SCL时钟线为低电平时，SDA数据线上的电平可为高/低。</p>
+<p><img src="https://www.vxbus.com/imgs/post/i2c-bus-basic-knowledge-2.png" alt="I2C Bus Basic Knowledge">
+I2C总线的位传输</p>
+<p>起始条件：SCL为高电平时，SDA由高电平向低电平切换；表示开始传送数据。</p>
+<p>停止条件：SCL为高电平时，SDA由低电平向高电平跳变；表示结束传送数据。</p>
+<p>空闲条件：I2C总线的SDA和SCL两条信号线同时处于高电平时；表示空闲状态。</p>
+<p><img src="https://www.vxbus.com/imgs/post/i2c-bus-basic-knowledge-3.png" alt="I2C Bus Basic Knowledge">
+起始和停止条件</p>
+<h2 id="数据传输">数据传输</h2>
+<h3 id="字节传输">字节传输</h3>
+<p>发送数据时，由主机先发送一个起始信号，再将SDA信号切换为输出模式，然后将8位数据依次由高到低发送出去；</p>
+<p>发送完成后，主机将SDA信号切换为输入模式，等待丛机回应ACK或NAK；再发下一笔数据</p>
+<p><img src="https://www.vxbus.com/imgs/post/i2c-bus-basic-knowledge-4.png" alt="I2C Bus Basic Knowledge">
+I2C总线数据传输</p>
+<h3 id="丛机地址">丛机地址</h3>
+<p>在I2C总线系统中，每个设备都有它的固定地址，一般由芯片的A0,A1和A2决定。丛机地址字节由七位地址位(D7-D1位)和一位方向位(为D0位)组成。</p>
+<p>器件地址的D7-D4一般都是被厂家固定了为1111，余下的D3，D2和D1连接到芯片的A2，A1和A0决定；D0为0x00表示写，D0为0x01表示读。大家看例程都是些0xA0和0xA1就是这个原因。</p>
+<p><img src="https://www.vxbus.com/imgs/post/i2c-bus-basic-knowledge-5.png" alt="I2C Bus Basic Knowledge">
+EEPROM的器件地址</p>
+<h2 id="读写过程">读写过程</h2>
+<h3 id="写数据过程">写数据过程</h3>
+<ol>
+<li>主机发送I2C总线停止信号，防止总线忙写数据失败</li>
+<li>主机发送I2C总线复位信号，确保写数据之前总线处于空闲状态</li>
+<li>主机发送I2C总线开始信号，启动一次数据的写入</li>
+<li>主机发送I2C丛机地址和写模式(W/R=0)信号，并且等待一个丛机的应答信号</li>
+<li>主机接收到ACK的应答信号后，开始多个字节的写入，每写完一个字节需要等待一个丛机的应答信号</li>
+<li>主机接收到ACK的应答信号后，发送2IC总线停止信号，确保总线处于空闲状态</li>
+</ol>
+<h3 id="读数据过程">读数据过程</h3>
+<ol>
+<li>主机发送I2C总线停止信号，防止总线忙写数据失败</li>
+<li>主机发送I2C总线复位信号，确保读数据之前总线处于空闲状态</li>
+<li>主机发送I2C总线开始信号，启动一次数据读取</li>
+<li>主机发送I2C丛机地址和读模式(W/R=1)信号，并且等待一个丛机的应答信号</li>
+<li>主机接收到ACK的应答信号后，开始多个字节的读取，每读完一个字节需要给丛机发送一个ACK应答信号</li>
+<li>主机接收到ACK的应答信号后，发送I2C总线停止信号，确保总线处于空闲状态</li>
+</ol>
+<p><img src="https://www.vxbus.com/imgs/post/i2c-bus-basic-knowledge-6.png" alt="I2C Bus Basic Knowledge">
+主机读/写数据过程</p>
+<h2 id="结语">结语</h2>
+<p>I2C总线在嵌入式应用中非常广泛，基本上所有的电力电子设备都会用到这个总线。</p>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1543398821442998"
      crossorigin="anonymous"></script>
 
@@ -424,11 +463,8 @@
 
 <div class="post-tags">
   
-    <a href="/tags/vxworks">
-    VxWorks
-  </a>
-    <a href="/tags/windriver">
-    WindRiver
+    <a href="/tags/i2c">
+    I2C
   </a>
 </div>
 
@@ -456,7 +492,7 @@
   <ul>
     <li class="post-copyright-title">
       <strong>文章标题：</strong>
-      欢迎加入 VxWorks 俱乐部！
+      I2C总线基础知识分享
     </li>
     <li class="post-copyright-author">
       <strong>本文作者： </strong>
@@ -464,7 +500,7 @@
     </li>
     <li class="post-copyright-link"> 
       <strong>本文链接：</strong>
-       <a id="post-cr-link" href="https://www.vxbus.com/post/welcome-to-vxworks-club/" title="欢迎加入 VxWorks 俱乐部！">https://www.vxbus.com/post/welcome-to-vxworks-club/</a>
+       <a id="post-cr-link" href="https://www.vxbus.com/post/hardware/basic-knowledge-of-i2c-bus-sharing.html" title="I2C总线基础知识分享">https://www.vxbus.com/post/hardware/basic-knowledge-of-i2c-bus-sharing.html</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -489,10 +525,13 @@
 </div>
 <div class="post-nav">
   <div class="post-nav-next post-nav-item">
+    <a href="/post/welcome-to-vxworks-club/" rel="next" title="欢迎加入 VxWorks 俱乐部！">
+      <i class="fa fa-chevron-left"></i> 欢迎加入 VxWorks 俱乐部！
+    </a>
   </div>
   <div class="post-nav-prev post-nav-item">
-    <a href="/post/hardware/basic-knowledge-of-i2c-bus-sharing.html" rel="prev" title="I2C总线基础知识分享">
-      I2C总线基础知识分享
+    <a href="/post/hardware/the-rise-of-AI-PC-opens-a-new-era-of-personal-computers.html" rel="prev" title="AI PC的崛起，开启个人计算机的新纪元">
+      AI PC的崛起，开启个人计算机的新纪元
       <i class="fa fa-chevron-right"></i>
     </a>
   </div>

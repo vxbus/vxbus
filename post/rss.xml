@@ -20,10 +20,10 @@
     
     <item>
       <title>I2C总线基础知识分享</title>
-      <link>https://www.vxbus.com/post/hardware/spi-bus-introduction.html</link>
+      <link>https://www.vxbus.com/post/hardware/basic-knowledge-of-i2c-bus-sharing.html</link>
       <pubDate>Sat, 24 Feb 2024 23:08:22 +0800</pubDate>
       
-      <guid>https://www.vxbus.com/post/hardware/spi-bus-introduction.html</guid>
+      <guid>https://www.vxbus.com/post/hardware/basic-knowledge-of-i2c-bus-sharing.html</guid>
       <description>&lt;p&gt;很多电子工程师都应该从 EEPROM 通信了解到的I²C总线，其实，I²C总线远不止于 EEPROM 存储器，它也有类似485、SPI等应用场景。&lt;/p&gt;</description>
     </item>
     
