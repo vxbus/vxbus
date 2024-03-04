@@ -6,7 +6,34 @@
     <description>Recent content in Tags on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 03 Mar 2024 14:43:22 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Mar 2024 23:15:48 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EMC</title>
+      <link>https://www.vxbus.com/tags/emc/</link>
+      <pubDate>Mon, 04 Mar 2024 23:15:48 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/emc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Layout</title>
+      <link>https://www.vxbus.com/tags/layout/</link>
+      <pubDate>Mon, 04 Mar 2024 23:15:48 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/layout/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PCB</title>
+      <link>https://www.vxbus.com/tags/pcb/</link>
+      <pubDate>Mon, 04 Mar 2024 23:15:48 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/pcb/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Domain Control</title>
       <link>https://www.vxbus.com/tags/domain-control/</link>
@@ -22,15 +49,6 @@
       <pubDate>Sun, 25 Feb 2024 08:33:30 +0800</pubDate>
       
       <guid>https://www.vxbus.com/tags/gnd/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>PCB</title>
-      <link>https://www.vxbus.com/tags/pcb/</link>
-      <pubDate>Sun, 25 Feb 2024 08:33:30 +0800</pubDate>
-      
-      <guid>https://www.vxbus.com/tags/pcb/</guid>
       <description></description>
     </item>
     
