@@ -6,7 +6,16 @@
     <description>Recent content in Server on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 22 Feb 2024 09:04:49 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/categories/server/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Mar 2024 14:43:22 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/categories/server/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>什么是域控服务器</title>
+      <link>https://www.vxbus.com/post/server/what-is-a-domain-control-server.html</link>
+      <pubDate>Sun, 03 Mar 2024 14:43:22 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/post/server/what-is-a-domain-control-server.html</guid>
+      <description>&lt;p&gt;在当今信息技术领域，组织和管理大量用户、计算机和资源是一项庞大的任务。为了有效地实现这一目标，域控制服务器应运而生。域控制服务器是一种关键的网络服务，其核心功能是集中管理和分发安全策略、用户账户、组信息等，从而提高组织内部的整体安全性和协同工作效率。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>展望2024：半导体行业收入将增长17%</title>
       <link>https://www.vxbus.com/post/server/outlook-2024-semiconductor-revenue-to-grow-17.html</link>
