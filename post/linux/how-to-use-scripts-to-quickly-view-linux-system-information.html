@@ -271,7 +271,7 @@
       </div>
     <div class="siteinfo-item">
       <div class="item-name"><i class="fa fa-font"></i>总字数：</div>
-      <div class="item-count" id="wordsCount" data-count="21535"></div>
+      <div class="item-count" id="wordsCount" data-count="21538"></div>
     </div>
     <div class="siteinfo-item">
       <div class="item-name"><i class="fa fa-mug-hot"></i>阅读约：</div>
@@ -357,7 +357,7 @@
   <span class="post-meta-item-icon">
     <i class="far fa-file-word"></i>
   </span>
-  <span class="post-meta-item-text">字数：</span><span>472</span>
+  <span class="post-meta-item-text">字数：</span><span>475</span>
 </span>
     
 <span class="post-meta-item" title="阅读">
@@ -403,91 +403,77 @@
 <p>这样系统的信息基本都可以显示出来，当然如果你需要更详细的信息，可以通过修改脚本自行修改实现。</p>
 <h2 id="编写shell脚本获取linux系统相关信息">编写SHELL脚本获取Linux系统相关信息</h2>
 <p>这里列出了如何获取Linux系统相关信息的脚本，主要包括主机名称，运行时间，系统版本，内核版本等主要Linux系统信息以及相关CPU，内存，磁盘和相应Oracle软件信息，具体参看脚本。</p>
-<pre><code class="lang-bash">
-#!/bin/bash
-echo -e "-------------------------------System Information----------------------------"
-echo -e "Hostname:\t\t"`hostname`
-echo -e "uptime:\t\t\t"`uptime | awk '{print $3,$4}' | sed 's/,//'`
-echo -e "Manufacturer:\t\t"`cat /sys/class/dmi/id/chassis_vendor`
-echo -e "Product Name:\t\t"`cat /sys/class/dmi/id/product_name`
-echo -e "Version:\t\t"`cat /sys/class/dmi/id/product_version`
-echo -e "Serial Number:\t\t"`cat /sys/class/dmi/id/product_serial`
-echo -e "Machine Type:\t\t"`vserver=$(lscpu | grep Hypervisor | wc -l); if [ $vserver -gt 0 ]; then echo "VM"; else echo "Physical"; fi`
-echo -e "Operating System:\t"`hostnamectl | grep "Operating System" | cut -d ' ' -f5-`
-echo -e "Kernel:\t\t\t"`uname -r`
-echo -e "Architecture:\t\t"`arch`
-echo -e "Processor Name:\t\t"`awk -F':' '/^model name/ {print $2}' /proc/cpuinfo | uniq | sed -e 's/^[ \t]*//'`
-echo -e "Active User:\t\t"`w | cut -d ' ' -f1 | grep -v USER | xargs -n1`
-echo -e "System Main IP:\t\t"`hostname -I`
-echo ""
-echo -e "-------------------------------CPU/Memory Usage------------------------------"
-echo -e "Memory Usage:\t"`free | awk '/Mem/{printf("%.2f%"), $3/$2*100}'`
-echo -e "Swap Usage:\t"`free | awk '/Swap/{printf("%.2f%"), $3/$2*100}'`
-echo -e "CPU Usage:\t"`cat /proc/stat | awk '/cpu/{printf("%.2f%\n"), ($2+$4)*100/($2+$4+$5)}' |  awk '{print $0}' | head -1`
-echo ""
-echo -e "-------------------------------Disk Usage >80%-------------------------------"
-df -Ph | sed s/%//g | awk '{ if($5 > 80) print $0;}'
-echo ""
-echo -e "-------------------------------For WWN Details-------------------------------"
-vserver=$(lscpu | grep Hypervisor | wc -l)
-if [ $vserver -gt 0 ]
-then
-echo "$(hostname) is a VM"
-else
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+</span><span style="color:#75715e"></span>echo -e <span style="color:#e6db74">&#34;-------------------------------System Information----------------------------&#34;</span>
+echo -e <span style="color:#e6db74">&#34;Hostname:\t\t&#34;</span><span style="color:#e6db74">`</span>hostname<span style="color:#e6db74">`</span>
+echo -e <span style="color:#e6db74">&#34;uptime:\t\t\t&#34;</span><span style="color:#e6db74">`</span>uptime | awk <span style="color:#e6db74">&#39;{print $3,$4}&#39;</span> | sed <span style="color:#e6db74">&#39;s/,//&#39;</span><span style="color:#e6db74">`</span>
+echo -e <span style="color:#e6db74">&#34;Manufacturer:\t\t&#34;</span><span style="color:#e6db74">`</span>cat /sys/class/dmi/id/chassis_vendor<span style="color:#e6db74">`</span>
+echo -e <span style="color:#e6db74">&#34;Product Name:\t\t&#34;</span><span style="color:#e6db74">`</span>cat /sys/class/dmi/id/product_name<span style="color:#e6db74">`</span>
+echo -e <span style="color:#e6db74">&#34;Version:\t\t&#34;</span><span style="color:#e6db74">`</span>cat /sys/class/dmi/id/product_version<span style="color:#e6db74">`</span>
+echo -e <span style="color:#e6db74">&#34;Serial Number:\t\t&#34;</span><span style="color:#e6db74">`</span>cat /sys/class/dmi/id/product_serial<span style="color:#e6db74">`</span>
+echo -e <span style="color:#e6db74">&#34;Machine Type:\t\t&#34;</span><span style="color:#e6db74">`</span>vserver<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>lscpu | grep Hypervisor | wc -l<span style="color:#66d9ef">)</span>; <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> $vserver -gt <span style="color:#ae81ff">0</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span> echo <span style="color:#e6db74">&#34;VM&#34;</span>; <span style="color:#66d9ef">else</span> echo <span style="color:#e6db74">&#34;Physical&#34;</span>; <span style="color:#66d9ef">fi</span><span style="color:#e6db74">`</span>
+echo -e <span style="color:#e6db74">&#34;Operating System:\t&#34;</span><span style="color:#e6db74">`</span>hostnamectl | grep <span style="color:#e6db74">&#34;Operating System&#34;</span> | cut -d <span style="color:#e6db74">&#39; &#39;</span> -f5-<span style="color:#e6db74">`</span>
+echo -e <span style="color:#e6db74">&#34;Kernel:\t\t\t&#34;</span><span style="color:#e6db74">`</span>uname -r<span style="color:#e6db74">`</span>
+echo -e <span style="color:#e6db74">&#34;Architecture:\t\t&#34;</span><span style="color:#e6db74">`</span>arch<span style="color:#e6db74">`</span>
+echo -e <span style="color:#e6db74">&#34;Processor Name:\t\t&#34;</span><span style="color:#e6db74">`</span>awk -F<span style="color:#e6db74">&#39;:&#39;</span> <span style="color:#e6db74">&#39;/^model name/ {print $2}&#39;</span> /proc/cpuinfo | uniq | sed -e <span style="color:#e6db74">&#39;s/^[ \t]*//&#39;</span><span style="color:#e6db74">`</span>
+echo -e <span style="color:#e6db74">&#34;Active User:\t\t&#34;</span><span style="color:#e6db74">`</span>w | cut -d <span style="color:#e6db74">&#39; &#39;</span> -f1 | grep -v USER | xargs -n1<span style="color:#e6db74">`</span>
+echo -e <span style="color:#e6db74">&#34;System Main IP:\t\t&#34;</span><span style="color:#e6db74">`</span>hostname -I<span style="color:#e6db74">`</span>
+echo <span style="color:#e6db74">&#34;&#34;</span>
+echo -e <span style="color:#e6db74">&#34;-------------------------------CPU/Memory Usage------------------------------&#34;</span>
+echo -e <span style="color:#e6db74">&#34;Memory Usage:\t&#34;</span><span style="color:#e6db74">`</span>free | awk <span style="color:#e6db74">&#39;/Mem/{printf(&#34;%.2f%&#34;), $3/$2*100}&#39;</span><span style="color:#e6db74">`</span>
+echo -e <span style="color:#e6db74">&#34;Swap Usage:\t&#34;</span><span style="color:#e6db74">`</span>free | awk <span style="color:#e6db74">&#39;/Swap/{printf(&#34;%.2f%&#34;), $3/$2*100}&#39;</span><span style="color:#e6db74">`</span>
+echo -e <span style="color:#e6db74">&#34;CPU Usage:\t&#34;</span><span style="color:#e6db74">`</span>cat /proc/stat | awk <span style="color:#e6db74">&#39;/cpu/{printf(&#34;%.2f%\n&#34;), ($2+$4)*100/($2+$4+$5)}&#39;</span> |  awk <span style="color:#e6db74">&#39;{print $0}&#39;</span> | head -1<span style="color:#e6db74">`</span>
+echo <span style="color:#e6db74">&#34;&#34;</span>
+echo -e <span style="color:#e6db74">&#34;-------------------------------Disk Usage &gt;80%-------------------------------&#34;</span>
+df -Ph | sed s/%//g | awk <span style="color:#e6db74">&#39;{ if($5 &gt; 80) print $0;}&#39;</span>
+echo <span style="color:#e6db74">&#34;&#34;</span>
+echo -e <span style="color:#e6db74">&#34;-------------------------------For WWN Details-------------------------------&#34;</span>
+vserver<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>lscpu | grep Hypervisor | wc -l<span style="color:#66d9ef">)</span>
+<span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> $vserver -gt <span style="color:#ae81ff">0</span> <span style="color:#f92672">]</span>
+<span style="color:#66d9ef">then</span>
+echo <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>hostname<span style="color:#66d9ef">)</span><span style="color:#e6db74"> is a VM&#34;</span>
+<span style="color:#66d9ef">else</span>
 cat /sys/class/fc_host/host?/port_name
-fi
-echo ""
-echo -e "-------------------------------Oracle DB Instances---------------------------"
-if id oracle >/dev/null 2>&1; then
+<span style="color:#66d9ef">fi</span>
+echo <span style="color:#e6db74">&#34;&#34;</span>
+echo -e <span style="color:#e6db74">&#34;-------------------------------Oracle DB Instances---------------------------&#34;</span>
+<span style="color:#66d9ef">if</span> id oracle &gt;/dev/null 2&gt;&amp;1; <span style="color:#66d9ef">then</span>
 /bin/ps -ef|grep pmon
-then
-else
-echo "oracle user does not exist on $(hostname)"
-fi
-echo ""
-if (( $(cat /etc/*-release | grep -w "Oracle|Red Hat|CentOS|Fedora" | wc -l) > 0 ))
-then
-echo -e "-------------------------------Package Updates-------------------------------"
-yum updateinfo summary | grep 'Security|Bugfix|Enhancement'
-echo -e "-----------------------------------------------------------------------------"
-else
-echo -e "-------------------------------Package Updates-------------------------------"
+<span style="color:#66d9ef">then</span>
+<span style="color:#66d9ef">else</span>
+echo <span style="color:#e6db74">&#34;oracle user does not exist on </span><span style="color:#66d9ef">$(</span>hostname<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
+<span style="color:#66d9ef">fi</span>
+echo <span style="color:#e6db74">&#34;&#34;</span>
+<span style="color:#66d9ef">if</span> <span style="color:#f92672">((</span> <span style="color:#66d9ef">$(</span>cat /etc/*-release | grep -w <span style="color:#e6db74">&#34;Oracle|Red Hat|CentOS|Fedora&#34;</span> | wc -l<span style="color:#66d9ef">)</span> &gt; <span style="color:#ae81ff">0</span> <span style="color:#f92672">))</span>
+<span style="color:#66d9ef">then</span>
+echo -e <span style="color:#e6db74">&#34;-------------------------------Package Updates-------------------------------&#34;</span>
+yum updateinfo summary | grep <span style="color:#e6db74">&#39;Security|Bugfix|Enhancement&#39;</span>
+echo -e <span style="color:#e6db74">&#34;-----------------------------------------------------------------------------&#34;</span>
+<span style="color:#66d9ef">else</span>
+echo -e <span style="color:#e6db74">&#34;-------------------------------Package Updates-------------------------------&#34;</span>
 cat /var/lib/update-notifier/updates-available
-echo -e "-----------------------------------------------------------------------------"
-fi
-
-</code></pre>
-<p>脚本编写完成后，将内容保存到一个文件 system-info.sh，之后添加可执行权限：</p>
-<pre><code class="lang-bash">
-chmod +x system-info.sh
-</code></pre>
-<p>执行脚本，命令行终端会输出相应信息:</p>
-<pre><code class="lang-bash">
-./system-info.sh
-</code></pre>
-<p>将脚本保存到服务器响应目录，例如这里保存到/opt/shell/system-info.sh，登录系统后执行脚本即可。</p>
+echo -e <span style="color:#e6db74">&#34;-----------------------------------------------------------------------------&#34;</span>
+<span style="color:#66d9ef">fi</span>
+</code></pre></div><p>脚本编写完成后，将内容保存到一个文件 system-info.sh，之后添加可执行权限：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">chmod +x system-info.sh
+</code></pre></div><p>执行脚本，命令行终端会输出相应信息:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">./system-info.sh
+</code></pre></div><p>将脚本保存到服务器响应目录，例如这里保存到/opt/shell/system-info.sh，登录系统后执行脚本即可。</p>
 <h2 id="配置登录系统后自动执行显示">配置登录系统后自动执行显示</h2>
 <p>如果希望自动每次登录 shell 时把系统信息打印到 terminal，我们可以通过配置实现这种方法，配置方法如下：</p>
 <p>1、当脚本准备好后，把脚本文件的路径加到 .bash_profile 文件末尾（红帽系列的系统：CentOS、Oracle Linux 和 Fedora）：</p>
-<pre><code class="lang-bash">
-echo "/opt/shell/system-info.sh" >> ~root/.bash_profile
-</code></pre>
-<p>对于 Debian 系统的系统，你可能需要把文件路径加到 .profile 文件中：</p>
-<pre><code class="lang-bash">
-echo "/root/system-info.sh" >> ~root/.profile
-</code></pre>
-<p>2、执行以下命令，来让修改的内容生效：</p>
-<pre><code class="lang-bash">
-source ~root/.bash_profile
-#or 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">echo <span style="color:#e6db74">&#34;/opt/shell/system-info.sh&#34;</span> &gt;&gt; ~root/.bash_profile
+</code></pre></div><p>对于 Debian 系统的系统，你可能需要把文件路径加到 .profile 文件中：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">echo <span style="color:#e6db74">&#34;/root/system-info.sh&#34;</span> &gt;&gt; ~root/.profile
+</code></pre></div><p>2、执行以下命令，来让修改的内容生效：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">source ~root/.bash_profile
+<span style="color:#75715e">#or </span>
 source ~root/.profile
-</code></pre>
-<p>从下次开始，你在每次登录 shell 时会看到terminal显示Linux系统的相关信息。</p>
+</code></pre></div><p>从下次开始，你在每次登录 shell 时会看到terminal显示Linux系统的相关信息。</p>
 <p>输出信息类似如下：</p>
-<pre><code class="lang-bash">
--------------------------------System Information---------------------------
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">-------------------------------System Information---------------------------
 Hostname:            linux265-Y700
-uptime:              1:20 1
+uptime:              1:20 <span style="color:#ae81ff">1</span>
 Manufacturer:        LENOVO
 Product Name:        80NV
 Version:             Lenovo ideapad Y700-15ISK
@@ -496,33 +482,32 @@ Machine Type:        Physical
 Operating System:    Manjaro Linux
 Kernel:              4.19.80-1-MANJARO
 Architecture:        x86_64
-Processor Name:      Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz
+Processor Name:      Intel<span style="color:#f92672">(</span>R<span style="color:#f92672">)</span> Core<span style="color:#f92672">(</span>TM<span style="color:#f92672">)</span> i7-6700HQ CPU @ 2.60GHz
 Active User:         root linux265
 System Main IP:      192.168.1.6 192.168.122.1
 -------------------------------CPU/Memory Usage------------------------------
 Memory Usage:     37.28%
 Swap Usage:       0.00%
 CPU Usage:        15.43%
--------------------------------Disk Usage >80%-------------------------------
+-------------------------------Disk Usage &gt;80%-------------------------------
 Filesystem      Size  Used Avail Use Mounted on
-/dev/nvme0n1p1  217G  202G  4.6G  98 /
-/dev/loop0      109M  109M     0 100 /var/lib/snapd/snap/odrive-unofficial/2
-/dev/loop1       91M   91M     0 100 /var/lib/snapd/snap/core/6405
-/dev/loop2       90M   90M     0 100 /var/lib/snapd/snap/core/7713
+/dev/nvme0n1p1  217G  202G  4.6G  <span style="color:#ae81ff">98</span> /
+/dev/loop0      109M  109M     <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">100</span> /var/lib/snapd/snap/odrive-unofficial/2
+/dev/loop1       91M   91M     <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">100</span> /var/lib/snapd/snap/core/6405
+/dev/loop2       90M   90M     <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">100</span> /var/lib/snapd/snap/core/7713
 -------------------------------For WWN Details-------------------------------
 CentOS8.linux265.com is a VM
 -------------------------------Oracle DB Instances---------------------------
 oracle user does not exist on CentOS8.linux265.com
 -------------------------------Package Updates-------------------------------
-    13 Security notice(s)
-         9 Important Security notice(s)
-         3 Moderate Security notice(s)
-         1 Low Security notice(s)
-    35 Bugfix notice(s)
-     1 Enhancement notice(s)
+    <span style="color:#ae81ff">13</span> Security notice<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span>
+         <span style="color:#ae81ff">9</span> Important Security notice<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span>
+         <span style="color:#ae81ff">3</span> Moderate Security notice<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span>
+         <span style="color:#ae81ff">1</span> Low Security notice<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span>
+    <span style="color:#ae81ff">35</span> Bugfix notice<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span>
+     <span style="color:#ae81ff">1</span> Enhancement notice<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span>
 -----------------------------------------------------------------------------
-</code></pre>
-<h2 id="写在最后">写在最后</h2>
+</code></pre></div><h2 id="写在最后">写在最后</h2>
 <p>本教程已经讲解了编写一个脚本将Linux系统信息集中呈现出来方式，你不妨在你的服务器上进行尝试。如果感兴趣也可以对脚本进行修改，实现自己需要展示的内容。</p>
 <p>原文地址： 
 <a href="https://www.6cn.club/2024/03/how-to-use-scripts-to-quickly-view-linux-system-information.html" title="如何使用脚本快速查看Linux系统信息" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
