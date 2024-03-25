@@ -6,7 +6,16 @@
     <description>Recent content in Server on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 03 Mar 2024 14:43:22 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/categories/server/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Mar 2024 21:18:39 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/categories/server/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes（K8s）详解</title>
+      <link>https://www.vxbus.com/post/server/Intel-stops-development-of-CPU-thermoelectric-cooling-technology.html</link>
+      <pubDate>Mon, 25 Mar 2024 21:18:39 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/post/server/Intel-stops-development-of-CPU-thermoelectric-cooling-technology.html</guid>
+      <description>&lt;p&gt;Kubernetes（常简称为 K8s）是一个开源的容器编排引擎，最初由 Google 设计开发，目前由 Cloud Native Computing Foundation (CNCF) 维护。它的目标是提供一个可移植、可扩展且易于使用的平台，用于自动化部署、扩展和管理容器化应用程序。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>什么是域控服务器</title>
       <link>https://www.vxbus.com/post/server/what-is-a-domain-control-server.html</link>
