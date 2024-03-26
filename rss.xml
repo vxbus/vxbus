@@ -6,7 +6,7 @@
     <description>Recent content on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 25 Mar 2024 22:23:13 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Mar 2024 23:07:54 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>欢迎加入 VxWorks 俱乐部！</title>
       <link>https://www.vxbus.com/post/welcome-to-vxworks-club/</link>
@@ -16,6 +16,15 @@
       <description>欢迎来到 北南南北 文档站点！ 相关文章来源于 VxWorks 俱乐部  ，也可能发布于 AI 嵌入式开发  ，专注于技术分享和交流。
 免责声明 所有资源均来自网络，版权归原作者，如有侵权，请联系删除！
 欢迎投稿  欢迎广大网友投稿 欢迎加入网友微信群  </description>
+    </item>
+    
+    <item>
+      <title>IPv6地址之间的转换技术：NAT66</title>
+      <link>https://www.vxbus.com/post/server/translation-technology-between-ipv6-address-nat66.html</link>
+      <pubDate>Tue, 26 Mar 2024 23:07:54 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/post/server/translation-technology-between-ipv6-address-nat66.html</guid>
+      <description>&lt;p&gt;NAT66，全称为Network Address Translation for IPv6 to IPv6，是一种用于IPv6网络的地址转换技术。在IPv6网络中，每个设备都被分配一个全局唯一的IPv6地址，这样的地址长度为128位。NAT66的作用是通过将内部设备的IPv6地址映射到另一组IPv6地址来实现地址转换，使得内部设备可以访问外部网络，同时保护内部网络的真实IPv6地址不被外部直接暴露。&lt;/p&gt;</description>
     </item>
     
     <item>
