@@ -16,6 +16,27 @@
   </entry>
   
   <entry>
+    <title>快速了解HTTP协议</title>
+    <url>/post/server/quickly-understand-the-http-protocol.html</url>
+    <categories><category>Server</category>
+    </categories>
+    <tags>
+      <tag>HTTP</tag>
+      <tag>HTTPS</tag>
+    </tags>
+    <content type="html"><![CDATA[HTTP（超文本传输协议）是一种用于从服务器传输超媒体文档到本地浏览器的应用层协议。它基于请求/响应模型，客户端发出请求，服务器返回响应。HTTP是无状态的，意味着服务器不会在两个请求之间保留任何数据（状态）。
+HTTP的主要特点包括：  简单快速：客户端向服务器请求服务时，只需传送请求方法和路径。 灵活：HTTP允许传输任意类型的数据对象，由Content-Type标头标记。 无连接：限制每次连接只处理一个请求，处理完后连接就断开，节省传输时间。 无状态：协议对于事务处理没有记忆能力，如果后续处理需要前面的信息，则必须重传。  HTTP消息由请求和响应组成，每个消息包含：
+ 起始行：对于请求是方法、URI和HTTP版本，对于响应是状态码和描述。 头部字段：包含属性如内容类型、内容长度、服务器信息等。 可选的消息体：对于POST请求和响应中的数据。  此外，HTTP/1.1引入了持久连接和流水线处理，而HTTP/2进一步引入了帧和多路复用，提高了效率和性能。
+http工作原理 HTTP（超文本传输协议）的工作原理基于客户端和服务器之间的请求和响应模式。以下是HTTP工作的基本步骤：
+ 建立连接：客户端（通常是浏览器）通过网络向服务器的HTTP端口（默认为80）发起TCP连接。 发送HTTP请求：客户端向服务器发送一个HTTP请求，该请求包含请求行（方法、URL、HTTP版本）、请求头部、空行和请求数据。 服务器处理请求：服务器解析请求，定位资源，并将资源复本写回TCP连接，供客户端读取。 服务器响应：服务器向客户端发送一个HTTP响应，该响应包含状态行（协议版本、状态码）、响应头部和响应数据。 释放连接：默认情况下，HTTP/1.0协议每完成一个请求响应周期后会关闭TCP连接。而HTTP/1.1支持持久连接（Connection: keep-alive），可以在一个连接上处理多个请求和响应。 客户端处理响应：客户端（浏览器）解析响应内容，并在用户界面上展示，例如显示网页。  HTTP是无状态的，意味着服务器不会保留任何两个请求之间的状态信息。但是，通过使用诸如Cookies之类的技术，可以在无状态的HTTP协议上创建有状态的会话。
+这个过程确保了Web客户端能够从Web服务器请求和接收数据，如HTML文档、图片、视频等。
+http和https区别 HTTP（HyperText Transfer Protocol）和HTTPS（Hypertext Transfer Protocol Secure）的主要区别如下：
+安全性：  HTTP 是不安全的超文本传输协议，它在客户端和服务器之间以明文形式传输数据，这意味着数据容易被中间人攻击、窃听和篡改。 HTTPS 是基于HTTP协议并结合SSL/TLS（Secure Sockets Layer / Transport Layer Security）加密协议的增强版本，能够对交换数据进行加密，提供身份认证和数据完整性校验机制，从而保护用户的隐私和信息安全。  连接方式与加密：  HTTP 连接简单，无状态，不进行任何加密处理。 HTTPS 在HTTP协议基础上添加了一层加密处理，使用非对称加密算法建立安全连接，确保只有授权方才能解密和读取数据。  端口：  HTTP 通常使用标准端口80进行通信。 HTTPS 使用443端口进行通信。  证书：  HTTP 不需要服务器证书。 HTTPS 需要服务器拥有由受信任的证书颁发机构（CA）签发的SSL/TLS证书，用于证明服务器的身份并启用加密连接。虽然现在有Let&rsquo;s Encrypt等机构提供免费的SSL/TLS证书，但过去获取和维护证书通常会带来一定的成本。  性能：  HTTP 相对于HTTPS来说，在同等条件下理论上性能更高，因为HTTPS涉及加密解密过程，会消耗额外的CPU资源，而且HTTPS首次握手会有更多的延迟。 HTTPS 虽然增加了计算开销，但是随着硬件性能的提升和HTTP/2、HTTP/3等新协议引入的多路复用等技术，HTTPS在很多场景下的性能已经得到显著优化，实际上在现代网络环境下，其带来的安全优势往往更为重要。  总之，HTTPS在保证用户数据安全性和隐私保护方面的优势使其成为现代互联网上的主流选择，尤其是在处理敏感信息，如登录凭据、信用卡信息和个人数据时。
+原文地址： 快速了解HTTP协议  
+]]></content>
+  </entry>
+  
+  <entry>
     <title>IPv6地址之间的转换技术：NAT66</title>
     <url>/post/server/translation-technology-between-ipv6-address-nat66.html</url>
     <categories><category>Server</category>
