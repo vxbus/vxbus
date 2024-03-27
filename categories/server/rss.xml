@@ -23,7 +23,8 @@
       <pubDate>Tue, 26 Mar 2024 23:07:54 +0800</pubDate>
       
       <guid>https://www.vxbus.com/post/server/translation-technology-between-ipv6-address-nat66.html</guid>
-      <description>&lt;p&gt;NAT66，全称为Network Address Translation for IPv6 to IPv6，是一种用于IPv6网络的地址转换技术。在IPv6网络中，每个设备都被分配一个全局唯一的IPv6地址，这样的地址长度为128位。NAT66的作用是通过将内部设备的IPv6地址映射到另一组IPv6地址来实现地址转换，使得内部设备可以访问外部网络，同时保护内部网络的真实IPv6地址不被外部直接暴露。&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://www.vxbus.com/imgs/post/NAT66-1.png&#34; alt=&#34;NAT66&#34;&gt;
+NAT66，全称为Network Address Translation for IPv6 to IPv6，是一种用于IPv6网络的地址转换技术。在IPv6网络中，每个设备都被分配一个全局唯一的IPv6地址，这样的地址长度为128位。NAT66的作用是通过将内部设备的IPv6地址映射到另一组IPv6地址来实现地址转换，使得内部设备可以访问外部网络，同时保护内部网络的真实IPv6地址不被外部直接暴露。&lt;/p&gt;</description>
     </item>
     
     <item>
