@@ -16,6 +16,25 @@
   </entry>
   
   <entry>
+    <title>Micron发布适用于大型服务器的大型内存</title>
+    <url>/post/server/micron-launches-big-capacity-memory-for-hyperscale-server.html</url>
+    <categories><category>Server</category>
+    </categories>
+    <tags>
+      <tag>Micron</tag>
+      <tag>MCRDIMM</tag>
+    </tags>
+    <content type="html"><![CDATA[美光本周宣布，它已经开始对其 256 GB multiplexer combined （MCR） DIMM 进行采样，这是该公司迄今为止容量最大的内存模块。这些全新的基于 DDR5 的 MCRDIMM 面向下一代服务器，特别是那些由英特尔至强可扩展“Granite Rapids”处理器提供支持的服务器，该处理器将支持12或24 memory slots per socket。使用这些DIMM 可以使数据中心计算机具有3TB或6TB的内存，达到 DDR5-8800 的数据速率。
+除了宣布这些DIMM的样品外，美光还在 NVIDIA 的 GTC 会议上展示了它们，服务器供应商和客户都在为下一代 AI 加速器构建新服务器。
+显然，美光的 256 GB DDR5-8800 MCRDIMM 有两种变体：一个是两侧分布有 80 个 DRAM 芯片的更高模块，另一个是使用 2Hi 堆叠封装的标准高度模块。两者都基于单片 32 Gb DDR5 IC，旨在满足不同的服务器配置。较高的版本消耗约 20W 的功率，这符合预期，因为 128 GB DDR5-8000 RDIMM 在 DDR5-4800 模式下消耗约 10W。不知道使用 2Hi 封装版本的功耗，尽管预计它会更热一点，更难冷却。
+MCRDIMM 是dual-rank内存模块，具有专用buffer，允许两个rank同时运行。该buffer使两个物理rank能够像并行工作的独立模块一样运行，从而允许每个时钟周期同时从两个rank检索 128 字节的数据（而常规内存模块则为每个周期 64 字节），从而有效地将单个模块的性能提高一倍。
+当然，由于模块保留了标准 DDR5 模块（即 72 位）的物理接口，因此buffer以非常高的数据传输速率与host一起工作，以将获取的数据传输到host CPU。这些速度超过了标准 DDR5 规格，在这种情况下达到 8800 MT/s。
+虽然 MCRDIMM 使内存DIMM 比常规 RDIMM 稍微复杂一些，但它们在不增加所涉及的内存模块数量的情况下提高了内存子系统的性能和容量，这使得构建服务器主板变得更加容易。这些模块有望在使下一代服务器能够处理要求越来越高的应用程序方面发挥关键作用，特别是在 人工智能领域  。
+原文地址： Micron发布适用于大型服务器的大型内存  
+]]></content>
+  </entry>
+  
+  <entry>
     <title>美光展示256GB DDR5-8800 MCRDIMM，带宽峰值达到1.5TB/s</title>
     <url>/post/server/micron-demonstrates-256GB-DDR5-8800-memory.html</url>
     <categories><category>Server</category>
