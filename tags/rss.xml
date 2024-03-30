@@ -6,7 +6,16 @@
     <description>Recent content in Tags on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 30 Mar 2024 17:57:51 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 Mar 2024 18:11:43 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Command</title>
+      <link>https://www.vxbus.com/tags/command/</link>
+      <pubDate>Sat, 30 Mar 2024 18:11:43 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/command/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>VLAN</title>
       <link>https://www.vxbus.com/tags/vlan/</link>
@@ -580,15 +589,6 @@
       <pubDate>Sat, 23 Dec 2023 11:06:18 +0800</pubDate>
       
       <guid>https://www.vxbus.com/tags/fpga/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Command</title>
-      <link>https://www.vxbus.com/tags/command/</link>
-      <pubDate>Thu, 21 Dec 2023 19:53:48 +0800</pubDate>
-      
-      <guid>https://www.vxbus.com/tags/command/</guid>
       <description></description>
     </item>
     
