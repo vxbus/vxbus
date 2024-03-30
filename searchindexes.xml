@@ -16,6 +16,21 @@
   </entry>
   
   <entry>
+    <title>Debian系统下CPU降频</title>
+    <url>/post/linux/CPU-frequency-reduction-under-Debian-system.html</url>
+    <categories><category>Linux</category>
+    </categories>
+    <tags>
+      <tag>Debian</tag>
+    </tags>
+    <content type="html"><![CDATA[客户报修服务器监控平台检测到出现多条CPU降频告警，现场通过调整BIOS的节能参数CState(MWait)、PState、HWPM等后，降频告警并没有解除 ，继而收集系统日志分析也并没有发现硬件告警，报错等情况。最后决定现场尝试通过更换CPU以及主板分别进行单独测试，CPU的降频告警信息依旧出现。
+最终解决方法：
+后面经过跟客户再深入了解客户debian系统，发现客户在系统中默认使用的pstate 驱动 intel_pstate可能会导致cpu降频，若BIOS调整无效，可以从系统下设置grub参数：
+增加grub参数 root@confluence:~# vim /etc/default/grub 在GRUB_CMDLINE_LINUX行的引号内增加：
+intel_idle.max_cstate=0 idle=poll processor.max_cstate=1 intel_pstate=disable 重新生成grub.cfg文件 root@confluence:~# grub-mkconfig -o /boot/grub/grub.cfg leagcy模式执行: root@confluence:~# grub-mkconfig -o /boot/grub/grub.cfg UEFI模式执行: root@confluence:~# grub-mkconfig -o /boot/efi/EFI/debian/grub.cfg ]]></content>
+  </entry>
+  
+  <entry>
     <title>600 条 Linux 命令详解</title>
     <url>/post/linux/detailed-explanation-of-600-linux-commands.html</url>
     <categories><category>Linux</category>

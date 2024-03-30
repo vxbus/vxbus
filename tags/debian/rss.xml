@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Debian on VxBus</title>
+    <link>https://www.vxbus.com/tags/debian/</link>
+    <description>Recent content in Debian on VxBus</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 30 Mar 2024 22:42:55 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/debian/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Debian系统下CPU降频</title>
+      <link>https://www.vxbus.com/post/linux/CPU-frequency-reduction-under-Debian-system.html</link>
+      <pubDate>Sat, 30 Mar 2024 22:42:55 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/post/linux/CPU-frequency-reduction-under-Debian-system.html</guid>
+      <description>&lt;p&gt;客户报修服务器监控平台检测到出现多条CPU降频告警，现场通过调整BIOS的节能参数CState(MWait)、PState、HWPM等后，降频告警并没有解除 ，继而收集系统日志分析也并没有发现硬件告警，报错等情况。最后决定现场尝试通过更换CPU以及主板分别进行单独测试，CPU的降频告警信息依旧出现。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
