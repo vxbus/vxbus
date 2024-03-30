@@ -122,6 +122,41 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://www.vxbus.com/tags/ai/</loc>
+    <lastmod>2024-03-28T18:45:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/gpu/</loc>
+    <lastmod>2024-03-28T18:45:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/jensen-huang/</loc>
+    <lastmod>2024-03-28T18:45:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/categories/news/</loc>
+    <lastmod>2024-03-28T18:45:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/nvidia/</loc>
+    <lastmod>2024-03-28T18:45:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/openai/</loc>
+    <lastmod>2024-03-28T18:45:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/post/news/Qualcomm-Intel-and-Google-form-a-strategic-alliance.html</loc>
+    <lastmod>2024-03-28T18:45:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://www.vxbus.com/tags/http/</loc>
     <lastmod>2024-03-27T19:30:59+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -149,21 +184,6 @@
   </url><url>
     <loc>https://www.vxbus.com/tags/nat66/</loc>
     <lastmod>2024-03-26T23:07:54+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/tags/ai/</loc>
-    <lastmod>2024-03-25T22:23:13+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/categories/news/</loc>
-    <lastmod>2024-03-25T22:23:13+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/tags/nvidia/</loc>
-    <lastmod>2024-03-25T22:23:13+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -727,11 +747,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.vxbus.com/tags/gpu/</loc>
-    <lastmod>2023-12-10T23:58:31+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.vxbus.com/post/news/NVIDIA-may-launch-RTX-5880-ADA.html</loc>
     <lastmod>2023-12-10T23:58:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -769,16 +784,6 @@
   </url><url>
     <loc>https://www.vxbus.com/post/software/global-variables-in-embedded-C-language.html</loc>
     <lastmod>2023-12-03T19:30:54+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/tags/jensen-huang/</loc>
-    <lastmod>2023-12-02T22:00:59+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/tags/openai/</loc>
-    <lastmod>2023-12-02T22:00:59+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
