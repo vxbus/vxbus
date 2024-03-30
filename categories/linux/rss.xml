@@ -6,7 +6,16 @@
     <description>Recent content in Linux on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 29 Mar 2024 17:30:40 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/categories/linux/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 Mar 2024 17:57:51 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/categories/linux/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何在 Linux 上划分VLAN</title>
+      <link>https://www.vxbus.com/post/linux/how-to-add-vlan-in-linux.html</link>
+      <pubDate>Sat, 30 Mar 2024 17:57:51 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/post/linux/how-to-add-vlan-in-linux.html</guid>
+      <description>&lt;p&gt;在某些场景中，我们希望在Linux服务器(CentOS / RHEL)上的同一网卡分配来自不同VLAN的多个ip。这可以通过启用VLAN标记接口来实现，但要实现这一点，首先必须确保交换机上添加多个vlan。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Fedora 41引入了全新 DNF5 软件包管理</title>
       <link>https://www.vxbus.com/post/linux/fedora-41-introduces-new-dnf5-package-management.html</link>

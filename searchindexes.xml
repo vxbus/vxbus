@@ -16,6 +16,35 @@
   </entry>
   
   <entry>
+    <title>如何在 Linux 上划分VLAN</title>
+    <url>/post/linux/how-to-add-vlan-in-linux.html</url>
+    <categories><category>Linux</category>
+    </categories>
+    <tags>
+      <tag>VLAN</tag>
+    </tags>
+    <content type="html"><![CDATA[在某些场景中，我们希望在Linux服务器(CentOS / RHEL)上的同一网卡分配来自不同VLAN的多个ip。这可以通过启用VLAN标记接口来实现，但要实现这一点，首先必须确保交换机上添加多个vlan。
+假设我们有一个Linux服务器，其中有两个以太网卡(ens33和ens38)，第一个网卡(ens33)用于数据流量，第二个网卡(ens38)用于控制/管理流量。对于数据流，将使用多个vlan(将在数据流网卡上分配来自不同vlan的多个ip)。
+假设从交换机连接到服务器数据流量网卡的端口被配置为Trunk，通过映射多个vlan到它。下面是映射到数据流量网卡的vlan:
+VLAN ID (200)，172.168.10.0/24
+VLAN ID (300)，172.168.20.0/24
+在CentOS 7 /RHEL 7 / CentOS 8 /RHEL 8系统上使用VLAN标记接口，必须加载内核模块8021q。
+使用以下命令加载内核模块&quot;8021q&quot;
+# 先列出模块，发现没有8021q模块。 [root@localhost ~]# lsmod | grep -i 8021q # 加载模块 [root@localhost ~]# modprobe --first-time 8021q [root@localhost ~]# lsmod | grep -i 8021q 8021q 33080 0 garp 14384 1 8021q mrp 18542 1 8021q 使用modinfo命令列出8021q的信息：
+[root@localhost ~]# modinfo 8021q 现在使用ip命令创建vlan 200和vlan 300到ens33网卡：
+# 创建vlan 200和vlan 300 [root@localhost ~]# ip link add link ens33 name ens33.200 type vlan id 200 [root@localhost ~]# ip link add link ens33 name ens33.300 type vlan id 300 发现ens33.200和ens33.300的链路状态为DOWN，下面启用它们。
+# 启用vlan 200 和vlan 300 [root@localhost ~]# ip link set ens33.200 up [root@localhost ~]# ip link set ens33.300 up 下面为两个vlan 分配ip地址：
+[root@localhost ~]# ip address add 172.168.10.51/24 dev ens33.200 [root@localhost ~]# ip address add 172.168.20.51/24 dev ens33.300 可以看到ens33.200和ens33.300已经配置好ip地址了。
+但是上面使用ip address添加的VLAN和地址不会永久生效的。重启系统之后都不存在了。我们需要把这些配置保存在配置文件里面。
+首先修改ifcfg-ens33的配置文件，其次创建ifcfg-ens33.200和ifcfg-ens33.300配置文件：
+[root@localhost ~]# vim /etc/sysconfig/network-scripts/ifcfg-ens33  TYPE=Ethernet BOOTPROTO=none DEVICE=ens33 ONBOOT=yes 接下来为vlan 200创建配置文件，命名为ifcfg-ens33.200
+[root@localhost ~]# vim /etc/sysconfig/network-scripts/ifcfg-ens33.200 DEVICE=ens33.200 BOOTPROTO=none ONBOOT=yes IPADDR=172.168.10.51 PREFIX=24 NETWORK=172.168.10.0 VLAN=yes 接下来为vlan 300创建配置文件，命名为ifcfg-ens33.300
+[root@localhost ~]# vim /etc/sysconfig/network-scripts/ifcfg-ens33.300 DEVICE=ens33.300 BOOTPROTO=none ONBOOT=yes IPADDR=172.168.20.51 PREFIX=24 NETWORK=172.168.20.0 VLAN=yes 编辑完配置文件，重启一下网络服务。
+[root@localhost ~]# systemctl restart network 可以看到vlan200,300的信息都没有消失。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>Micron发布适用于大型服务器的大型内存</title>
     <url>/post/server/micron-launches-big-capacity-memory-for-hyperscale-server.html</url>
     <categories><category>Server</category>
