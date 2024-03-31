@@ -6,7 +6,16 @@
     <description>Recent content in PCB on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 04 Mar 2024 23:15:48 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/pcb/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 31 Mar 2024 12:04:18 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/pcb/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DCDC电源PCB布局及注意事项</title>
+      <link>https://www.vxbus.com/post/hardware/dc-to-dc-power-pcb-layout-tips.html</link>
+      <pubDate>Sun, 31 Mar 2024 12:04:18 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/post/hardware/dc-to-dc-power-pcb-layout-tips.html</guid>
+      <description>&lt;p&gt;在DCDC电源电路中，PCB的布局对电路功能的实现和良好的各项指标来说都十分重要。本文以buck电路为例，简单分析一下如何进行合理PCB layout布局以及设计中的注意事项。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>不理解EMC，画不好PCB</title>
       <link>https://www.vxbus.com/post/hardware/understand-emc-deeply-will-help-pcb-layout.html</link>
