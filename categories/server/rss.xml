@@ -6,7 +6,16 @@
     <description>Recent content in Server on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 30 Mar 2024 12:15:50 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/categories/server/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 Apr 2024 12:07:59 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/categories/server/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>英伟达下一代显卡的信息汇总</title>
+      <link>https://www.vxbus.com/post/server/nvidia-next-generation-graphics-cards.html</link>
+      <pubDate>Sun, 21 Apr 2024 12:07:59 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/post/server/nvidia-next-generation-graphics-cards.html</guid>
+      <description>&lt;p&gt;英伟达的下一代Blackwell GPU架构和GeForce RTX 50系列GPU是今年科技界备受期待的硬件产品，预计将在今年底前推出，大概率会在十月或十一月的购物季前，消费者最有可能首先见到RTX 5090和RTX 5080，Blackwell架构将是最新一代顶尖显卡的代表。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Micron发布适用于大型服务器的大型内存</title>
       <link>https://www.vxbus.com/post/server/micron-launches-big-capacity-memory-for-hyperscale-server.html</link>

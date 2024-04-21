@@ -6,7 +6,16 @@
     <description>Recent content in Categories on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 31 Mar 2024 14:48:03 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/categories/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 Apr 2024 12:07:59 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/categories/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Server</title>
+      <link>https://www.vxbus.com/categories/server/</link>
+      <pubDate>Sun, 21 Apr 2024 12:07:59 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/categories/server/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Hardware</title>
       <link>https://www.vxbus.com/categories/hardware/</link>
@@ -22,15 +31,6 @@
       <pubDate>Sat, 30 Mar 2024 22:42:55 +0800</pubDate>
       
       <guid>https://www.vxbus.com/categories/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Server</title>
-      <link>https://www.vxbus.com/categories/server/</link>
-      <pubDate>Sat, 30 Mar 2024 12:15:50 +0800</pubDate>
-      
-      <guid>https://www.vxbus.com/categories/server/</guid>
       <description></description>
     </item>
     
