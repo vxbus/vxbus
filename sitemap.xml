@@ -7,32 +7,52 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.vxbus.com/categories/</loc>
-    <lastmod>2024-04-21T12:07:59+08:00</lastmod>
+    <loc>https://www.vxbus.com/tags/amd/</loc>
+    <lastmod>2024-08-02T00:13:43+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.vxbus.com/tags/gpu/</loc>
-    <lastmod>2024-04-21T12:07:59+08:00</lastmod>
+    <loc>https://www.vxbus.com/post/server/AMD-and-NVIDIA-are-competing-fiercely-in-the-server-CPU-field.html</loc>
+    <lastmod>2024-08-02T00:13:43+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/categories/</loc>
+    <lastmod>2024-08-02T00:13:43+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/cpu/</loc>
+    <lastmod>2024-08-02T00:13:43+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/nvidia/</loc>
+    <lastmod>2024-08-02T00:13:43+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/post/</loc>
-    <lastmod>2024-04-21T12:07:59+08:00</lastmod>
+    <lastmod>2024-08-02T00:13:43+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/categories/server/</loc>
-    <lastmod>2024-04-21T12:07:59+08:00</lastmod>
+    <lastmod>2024-08-02T00:13:43+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/tags/</loc>
-    <lastmod>2024-04-21T12:07:59+08:00</lastmod>
+    <lastmod>2024-08-02T00:13:43+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/</loc>
+    <lastmod>2024-08-02T00:13:43+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/gpu/</loc>
     <lastmod>2024-04-21T12:07:59+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -193,11 +213,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/categories/news/</loc>
-    <lastmod>2024-03-28T18:45:46+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/tags/nvidia/</loc>
     <lastmod>2024-03-28T18:45:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -373,11 +388,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/tags/a100/</loc>
-    <lastmod>2024-02-07T14:43:22+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/tags/cpu/</loc>
     <lastmod>2024-02-07T14:43:22+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -659,11 +669,6 @@
   </url><url>
     <loc>https://www.vxbus.com/post/news/century-old-giant-toshiba-officially-delisted-today.html</loc>
     <lastmod>2023-12-20T16:05:30+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/tags/amd/</loc>
-    <lastmod>2023-12-19T10:43:49+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>

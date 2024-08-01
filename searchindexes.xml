@@ -16,6 +16,27 @@
   </entry>
   
   <entry>
+    <title>AMD和NVIDIA在服务器CPU领域展开激烈竞争</title>
+    <url>/post/server/AMD-and-NVIDIA-are-competing-fiercely-in-the-server-CPU-field.html</url>
+    <categories><category>Server</category>
+    </categories>
+    <tags>
+      <tag>CPU</tag>
+      <tag>AMD</tag>
+      <tag>NVIDIA</tag>
+    </tags>
+    <content type="html"><![CDATA[近年以来，NVIDIA通过其Grace Superchip和Grace CPU正式进入 数据中心  CPU市场，这对于长期由x86架构主导的市场来说是一大突破。
+由于绿厂在GPU上的强势——NVIDIA的Superchip平台被广泛采用于基于其Hopper和下一代Blackwell解决方案的数据中心，而这些解决方案目前非常畅销。所以人们担心NVIDIA基于Arm架构的Grace CPU也会对市场构成了重大威胁。对此，AMD迅速做出了反应，回应了NVIDIA近期的性能声明。
+AMD近日发布了一篇博客文章，详细介绍了数据中心的重要性及其高性能和节能运行的优势。AMD表示，尽管EPYC Milan已经是x86数据中心领域的顶级产品，但其最新的“第四代EPYC”Genoa和Bergamo CPU将性能提升到了一个全新的高度。
+AMD说自家的第四代EPYC处理器在与NVIDIA的Grace CPU Superchip的竞争中能够展现出巨大的性能优势。根据AMD的基准测试，EPYC 9654和9754在多项数据中心相关测试中的性能均比Grace CPU Superchip高出两倍以上，在高性能计算（HPC）工作负载中高出四倍以上。
+AMD EPYC 9754是其旗舰数据中心CPU，具备高达128核和256线程的配置，而EPYC 9654则具备96核和192线程的配置。在效率测试中，EPYC 9654的能效提高了2.27倍，而单插槽EPYC 9754的能效提高了2.50倍。双插槽EPYC 9754的效率则提高到了2.75倍，所以EPYC是高要求工作负载的最佳选择。AMD还强调其EPYC CPU基于x86-64架构具有更好兼容性的优势。
+而NVIDIA方面声称：Grace CPU Superchip在其发布的基准测试中显示出在服务器端性能上比双插槽EPYC 9654平台快2.4倍，平均快1.2-1.3倍。数据中心吞吐量在Grace平台上快3倍，在多次测试中平均快1.5-2.0倍。NVIDIA建议使用最新的编译器和最佳的数学库以充分利用其Superchip架构的功能。Murex、Gurobi和Petrobras等客户已经在实践中验证了Grace CPU的性能优势。
+需要注意的是，AMD和NVIDIA使用了不同的基准测试和工作负载来比较其EPYC和Grace CPU，因此性能结果可能有所不同。
+展望未来，AMD预计将在今年晚些时候推出其第五代EPYC CPU系列，代号为Turin，而NVIDIA则计划在2026年推出其下一代主要Arm CPU，代号为Vera。届时服务器市场的竞争会愈加激烈。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>英伟达下一代显卡的信息汇总</title>
     <url>/post/server/nvidia-next-generation-graphics-cards.html</url>
     <categories><category>Server</category>
