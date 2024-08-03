@@ -16,6 +16,25 @@
   </entry>
   
   <entry>
+    <title>什么是 API 网关</title>
+    <url>/post/server/what-is-an-API-gateway.html</url>
+    <categories><category>Server</category>
+    </categories>
+    <tags>
+      <tag>API Gateway</tag>
+    </tags>
+    <content type="html"><![CDATA[API 网关是一种服务器，充当 API 前端，接收 API 请求，执行节流和安全策略，将请求传递给后端服务，然后将适当的结果返回给客户端。
+它本质上是客户端和服务器之间的中间人，负责管理和优化 API 流量。
+API 网关的主要功能   请求路由：将传入的 API 请求导向适当的后端服务。
+  负载平衡：在多个服务器之间分配请求，确保没有一个服务器不堪重负。
+  安全性：实施身份验证、授权和数据加密等安全措施。
+  速率限制和节流：控制客户端在一定时间内可发出的请求数量。
+  API 聚合：将多个后端 API 请求合并为一个前端请求，以优化性能。
+  缓存：临时存储响应，以减少重复处理的需要。
+  常见的 API 网关产品 亚马逊 API 网关  由 AWS 全面管理的服务。 与其他 AWS 服务无缝集成。 支持 REST、WebSocket 和 HTTP API。 提供请求/响应转换、缓存和使用计划等功能。  使用案例  AWS 托管应用的理想选择。 使用 AWS Lambda 快速设置无服务器架构。 管理微服务和后端服务的 API。  Kong  开源且高度可扩展。 可添加功能的插件架构。 支持多种部署选项（内部部署、云、Kubernetes）。  使用案例  需要高度可定制 API 网关的企业。 可扩展的微服务架构。 在混合云和多云环境中使用。  Apigee  谷歌云的综合 API 管理平台。 先进的分析、开发人员门户和货币化功能。 提供流量管理、安全和调解策略。  使用案例  需要全功能 API 管理解决方案的大型企业。 API 货币化和合作伙伴管理。 与谷歌云服务集成。  NGINX  高性能网络服务器和反向代理。 可配置为 API 网关，具有负载平衡和速率限制等功能。 轻便高效。  使用案例  高性能 API 流量处理。 微服务的负载平衡。 与现有 NGINX 部署集成。  Tyk  开源，支持企业应用。 功能包括分析、安全和速率限制。 开发人员门户和 API 生命周期管理。  使用案例  寻求具有企业功能的开源解决方案的企业。 API 安全性和速率限制。 开发人员友好的 API 管理。  MuleSoft Anypoint  API 设计、开发和管理的统一平台。 连接各种应用程序、数据和设备。 广泛的集成功能。  使用案例  复杂的集成方案。 需要 API 和集成管理统一平台的企业。 连接内部部署和云应用程序。  Azure API 管理  由 Microsoft Azure 提供全面管理服务。 可与 Azure 服务很好地集成。 提供 API 设计、发布、安全和监控工具。  使用案例  Microsoft Azure 上托管的应用程序。 与 Azure 服务无缝集成。 管理内部和外部使用的 API。  IBM API Connect  IBM 的全面 API 管理解决方案。 包括 API 创建、安全和社会化功能。 高级分析和开发人员门户。  使用案例  使用 IBM 技术的大型企业。 API 生命周期管理和分析。 合作伙伴和开发人员参与。  基于 Kubernetes 的 API 网关解决方案（例如 Ambassador、Gloo、Istio）  专为 Kubernetes 环境设计。 通常包括服务网格功能。 侧重于管理微服务流量。  使用案例  Kubernetes 原生微服务架构。 用于高级流量管理和可观察性的服务网格。 保护和管理内部微服务通信。  Traefik  现代反向代理和负载平衡器。 与 Docker、Kubernetes 和其他协调系统集成。 通过标签和注释进行动态配置。  使用案例  使用容器和微服务的动态环境。 简单的声明式 API 网关设置。 容器化应用中的负载平衡和路由选择。 ]]></content>
+  </entry>
+  
+  <entry>
     <title>NVMe over CXL的最新进展和技术要点简介</title>
     <url>/post/server/introduction-to-the-latest-progress-and-technical-highlights-of-NVMe-over-CXL.html</url>
     <categories><category>Server</category>
