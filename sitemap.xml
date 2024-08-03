@@ -7,8 +7,43 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://www.vxbus.com/tags/altium/</loc>
+    <lastmod>2024-08-04T07:52:28+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/post/news/renesas-completes-acquisition-altium.html</loc>
+    <lastmod>2024-08-04T07:52:28+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://www.vxbus.com/categories/</loc>
-    <lastmod>2024-08-04T07:44:42+08:00</lastmod>
+    <lastmod>2024-08-04T07:52:28+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/categories/news/</loc>
+    <lastmod>2024-08-04T07:52:28+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/post/</loc>
+    <lastmod>2024-08-04T07:52:28+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/renesas/</loc>
+    <lastmod>2024-08-04T07:52:28+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/</loc>
+    <lastmod>2024-08-04T07:52:28+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/</loc>
+    <lastmod>2024-08-04T07:52:28+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -18,21 +53,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/categories/linux/</loc>
-    <lastmod>2024-08-04T07:44:42+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/post/</loc>
-    <lastmod>2024-08-04T07:44:42+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/tags/</loc>
-    <lastmod>2024-08-04T07:44:42+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/</loc>
     <lastmod>2024-08-04T07:44:42+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -278,11 +298,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/tags/jensen-huang/</loc>
-    <lastmod>2024-03-28T18:45:46+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/categories/news/</loc>
     <lastmod>2024-03-28T18:45:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

@@ -16,6 +16,27 @@
   </entry>
   
   <entry>
+    <title>Altium Designer 正式被瑞萨收入囊中</title>
+    <url>/post/news/renesas-completes-acquisition-altium.html</url>
+    <categories><category>News</category>
+    </categories>
+    <tags>
+      <tag>Renesas</tag>
+      <tag>Altium</tag>
+    </tags>
+    <content type="html"><![CDATA[2024 年 7 月 31 日，先进半导体解决方案供应商瑞萨电子株式会社（瑞萨电子）和电子设计系统全球领导者 Altium Limited（Altium）宣布瑞萨电子成功完成对 Altium 的收购。收购 Altium 的最终协议于 2024 年 2 月 15 日宣布。
+“这对瑞萨和 Altium 来说都是一个历史性的里程碑，因为我们在为电子系统设计人员提供增强的用户体验方面又迈出了重要的一步，”瑞萨首席执行官柴田英俊表示。“我们旨在共同构建的集成和开放的电子系统设计和生命周期管理平台将使电子产品进入更广泛的市场，适用于任何规模或行业的任何企业。我想重申，我们致力于维护 Altium 客户的数据安全和合规性将继续是我们的首要任务。”
+随着交易的完成，Altium 现在是瑞萨的全资子公司。Altium 首席执行官 Aram Mirkazemi 已担任瑞萨高级副总裁兼软件与数字化主管。他同时担任 Altium 首席执行官。
+Altium 首席执行官 Aram Mirkazemi 表示：“这是 Altium 的关键时刻，标志着我们与瑞萨电子共同开启激动人心的未来。借助瑞萨电子的支持和专业知识，我们期待加速与电子设计和开发相关的所有行业流程的云化。这将使电子产品进入更广泛的市场，并为软件定义产品奠定基础。”
+瑞萨电子对 Altium 的收购已通过生效。根据该计划的条款，瑞萨电子的间接全资子公司 Renesas Electronics NSW Pty Ltd 以每股 68.50 澳元现金收购了 Altium 全部流通股，总股权价值约为 91 亿澳元。Altium 将于 2024 年 8 月 2 日交易结束时从澳大利亚证券交易所正式名单中除名。
+对于Altium，电子工程师可能更关心被瑞萨收购后，Altium Designer软件版权问题的处理方式会不会有所变化，以及一家MCU厂商会给一家EDA厂商带来哪些工程设计上的变化。欢迎评论区留言你的看法。
+Altium 是一家总部设在加利福尼亚州圣地亚哥的全球性软件公司，也是世界上最早的PCB设计工具提供商之一。据官网信息显示，Altium 公司创立与于1985年，发布首版 Altium Designer 软件 Protel PCB（dos版）。1991年，Altium将总部迁至美国并推出Protel for Windows。1999 年在澳大利亚证券交易所上市。2006 年，Altium Designer 6.0 成功推出。2020 Altium推出了Altium 365,实现在云端进行敏捷协作和设计共享。
+图源：Altium官网，展示 Altium 365 的在线 PCB 查看功能
+2023年，瑞萨电子宣布将全面采用Altium的PCB设计工具和云平台Altium 365，以简化其PCB设计和开发流程。瑞萨电子于2010年成立，由日本电气公司（NEC）的芯片部门和瑞萨科技（Renesas Technology）整合而成的新公司，而瑞萨科技本身由日立和三菱电机的芯片业务整合而成。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>运维工程师最常用的ESXi系统命令</title>
     <url>/post/linux/ESXi-commands-most-commonly-used-by-operation-and-maintenance-engineers.html</url>
     <categories><category>Linux</category>
