@@ -16,6 +16,18 @@
   </entry>
   
   <entry>
+    <title>运维工程师最常用的ESXi系统命令</title>
+    <url>/post/linux/ESXi-commands-most-commonly-used-by-operation-and-maintenance-engineers.html</url>
+    <categories><category>Linux</category>
+    </categories>
+    <tags>
+      <tag>ESXi</tag>
+    </tags>
+    <content type="html"><![CDATA[本文介绍了运维工程师最常用的ESXi系统命令!
+# vmware -v 查看ESXi/ESX 主机版本 # esxcli network nic list 列出主机上所有网卡 #esxcli storage core device list 列出当前存储设备 # esxcli hardware platform get 检查主机兼容性 # esxcli storage core device vaai status get ：获得存储设备支持的VAAI的当前状态。 # esxcli vm process list ：列出已启动的虚拟机的进程信息。 # esxcli storage core path list 或者 esxcfg-scsidevs –A 处理多个控制器，用户如何确定哪个磁盘与哪个控制器关联 # esxcli vm process kill ：停止正在运行的虚拟机的进程，关闭虚拟机或者强制关闭虚拟机电源。 # for a in $(esxcfg-scsidevs -a |awk &#39;{print $2}&#39;) ;do vmkload_mod -s $a |grep -i version ;done 要通过单个命令获取系统中所有 HBA 的驱动程序版本 # esxcli vsan storage ：配置VSAN使用的本地存储，包括增加、删除物理存储并修改自动声明。 # esxcli network nic get -n vmnic# 列出单块网卡的驱动和固件版本 # vmkchdev -l |grep vmnic0 列出网卡ID信息 # esxcli software vib list 获取软件版本的方式，其中包括已安装在 ESXi 主机上的第三方驱动程序 # esxcli system module get -m Driver 查询控制器驱动程序版本 002:01.0 8086:100f 15ad:0750 vmkernel vmnic0 在此示例中，值分别为： VID = 8086 DID = 100f SVID = 15ad SDID = 0750 # esxcli vsan cluster ：本地主机脱离/加入VSAN集群。 # esxcli storage core device list 收集控制器/闪存设备信息（各类硬盘信息）##过滤 Model 字段更清晰 # esxcli esxcli command list ：列出所有的esxcli命令及其提供的功能 # esxcli storage core adapter list 显示适配器/控制器的详细信息 # esxcli hardware cpu list ：查看CPU信息（Brand,Core Speed） # esxcl hardware cpu global get ：查看CPU Cores信息 # esxcli hardware memory get ：查看物理内存信息 # esxcli hardware clockget ：查看ESXI宿主当前时间 # vim-cmd hostsvc/hostsummary ：查看宿主机摘要信息 # vmkchdev -l |grep vmhba1 获取供应商 ID (VID)、设备 ID (DID)、子供应商 ID (SVID) 和子设备 ID (SDID) 000:16.0 1000:0030 15ad:1976 vmkernel vmhba1 在此示例中，值分别为： VID = 1000 DID = 0030 SVID = 15ad SDID = 1976 如果网卡使用的是本机驱动程序（ESXi 5.5 和更高版本）则 必须使用 esxcli network 命令集来获取网络适配器信息。 现在可以在 VMware Compatibility Guide 中搜索供应商 ID (VID)、设备 ID (DID)、子供应商 ID (SVID) 和子设备 ID (SDID)。在某些情况下，可能需要执行文本搜索，以将范围缩小到特定的卡。 # esxcli software vib install -d /vmfs/volumes/datastore/patches/xxx.zip ：为ESXi主机升级、安装更新补丁和驱动 # esxcli network vm list ：列出虚拟机的网路信息 # vim-cmd vmsvc/getallvms ：列出所有虚拟机VMID # vim-cmd vmsvc/power.getstate VMID ：查看指定VMID虚拟机状态 # vim-cmd vmsvc/power.shutdown VMID ：关闭虚拟机 # vim-cmd vmsvc/power.on VMID ：开起虚拟机 # vim-cmd vmsvc/power.off VMID ：如果虚拟机强制关机 # vim-cmd vmsvc/get.config VMID ：查看虚拟机配置信息 # vim-cmd hostsvc/maintenance_mode_enter ：主机进入维护模式（虚拟要挂起或关机才能执行） # vim-cmd hostsvc/maintenance_mode_exit ：主机退出维护模式 ]]></content>
+  </entry>
+  
+  <entry>
     <title>什么是 API 网关</title>
     <url>/post/server/what-is-an-API-gateway.html</url>
     <categories><category>Server</category>
