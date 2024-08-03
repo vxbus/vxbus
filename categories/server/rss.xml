@@ -6,7 +6,20 @@
     <description>Recent content in Server on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 03 Aug 2024 00:11:33 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/categories/server/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Aug 2024 21:02:11 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/categories/server/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>无损以太网拥塞控制深入思考</title>
+      <link>https://www.vxbus.com/post/server/in-depth-thoughts-on-lossless-ethernet-congestion-control.html</link>
+      <pubDate>Sat, 03 Aug 2024 21:02:11 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/post/server/in-depth-thoughts-on-lossless-ethernet-congestion-control.html</guid>
+      <description>&lt;p&gt;拥塞控制技术对于构建大规模无损以太网至关重要。清华、北邮和北航的几位研究人员在2024年NSDI《
+&lt;a href=&#34;https://www.vxworks7.com&#34; title=&#34;Revisiting Congestion Control for Lossless Ethernet&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;
+    Revisiting Congestion Control for Lossless Ethernet
+    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;
+&lt;/a&gt;》上从新颖视角出发，深入探讨并利用无损网络的内在特性，对传统拥塞控制问题进行了深入的思考，主要利用无损网络的数据包守恒特性为准确估计网络管道容量及过量数据包数量提供了重要线索。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>为什么Windows电脑一定要每年重装一次系统</title>
       <link>https://www.vxbus.com/post/server/why-windows-computers-must-be-reinstalled-once-a-year.html</link>
