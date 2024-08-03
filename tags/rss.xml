@@ -6,7 +6,25 @@
     <description>Recent content in Tags on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 03 Aug 2024 21:02:11 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Aug 2024 07:16:59 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CXL</title>
+      <link>https://www.vxbus.com/tags/cxl/</link>
+      <pubDate>Sun, 04 Aug 2024 07:16:59 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/cxl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NVMe</title>
+      <link>https://www.vxbus.com/tags/nvme/</link>
+      <pubDate>Sun, 04 Aug 2024 07:16:59 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/nvme/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Ethernet</title>
       <link>https://www.vxbus.com/tags/ethernet/</link>
@@ -1498,15 +1516,6 @@
       <pubDate>Mon, 27 Mar 2023 11:27:46 -0400</pubDate>
       
       <guid>https://www.vxbus.com/tags/e-books/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>CXL</title>
-      <link>https://www.vxbus.com/tags/cxl/</link>
-      <pubDate>Sun, 26 Mar 2023 10:15:50 -0400</pubDate>
-      
-      <guid>https://www.vxbus.com/tags/cxl/</guid>
       <description></description>
     </item>
     
