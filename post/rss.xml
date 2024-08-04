@@ -6,7 +6,7 @@
     <description>Recent content in Posts on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 04 Aug 2024 07:52:28 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/post/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Aug 2024 11:26:38 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/post/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>欢迎加入 VxWorks 俱乐部！</title>
       <link>https://www.vxbus.com/post/welcome-to-vxworks-club/</link>
@@ -16,6 +16,15 @@
       <description>欢迎来到 北南南北 文档站点！ 相关文章来源于 VxWorks 俱乐部  ，也可能发布于 AI 嵌入式开发  ，专注于技术分享和交流。
 免责声明 所有资源均来自网络，版权归原作者，如有侵权，请联系删除！
 欢迎投稿  欢迎广大网友投稿 欢迎加入网友微信群  </description>
+    </item>
+    
+    <item>
+      <title>MCR DIMM如何解决内存带宽瓶颈</title>
+      <link>https://www.vxbus.com/post/server/how-MCR-DIMM-solves-memory-bandwidth-bottleneck.html</link>
+      <pubDate>Sun, 04 Aug 2024 11:26:38 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/post/server/how-MCR-DIMM-solves-memory-bandwidth-bottleneck.html</guid>
+      <description>&lt;p&gt;随着云计算、大数据、人工智能(AI)和高性能计算(HPC)等领域对内存带宽的迫切需求，存储技术的创新显得尤为重要。在这个背景下，MCR DIMM(Multiplexer Combined Ranks DIMM)应运而生，成为解决内存带宽瓶颈的关键技术之一。&lt;/p&gt;</description>
     </item>
     
     <item>
