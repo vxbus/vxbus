@@ -16,6 +16,25 @@
   </entry>
   
   <entry>
+    <title>AMD Zen 5 EPYC 9755跑分数据流出</title>
+    <url>/post/server/AMD-zen-5-EPYC-9755-benchmark-data-leaked.html</url>
+    <categories><category>Server</category>
+    </categories>
+    <tags>
+      <tag>AMD</tag>
+      <tag>EPYC</tag>
+      <tag>Zen 5</tag>
+    </tags>
+    <content type="html"><![CDATA[近日， AMD  基于Zen 5架构的EPYC 9755 &ldquo;Turin&rdquo; CPU在CPU-z基准测试中展示了其惊人的性能表现。这款128核旗舰级CPU在单核测试中获得了653.7分，而在多核测试中更是达到了惊人的108,093分，轻松突破了10万分。
+AMD EPYC 9755 CPU是第五代EPYC系列的最新产品，代号为Turin，采用Zen 5核心架构，拥有128个内核和256个线程。其基本时钟频率为2.70 GHz，最高可提升至4.10 GHz的时钟速度。这款CPU的内核和线程数量相比前代产品增加了33%，时钟频率提高了11%。此外，它还配备了巨大的缓存池，总计650 MB，包括512 MB的L3缓存、128 MB的L2缓存和10 MB的L1缓存。相比之下，前一代基于Zen 4架构的EPYC 9654（Genoa）拥有496 MB的总缓存。
+从技术规格来看，EPYC 9755配备了16个CCD，每个CCD包含8个核心，每个核心具有4 MB的L3缓存和1 MB的L2缓存。此外，每个核心还配备了80 KB的L1缓存。所以加在一起就是16 x 8 x (4+1+0.08) = 650MB。
+如前所述，EPYC 9755在多核测试中获得了108,093分，超越了前代产品EPYC 9654的95,002分，提升幅度达14%。这一成绩表明，尽管测试样品可能是早期工程样品，但其性能已经相当出色，最终的零售版本性能有望进一步提升。
+除了服务器市场外，通过EPYC 9755的性能表现也能预测基于Zen 5架构的下一代线程撕裂者Threadripper产品线的潜力。EPYC CPU能够在多核测试中突破10万分，那么具有更高时钟频率和额外优化的Threadripper CPU将有望轻松超越12~13万分，甚至在超频情况下达到15万。
+AMD凭借其Zen 4产品在服务器和工作站市场已经占据了主导地位，随着Zen 5的推出，AMD有望进一步巩固其在这些领域的领先地位。EPYC 9755的强劲性能不仅展示了AMD在高性能计算领域的技术实力，也为未来的产品线奠定了坚实基础。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>美光推出全球最快的数据中心固态硬盘</title>
     <url>/post/server/micron-launches-fastest-data-center-SSD.html</url>
     <categories><category>Server</category>
