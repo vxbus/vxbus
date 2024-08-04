@@ -6,7 +6,16 @@
     <description>Recent content in PCB on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 31 Mar 2024 12:04:18 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/pcb/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Aug 2024 12:14:46 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/pcb/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用红外热像仪进行电路故障排查</title>
+      <link>https://www.vxbus.com/post/hardware/circuit-troubleshooting-using-infrared-thermal-imaging.html</link>
+      <pubDate>Sun, 04 Aug 2024 12:14:46 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/post/hardware/circuit-troubleshooting-using-infrared-thermal-imaging.html</guid>
+      <description>&lt;p&gt;由于可实现无损检测、非接触测温，并通过热像图分析，实时观察电子设备的热能分布与扩散状态，红外热像技术已经广泛应用于PCB设计、芯片制造、LED等产品研发和不良排查。其高效精准的优势，能够帮助工程师们更快的解决问题。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>DCDC电源PCB布局及注意事项</title>
       <link>https://www.vxbus.com/post/hardware/dc-to-dc-power-pcb-layout-tips.html</link>

@@ -7,6 +7,46 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://www.vxbus.com/categories/</loc>
+    <lastmod>2024-08-04T12:14:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/categories/hardware/</loc>
+    <lastmod>2024-08-04T12:14:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/infrared-thermal-imaging/</loc>
+    <lastmod>2024-08-04T12:14:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/pcb/</loc>
+    <lastmod>2024-08-04T12:14:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/post/</loc>
+    <lastmod>2024-08-04T12:14:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/</loc>
+    <lastmod>2024-08-04T12:14:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/</loc>
+    <lastmod>2024-08-04T12:14:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/post/hardware/circuit-troubleshooting-using-infrared-thermal-imaging.html</loc>
+    <lastmod>2024-08-04T12:14:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://www.vxbus.com/tags/amd/</loc>
     <lastmod>2024-08-04T11:45:44+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -17,32 +57,12 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.vxbus.com/categories/</loc>
-    <lastmod>2024-08-04T11:45:44+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.vxbus.com/tags/epyc/</loc>
     <lastmod>2024-08-04T11:45:44+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.vxbus.com/post/</loc>
-    <lastmod>2024-08-04T11:45:44+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.vxbus.com/categories/server/</loc>
-    <lastmod>2024-08-04T11:45:44+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/tags/</loc>
-    <lastmod>2024-08-04T11:45:44+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/</loc>
     <lastmod>2024-08-04T11:45:44+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -162,11 +182,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.vxbus.com/categories/hardware/</loc>
-    <lastmod>2024-08-02T01:20:24+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.vxbus.com/tags/rs485/</loc>
     <lastmod>2024-08-02T01:20:24+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -228,11 +243,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/post/hardware/dc-to-dc-power-pcb-layout-tips.html</loc>
-    <lastmod>2024-03-31T12:04:18+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/tags/pcb/</loc>
     <lastmod>2024-03-31T12:04:18+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
