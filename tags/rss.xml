@@ -6,7 +6,25 @@
     <description>Recent content in Tags on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 04 Aug 2024 11:26:38 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Aug 2024 11:35:03 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Micron</title>
+      <link>https://www.vxbus.com/tags/micron/</link>
+      <pubDate>Sun, 04 Aug 2024 11:35:03 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/micron/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SSD</title>
+      <link>https://www.vxbus.com/tags/ssd/</link>
+      <pubDate>Sun, 04 Aug 2024 11:35:03 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/ssd/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>MCR DIMM</title>
       <link>https://www.vxbus.com/tags/mcr-dimm/</link>
@@ -211,15 +229,6 @@
       <pubDate>Sat, 30 Mar 2024 12:15:50 +0800</pubDate>
       
       <guid>https://www.vxbus.com/tags/mcrdimm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Micron</title>
-      <link>https://www.vxbus.com/tags/micron/</link>
-      <pubDate>Sat, 30 Mar 2024 12:15:50 +0800</pubDate>
-      
-      <guid>https://www.vxbus.com/tags/micron/</guid>
       <description></description>
     </item>
     
@@ -589,15 +598,6 @@
       <pubDate>Thu, 28 Dec 2023 14:54:47 +0800</pubDate>
       
       <guid>https://www.vxbus.com/tags/raid/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>SSD</title>
-      <link>https://www.vxbus.com/tags/ssd/</link>
-      <pubDate>Thu, 28 Dec 2023 14:54:47 +0800</pubDate>
-      
-      <guid>https://www.vxbus.com/tags/ssd/</guid>
       <description></description>
     </item>
     

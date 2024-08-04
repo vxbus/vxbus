@@ -16,6 +16,30 @@
   </entry>
   
   <entry>
+    <title>美光推出全球最快的数据中心固态硬盘</title>
+    <url>/post/server/micron-launches-fastest-data-center-SSD.html</url>
+    <categories><category>Server</category>
+    </categories>
+    <tags>
+      <tag>Micron</tag>
+      <tag>SSD</tag>
+    </tags>
+    <content type="html"><![CDATA[美光宣布推出Micron 9550 NVMe SSD，这是世界上最快的数据中心SSD，也是 人工智能  性能和能效的行业领导者。
+ 美光9550 SSD  通过将自己的控制器、NAND、DRAM和固件集成到一个世界级产品中，展示了美光的深厚专业知识和创新。这种集成解决方案为数据中心运营商提供了一流的性能、能效和安全功能。
+Micron 9550 SSD提供一流的性能，具有14.0 GB/s的顺序读取和10.0 GB/s的顺序写入，与类似的SSD相比，性能提高了高达67%，并为人工智能等高要求的工作负载提供了行业领先的性能。此外，其3300 KIOPS的随机读取率比竞争产品高出35%，400 KIOPS的随机写入率比竞争产品高出33%。
+人工智能工作负载需要高性能存储解决方案。9550 SSD的顺序和随机读写速度提高了了人工智能用例的性能。例如，大型语言模型（LLM）需要高顺序读取，而图神经网络（GNN）需要高随机读取性能。Micron 9550 SSD在关键的AI工作负载中表现优于竞争产品，在使用大加速器内存（BaM）的GNN训练中，工作负载完成时间提高33%，功能聚合速度提高60%。Micron 9550 SSD还为NVIDIA Magnum IO GPUDirect存储提供了高达34%的吞吐量。
+美光数据中心存储集团副总裁兼总经理Alvaro Toledo说：“Micron 9550 SSD代表了数据中心存储的巨大飞跃，提供了惊人的330万IOPS，同时在GNN和LLM培训等人工智能工作负载中比对手SSD少43%的功耗。”“这种无与伦比的性能，加上卓越的能效，为人工智能存储解决方案树立了新的基准，并表明美光公司坚定不移地致力于引领人工智能革命。”
+英伟达存储技术副总裁Rob Davis说：“提高人工智能工作负载的数据中心效率和性能对于降低成本和确保各地企业的可靠运营至关重要。”“通过集成NVIDIA技术，Micron 9550 SSD可以为人工智能提供强大的存储空间。”
+AMD数据中心生态系统和解决方案公司副总裁Raghu Nambiar表示：“存储技术的创新是为人工智能和业务关键型企业应用等延迟敏感工作负载提供动力的关键方面。”“我们与美光以及整个生态系统的合作伙伴的深入合作，将确保新的9550 SSD在基于AMD EPYC的服务器上实现全部功能。”
+“英特尔很高兴看到Micron凭借Micron 9550 NVMe SSD进入PCIe Gen5市场。这款PCIe Gen5 SSD与英特尔的PCIe Gen5 CPU平台非常一致，特别是英特尔的第四代至强、第五代至强和英特尔至强6处理器，”英特尔高级研究员兼首席I/O架构师Debendra Das Sharma说。“Micron是英特尔宝贵的生态系统合作伙伴，长期以来一直与基于英特尔的平台提供良好的集成PCIe解决方案，包括支持英特尔CPU上虚拟RAID（英特尔VROC）的解决方案，以及由英特尔高迪AI加速器驱动的AI工作负载。”
+Micron 9550 SSD擅长提供行业领先的能效，以支持各种人工智能工作负载，包括：
+ 使用BaM进行GNN培训：SSD平均功率降低高达43%，整体系统能耗降低29% NVIDIA Magnum IO GPUDirect存储：每传输1TB的SSD能量减少高达81% MLPerf：SSD能源减少高达35%，系统能源消耗减少13% 使用Microsoft DeepSpeed进行Llama LLM训练微调：使用SSD能源减少高达21%  9550 SSD采用采用美光开发的技术的垂直集成架构，提供灵活的设计选择和先进的安全能力。该驱动器集成了NVMe 2.0和OCP 2.0支持，以及用于高级性能和运行状况监控的OCP 2.5遥测功能，所有这些都大规模简化了数据中心的部署和管理。
+9550 SSD的设计重点是端到端安全，具有自加密驱动器（SED）功能，符合安全协议和数据模型（SPDM 1.2），强大的数据加密和其他关键安全功能。需要更高安全标准的客户也可以使用FIPS 140-3 2级和TAA合规性选项。
+容量从3.2TB到30.72TB不等，U.2、E1。S和E3。9550 SSD外形规格，提供广泛的产品组合，为当今的PCIe Gen5服务器设计提供性能、灵活性和可扩展性。9550 SSD旨在满足顶级OEM和超大规模的苛刻要求，正在全球采样，是美光行业领先的数据中心内存和存储产品组合的一部分，可满足AI、HPC和许多其他工作负载日益增长的需求。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>MCR DIMM如何解决内存带宽瓶颈</title>
     <url>/post/server/how-MCR-DIMM-solves-memory-bandwidth-bottleneck.html</url>
     <categories><category>Server</category>
