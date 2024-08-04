@@ -6,7 +6,7 @@
     <description>Recent content in Posts on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 04 Aug 2024 14:22:39 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/post/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Aug 2024 14:38:49 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/post/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>欢迎加入 VxWorks 俱乐部！</title>
       <link>https://www.vxbus.com/post/welcome-to-vxworks-club/</link>
@@ -16,6 +16,28 @@
       <description>欢迎来到 北南南北 文档站点！ 相关文章来源于 VxWorks 俱乐部  ，也可能发布于 AI 嵌入式开发  ，专注于技术分享和交流。
 免责声明 所有资源均来自网络，版权归原作者，如有侵权，请联系删除！
 欢迎投稿  欢迎广大网友投稿 欢迎加入网友微信群  </description>
+    </item>
+    
+    <item>
+      <title>服务器基础知识之硬盘</title>
+      <link>https://www.vxbus.com/post/server/hard-disk-drive-for-server.html</link>
+      <pubDate>Sun, 04 Aug 2024 14:38:49 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/post/server/hard-disk-drive-for-server.html</guid>
+      <description>服务器硬盘是一种专门用于存储和读取数据的硬件设备。它通常具有较大的存储容量和高速的数据传输速度，以满足服务器对大量数据的处理需求。
+机械硬盘工作原理 服务器硬盘可以根据不同的特性和用途进行分类。其中服务器硬盘中有机械硬盘(Hard Disk Drive，HDD)和固态硬盘(SSD)
+机械硬盘： 机械硬盘是采用磁介质进行数据存储的。主要由：盘片，磁头，盘片转轴及控制电机，磁头控制器，数据转换器，接口，缓存等几个部分组成，所有的盘片都装在一个旋转轴上，每张盘片之间是平行的，在每个盘片的存储面上有一个磁头，磁头与盘片之间的距离只有0.1μm～0.5μm，较高的水平已经达到 0.005μm～0.01μm，所有的磁头联在一个磁头控制器上，由磁头控制器负责各个磁头的运动。机械硬盘读写速度依赖于电机的转速，因为需要依靠电机带动磁盘高速转动使磁头找到指定位置进行读写。如下图：
+固态硬盘： 固态驱动器（Solid State Drive），俗称固态硬盘，固态硬盘是用固态电子存储芯片阵列而制成的硬盘，SSD由控制单元和存储单元（FLASH芯片、DRAM芯片）组成。它的工作原理与机械硬盘完全不同。SSD的优点包括读写速度快、防震抗摔性高、低功耗、无噪音以及宽广的工作温度范围，但它的缺点是容量相对较小、售价较高。固态硬盘在接口的规范和定义、功能及使用方法上与普通硬盘的完全相同，在产品外形和尺寸上也完全与普通硬盘一致。如下图：
+固态硬盘
+硬盘接口分类 注：过时淘汰掉的接口就不再介绍，如IDE硬盘。
+SATA接口 SATA（Serial ATA）硬盘是目前最常见的硬盘类型，它采用串行连接方式，具有较强的纠错能力，并且能够对传输指令进行检查和自动矫正，从而大大提高数据传输的可靠性。以连续串行的方式传送数据，可以在较少的位宽下使用较高的工作频率来提高数据传输的带宽。这个硬盘接口大概是在2003年出现的，可以算是最为主流的硬盘接口形态。由于存在时间很长，SATA接口兼容性极强，几乎所有种类的主板都有SATA接口。市面上固态硬盘SATA接口在性能标准上，一般采用SATA Ⅲ标准，理论最高速度为6Gbps。大部分基于SATA接口的固态硬盘的读取性能正常会在500MB/S以上。
+SCSI接口 SCSI（Small Computer System Interface）硬盘是一种高速数据传输技术，它不专门针对硬盘设计，而是广泛应用于小型机上。实际上它是一种总线型接口。独立于系统总线工作。SCSI硬盘的优点包括应用范围广、多任务、带宽大、CPU占用率低以及支持热插拔等，
+SAS接口 SAS（Serial Attached SCSI）即串行连接SCSI，是新一代的SCSI技术,SAS结合了SATA和SCSI的优点开发出的全新接口，采用串行技术以获得更高的传输速度，并通过缩短连结线改善内部空间等，旨在改善存储系统的效能、可用性和扩充性，并提供与SATA硬盘的兼容性。在物理层，SAS 接口和 SATA 接口完全兼容，SATA 硬盘可以直接使用在 SAS 的 环境中，从接口标准上而言，SATA 是 SAS 的一个子标准，因此 SAS 控制器可以直接操 控 SATA 硬盘，但是 SAS 却不能直接使用在 SATA 的环境中，因为 SATA 控制器并不能 对 SAS 硬盘进行控制；具体来说，二者的兼容性主要体现在物理层和 协议层的兼容。
+FC接口 FC（Fiber Channel）即是“光纤通道”的意思。和SCSI接口一样，光纤通道最初也不是为硬盘设计开发的接口技术，但随着存储系统对速度的需求，才逐渐应用到硬盘系统中，它以点对点（或是交换）的配置方式在系统之间采用了光缆连接，大大提高了多硬盘系统的通信速度。FC硬盘的优点包括高速带宽、远程连接和连接设备数量大等，但它主要用于数据中心和高端服务器环境。
+M.2接口： M.2接口2013年诞生，M.2原名是NGFF接口，是Intel推出的一种替代MSATA新的接口规范，它是为超极本(Ultrabook)量身定做的新一代接口标准，主要用来取代MSATA接口，具备体积小巧、性能主流等特点。并且M.2又有丰富的可扩展性。
+M.2接口按照插槽来划分可以分为BKey和MKey
+ B key  支持SATA通道PCI-E X 2通道，传输速率就和SATA 6Gbps一模一样，没有区别。
+M key  支持PCI-E x 4通道，在PCI-E*4通道上可以支持NVME协议，理论带宽32Gbps。</description>
     </item>
     
     <item>

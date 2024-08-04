@@ -8,7 +8,42 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/categories/</loc>
-    <lastmod>2024-08-04T14:22:39+08:00</lastmod>
+    <lastmod>2024-08-04T14:38:49+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/hdd/</loc>
+    <lastmod>2024-08-04T14:38:49+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/post/</loc>
+    <lastmod>2024-08-04T14:38:49+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/categories/server/</loc>
+    <lastmod>2024-08-04T14:38:49+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/storage/</loc>
+    <lastmod>2024-08-04T14:38:49+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/</loc>
+    <lastmod>2024-08-04T14:38:49+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/</loc>
+    <lastmod>2024-08-04T14:38:49+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/post/server/hard-disk-drive-for-server.html</loc>
+    <lastmod>2024-08-04T14:38:49+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -18,26 +53,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/tags/csps/</loc>
-    <lastmod>2024-08-04T14:22:39+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/post/</loc>
-    <lastmod>2024-08-04T14:22:39+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/categories/server/</loc>
-    <lastmod>2024-08-04T14:22:39+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/tags/</loc>
-    <lastmod>2024-08-04T14:22:39+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/</loc>
     <lastmod>2024-08-04T14:22:39+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -652,11 +667,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.vxbus.com/tags/storage/</loc>
-    <lastmod>2023-12-28T14:28:20+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.vxbus.com/tags/c/</loc>
     <lastmod>2023-12-28T12:07:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -863,11 +873,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/post/server/HDD-Outlook-2024.html</loc>
-    <lastmod>2023-12-16T21:24:24+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/tags/hdd/</loc>
     <lastmod>2023-12-16T21:24:24+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
