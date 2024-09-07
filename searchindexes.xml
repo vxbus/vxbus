@@ -16,6 +16,48 @@
   </entry>
   
   <entry>
+    <title>30 个实用的 Linux 命令贴与技巧</title>
+    <url>/post/linux/30-practical-linux-commands-and-tips.html</url>
+    <categories><category>Linux</category>
+    </categories>
+    <tags>
+      <tag>Linux Command</tag>
+    </tags>
+    <content type="html"><![CDATA[在日常使用 Linux   的过程中，掌握一些小技巧可以大大提升工作效率。这篇文章将为你带来 30 个常用的 Linux 命令，配合实际应用案例，帮助你快速提高命令行操作水平。
+ cd -：返回上一个目录 每次在不同目录间切换时，使用 cd - 可以迅速返回上一个目录。  cd /var/log cd /home/user cd - # 你将返回到 /var/log !!：重新执行上一个命令  当你忘记在命令前加 sudo 时，使用 sudo !! 可以重新运行上一个命令。
+apt-get update sudo !! # 重新以 sudo 权限执行 apt-get update df -h：查看磁盘使用情况  df 显示磁盘空间的使用情况，-h 选项让输出更具可读性。
+df -h # 以 GB、MB 为单位显示磁盘使用情况 du -sh *：查看文件夹大小  快速查看当前目录下每个文件夹的大小，帮助你管理磁盘空间。
+du -sh * # 显示当前目录下所有文件和文件夹的大小 grep -r：递归搜索文本  grep 可以递归地在多个文件中搜索特定的文本。
+grep -r &#34;error&#34; /var/log/ # 在 /var/log 目录下递归查找包含 &#34;error&#34; 的日志文件 ps aux | grep：查找运行中的进程  使用 ps 和 grep 组合可以快速查找指定的进程。
+ps aux | grep nginx # 查找正在运行的 nginx 进程 history：查看历史命令  history 命令显示过去执行过的命令，结合 ! 可以快速执行某个历史命令。
+history | grep ssh !105 # 搜索历史命令中有关 ssh 的操作，执行编号为 105 的命令 tar -czvf：打包压缩文件  使用 tar 创建 tar.gz 压缩包。
+tar -czvf backup.tar.gz /home/user/ # 将 /home/user 目录打包并压缩为 backup.tar.gz find . -name：查找文件  find 可以在指定目录下搜索特定文件。
+find /home/user/ -name &#34;*.log&#34; # 查找 /home/user/ 目录下所有 .log 文件 chmod +x：赋予可执行权限  为脚本或文件赋予可执行权限。
+chmod +x script.sh # 为 script.sh 脚本添加执行权限 chown user:group：更改文件权限  使用 chown 命令更改文件或目录的拥有者。
+chown user:group filename # 将 filename 的拥有者改为 user，组改为 group top：实时查看系统资源使用情况  top 命令显示系统资源占用情况，方便监控系统性能。
+top # 查看 CPU、内存使用率等实时信息 uptime：查看系统运行时间  uptime 显示系统运行时间和当前负载。
+uptime # 显示系统已运行多长时间 curl -I：快速查看 HTTP 头信息  curl 命令不仅可以下载文件，还能用于查看网站的 HTTP 头信息。
+curl -I https://www.example.com # 显示指定网站的 HTTP 头信息 wget -c：断点续传下载  wget 支持断点续传，可以在网络中断后继续下载文件。
+wget -c https://example.com/file.iso # 继续下载 file.iso 文件 rsync：高效同步文件  rsync 是一个用于文件同步的命令，适用于备份和远程文件传输。
+rsync -av /source/ /destination/ # 将 /source/ 目录下的文件同步到 /destination/ netstat -tuln：查看网络端口状态  netstat 显示网络连接状态，-tuln 参数仅显示监听的 TCP 和 UDP 端口。
+netstat -tuln # 显示当前监听的端口 ping：检查网络连通性  ping 命令用于检测目标主机的网络连通性。
+ping google.com # 检查是否可以连通 google.com traceroute：跟踪网络路径  traceroute 显示数据包到目标主机的路由路径。
+traceroute google.com # 跟踪数据包从本地主机到 google.com 的路径 ss：替代 netstat 的网络状态工具  ss 命令比 netstat 更快，用于查看网络连接状态。
+ss -tuln # 显示当前监听的端口 whoami：查看当前用户名  whoami 显示当前登录用户的用户名。
+whoami # 显示当前用户 alias：创建命令别名  使用 alias 为常用命令创建快捷方式。
+alias ll=&#39;ls -la&#39; # 将 ll 设为 &#39;ls -la&#39; 的快捷方式 unzip：解压文件  unzip 用于解压 .zip 文件。
+unzip file.zip # 解压 file.zip 文件 kill：终止进程  使用 kill 命令终止进程，结合 ps 或 top 查找进程 ID (PID)。
+kill 1234 # 终止 PID 为 1234 的进程 killall：按名称终止进程  killall 可以通过进程名称终止所有匹配的进程。
+killall nginx # 终止所有 nginx 进程 zip：创建压缩文件  使用 zip 创建 .zip 压缩文件。
+zip -r backup.zip /home/user/ # 将 /home/user 目录压缩为 backup.zip crontab -e：设置定时任务  crontab 是 Linux 中用于自动化任务调度的工具。
+crontab -e # 编辑定时任务 示例：每天凌晨 2 点自动备份文件。 0 2 * * * /path/to/backup.sh nohup：后台运行命令  使用 nohup 可以让命令在后台运行，即使关闭终端也不会中断。
+nohup ./script.sh &amp; # 让 script.sh 在后台运行 man：查看命令手册  man 显示指定命令的使用手册，方便查询命令选项和用法。
+man tar # 查看 tar 命令的使用手册 echo $SHELL：查看当前使用的 shell  使用 echo $SHELL 查看当前使用的 shell 类型。
+echo $SHELL # 显示当前 shell，如 /bin/bash 以上是 30 个常用的 Linux 命令贴与技巧，希望这些命令和实际案例能帮助你在 Linux 的世界里更加得心应手！
+]]></content>
+  </entry>
+  
+  <entry>
     <title>高通计划收购英特尔PC芯片设计部门</title>
     <url>/post/news/qualcomm-plans-to-acquire-intel-PC-chip-design-unit.html</url>
     <categories><category>News</category>
