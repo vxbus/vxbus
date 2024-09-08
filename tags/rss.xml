@@ -6,7 +6,34 @@
     <description>Recent content in Tags on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 08 Sep 2024 00:19:59 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 08 Sep 2024 08:23:33 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI</title>
+      <link>https://www.vxbus.com/tags/ai/</link>
+      <pubDate>Sun, 08 Sep 2024 08:23:33 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/ai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Center</title>
+      <link>https://www.vxbus.com/tags/data-center/</link>
+      <pubDate>Sun, 08 Sep 2024 08:23:33 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/data-center/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Optical Module</title>
+      <link>https://www.vxbus.com/tags/optical-module/</link>
+      <pubDate>Sun, 08 Sep 2024 08:23:33 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/optical-module/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Linux Command</title>
       <link>https://www.vxbus.com/tags/linux-command/</link>
@@ -341,15 +368,6 @@
     </item>
     
     <item>
-      <title>Data Center</title>
-      <link>https://www.vxbus.com/tags/data-center/</link>
-      <pubDate>Sat, 30 Mar 2024 11:40:27 +0800</pubDate>
-      
-      <guid>https://www.vxbus.com/tags/data-center/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Mbps</title>
       <link>https://www.vxbus.com/tags/mbps/</link>
       <pubDate>Sat, 30 Mar 2024 11:40:27 +0800</pubDate>
@@ -382,15 +400,6 @@
       <pubDate>Fri, 29 Mar 2024 17:30:40 +0800</pubDate>
       
       <guid>https://www.vxbus.com/tags/fedora-41/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>AI</title>
-      <link>https://www.vxbus.com/tags/ai/</link>
-      <pubDate>Thu, 28 Mar 2024 18:45:46 +0800</pubDate>
-      
-      <guid>https://www.vxbus.com/tags/ai/</guid>
       <description></description>
     </item>
     
