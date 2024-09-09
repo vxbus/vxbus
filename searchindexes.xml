@@ -16,6 +16,42 @@
   </entry>
   
   <entry>
+    <title>FFmpeg实战指南</title>
+    <url>/post/linux/ffmpeg-practica-guide.html</url>
+    <categories><category>Linux</category>
+    </categories>
+    <tags>
+      <tag>FFmpeg</tag>
+    </tags>
+    <content type="html"><![CDATA[FFmpeg是一个完整的跨平台解决方案，用于录制、转换和流式传输音频和视频。它是一款强大的开源工具包，可以帮助用户处理和转换流媒体文件。无论是剪辑视频、提取音频还是转码，FFmpeg都能轻松胜任。它是一个命令行工具，让我们一起来看看它的基本用法，以及一些常见的命令实例。
+安装FFmpeg 安装FFmpeg相对简单，对于不同的操作系统，安装方式有所不同：
+ Linux: 可以通过包管理器（如apt、yum或者pacman）来安装。 macOS: 可以通过Homebrew（brew install ffmpeg）来安装。 Windows: 可以从FFmpeg官网下载预编译的二进制文件。  查看视频信息 FFmpeg提供了一个简单的命令来查看多媒体文件的信息：
+ffmpeg -i input.mp4 这将显示关于 input.mp4 文件的详细信息，包括视频的总时长、视频和音频的编解码器、比特率、持续时间、帧速率等。以下是一个典型的输出示例及简单解释：
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from &#39;input.mp4&#39;: Metadata: major_brand : isom minor_version : 512 compatible_brands: isomiso2avc1mp41 encoder : Lavf58.76.100 Duration: 00:00:05.71, start: 0.000000, bitrate: 652 kb/s Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709), 1920x810 [SAR 1:1 DAR 64:27], 568 kb/s, 24 fps, 24 tbr, 90k tbn, 48 tbc (default) Metadata: handler_name : VideoHandler vendor_id : [0][0][0][0] Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 94 kb/s (default) Metadata: handler_name : SoundHandler vendor_id : [0][0][0][0]  Input #0：是输入文件的索引号，可以使用多个-i指定多个输入文件。这一行表示当前文件可能支持的所有格式。 Duration：指多媒体文件的总时长；比特率为652 kb/s表示平均每秒传输的数据量。 Stream #0:0：代表视频流，h264是一种广泛使用的视频压缩格式，它能够在保持较高视频质量的同时显著减少文件大小；1920x810是视频分辨率；24 fps是帧率，即每秒24帧。 Stream #0:1：代表音频流，aac代表高级音频编码（Advanced Audio Coding），是一种广泛使用的音频压缩格式，能够在保持高质量音频的同时减少文件大小。  截取视频片段 如果想从视频中截取特定的部分作为新的视频文件，可以使用以下命令：
+ffmpeg -i input.mp4 -ss start_time -to end_time -c copy output.mp4 -ss选项指定开始时间，-to选项指定结束时间，时间格式为&rsquo;HH:mm:ss'，即“时:分:秒”，秒后面可以添加2位小数；-c copy表示直接复制视频流，不进行重新编码，这样可以提高速度并保持原视频质量。output.mp4是输出文件名。
+例如，要截取视频的前30秒，可以这样操作：
+ffmpeg -i input.mp4 -ss 00:00:00 -to 00:00:30 -c copy output.mp4 可通过指定小数对截取位置进行微调，例如：
+ffmpeg -i input.mp4 -ss 00:00:00.10 -to 00:00:29.85 -c copy output.mp4 提取音频 如果需要从视频文件中提取音频，可以使用下面的命令：
+ffmpeg -i input.mp4 -vn -acodec copy output.aac -vn表示阻止文件的所有视频流映射到任何输出，-acodec copy表示直接复制音频而不进行重新编码，output.aac是输出的音频文件名。
+要将提取的音频保存为熟悉的mp3格式，该命令也可以简化为：
+ffmpeg -i input.mp4 output.mp3 添加水印到视频 要在视频中添加一个静态图像作为水印，可以使用-filter_complex选项：
+ffmpeg -i input.mp4 -i watermark.png -filter_complex &#34;overlay=100:0&#34; -c:a copy output.mp4 watermark.png是要叠加的图像文件，overlay=100:0设置了水印的位置，距离左边缘100像素，距离顶边缘0像素。即图片相对于视频的相对位置，可以使用负值。
+裁剪视频画面 如果需要裁剪视频的画面，可以使用-vf选项：
+ffmpeg -i input.mp4 -vf &#34;crop=in_w-200:in_h-100:20:10&#34; output.mp4 crop=后面的参数由半角冒号分隔的四部分组成，in_w-200表示裁剪掉输入视频的宽度200像素，in_h-100表示裁剪掉输入视频的高度100像素，后面的20:10是裁剪起始的x坐标和y坐标，视频左上角坐标为0:0。
+如果裁剪视频的中间画面，可以对命令进行简化，例如：
+ffmpeg -i input.mp4 -vf &#34;crop=in_w-1000&#34; output_cropped.mp4 该命令将裁剪掉输入视频宽度1000像素（左右各500像素）。
+合并多个视频片段 如果有多个视频片段需要合并成一个文件，且这些视频片段有相同的编解码器设置，可以直接使用cat命令合并，请阅读之前的文章《cat命令的隐藏技能：合并视频原来这么简单》。
+使用FFmpeg也可以进行合并。创建一个文本文件（比如tslist.txt），列出所有要合并的视频文件的路径，类似如下：
+file 1.ts file 2.ts 然后使用-f concat选项来合并这个文件中列出的视频，并输出到新的视频文件：
+ffmpeg -f concat -safe 0 -i tslist.txt -c copy output.mp4 -f concat表示将使用文件列表的方式合并多个文件，-safe 0允许在列表文件中使用相对路径。
+但是，如果输入的多个视频文件编解码器设置不同，直接使用concat协议可能会失败。在这种情况下可以使用concat过滤器，重新编码音视频流以确保它们具有相同的参数：
+ffmpeg -i 1.ts -i 2.ts -filter_complex &#34;[0:v][0:a][1:v][1:a]concat=n=2:v=1:a=1&#34; -c:v libx264 -c:a aac output.mp4 -filter_complex &quot;[0:v][0:a][1:v][1:a]concat=n=2:v=1:a=1&quot;是命令的核心部分，它使用了一个复杂的过滤器（filter_complex）来合并视频和音频流。
+[0:v]和[0:a]分别代表第一个输入文件的视频和音频流，concat=n=2:v=1:a=1用于将多个视频和音频流按顺序合并成一个，n=2表示有两个输入文件，v=1表示输出视频流的数量为1，a=1表示输出音频流的数量为1。-c:v libx264表示视频编解码器使用libx264（即H.264编解码器），-c:a aac表示音频编解码器使用AAC。
+这些只是FFmpeg功能的冰山一角。掌握了这些基础命令后，你可以继续探索更多的用法和功能，以满足更复杂的多媒体处理需求。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>服务器基础知识之BIOS</title>
     <url>/post/server/basic-knowledge-of-bios-for-server.html</url>
     <categories><category>Server</category>

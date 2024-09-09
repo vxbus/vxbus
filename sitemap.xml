@@ -7,17 +7,42 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.vxbus.com/tags/bios/</loc>
-    <lastmod>2024-09-08T08:41:30+08:00</lastmod>
+    <loc>https://www.vxbus.com/categories/</loc>
+    <lastmod>2024-09-09T21:57:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.vxbus.com/categories/</loc>
-    <lastmod>2024-09-08T08:41:30+08:00</lastmod>
+    <loc>https://www.vxbus.com/tags/ffmpeg/</loc>
+    <lastmod>2024-09-09T21:57:57+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/post/linux/ffmpeg-practica-guide.html</loc>
+    <lastmod>2024-09-09T21:57:57+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/categories/linux/</loc>
+    <lastmod>2024-09-09T21:57:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/post/</loc>
+    <lastmod>2024-09-09T21:57:57+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/</loc>
+    <lastmod>2024-09-09T21:57:57+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/</loc>
+    <lastmod>2024-09-09T21:57:57+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.vxbus.com/tags/bios/</loc>
     <lastmod>2024-09-08T08:41:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -28,16 +53,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/categories/server/</loc>
-    <lastmod>2024-09-08T08:41:30+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/tags/</loc>
-    <lastmod>2024-09-08T08:41:30+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/</loc>
     <lastmod>2024-09-08T08:41:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -73,11 +88,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.vxbus.com/post/linux/30-practical-linux-commands-and-tips.html</loc>
-    <lastmod>2024-09-08T00:19:59+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/categories/linux/</loc>
     <lastmod>2024-09-08T00:19:59+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -1959,11 +1969,6 @@
   </url><url>
     <loc>https://www.vxbus.com/post/linux/syslog.html</loc>
     <lastmod>2022-10-15T20:55:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.vxbus.com/tags/ffmpeg/</loc>
-    <lastmod>2022-10-15T16:43:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>

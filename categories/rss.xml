@@ -6,7 +6,16 @@
     <description>Recent content in Categories on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 08 Sep 2024 08:41:30 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/categories/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Sep 2024 21:57:57 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/categories/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux</title>
+      <link>https://www.vxbus.com/categories/linux/</link>
+      <pubDate>Mon, 09 Sep 2024 21:57:57 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/categories/linux/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Server</title>
       <link>https://www.vxbus.com/categories/server/</link>
@@ -22,15 +31,6 @@
       <pubDate>Sun, 08 Sep 2024 08:23:33 +0800</pubDate>
       
       <guid>https://www.vxbus.com/categories/datacenter/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Linux</title>
-      <link>https://www.vxbus.com/categories/linux/</link>
-      <pubDate>Sun, 08 Sep 2024 00:19:59 +0800</pubDate>
-      
-      <guid>https://www.vxbus.com/categories/linux/</guid>
       <description></description>
     </item>
     
