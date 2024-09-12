@@ -9,10 +9,10 @@
     <lastBuildDate>Mon, 09 Sep 2024 21:57:57 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/ffmpeg/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>FFmpeg实战指南</title>
-      <link>https://www.vxbus.com/post/linux/ffmpeg-practica-guide.html</link>
+      <link>https://www.vxbus.com/post/linux/ffmpeg-practical-guide.html</link>
       <pubDate>Mon, 09 Sep 2024 21:57:57 +0800</pubDate>
       
-      <guid>https://www.vxbus.com/post/linux/ffmpeg-practica-guide.html</guid>
+      <guid>https://www.vxbus.com/post/linux/ffmpeg-practical-guide.html</guid>
       <description>&lt;p&gt;FFmpeg是一个完整的跨平台解决方案，用于录制、转换和流式传输音频和视频。它是一款强大的开源工具包，可以帮助用户处理和转换流媒体文件。无论是剪辑视频、提取音频还是转码，FFmpeg都能轻松胜任。它是一个命令行工具，让我们一起来看看它的基本用法，以及一些常见的命令实例。&lt;/p&gt;</description>
     </item>
     
