@@ -6,7 +6,7 @@
     <description>Recent content on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 14 Sep 2024 22:21:28 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 Sep 2024 10:51:42 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>欢迎加入 VxWorks 俱乐部！</title>
       <link>https://www.vxbus.com/post/welcome-to-vxworks-club/</link>
@@ -16,6 +16,19 @@
       <description>欢迎来到 北南南北 文档站点！ 相关文章来源于 VxWorks 俱乐部  ，也可能发布于 AI 嵌入式开发  ，专注于技术分享和交流。
 免责声明 所有资源均来自网络，版权归原作者，如有侵权，请联系删除！
 欢迎投稿  欢迎广大网友投稿 欢迎加入网友微信群  </description>
+    </item>
+    
+    <item>
+      <title>什么是带宽利用率</title>
+      <link>https://www.vxbus.com/post/server/what-is-bandwidth-utilization.html</link>
+      <pubDate>Sun, 15 Sep 2024 10:51:42 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/post/server/what-is-bandwidth-utilization.html</guid>
+      <description>&lt;p&gt;带宽是指在给定时间段内可以通过通信信道传输的最大数据量。它表示
+&lt;a href=&#34;https://www.gaitpu.com/category/data-center/server&#34; title=&#34;网络连接&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;
+    网络连接
+    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;
+&lt;/a&gt;的容量限制，对数据传输速度和网络性能有直接影响。&lt;/p&gt;</description>
     </item>
     
     <item>
