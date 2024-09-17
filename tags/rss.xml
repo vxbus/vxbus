@@ -6,7 +6,25 @@
     <description>Recent content in Tags on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 17 Sep 2024 16:04:14 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Sep 2024 19:16:31 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Debian</title>
+      <link>https://www.vxbus.com/tags/debian/</link>
+      <pubDate>Tue, 17 Sep 2024 19:16:31 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/debian/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MAC</title>
+      <link>https://www.vxbus.com/tags/mac/</link>
+      <pubDate>Tue, 17 Sep 2024 19:16:31 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/mac/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>linux</title>
       <link>https://www.vxbus.com/tags/linux/</link>
@@ -418,15 +436,6 @@
       <pubDate>Sun, 31 Mar 2024 12:04:18 +0800</pubDate>
       
       <guid>https://www.vxbus.com/tags/dc2dc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Debian</title>
-      <link>https://www.vxbus.com/tags/debian/</link>
-      <pubDate>Sat, 30 Mar 2024 22:42:55 +0800</pubDate>
-      
-      <guid>https://www.vxbus.com/tags/debian/</guid>
       <description></description>
     </item>
     
