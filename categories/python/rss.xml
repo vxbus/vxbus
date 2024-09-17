@@ -6,7 +6,16 @@
     <description>Recent content in Python on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 29 Oct 2022 07:53:45 -0400</lastBuildDate><atom:link href="https://www.vxbus.com/categories/python/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Sep 2024 16:04:14 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/categories/python/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux上编译安装Python 3的详细教程</title>
+      <link>https://www.vxbus.com/post/python/detailed-tutorial-on-compiling-and-installing-python-3-on-linux.html</link>
+      <pubDate>Tue, 17 Sep 2024 16:04:14 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/post/python/detailed-tutorial-on-compiling-and-installing-python-3-on-linux.html</guid>
+      <description>&lt;p&gt;Python是一种广泛使用的高级编程语言，以其简洁的语法和强大的功能而闻名。在Linux系统中，除了可以通过包管理器安装Python外，还可以选择从源代码编译安装，以获取最新版本或自定义配置。本文将指导您如何在Linux系统上编译安装Python 3。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>10个Python脚本来自动化你的日常任务</title>
       <link>https://www.vxbus.com/post/python/ten-python-script-to-automatically-execute-your-daily-task.html</link>
