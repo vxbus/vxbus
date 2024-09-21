@@ -10,26 +10,26 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/imgs/icons/favicon_16x16_next.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/imgs/icons/favicon_32_32_next.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/imgs/icons/apple_touch_icon_next.png">
-<meta itemprop="name" content="Linux系统下更改网卡MAC地址" />
-<meta itemprop="description" content="Linux系统下更改网卡MAC地址" />
+<meta itemprop="name" content="Linux find 命令介绍" />
+<meta itemprop="description" content="Linux find 命令介绍" />
 <meta itemprop="datePublished" ZgotmplZ />
 <meta itemprop="dateModified" ZgotmplZ />
 <meta itemprop="image" content="https://www.vxbus.com/imgs/vxbus_logo.png" />
-<meta itemprop="keywords" content="MAC,Debian" />
+<meta itemprop="keywords" content="find" />
 
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Linux系统下更改网卡MAC地址" />
-<meta property="og:description" content="Linux系统下更改网卡MAC地址" />
+<meta property="og:title" content="Linux find 命令介绍" />
+<meta property="og:description" content="Linux find 命令介绍" />
 <meta property="og:image" content="/imgs/vxbus_logo.png" />
 <meta property="og:image:width" content="312" />
 <meta property="og:image:height" content="312" />
 <meta property="og:image:type" content="image/jpeg/png/svg/jpg" />
-<meta property="og:url" content="https://www.vxbus.com/post/linux/how-to-modify-mac-address-in-linux.html"/>
+<meta property="og:url" content="https://www.vxbus.com/post/linux/introduction-to-linux-find-command.html"/>
 <meta property="og:site_name" content="VxBus" />
 <meta property="og:locale" content="zh-CN"/>
 <meta property="article:author" content="VxWorks OS" />
-<meta property="article:published_time" content="2024-09-17 19:16:31 &#43;0800 CST" />
-<meta property="article:modified_time" content="2024-09-17 19:16:31 &#43;0800 CST" />
+<meta property="article:published_time" content="2024-09-21 19:56:19 &#43;0800 CST" />
+<meta property="article:modified_time" content="2024-09-21 19:56:19 &#43;0800 CST" />
 
 
   
@@ -44,7 +44,7 @@
       content: "~ 我可是有底线的哟 ~";
     }
   </style>
-  <script class="next-config" data-name="page" type="application/json">{"comments":false,"isHome":false,"isPage":true,"path":"how-to-modify-mac-address-in-linux.html","permalink":"https://www.vxbus.com/post/linux/how-to-modify-mac-address-in-linux.html","title":"Linux系统下更改网卡MAC地址"}</script>
+  <script class="next-config" data-name="page" type="application/json">{"comments":false,"isHome":false,"isPage":true,"path":"introduction-to-linux-find-command.html","permalink":"https://www.vxbus.com/post/linux/introduction-to-linux-find-command.html","title":"Linux find 命令介绍"}</script>
   <script type="text/javascript">
   document.addEventListener('DOMContentLoaded', () => {
     var script = document.createElement('script');
@@ -60,7 +60,7 @@
 
 
 
-  <title>Linux系统下更改网卡MAC地址 - VxBus</title>
+  <title>Linux find 命令介绍 - VxBus</title>
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
@@ -174,20 +174,13 @@
       <div class="post-toc-wrap sidebar-panel">
         <div class="post-toc animated"><nav id="TableOfContents">
   <ul>
-    <li><a href="#安装mft工具方法如下">安装mft工具方法如下：</a>
-      <ul>
-        <li><a href="#解压安装包">解压安装包</a></li>
-        <li><a href="#安装编译环境">安装编译环境</a></li>
-        <li><a href="#安装mft工具">安装mft工具</a></li>
-      </ul>
-    </li>
-    <li><a href="#刷新mac地址">刷新MAC地址</a>
-      <ul>
-        <li><a href="#关闭写保护">关闭写保护：</a></li>
-        <li><a href="#刷mac">刷MAC：</a></li>
-        <li><a href="#重置fw">重置FW：</a></li>
-      </ul>
-    </li>
+    <li><a href="#引言">引言</a></li>
+    <li><a href="#基本语法">基本语法</a></li>
+    <li><a href="#常用选项">常用选项</a></li>
+    <li><a href="#操作符">操作符</a></li>
+    <li><a href="#实用示例">实用示例</a></li>
+    <li><a href="#组合用法进阶">组合用法（进阶）</a></li>
+    <li><a href="#结语">结语</a></li>
   </ul>
 </nav></div>
       </div>
@@ -321,7 +314,7 @@
       
   <div class="post-block">
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://www.vxbus.com/post/linux/how-to-modify-mac-address-in-linux.html">
+    <link itemprop="mainEntityOfPage" href="https://www.vxbus.com/post/linux/introduction-to-linux-find-command.html">
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
       <meta itemprop="name" content="VxWorks OS">
@@ -331,11 +324,11 @@
       <meta itemprop="description" content="Where there is embedded, there is VxWorks.">
     </span>
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Linux系统下更改网卡MAC地址">
-      <meta itemprop="description" content="Linux系统下更改网卡MAC地址">
+      <meta itemprop="name" content="Linux find 命令介绍">
+      <meta itemprop="description" content="Linux find 命令介绍">
     </span>
     <header class="post-header">
-       <h1 class="post-title" itemprop="name headline">Linux系统下更改网卡MAC地址 </h1> <div class="post-meta-container">
+       <h1 class="post-title" itemprop="name headline">Linux find 命令介绍 </h1> <div class="post-meta-container">
   <div class="post-meta-items">
     
 
@@ -345,7 +338,7 @@
     <i class="far fa-calendar"></i>
   </span>
   <span class="post-meta-item-text">发表于：</span>
-  <time title="发表于：2024-09-17 19:16:31 &#43;0800 CST" itemprop="dateCreated datePublished" datetime="2024-09-17 19:16:31 &#43;0800 CST">2024-09-17</time>
+  <time title="发表于：2024-09-21 19:56:19 &#43;0800 CST" itemprop="dateCreated datePublished" datetime="2024-09-21 19:56:19 &#43;0800 CST">2024-09-21</time>
 </span>
     
     
@@ -367,7 +360,7 @@
   <span class="post-meta-item-icon">
     <i class="far fa-file-word"></i>
   </span>
-  <span class="post-meta-item-text">字数：</span><span>175</span>
+  <span class="post-meta-item-text">字数：</span><span>192</span>
 </span>
     
 <span class="post-meta-item" title="阅读">
@@ -386,7 +379,7 @@
   <span class="post-meta-item-text">
   浏览：
   </span>
-  <span id="busuanzi_value_page_pv" data-path="/post/linux/how-to-modify-mac-address-in-linux.html"><i class="fa fa-sync fa-spin"></i></span>
+  <span id="busuanzi_value_page_pv" data-path="/post/linux/introduction-to-linux-find-command.html"><i class="fa fa-sync fa-spin"></i></span>
 </span>
 
   </div>
@@ -397,75 +390,113 @@
     
     <div class="post-body  autonumber " itemprop="articleBody">
       
-  <p>本文讲解了如何在
-<a href="https://www.kontronn.com/post/linux/how-to-modify-mac-address-in-linux.html" title="Linux系统下修改MAC地址" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
-    Linux系统下修改MAC地址
+  <p>本文将详细介绍find命令的使用方法，包括其基本语法、选项和一些实用的示例、组合用法。</p>
+<h2 id="引言">引言</h2>
+<p>在
+<a href="https://www.vxworks.net/linux/1197-new-features-of-rhel9" title="Linux操作系统" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    Linux操作系统
     <i class="fa fa-external-link-alt"></i>
-</a></p>
-<ul>
-<li>系统环境： 
-<a href="https://www.vxworks.net/news/761-new-feature-for-the-new-release-edition-for-debian-10-buster" title="Debian 12" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
-    Debian 12
-    <i class="fa fa-external-link-alt"></i>
-</a></li>
-<li>网卡型号： 此办法适用于
-<a href="https://www.vxworks.net/news/811-nvidia-acquire-mellanox-successfully" title="Mellanox" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
-    Mellanox
-    <i class="fa fa-external-link-alt"></i>
-</a> connectx的4/5/6/7代网卡</li>
-<li>刷新方案： 刷新MAC地址需要安装MFT工具, mft-4.26.1-3-x86_64-deb.tgz</li>
+</a>中，find命令是一个非常强大的工具，它允许用户在指定目录及其子目录下查找符合条件的文件或目录。</p>
+<h2 id="基本语法">基本语法</h2>
+<p>find命令的基本语法如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">find <span style="color:#f92672">[</span>path<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>expression<span style="color:#f92672">]</span>
+</code></pre></div><ul>
+<li>path：指定搜索的目录路径，默认为当前目录</li>
+<li>expression：定义搜索条件的表达式</li>
 </ul>
-<h2 id="安装mft工具方法如下">安装mft工具方法如下：</h2>
-<h3 id="解压安装包">解压安装包</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">root@vxworks:~/mft# tar zxvf mft-4.26.1-3-x86_64-deb.tgz
-root@vxworks:~/mft# cd mft-4.26.1-3-x86_64-deb/
-root@vxworks:~/mft/mft-4.26.1-3-x86_64-deb# ls
-DEBS  install.sh  LICENSE.txt  old-mft-uninstall.sh  SDEBS  uninstall.sh
-root@vxworks:~/mft/mft-4.26.1-3-x86_64-deb#
-</code></pre></div><h3 id="安装编译环境">安装编译环境</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">root@vxworks:~/mft/mft-4.26.1-3-x86_64-deb# apt install gcc make dkms
-Reading package lists... Done
-Building dependency tree... Done
-Reading state information... Done
-.......
-/etc/kernel/header_postinst.d/dkms:
-dkms: running auto installation service <span style="color:#66d9ef">for</span> kernel 6.1.0-18-amd64.
-dkms: autoinstall <span style="color:#66d9ef">for</span> kernel: 6.1.0-18-amd64.
-Setting up linux-headers-amd64 <span style="color:#f92672">(</span>6.1.76-1<span style="color:#f92672">)</span> ...
-Processing triggers <span style="color:#66d9ef">for</span> man-db <span style="color:#f92672">(</span>2.11.2-2<span style="color:#f92672">)</span> ...
-Processing triggers <span style="color:#66d9ef">for</span> libc-bin <span style="color:#f92672">(</span>2.36-9+deb12u4<span style="color:#f92672">)</span> ...
-root@vxworks:~/mft/mft-4.26.1-3-x86_64-deb#
-</code></pre></div><h3 id="安装mft工具">安装mft工具</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">root@vxworks:~/mft/mft-4.26.1-3-x86_64-deb# ./install.sh 
--I- Removing mft external packages installed on the machine
--I- Installing package: /root/mft/mft-4.26.1-3-x86_64-deb/SDEBS/kernel-mft-dkms_4.26.1-3_all.deb
--I- Installing package: /root/mft/mft-4.26.1-3-x86_64-deb/DEBS/mft_4.26.1-3_amd64.deb
--I- In order to start mst, please run <span style="color:#e6db74">&#34;mst start&#34;</span>.
-
-root@vxworks:~/mft/mft-4.26.1-3-x86_64-deb# 
-root@vxworks:~/mft/mft-4.26.1-3-x86_64-deb# mst status
-MST modules:
-------------
-    MST PCI module is not loaded
-    MST PCI configuration module loaded
-
-PCI Devices:
-------------
-
-/dev/mst/mt4119_pciconf0   - PCI conf iguration cycles access .
-                             domain🚌dev.fn<span style="color:#f92672">=</span>0000:3b:00.0 addr.reg<span style="color:#f92672">=</span><span style="color:#ae81ff">88</span> data.reg<span style="color:#f92672">=</span><span style="color:#ae81ff">92</span> cr_bar.gw_offset<span style="color:#f92672">=</span>-1
-                             Chip revision is: <span style="color:#ae81ff">00</span>
-
-root@vxworks:~/mft/mft-4.26.1-3-x86_64-deb#
-</code></pre></div><h2 id="刷新mac地址">刷新MAC地址</h2>
-<h3 id="关闭写保护">关闭写保护：</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">root@vxworks:~#flint -d /dev/mst/mt511_pciconf0 -ocr hw set Flash0.WriteProtected<span style="color:#f92672">=</span>Disabled
-</code></pre></div><h3 id="刷mac">刷MAC：</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">root@vxworks:~#flint -d /dev/mst/mt511_pciconf0 –mac 0000709CD1C9B5E8 –ocr sg
-</code></pre></div><h3 id="重置fw">重置FW：</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">root@vxworks:~#mlxfwreset –d /dev/mst/mt511_pciconf0 r
-</code></pre></div><p>这样mac地址应该已经生效了，请重启再重新检查一下。</p>
-<p>注意：加粗部分根据实际情况修正，mst status可获取到实际的设备名称</p>
+<h2 id="常用选项">常用选项</h2>
+<p>以下是一些find命令的常用选项：</p>
+<ul>
+<li>-name：按文件名查找文件。</li>
+<li>-type：查找文件类型，如f代表普通文件，d代表目录。</li>
+<li>-size：查找具有特定大小的文件。</li>
+<li>-mtime：查找在指定时间内修改过的文件，时间格式为+n（n天前）或n（n天之内）。</li>
+<li>-user：查找属于特定用户的文件。</li>
+<li>-group：查找属于特定组的文件。</li>
+<li>-maxdepth：设置搜索的最大深度。</li>
+<li>-mindepth：设置搜索的最小深度。</li>
+</ul>
+<h2 id="操作符">操作符</h2>
+<p>find命令支持多种操作符来组合搜索条件：</p>
+<ul>
+<li>-o：逻辑或操作符，用于连接多个条件。</li>
+<li>-not：逻辑非操作符，用于排除某些条件。</li>
+<li>()：用于分组条件。</li>
+</ul>
+<h2 id="实用示例">实用示例</h2>
+<p>以下是一些find命令的实用示例：</p>
+<ul>
+<li>查找当前目录及其子目录下所有.txt文件：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">find . -name <span style="color:#e6db74">&#34;*.txt&#34;</span>
+</code></pre></div><ul>
+<li>查找/home/user目录下所有大于10MB的文件：</li>
+</ul>
+<p>(-size :  M:兆字节   G：千字节)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">find /home/user -type f -size +10M
+</code></pre></div><ul>
+<li>查找/var/log目录下7天内修改过的文件：</li>
+</ul>
+<p>（-mtime: 文件内容最后修改时间；-atime: 最后访问时间；-ctime:文件状态最后改变时间；+ 表示大于；- 表示小于）</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">find /var/log -mtime -7
+</code></pre></div><ul>
+<li>查找/usr/bin目录下属于用户root的文件：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">find /usr/bin -user root
+</code></pre></div><ul>
+<li>查找/etc目录下所有目录，并列出它们的名称和大小：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">find /etc -type d -exec du -sh <span style="color:#f92672">{}</span> <span style="color:#ae81ff">\;</span>
+</code></pre></div><ul>
+<li>查找/opt目录下所有不以.bak结尾的文件，并删除它们：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># 谨慎执行</span>
+find /opt -type f ! -name <span style="color:#e6db74">&#34;*.bak&#34;</span> -exec rm -f <span style="color:#f92672">{}</span> <span style="color:#ae81ff">\;</span>
+</code></pre></div><h2 id="组合用法进阶">组合用法（进阶）</h2>
+<ol>
+<li>组合条件搜索</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># 查找当前目录及其子目录中扩展名为.txt且大小小于1MB的文件</span>
+find . <span style="color:#ae81ff">\(</span> -name <span style="color:#e6db74">&#34;*.txt&#34;</span> -and -size -1M <span style="color:#ae81ff">\)</span> -print
+</code></pre></div><ol start="2">
+<li>使用-exec选项执行操作</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># 搜索当前目录及其子目录中扩展名为.log的文件并删除它们</span>
+find . -name <span style="color:#e6db74">&#34;*.log&#34;</span> -exec rm -f <span style="color:#f92672">{}</span> <span style="color:#ae81ff">\;</span>
+</code></pre></div><ol start="3">
+<li>搜索结果输出到文件</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># 将当前目录及其子目录中所有.txt文件的路径保存到result.txt中</span>
+find . -name <span style="color:#e6db74">&#34;*.txt&#34;</span> &gt; result.txt
+</code></pre></div><ol start="4">
+<li>使用正则表达式搜索</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># 查找当前目录及其子目录下匹配正则表达式的文件</span>
+find . -regex <span style="color:#e6db74">&#34;.*\([a-z]+\)\.txt&#34;</span> -print
+</code></pre></div><ol start="5">
+<li>使用-exec选项执行多个命令</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># 搜索当前目录及其子目录中扩展名为.log的文件，并打印和删除它们</span>
+find . -name <span style="color:#e6db74">&#34;*.log&#34;</span> -exec echo <span style="color:#e6db74">&#34;Found: {}&#34;</span> <span style="color:#ae81ff">\;</span> -exec rm -f <span style="color:#f92672">{}</span> <span style="color:#ae81ff">\;</span>
+</code></pre></div><ol start="6">
+<li>使用-ok选项进行安全执行</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># 搜索当前目录及其子目录中扩展名为.log的文件，并提示用户确认后删除</span>
+find . -name <span style="color:#e6db74">&#34;*.log&#34;</span> -ok rm -f <span style="color:#f92672">{}</span> <span style="color:#ae81ff">\;</span>
+</code></pre></div><ol start="7">
+<li>使用-depth选项进行深度优先搜索</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># 先删除文件再删除目录</span>
+find . -depth -type d -name <span style="color:#e6db74">&#34;temp&#34;</span> -exec rm -rf <span style="color:#f92672">{}</span> <span style="color:#ae81ff">\;</span>
+</code></pre></div><ol start="8">
+<li>使用-print0和find -0处理特殊字符文件名</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># 正确处理文件名中的空格或特殊字符</span>
+find . -name <span style="color:#e6db74">&#34;* *&#34;</span> -print0 | xargs -0 rm -f
+</code></pre></div><h2 id="结语">结语</h2>
+<p>find 命令是Linux系统中进行文件搜索的强大工具。</p>
+<p>通过掌握其基本语法和选项，用户可以高效地查找和管理文件系统。</p>
+<p>希望本文能够帮助你更好地使用find命令，提高你的工作效率。</p>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1543398821442998"
      crossorigin="anonymous"></script>
 
@@ -485,11 +516,8 @@ root@vxworks:~/mft/mft-4.26.1-3-x86_64-deb#
 
 <div class="post-tags">
   
-    <a href="/tags/mac">
-    MAC
-  </a>
-    <a href="/tags/debian">
-    Debian
+    <a href="/tags/find">
+    find
   </a>
 </div>
 
@@ -517,7 +545,7 @@ root@vxworks:~/mft/mft-4.26.1-3-x86_64-deb#
   <ul>
     <li class="post-copyright-title">
       <strong>文章标题：</strong>
-      Linux系统下更改网卡MAC地址
+      Linux find 命令介绍
     </li>
     <li class="post-copyright-author">
       <strong>本文作者： </strong>
@@ -525,7 +553,7 @@ root@vxworks:~/mft/mft-4.26.1-3-x86_64-deb#
     </li>
     <li class="post-copyright-link"> 
       <strong>本文链接：</strong>
-       <a id="post-cr-link" href="https://www.vxbus.com/post/linux/how-to-modify-mac-address-in-linux.html" title="Linux系统下更改网卡MAC地址">https://www.vxbus.com/post/linux/how-to-modify-mac-address-in-linux.html</a>
+       <a id="post-cr-link" href="https://www.vxbus.com/post/linux/introduction-to-linux-find-command.html" title="Linux find 命令介绍">https://www.vxbus.com/post/linux/introduction-to-linux-find-command.html</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -550,13 +578,13 @@ root@vxworks:~/mft/mft-4.26.1-3-x86_64-deb#
 </div>
 <div class="post-nav">
   <div class="post-nav-next post-nav-item">
-    <a href="/post/linux/introduction-to-linux-find-command.html" rel="next" title="Linux find 命令介绍">
-      <i class="fa fa-chevron-left"></i> Linux find 命令介绍
+    <a href="/post/welcome-to-vxworks-club/" rel="next" title="欢迎加入 VxWorks 俱乐部！">
+      <i class="fa fa-chevron-left"></i> 欢迎加入 VxWorks 俱乐部！
     </a>
   </div>
   <div class="post-nav-prev post-nav-item">
-    <a href="/post/python/detailed-tutorial-on-compiling-and-installing-python-3-on-linux.html" rel="prev" title="Linux上编译安装Python 3的详细教程">
-      Linux上编译安装Python 3的详细教程
+    <a href="/post/linux/how-to-modify-mac-address-in-linux.html" rel="prev" title="Linux系统下更改网卡MAC地址">
+      Linux系统下更改网卡MAC地址
       <i class="fa fa-chevron-right"></i>
     </a>
   </div>
