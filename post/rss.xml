@@ -6,7 +6,7 @@
     <description>Recent content in Posts on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 22 Sep 2024 10:11:45 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/post/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 Sep 2024 10:58:53 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/post/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>欢迎加入 VxWorks 俱乐部！</title>
       <link>https://www.vxbus.com/post/welcome-to-vxworks-club/</link>
@@ -16,6 +16,15 @@
       <description>欢迎来到 北南南北 文档站点！ 相关文章来源于 VxWorks 俱乐部  ，也可能发布于 AI 嵌入式开发  ，专注于技术分享和交流。
 免责声明 所有资源均来自网络，版权归原作者，如有侵权，请联系删除！
 欢迎投稿  欢迎广大网友投稿 欢迎加入网友微信群  </description>
+    </item>
+    
+    <item>
+      <title>数字电路中的跨时钟域CDC</title>
+      <link>https://www.vxbus.com/post/hardware/cross-clock-domain-cdc-in-digital-circuits.html</link>
+      <pubDate>Sun, 22 Sep 2024 10:58:53 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/post/hardware/cross-clock-domain-cdc-in-digital-circuits.html</guid>
+      <description>&lt;p&gt;时钟域交叉（CDC）是指用于在ASIC IC或FPGA中管理数字系统内不同时钟域之间的数据传输的技术。下图1显示了CDC的场景。在这里，来自时钟域A的数据被传输到时钟域B。时钟A和时钟B可以具有不同的频率以及不同的相位。因此，两个时钟域彼此异步。&lt;/p&gt;</description>
     </item>
     
     <item>
