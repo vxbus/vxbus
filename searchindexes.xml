@@ -16,6 +16,66 @@
   </entry>
   
   <entry>
+    <title>NVMe over RDMA：高性能存储网络的革新之路</title>
+    <url>/post/server/NVMe-over-RDMA-a-revolutionary-approach-to-high-performance-storage-networks.html</url>
+    <categories><category>Server</category>
+    </categories>
+    <tags>
+      <tag>NVMe over RDMA</tag>
+    </tags>
+    <content type="html"><![CDATA[ NVMe(Non-volatile Memory Express)  是针对使用PCI Express SSD系统开发的控制器接口标准(包含优化的控制器寄存器接口、命令集，IO队列管理)，规范SSD控制器与操作系统之间的通信连接及数据传输，而如何控制存储满足上层业务则不在定义中；NVMe协议是为实现对FLASH介质的高性能访问而推出的标准协议，从最初用于访问PCIe FLASH SSD，逐渐演进到基于其他网络的远程访问。
+NVMe over Fabrics基础 NVMe概述 NVMe通过 PCI Express（PCIe）  总线直接连接到计算机的主板，而不是通过传统的硬盘接口如SATA或SAS。这种直接连接方式允许更高的数据传输速率和更高效的命令处理，使得NVMe SSD在高性能计算环境、数据中心和企业级应用中非常受欢迎。
+NVMe over Fabrics介绍 在当前大数据节点的背景下，存储节点不是独立存在的，海量的存储数据读写，需要高性能存储网络的支撑，由此产生了NVMe-oF。
+NVMe over Fabrics（NVMe-oF）是一种网络存储协议，它允许NVMe（Non-Volatile Memory Express）存储协议通过网络传输，而不是仅限于本地PCI Express（PCIe）总线。NVMe-oF的目标是将NVMe的高性能和低延迟特性扩展到网络存储环境中，使得远程主机能够像访问本地NVMe存储设备一样访问远程存储资源。
+NVMe over Fabrics 要求底层 NVMe 传输提供可靠的 NVMe 命令和数据传递。NVMe 传输是一个抽象的协议层，独立于任何物理互连属性。Figure 1展示了 NVMe 传输的分类及其示例。NVMe 传输可能展现出一个内存模型、一个消息模型，或两者的结合。内存模型是指通过执行显式的内存读写操作在网络节点之间传输命令、响应和数据，而消息模型则是指仅通过发送包含command capsules、response capsules和数据的消息在网络节点之间进行传输。消息/内存模型则结合了消息和显式的内存读写操作，以在网络节点之间传输command capsules、response capsules和数据。数据可以选择性地包含在command capsules和response capsules和响应中。
+Figure 1：Nvme的传输分类
+NVMe-oF的传输协议 在NVMe over Fabrics（NVMe-oF）中，不同的传输协议（见Figure 2）在数据面中扮演着关键角色，它们各自有不同的工作原理和特点。以下是针对这几种传输协议的详细讲解：
+Figure2: 传输协议
+TCP  TCP  是互联网协议族中的一个核心协议，提供可靠的、面向连接的数据传输服务。在NVMe-oF中，NVMe over TCP（NVMe-oT）使用TCP作为传输层协议，通过标准的以太网传输NVMe命令和数据。
+NVMe-oT的优势在于其广泛的兼容性和易于部署，因为它可以在现有的TCP/IP网络基础设施上运行，无需特殊的硬件支持。
+然而，TCP的性能通常不如RDMA等专用协议，因为它在传输过程中需要更多的CPU参与，增加了延迟和处理开销。
+FC（Fibre Channel） Fibre Channel是一种高速网络技术，传统上用于存储区域网络（SAN）。在NVMe-oF中，NVMe over FC通过光纤通道网络传输NVMe命令和数据，提供低延迟和高带宽的存储连接。
+NVMe over FC的优势在于其高性能和低延迟，适合对性能要求极高的企业级存储环境。光纤通道网络通常需要专用的硬件和基础设施，这可能增加部署成本和复杂性。
+RDMA RDMA是一种网络协议，允许计算机在网络中直接访问另一台计算机的内存，而无需远程计算机的操作系统参与。这减少了CPU的负担，降低了延迟，并提高了数据传输效率。
+在NVMe-oF中，RDMA可以通过多种网络技术实现，如InfiniBand、RDMA over Converged Ethernet（RoCE）和Internet Wide Area RDMA Protocol（iWARP）。
+RDMA的优势在于其极低的延迟和高吞吐量，适合高性能计算和数据中心环境。使用RDMA的NVMe-oF需要支持RDMA的网络硬件和适配器，这可能需要额外的投资和配置。
+基于RDMA 的 NVMe-oF RDMA支持协议 RDMA技术支持三类协议，分别为InfiniBand(IB)，RDMA over Converged Ethernet(RoCE)和internet Wide Area RDMA Protocol(iWARP)，三类协议使用相同的RDMA标准。
+InfiniBand InfiniBand是一种基于InfiniBand架构的RDMA技术，它提供了一种基于通道的点对点消息队列转发模型，每个应用都可通过创建的虚拟通道直接获取本应用的数据消息，无需其他操作系统及协议栈的介入。InfiniBand架构的应用层采用了RDMA技术，可以提供远程节点间RDMA读写访问，完全卸载CPU工作负载；网络传输采用了高带宽的传输；链路层设置特定的重传机制保证服务质量，不需要数据缓冲。
+InfiniBand必须运行在InfiniBand网络环境下，必须使用IB交换机及IB网卡才可实现。
+RoCE RoCE技术支持在以太网上承载IB协议，实现RDMA over Ethernet。RoCE与InfiniBand技术有相同的软件应用层及传输控制层，仅网络层及以太网链路层存在差异。
+RoCE v1协议：基于以太网承载RDMA，只能部署于二层网络，它的报文结构是在原有的IB架构的报文上增加二层以太网的报文头，通过Ethertype 0x8915标识RoCE报文。
+RoCE v2协议：基于UDP/IP协议承载RDMA，可部署于三层网络，它的报文结构是在原有的IB架构的报文上增加UDP头、IP头和二层以太网报文头，通过UDP目的端口号4791标识RoCE报文。RoCE v2支持基于源端口号hash，采用ECMP实现负载分担，提高了网络的利用率。
+Figure 3为RoCE的协议栈：
+Figure3：RoCE协议栈
+iWARP iWARP协议是IETF基于TCP提出的，因为TCP是面向连接的可靠协议，这使得iWARP在面对有损网络场景（可以理解为网络环境中可能经常出现丢包）时相比于RoCE v2和IB具有更好的可靠性，在大规模组网时也有明显的优势。但是大量的TCP连接会耗费很多的内存资源，另外TCP复杂的流控等机制会导致性能问题，所以从性能上看iWARP要比UDP的RoCE v2和IB差。
+RDMA与NVMe-oF的结合 上面章节介绍了NVMe-oF的传输协议，其中NVMe over RDMA又可以根据RDMA本身支持的协议而分为多个 RDMA Transport。Figure 4为不同RDMA协议作为transport支持NVME-oF的情况。
+Figure4: 基于RDMA的Transport
+NVMe-oF的传输之选 低延迟：RDMA技术通过直接内存访问，减少了CPU的参与，从而显著降低了数据传输的延迟。这对于需要高吞吐量和低延迟的存储应用至关重要。
+高带宽：RDMA支持高速网络，如InfiniBand和100GbE，能够提供高带宽，满足大规模数据传输的需求。
+减少CPU负载：传统的网络通信需要CPU参与数据包的处理，而RDMA允许数据直接在内存之间传输，减少了CPU的负载，提高了系统的整体效率。
+RDMA在NVMe-oF中的具体应用 直接数据路径：在NVMe-oF中，RDMA允许存储设备和主机之间直接传输数据，无需通过中间的软件堆栈，从而减少了数据路径上的延迟。
+零拷贝：RDMA的零拷贝特性意味着数据在传输过程中不需要在内存中进行多次复制，进一步减少了延迟和提高了效率。
+无锁机制：RDMA使用无锁机制进行数据传输，减少了并发操作时的开销，提高了多核系统的性能。
+RDMA与NVMe-oF结合的优势 性能提升：结合RDMA的NVMe-oF能够提供更高的IOPS（每秒输入输出操作数）和更低的延迟，适用于高性能计算和数据中心等场景。
+可扩展性：RDMA支持大规模的并行数据传输，使得NVMe-oF系统能够轻松扩展，满足不断增长的数据存储需求。
+简化架构：RDMA减少了中间软件层的需求，简化了存储网络的架构，降低了系统的复杂性和维护成本。
+测试实践 环境信息 环境拓扑信息如图Figure 5
+Figure 5：测试拓扑
+名词解释：
+ initiator端：Initiator端通常是连接到存储设备的计算机、服务器或其他类型的主机。它的主要功能是向存储目标（如存储阵列、磁盘等）发送读取或写入数据的请求。 target端：Target端通常是存储设备本身，如存储阵列、磁盘或其他类型的存储系统。它的主要功能是处理来自initiator端的读取或写入请求，并执行相应的数据操作。  initiator端信息 target端信息 环境搭建 安装nvme cli工具，用以查看nvme信息，查看target端上的nvme盘信息，这里为容量1TB的ZHITAI TiPlus5000。
+[root@localhost ~]# nvme list Node SN Model Namespace Usage Format FW Rev ---------------- -------------------- ---------------------------------------- --------- -------------------------- ---------------- -------- /dev/nvme0n1 ZTA21T0KA2319001AY ZHITAI TiPlus5000 1TB 1 1.02 TB / 1.02 TB 512 B + 0 B ZTA10613 内核模块准备
+#target端 [root@localhost ~]# lsmod |grep nvme nvmet_tcp 45056 1 nvme_rdma 57344 0 nvme_fabrics 36864 1 nvme_rdma nvmet_rdma 53248 0 rdma_cm 155648 2 nvme_rdma,nvmet_rdma nvmet 204800 8 nvmet_tcp,nvmet_rdma ib_core 524288 8 rdma_cm,nvme_rdma,nvmet_rdma,iw_cm,irdma,ib_uverbs,mlx5_ib,ib_cm nvme 65536 1 nvme_core 221184 4 nvme,nvme_rdma,nvme_fabrics nvme_common 24576 2 nvmet,nvme_core t10_pi 24576 3 nvmet,sd_mod,nvme_core #initiator端 [root@localhost ~]# lsmod |grep nvme nvme_tcp 49152 0 nvme_rdma 57344 0 nvme_fabrics 36864 2 nvme_tcp,nvme_rdma rdma_cm 155648 1 nvme_rdma nvme 65536 0 nvme_core 221184 4 nvme_tcp,nvme,nvme_rdma,nvme_fabrics nvme_common 24576 1 nvme_core ib_core 524288 7 rdma_cm,nvme_rdma,iw_cm,irdma,ib_uverbs,mlx5_ib,ib_cm t10_pi 24576 2 sd_mod,nvme_core Over TCP target端配置过程如下
+#创建nvm subsystem cd /sys/kernel/config/nvmet/subsystems/ mkdir nqn.2024-08.org.nvmexpress.test （nqn，名字随意，按这个格式来） #设置initiator端访问权限 cd nqn.2024-08.org.nvmexpress.test/ echo 1 &gt; attr_allow_any_host #申请namespac id cd namespaces/ mkdir 1 #NSID绑定存储设备 cd 1 echo /dev/nvme0n1 &gt; device_path echo 1 &gt; enable #创建NVMe over TCP的Transport层 root@test-Super-Server:/sys/kernel/config/nvmet/ports# mkdir 1234 root@test-Super-Server:/sys/kernel/config/nvmet/ports# cd 1234 echo tcp &gt; addr_trtype echo ipv4 &gt; addr_adrfam echo 10.10.10.200 &gt; addr_traddr （本端网卡IP地址） echo 4420 &gt; addr_trsvcid （监听端口） #Transport层与NVM subsystem关联 cd subsystems ln -s ../../../subsystems/nqn.2024-08.org.nvmexpress.test/ tcpsubsys target端搭建完毕 initiator端配置过程如下
+#通过tcp发现远端nvme设备 root@test-int:~# nvme discover -t tcp -a 10.10.10.200 -s 4420 Discovery Log Number of Records 1, Generation counter 2 =====Discovery Log Entry 0====== trtype: tcp adrfam: ipv4 subtype: nvme subsystem treq: not specified, sq flow control disable supported portid: 1234 trsvcid: 4420 subnqn: nqn.2024-08.org.nvmexpress.test traddr: 10.10.10.200 sectype: none #连接target root@test-int:~# nvme connect -t tcp -a 10.10.10.200 -s 4420 -n nqn.2024-08.org.nvmexpress.test #此时可以查看到远端nvme设备 root@test-int:~# nvme --list Node SN Model Namespace Usage Format FW Rev --------------------- -------------------- ---------------------------------------- --------- -------------------------- ---------------- -------- /dev/nvme0n1 0bd67005473c4f00cccb Linux 1 1.02 TB / 1.02 TB 512 B + 0 B 5.15.0-1 Over RDMA target端配置如下
+#创建nvm subsystem cd /sys/kernel/config/nvmet/subsystems/ mkdir nqn.2024-08.org.nvmexpress.test （nqn，名字随意，按这个格式来） #设置initiator端访问权限 cd nqn.2024-08.org.nvmexpress.test/ echo 1 &gt; attr_allow_any_host #申请namespac id cd namespaces/ mkdir 1 #NSID绑定存储设备 cd 1 echo /dev/nvme0n1 &gt; device_path echo 1 &gt; enable #创建NVMe over Rdma的Transport层 root@test-Super-Server:/sys/kernel/config/nvmet/ports# mkdir 1234 root@test-Super-Server:/sys/kernel/config/nvmet/ports# cd 1234 echo rdma &gt; addr_trtype echo ipv4 &gt; addr_adrfam echo 10.10.10.200 &gt; addr_traddr （本端网卡IP地址） echo 4420 &gt; addr_trsvcid （监听端口） #Transport层与NVM subsystem关联 cd subsystems ln -s ../../../subsystems/nqn.2024-08.org.nvmexpress.test nqn.2024-08.org.nvmexpress.test target端搭建完毕 initiator端配置如下
+#通过rdma发现远端nvme设备[root@localhost subsystems]# nvme discover -t rdma -a 10.10.10.200 -s 4420Discovery Log Number of Records 1, Generation counter 1=====Discovery Log Entry 0======trtype: rdmaadrfam: ipv4subtype: current discovery subsystemtreq: not specified, sq flow control disable supportedportid: 1234trsvcid: 4420subnqn: nqn.2014-08.org.nvmexpress.discoverytraddr: 10.10.10.200eflags: nonerdma_prtype: not specifiedrdma_qptype: connectedrdma_cms: rdma-cmrdma_pkey: 0x0000#连接targetroot@test-int:~# nvme connect -t rdma -a 10.10.10.200 -s 4420 -n nqn.2024-08.org.nvmexpress.test#此时可以查看到远端nvme设备root@test-int:~# nvme --listNode SN Model Namespace Usage Format FW Rev--------------------- -------------------- ---------------------------------------- --------- -------------------------- ---------------- --------/dev/nvme0n1 0bd67005473c4f00cccb Linux 1 1.02 TB / 1.02 TB 512 B + 0 B 5.15.0-1 性能测试 256K顺序写
+fio --ioengine=libaio -direct=1 --runtime=60s --numjobs=1 --iodepth=128 --bs=256k --rw=write --filename=/dev/nvme0n1 --name=test --time_based -refill_buffers -group_reporting 256K顺序读
+fio --ioengine=libaio -direct=1 --runtime=60s --numjobs=1 --iodepth=128 --bs=256k --rw=read --filename=/dev/nvme0n1 --name=test --time_based -refill_buffers -group_reporting 分别测试Nvme本地(PCIE)性能，Nvme over TCP性能以及Nvme over RDMA性能，数据如下：
+从数据结果来看，无论读写的带宽还是读写的延迟，NVME over RDMA都要比NVME over TCP性能来的好很多，在实际的生产应用中，可能涉及到大量的数据处理、存储和传输，尤其是在需要实时处理和分析大量数据的情况下。NVMe over RDMA的低延迟、高带宽和高效CPU利用率特性，使其成为更优的选择，能够满足高性能和高效率的需求。
+]]></content>
+  </entry>
+  
+  <entry>
     <title>数字电路中的跨时钟域CDC</title>
     <url>/post/hardware/cross-clock-domain-cdc-in-digital-circuits.html</url>
     <categories><category>Hardware</category>
