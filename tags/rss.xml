@@ -6,7 +6,34 @@
     <description>Recent content in Tags on VxBus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 22 Sep 2024 11:26:09 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 29 Sep 2024 19:05:39 +0800</lastBuildDate><atom:link href="https://www.vxbus.com/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Foundry</title>
+      <link>https://www.vxbus.com/tags/foundry/</link>
+      <pubDate>Sun, 29 Sep 2024 19:05:39 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/foundry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IDM 2.0</title>
+      <link>https://www.vxbus.com/tags/idm-2.0/</link>
+      <pubDate>Sun, 29 Sep 2024 19:05:39 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/idm-2.0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Intel</title>
+      <link>https://www.vxbus.com/tags/intel/</link>
+      <pubDate>Sun, 29 Sep 2024 19:05:39 +0800</pubDate>
+      
+      <guid>https://www.vxbus.com/tags/intel/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>NVMe over RDMA</title>
       <link>https://www.vxbus.com/tags/nvme-over-rdma/</link>
@@ -202,15 +229,6 @@
       <pubDate>Sun, 08 Sep 2024 00:19:59 +0800</pubDate>
       
       <guid>https://www.vxbus.com/tags/linux-command/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Intel</title>
-      <link>https://www.vxbus.com/tags/intel/</link>
-      <pubDate>Sun, 08 Sep 2024 00:09:57 +0800</pubDate>
-      
-      <guid>https://www.vxbus.com/tags/intel/</guid>
       <description></description>
     </item>
     
